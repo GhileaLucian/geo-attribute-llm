@@ -155,7 +155,7 @@ st.markdown("""
 st.markdown("""
 <div class="header-box">
     <div class="header-title">GeoAttribute Quality Assurance Platform</div>
-    <div class="header-subtitle">Comparative benchmark: Rule-based Baseline vs Claude 3.5 Sonnet / GPT-4o on OpenStreetMap data</div>
+    <div class="header-subtitle">Comparative benchmark: Rule-based Baseline vs Claude Sonnet / GPT-4o on OpenStreetMap data</div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -179,7 +179,7 @@ with tab_inspector:
     with opt_col:
         engine_choice = st.selectbox(
             "Extractor Engine:",
-            ["Rule-Based Baseline", "Claude 3.5 Sonnet (Live API)", "OpenAI GPT-4o (Live API)"],
+            ["Rule-Based Baseline", "Claude Sonnet (Live API)", "OpenAI GPT-4o (Live API)"],
             index=0
         )
     with ctrl_col:
@@ -347,8 +347,8 @@ with tab_workflow:
             The QA pipeline runs as a resilient Prefect flow coordinating 5 distinct tasks:
         </p>
         <ol style="font-size: 13px; color: #334155; line-height: 1.8; margin-left: 18px;">
-            <li><strong>Data Ingestion:</strong> Loads verified OpenStreetMap road segments from <code>data/osm_ground_truth_cluj.json</code>.</li>
-            <li><strong>Batch Extraction:</strong> Runs the selected extractor (Rule-Based Baseline, Claude 3.5 Sonnet, or GPT-4o) using LangChain and strict Pydantic schemas.</li>
+            <li><strong>Data Ingestion:</strong> Loads hand-curated OpenStreetMap-style road segments from <code>data/osm_ground_truth_cluj.json</code>.</li>
+            <li><strong>Batch Extraction:</strong> Runs the selected extractor (Rule-Based Baseline, Claude Sonnet, or GPT-4o) using LangChain and strict Pydantic schemas.</li>
             <li><strong>Benchmarking:</strong> Computes precision, recall, and F1 scores using scikit-learn.</li>
             <li><strong>Error Taxonomy:</strong> Maps discrepancies into structured categories (speed hallucinations, road class mismatches).</li>
             <li><strong>Artifact Export:</strong> Generates evaluation reports and Matplotlib summary charts.</li>
@@ -361,6 +361,6 @@ with tab_workflow:
 # Run the rule-based baseline (no API key required):
 python run_pipeline.py --mode baseline
 
-# Run with Anthropic Claude 3.5 Sonnet (requires ANTHROPIC_API_KEY):
+# Run with Anthropic Claude Sonnet (requires ANTHROPIC_API_KEY):
 python run_pipeline.py --mode claude
     """, language="bash")

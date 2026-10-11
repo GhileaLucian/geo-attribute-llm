@@ -154,12 +154,14 @@ class RuleBasedBaselineExtractor:
 
 class ClaudeExtractor:
     """
-    Live LLM attribute extractor powered by Anthropic Claude 3.5 Sonnet.
+    Live LLM attribute extractor powered by Anthropic Claude Sonnet.
     Uses LangChain ChatAnthropic with system prompts, few-shot demonstration pairs,
     and strict Pydantic structured output validation.
     """
 
-    def __init__(self, model_name: str = "claude-3-5-sonnet-20241022"):
+    def __init__(self, model_name: str = None):
+        # Model id can be overridden with ANTHROPIC_MODEL; the default is a current Claude Sonnet model.
+        model_name = model_name or os.getenv("ANTHROPIC_MODEL", "claude-sonnet-5-5")
         api_key = os.getenv("ANTHROPIC_API_KEY")
         if not api_key:
             raise ValueError(

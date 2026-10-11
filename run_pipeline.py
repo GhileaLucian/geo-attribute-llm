@@ -2,7 +2,7 @@
 Entrypoint script for GeoAttribute-LLM pipeline.
 Usage:
     python run_pipeline.py                     # Runs Rule-based Baseline
-    python run_pipeline.py --mode claude       # Runs live Claude 3.5 Sonnet extraction (requires ANTHROPIC_API_KEY)
+    python run_pipeline.py --mode claude       # Runs live Claude Sonnet extraction (requires ANTHROPIC_API_KEY)
     python run_pipeline.py --mode openai       # Runs live OpenAI GPT-4o extraction (requires OPENAI_API_KEY)
 """
 

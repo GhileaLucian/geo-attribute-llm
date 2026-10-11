@@ -1,6 +1,6 @@
 """
 Dataset loader for OpenStreetMap ground truth.
-Loads verified road segments strictly from disk (data/osm_ground_truth_cluj.json).
+Loads hand-curated road segments strictly from disk (data/osm_ground_truth_cluj.json).
 """
 
 import json

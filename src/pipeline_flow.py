@@ -22,7 +22,7 @@ from src.evaluator import GeospatialEvaluator
 def load_osm_ground_truth_task(data_path: Path) -> List[RoadSegmentInput]:
     """Loads OpenStreetMap ground-truth dataset strictly from JSON file."""
     dataset = load_ground_truth_dataset(data_path)
-    print(f"Loaded {len(dataset)} verified road segments from {data_path.name}")
+    print(f"Loaded {len(dataset)} road segments from {data_path.name}")
     return dataset
 
 

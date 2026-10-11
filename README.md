@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 > **Applied learning project for geospatial attribute extraction, automated map-quality control, and ground-truth benchmarking.**  
-> Explores LLM orchestration (**LangChain**, **Prefect**), structured schema enforcement (**Pydantic**), and comparative benchmarking between a rule-based baseline and **Anthropic Claude 3.5 Sonnet** on OpenStreetMap (OSM) roadway data.
+> Explores LLM orchestration (**LangChain**, **Prefect**), structured schema enforcement (**Pydantic**), and comparative benchmarking between a rule-based baseline and **Anthropic Claude Sonnet** on OpenStreetMap (OSM) roadway data.
 
 ---
 
@@ -19,9 +19,9 @@ This repository implements an **end-to-end automated QA pipeline** designed to:
 1. **Parse OpenStreetMap (OSM) roadway data** across Cluj-Napoca, Romania (from arterial boulevards and motorways to pedestrian zones and mountain tracks).
 2. **Implement a two-stage extraction architecture**:
    - **Rule-Based Baseline**: Fast deterministic heuristics parsing explicit tags and statutory speed limits.
-   - **Claude 3.5 Sonnet (LLM)**: LangChain `ChatAnthropic` chain with few-shot demonstration pairs and strict Pydantic JSON schema output.
+   - **Claude Sonnet (LLM)**: LangChain `ChatAnthropic` chain with few-shot demonstration pairs and strict Pydantic JSON schema output.
 3. **Orchestrate execution flows via Prefect 3.8**, with task retries and artifact logging.
-4. **Benchmark performance** against a human-verified test set from OpenStreetMap Cluj-Napoca.
+4. **Benchmark performance** against a small hand-curated test set of 30 road segments around Cluj-Napoca. The baseline scores 100% on it, so the set is too easy to separate the two methods; harder, real OSM cases are the next step.
 5. **Classify discrepancies into a Spatial Error Taxonomy** (speed limit hallucinations, road class mismatches, barrier false negatives).
 
 ---
@@ -34,7 +34,7 @@ flowchart TD
     B --> C["Prompt Architecture (System + Few-Shot Pairs)"]
     C --> D{"Extractor Engine"}
     D -->|"Baseline"| E1["Rule-Based Heuristic Parser"]
-    D -->|"LLM"| E2["LangChain ChatAnthropic / Claude 3.5 Sonnet"]
+    D -->|"LLM"| E2["LangChain ChatAnthropic / Claude Sonnet"]
     E1 --> F["Pydantic Schema Validation (RoadAttributes)"]
     E2 --> F
     F --> G["Geospatial Evaluator (Scikit-Learn)"]
@@ -49,7 +49,7 @@ flowchart TD
 
 The framework is structured to compare the deterministic baseline against LLM inference on the test set:
 
-| Dimension | Rule-Based Baseline | Claude 3.5 Sonnet (LLM) |
+| Dimension | Rule-Based Baseline | Claude Sonnet (LLM), expected, not yet measured |
 | :--- | :--- | :--- |
 | **Execution Cost** | Zero (Local CPU) | API token cost |
 | **Handling of Unstructured Text** | Brittle keyword matching | High comprehension of colloquial descriptions |
@@ -80,7 +80,7 @@ pip install -r requirements.txt
 python run_pipeline.py --mode baseline
 ```
 
-### 3. Run with Anthropic Claude 3.5 Sonnet
+### 3. Run with Anthropic Claude Sonnet
 ```bash
 export ANTHROPIC_API_KEY="your-api-key"
 python run_pipeline.py --mode claude
