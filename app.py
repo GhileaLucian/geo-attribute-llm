@@ -4,14 +4,15 @@ Minimalist, high-end SaaS interface inspired by Linear and Mapbox Studio.
 Strictly light-themed, zero emojis, clean typography and subtle components.
 """
 
+import os
 import json
 from pathlib import Path
 import streamlit as st
 import pandas as pd
 
 from src.models import RoadSegmentInput, RoadAttributes
-from src.extractor import OpenStreetMapAttributeExtractor
-from src.dataset_generator import build_cluj_osm_dataset
+from src.extractor import get_extractor, RuleBasedBaselineExtractor
+from src.dataset_generator import load_ground_truth_dataset
 
 # Configuration
 st.set_page_config(
@@ -93,7 +94,7 @@ st.markdown("""
         color: #64748b;
         margin-bottom: 4px;
     }
-    .attr-value {
+    .attr-val {
         font-size: 15px;
         font-weight: 600;
         color: #0f172a;
@@ -154,12 +155,13 @@ st.markdown("""
 st.markdown("""
 <div class="header-box">
     <div class="header-title">GeoAttribute Quality Assurance Platform</div>
-    <div class="header-subtitle">Automated validation of road attributes, schema enforcement, and spatial error benchmarking</div>
+    <div class="header-subtitle">Comparative benchmark: Rule-based Baseline vs Claude 3.5 Sonnet / GPT-4o on OpenStreetMap data</div>
 </div>
 """, unsafe_allow_html=True)
 
-# Load ground-truth dataset
-dataset = build_cluj_osm_dataset()
+# Load ground-truth dataset strictly from JSON
+data_file = Path("data/osm_ground_truth_cluj.json")
+dataset = load_ground_truth_dataset(data_file)
 segment_map = {f"{s.segment_id} — {s.name}": s for s in dataset}
 
 # Top Navigation Tabs
@@ -173,21 +175,43 @@ tab_inspector, tab_benchmark, tab_workflow = st.tabs([
 # TAB 1: SEGMENT INSPECTOR
 # ---------------------------------------------------------
 with tab_inspector:
-    ctrl_col, btn_col = st.columns([4, 1])
+    opt_col, ctrl_col, btn_col = st.columns([1.5, 3, 1])
+    with opt_col:
+        engine_choice = st.selectbox(
+            "Extractor Engine:",
+            ["Rule-Based Baseline", "Claude 3.5 Sonnet (Live API)", "OpenAI GPT-4o (Live API)"],
+            index=0
+        )
     with ctrl_col:
         selected_key = st.selectbox(
             "Select road segment from benchmark dataset:",
-            list(segment_map.keys()),
-            label_visibility="collapsed"
+            list(segment_map.keys())
         )
     with btn_col:
-        run_extraction = st.button("Extract Attributes", type="primary", use_container_width=True)
+        st.write("")
+        st.write("")
+        run_extraction = st.button("Extract", type="primary", use_container_width=True)
 
     segment: RoadSegmentInput = segment_map[selected_key]
     
-    # Run extractor
-    extractor = OpenStreetMapAttributeExtractor(use_live_api=False)
-    extracted = extractor.extract_attributes(segment)
+    # Initialize appropriate extractor
+    extractor_error = None
+    try:
+        if "Claude" in engine_choice:
+            extractor = get_extractor("claude")
+        elif "OpenAI" in engine_choice:
+            extractor = get_extractor("openai")
+        else:
+            extractor = get_extractor("baseline")
+        extracted = extractor.extract_attributes(segment)
+    except Exception as e:
+        extractor_error = str(e)
+        # Fallback to baseline
+        extractor = RuleBasedBaselineExtractor()
+        extracted = extractor.extract_attributes(segment)
+
+    if extractor_error:
+        st.warning(f"Live API unavailable ({extractor_error}). Displaying Rule-based Baseline output instead.")
 
     col_left, col_right = st.columns([1, 1], gap="medium")
 
@@ -196,7 +220,7 @@ with tab_inspector:
         <div class="card">
             <div class="card-title">
                 <span>Input Metadata</span>
-                <span style="font-weight: 500; color: #94a3b8;">Source: OpenStreetMap</span>
+                <span style="font-weight: 500; color: #94a3b8;">Source: OpenStreetMap (Cluj-Napoca)</span>
             </div>
         """, unsafe_allow_html=True)
         
@@ -229,7 +253,7 @@ with tab_inspector:
         st.markdown(f"""
         <div class="card">
             <div class="card-title">
-                <span>Structured Extraction</span>
+                <span>Extraction Output [{extractor.name}]</span>
                 {status_html}
             </div>
             <div class="attr-grid">
@@ -251,13 +275,13 @@ with tab_inspector:
                 </div>
             </div>
             <div style="margin-top: 16px;">
-                <div class="attr-label">Model Reasoning (Chain-of-Thought)</div>
+                <div class="attr-label">Reasoning Trace</div>
                 <div class="reasoning-box">{extracted.reasoning_cot}</div>
             </div>
             <div style="display: flex; justify-content: space-between; margin-top: 14px; font-size: 11.5px; color: #64748b;">
                 <span>One-Way: <strong>{"Yes" if extracted.oneway else "No"}</strong></span>
                 <span>Confidence: <strong>{extracted.confidence_score*100:.0f}%</strong></span>
-                <span>Contradiction Flag: <strong>{"Yes" if extracted.anomaly_flag else "None"}</strong></span>
+                <span>Anomaly Flag: <strong>{"Yes" if extracted.anomaly_flag else "None"}</strong></span>
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -273,8 +297,11 @@ with tab_benchmark:
         with open(metrics_path, "r", encoding="utf-8") as f:
             metrics = json.load(f)
 
+        mode_ran = metrics.get("extractor_mode", "baseline").upper()
+        st.caption(f"Currently viewing evaluation artifacts generated for: **{mode_ran}**")
+
         m_cols = st.columns(5)
-        m_cols[0].metric("Total Evaluated", f"{metrics['total_segments_evaluated']} segments")
+        m_cols[0].metric("Evaluated Segments", f"{metrics['total_segments_evaluated']}")
         m_cols[1].metric("Exact Match Rate", f"{metrics['exact_segment_match_rate']*100:.1f}%")
         m_cols[2].metric("Road Classification F1", f"{metrics['attributes']['road_type']['f1_score']*100:.1f}%")
         m_cols[3].metric("Barrier Detection F1", f"{metrics['attributes']['barrier_present']['f1_score']*100:.1f}%")
@@ -317,17 +344,23 @@ with tab_workflow:
     <div class="card">
         <div class="card-title">Prefect Workflow Orchestration</div>
         <p style="font-size: 13px; color: #475569; line-height: 1.6;">
-            The QA pipeline runs as a resilient, scheduled Prefect flow that coordinates 5 distinct stages:
+            The QA pipeline runs as a resilient Prefect flow coordinating 5 distinct tasks:
         </p>
         <ol style="font-size: 13px; color: #334155; line-height: 1.8; margin-left: 18px;">
-            <li><strong>Data Ingestion:</strong> Loads verified OpenStreetMap ground-truth geometries and metadata.</li>
-            <li><strong>Batch Extraction:</strong> Applies system prompts and few-shot guidance with strict Pydantic JSON schema enforcement.</li>
-            <li><strong>Benchmarking:</strong> Computes multi-class precision, recall, and F1 scores using scikit-learn.</li>
-            <li><strong>Error Taxonomy Classification:</strong> Maps failure points (e.g. speed limit hallucinations, road class mismatches).</li>
-            <li><strong>Artifact Generation:</strong> Exports quantitative metrics JSON and visual performance plots.</li>
+            <li><strong>Data Ingestion:</strong> Loads verified OpenStreetMap road segments from <code>data/osm_ground_truth_cluj.json</code>.</li>
+            <li><strong>Batch Extraction:</strong> Runs the selected extractor (Rule-Based Baseline, Claude 3.5 Sonnet, or GPT-4o) using LangChain and strict Pydantic schemas.</li>
+            <li><strong>Benchmarking:</strong> Computes precision, recall, and F1 scores using scikit-learn.</li>
+            <li><strong>Error Taxonomy:</strong> Maps discrepancies into structured categories (speed hallucinations, road class mismatches).</li>
+            <li><strong>Artifact Export:</strong> Generates evaluation reports and Matplotlib summary charts.</li>
         </ol>
     </div>
     """, unsafe_allow_html=True)
     
     st.markdown("<p style='font-size: 12px; font-weight: 600; text-transform: uppercase; color: #64748b;'>Command Line Execution</p>", unsafe_allow_html=True)
-    st.code("python run_pipeline.py", language="bash")
+    st.code("""
+# Run the rule-based baseline (no API key required):
+python run_pipeline.py --mode baseline
+
+# Run with Anthropic Claude 3.5 Sonnet (requires ANTHROPIC_API_KEY):
+python run_pipeline.py --mode claude
+    """, language="bash")

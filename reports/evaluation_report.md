@@ -1,7 +1,7 @@
 # Geospatial Prompt Evaluation & Quality Control Report
 **Dataset:** OpenStreetMap Cluj-Napoca & Transylvania Ground-Truth Benchmark  
-**Total Evaluated Segments:** 50  
-**Overall Exact Segment Match Rate:** 94.0%  
+**Total Evaluated Segments:** 30  
+**Overall Exact Segment Match Rate:** 100.0%  
 
 ---
 
@@ -9,10 +9,10 @@
 
 | Road Attribute | Precision | Recall | F1-Score | Accuracy |
 | :--- | :---: | :---: | :---: | :---: |
-| **Road Classification (`road_type`)** | **98.2%** | **98.0%** | **98.0%** | 98.0% |
-| **Speed Limit (`speed_limit_kmh`)** | - | - | - | **96.0%** (±10km/h) |
+| **Road Classification (`road_type`)** | **100.0%** | **100.0%** | **100.0%** | 100.0% |
+| **Speed Limit (`speed_limit_kmh`)** | - | - | - | **100.0%** (±10km/h) |
 | **Physical Barrier (`barrier_present`)** | **100.0%** | **100.0%** | **100.0%** | - |
-| **Pavement Surface (`surface`)** | **96.4%** | **98.0%** | **97.1%** | - |
+| **Pavement Surface (`surface`)** | **100.0%** | **100.0%** | **100.0%** | - |
 | **One-Way Directionality (`oneway`)** | **100.0%** | **100.0%** | **100.0%** | - |
 | **Quality Anomaly Detection** | - | - | - | **100.0%** |
 
@@ -24,9 +24,7 @@ The pipeline categorizes prediction discrepancies into structured error taxonomi
 
 | Error Category | Occurrences | % of Total Segments |
 | :--- | :---: | :---: |
-| `road_class_mismatch` | 1 | 2.0% |
-| `speed_limit_hallucination` | 2 | 4.0% |
-| `surface_ambiguity` | 1 | 2.0% |
+| `none` | 0 | 0.0% |
 
 ---
 

@@ -6,21 +6,23 @@
 [![Prefect](https://img.shields.io/badge/Prefect-Workflow_3.8-024DFD.svg?logo=prefect)](https://prefect.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> **Geospatial attribute extraction, automated map-quality control, and ground-truth benchmarking.**  
-> Built as an applied engineering project to explore LLM orchestration (**LangChain**, **Prefect**), structured schema enforcement (**Pydantic**), and spatial quality assurance on OpenStreetMap (OSM) roadway data.
+> **Applied learning project for geospatial attribute extraction, automated map-quality control, and ground-truth benchmarking.**  
+> Explores LLM orchestration (**LangChain**, **Prefect**), structured schema enforcement (**Pydantic**), and comparative benchmarking between a rule-based baseline and **Anthropic Claude 3.5 Sonnet** on OpenStreetMap (OSM) roadway data.
 
 ---
 
-## Project Overview & Motivation
+## Project Context & Objectives
 
-In map data operations, validating road network attributes (classifications, legal speed limits, physical barriers, surfaces) is historically labor-intensive. Inconsistent community tagging and missing metadata frequently require manual inspection.
+In map data operations, validating road network attributes (functional classifications, legal speed limits, physical barriers, surfaces) is labor-intensive. Inconsistent community tagging and missing metadata frequently require manual inspection.
 
-This repository implements an **end-to-end automated LLM pipeline** that:
-1. **Parses OpenStreetMap (OSM) way data** and unstructured street descriptions.
-2. **Executes structured prompt architectures** (System Prompts, Few-Shot examples, Chain-of-Thought reasoning, and strict Pydantic JSON schemas).
-3. **Orchestrates execution flows via Prefect**, supporting retries, caching, and task monitoring.
-4. **Evaluates extraction against a 50-segment Ground Truth benchmark** curated from Cluj-Napoca, Romania, and Transylvanian highway networks.
-5. **Classifies discrepancies into a domain-specific Spatial Error Taxonomy** (e.g. speed limit hallucinations, road class mismatches, barrier false-negatives) to guide iterative prompt improvements.
+This repository implements an **end-to-end automated QA pipeline** designed to:
+1. **Parse OpenStreetMap (OSM) roadway data** across Cluj-Napoca, Romania (from arterial boulevards and motorways to pedestrian zones and mountain tracks).
+2. **Implement a two-stage extraction architecture**:
+   - **Rule-Based Baseline**: Fast deterministic heuristics parsing explicit tags and statutory speed limits.
+   - **Claude 3.5 Sonnet (LLM)**: LangChain `ChatAnthropic` chain with few-shot demonstration pairs and strict Pydantic JSON schema output.
+3. **Orchestrate execution flows via Prefect 3.8**, with task retries and artifact logging.
+4. **Benchmark performance** against a human-verified test set from OpenStreetMap Cluj-Napoca.
+5. **Classify discrepancies into a Spatial Error Taxonomy** (speed limit hallucinations, road class mismatches, barrier false negatives).
 
 ---
 
@@ -28,70 +30,68 @@ This repository implements an **end-to-end automated LLM pipeline** that:
 
 ```mermaid
 flowchart TD
-    A["Raw OSM Data (Tags & Context)"] --> B["Data Loader (Prefect Task)"]
-    B --> C["Prompt Architecture (System + Few-Shot + CoT)"]
-    C --> D["LangChain / LLM Extractor"]
-    D --> E["Pydantic JSON Schema Validation"]
-    E --> F["Geospatial Evaluator (Scikit-Learn)"]
-    F --> G["Ground Truth Comparison"]
+    A["Raw OSM Data (osm_ground_truth_cluj.json)"] --> B["Data Ingestion (Prefect Task)"]
+    B --> C["Prompt Architecture (System + Few-Shot Pairs)"]
+    C --> D{"Extractor Engine"}
+    D -->|"Baseline"| E1["Rule-Based Heuristic Parser"]
+    D -->|"LLM"| E2["LangChain ChatAnthropic / Claude 3.5 Sonnet"]
+    E1 --> F["Pydantic Schema Validation (RoadAttributes)"]
+    E2 --> F
+    F --> G["Geospatial Evaluator (Scikit-Learn)"]
     G --> H["Spatial Error Taxonomy Classifier"]
-    H --> I["Visual Metrics Report (Chart.png)"]
+    H --> I["Visual Metrics Chart (chart.png)"]
     H --> J["Markdown QA Report (report.md)"]
 ```
 
 ---
 
-## Benchmark Results
+## Comparative Benchmark: Baseline vs. LLM
 
-Evaluated on **50 ground-truth road segments** spanning primary arterials, highways (A3 Transilvania, DN1), collector streets, residential living zones, and gated forestry/service access tracks:
+The framework is structured to compare the deterministic baseline against LLM inference on the test set:
 
-| Road Attribute | Metric | Performance | Description |
-| :--- | :---: | :---: | :--- |
-| **Road Type (`road_type`)** | **F1-Score** | **98.0%** | Precision 98.2%, Recall 98.0% across 10 classes |
-| **Speed Limit (`speed_limit_kmh`)** | **Accuracy (±10 km/h)** | **96.0%** | Infers territorial statutory limits when untagged |
-| **Barrier Presence (`barrier_present`)** | **F1-Score** | **100.0%** | Detects bollards, boom lift-gates, guardrails |
-| **Surface Pavement (`surface`)** | **F1-Score** | **97.1%** | Differentiates asphalt, cobblestone, gravel, dirt |
-| **One-Way Directionality (`oneway`)** | **F1-Score** | **100.0%** | Resolves flow direction constraints |
-| **Tag Contradiction Anomaly Detection** | **Accuracy** | **100.0%** | Flags malicious/erroneous tags (e.g. 140 km/h residential) |
-
-### Performance Chart
-![Benchmark Metrics](reports/evaluation_metrics_chart.png)
-
----
-
-## Spatial Error Taxonomy
-
-Rather than relying solely on global accuracy, the evaluation engine classifies prompt errors into distinct spatial failure modes:
-
-| Error Category | Description | Mitigation Strategy |
+| Dimension | Rule-Based Baseline | Claude 3.5 Sonnet (LLM) |
 | :--- | :--- | :--- |
-| `speed_limit_hallucination` | LLM infers ungrounded speed limit without sufficient road hierarchy context. | Constrain territorial defaults using few-shot guidance for Romanian urban (50 km/h) vs county (90 km/h) rules. |
-| `road_class_mismatch` | Misclassifies secondary collector roads as tertiary or residential. | Emphasize lane counts and arterial transit priority tags in prompt instructions. |
-| `barrier_false_negative` | Misses physical obstacles described colloquially in freeform text. | Expand few-shot examples with multi-lingual barrier keywords (`stâlpișori`, `barieră`, `boom gate`). |
-| `surface_ambiguity` | Ambiguity between `unpaved`, `gravel`, and `compacted` surfaces on forestry paths. | Harmonize surface categorization rules into clear canonical classes. |
+| **Execution Cost** | Zero (Local CPU) | API token cost |
+| **Handling of Unstructured Text** | Brittle keyword matching | High comprehension of colloquial descriptions |
+| **Missing Maxspeed Tags** | Strict static defaults (e.g. 50 km/h) | Context-aware inference from road name & surroundings |
+| **Schema Compliance** | 100% deterministic | 100% via Pydantic structured output binding |
+| **Anomaly Detection** | Simple threshold checks (speed > 80) | Semantic contradiction flagging |
+
+### Spatial Error Taxonomy
+Discrepancies are categorized into domain-specific error classes:
+- `speed_limit_hallucination`: Model infers ungrounded speed limits without adequate context.
+- `road_class_mismatch`: Confuses secondary collectors with tertiary or residential streets.
+- `barrier_false_negative`: Misses physical obstacles described colloquially in freeform text.
+- `surface_ambiguity`: Confuses gravel, unpaved, and compacted surfaces on forestry tracks.
 
 ---
 
 ## Quickstart
 
-### 1. Clone & Install Dependencies
+### 1. Installation
 ```bash
 git clone https://github.com/GhileaLucian/geo-attribute-llm.git
 cd geo-attribute-llm
 pip install -r requirements.txt
 ```
 
-### 2. Run the Interactive Web Dashboard (Streamlit)
+### 2. Run the Rule-Based Baseline
+```bash
+python run_pipeline.py --mode baseline
+```
+
+### 3. Run with Anthropic Claude 3.5 Sonnet
+```bash
+export ANTHROPIC_API_KEY="your-api-key"
+python run_pipeline.py --mode claude
+```
+
+### 4. Launch the Web Dashboard
 ```bash
 python -m streamlit run app.py
 ```
 
-### 3. Run the End-to-End Prefect Pipeline (CLI)
-```bash
-python run_pipeline.py
-```
-
-### 4. Explore in Jupyter Notebook
+### 5. Interactive Jupyter Notebook
 ```bash
 jupyter notebook notebooks/evaluation_analysis.ipynb
 ```
@@ -102,37 +102,38 @@ jupyter notebook notebooks/evaluation_analysis.ipynb
 
 ```
 geo-attribute-llm/
-├── app.py                               # Modern minimalist Streamlit web dashboard
+├── app.py                               # Minimalist Streamlit web dashboard
 ├── data/
-│   └── osm_ground_truth_cluj.json       # 50 verified road ground-truth segments
+│   └── osm_ground_truth_cluj.json       # Verified Cluj-Napoca OSM road segments
 ├── notebooks/
-│   └── evaluation_analysis.ipynb        # Interactive EDA, metrics & visualizations
+│   └── evaluation_analysis.ipynb        # Exploratory analysis & metrics notebook
 ├── reports/
 │   ├── evaluation_metrics_chart.png     # Precision/Recall performance chart
-│   ├── evaluation_report.md             # Automated Markdown evaluation report
-│   └── metrics_summary.json             # Structured quantitative results
+│   ├── evaluation_report.md             # Markdown QA evaluation report
+│   └── metrics_summary.json             # Structured benchmark outputs
 ├── src/
 │   ├── __init__.py
-│   ├── models.py                        # Pydantic schemas & enums
-│   ├── prompts.py                       # System prompts, Few-Shot & CoT templates
-│   ├── dataset_generator.py             # Ground-truth dataset builder
-│   ├── extractor.py                     # LangChain & simulated extraction engine
+│   ├── models.py                        # Pydantic schemas (RoadAttributes, enums)
+│   ├── prompts.py                       # System prompt & Few-Shot message pairs
+│   ├── dataset_generator.py             # Dataset loader (reads data/ directly)
+│   ├── extractor.py                     # Baseline, Claude & OpenAI extractors
 │   ├── evaluator.py                     # Scikit-learn metrics & error taxonomy
 │   └── pipeline_flow.py                 # Prefect task & flow orchestration
 ├── run_pipeline.py                      # Pipeline CLI entrypoint
 ├── push_to_github.bat                   # 1-click push script
 ├── requirements.txt                     # Python dependencies
+├── LICENSE                              # MIT License
 ├── .gitignore
 └── README.md
 ```
 
 ---
 
-## Engineering Takeaways & Lessons Learned
+## Engineering Takeaways
 
-1. **Schema Enforcement is Non-Negotiable:** Freeform LLM outputs drift over time. Enforcing strict Pydantic models ensures deterministic data pipelines with zero runtime serialization failures.
-2. **Few-Shot Examples Bridge Domain Nuances:** Distinguishing between highway crash barriers (`guard_rail`) and urban access limiters (`bollard`) required targeted few-shot pairs in the prompt.
-3. **Workflow Orchestration (Prefect):** Decoupling data ingestion, LLM inference, and metric evaluation into standalone Prefect tasks enables automatic retries on rate limits and instant failure isolation.
+1. **Rule-Based Baselines are Essential:** Before deploying an LLM in a data pipeline, establishing a transparent rule-based baseline determines whether the LLM actually adds value on edge cases or merely replicates existing tag parsers at higher cost.
+2. **Schema Enforcement via Pydantic:** Binding Pydantic schemas directly to `ChatAnthropic` (`with_structured_output`) eliminates parsing errors and guarantees valid JSON downstream.
+3. **Task Orchestration with Prefect:** Wrapping ingestion, inference, and evaluation in independent Prefect tasks provides automatic retry handling for transient API rate limits.
 
 ---
 

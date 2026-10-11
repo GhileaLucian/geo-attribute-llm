@@ -13,32 +13,29 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from src.models import RoadSegmentInput, ExtractionResult
-from src.dataset_generator import build_cluj_osm_dataset, save_dataset_to_json
-from src.extractor import OpenStreetMapAttributeExtractor
+from src.dataset_generator import load_ground_truth_dataset
+from src.extractor import get_extractor
 from src.evaluator import GeospatialEvaluator
 
 
 @task(name="load-osm-ground-truth", retries=2, retry_delay_seconds=2)
 def load_osm_ground_truth_task(data_path: Path) -> List[RoadSegmentInput]:
-    """Loads OpenStreetMap ground-truth dataset from disk or generates baseline."""
-    if not data_path.exists():
-        save_dataset_to_json(data_path)
-    dataset = build_cluj_osm_dataset()
-    print(f"Loaded {len(dataset)} road segments from {data_path.name}")
+    """Loads OpenStreetMap ground-truth dataset strictly from JSON file."""
+    dataset = load_ground_truth_dataset(data_path)
+    print(f"Loaded {len(dataset)} verified road segments from {data_path.name}")
     return dataset
 
 
 @task(name="extract-attributes-batch", retries=2, retry_delay_seconds=3)
 def extract_attributes_batch_task(
     dataset: List[RoadSegmentInput],
-    model_name: str = "claude-3-5-sonnet",
-    use_live_api: bool = False
+    mode: str = "baseline"
 ) -> List[ExtractionResult]:
-    """Runs batch attribute extraction using LangChain / Extractor."""
-    extractor = OpenStreetMapAttributeExtractor(model_name=model_name, use_live_api=use_live_api)
+    """Runs batch attribute extraction using selected extractor (baseline, claude, openai)."""
+    extractor = get_extractor(mode=mode)
     results: List[ExtractionResult] = []
 
-    print(f"Beginning attribute extraction for {len(dataset)} segments...")
+    print(f"Beginning attribute extraction for {len(dataset)} segments using [{extractor.name}]...")
     for segment in dataset:
         t0 = time.time()
         extracted = extractor.extract_attributes(segment)
@@ -56,10 +53,11 @@ def extract_attributes_batch_task(
 
 
 @task(name="benchmark-and-evaluate")
-def benchmark_and_evaluate_task(results: List[ExtractionResult]) -> Dict[str, Any]:
+def benchmark_and_evaluate_task(results: List[ExtractionResult], mode_name: str = "baseline") -> Dict[str, Any]:
     """Benchmarks predictions against ground-truth and classifies errors."""
     evaluator = GeospatialEvaluator()
     metrics = evaluator.evaluate_batch(results)
+    metrics["extractor_mode"] = mode_name
     return metrics
 
 
@@ -68,6 +66,7 @@ def generate_visualizations_task(metrics: Dict[str, Any], output_path: Path) -> 
     """Generates precision/recall bar chart and metrics plot."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
     attr = metrics["attributes"]
+    mode_name = metrics.get("extractor_mode", "baseline").upper()
 
     categories = ["Road Type", "Barrier", "Surface", "One-Way"]
     precision_vals = [
@@ -91,7 +90,7 @@ def generate_visualizations_task(metrics: Dict[str, Any], output_path: Path) -> 
     ax.bar([i + width/2 for i in x], recall_vals, width, label="Recall (%)", color="#0f766e")
 
     ax.set_ylabel("Score (%)", fontsize=10, fontweight="bold")
-    ax.set_title("Geospatial Attribute Extraction: Precision & Recall Benchmark", fontsize=11, fontweight="bold", pad=12)
+    ax.set_title(f"Attribute Extraction: Precision & Recall [{mode_name}]", fontsize=11, fontweight="bold", pad=12)
     ax.set_xticks(list(x))
     ax.set_xticklabels(categories, fontsize=9, fontweight="bold")
     ax.set_ylim(0, 110)
@@ -128,13 +127,13 @@ def export_artifacts_task(metrics: Dict[str, Any], reports_dir: Path) -> None:
 def run_geospatial_pipeline(
     data_dir: Path = Path("data"),
     reports_dir: Path = Path("reports"),
-    use_live_api: bool = False
+    mode: str = "baseline"
 ) -> Dict[str, Any]:
     """End-to-end Prefect pipeline coordinating dataset loading, extraction, and evaluation."""
     data_file = data_dir / "osm_ground_truth_cluj.json"
     dataset = load_osm_ground_truth_task(data_file)
-    results = extract_attributes_batch_task(dataset, use_live_api=use_live_api)
-    metrics = benchmark_and_evaluate_task(results)
+    results = extract_attributes_batch_task(dataset, mode=mode)
+    metrics = benchmark_and_evaluate_task(results, mode_name=mode)
     generate_visualizations_task(metrics, reports_dir / "evaluation_metrics_chart.png")
     export_artifacts_task(metrics, reports_dir)
     return metrics

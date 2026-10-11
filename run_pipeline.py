@@ -1,10 +1,12 @@
 """
 Entrypoint script for GeoAttribute-LLM pipeline.
 Usage:
-    python run_pipeline.py
-    python run_pipeline.py --live-api
+    python run_pipeline.py                     # Runs Rule-based Baseline
+    python run_pipeline.py --mode claude       # Runs live Claude 3.5 Sonnet extraction (requires ANTHROPIC_API_KEY)
+    python run_pipeline.py --mode openai       # Runs live OpenAI GPT-4o extraction (requires OPENAI_API_KEY)
 """
 
+import os
 import sys
 import argparse
 from pathlib import Path
@@ -20,13 +22,37 @@ from src.pipeline_flow import run_geospatial_pipeline
 
 def main():
     parser = argparse.ArgumentParser(description="GeoAttribute-LLM: Geospatial Attribute Extraction & Automated QA Pipeline")
-    parser.add_argument("--live-api", action="store_true", help="Use live OpenAI/Claude API (requires OPENAI_API_KEY or ANTHROPIC_API_KEY)")
+    parser.add_argument(
+        "--mode",
+        choices=["baseline", "claude", "openai"],
+        default="baseline",
+        help="Extractor engine to use: 'baseline' (rule heuristics), 'claude' (Anthropic Claude 3.5), or 'openai' (GPT-4o)"
+    )
     parser.add_argument("--data-dir", default="data", help="Directory where ground truth data is stored")
     parser.add_argument("--reports-dir", default="reports", help="Directory where reports are saved")
     args = parser.parse_args()
 
+    # Pre-check API keys
+    if args.mode == "claude" and not os.getenv("ANTHROPIC_API_KEY"):
+        print("\n[ERROR] ANTHROPIC_API_KEY environment variable is not set!")
+        print("Please set it in your terminal:")
+        print("   Windows CMD:        set ANTHROPIC_API_KEY=your-api-key")
+        print("   PowerShell:         $env:ANTHROPIC_API_KEY='your-api-key'")
+        print("Or run the rule-based baseline without an API key:")
+        print("   python run_pipeline.py --mode baseline\n")
+        sys.exit(1)
+
+    if args.mode == "openai" and not os.getenv("OPENAI_API_KEY"):
+        print("\n[ERROR] OPENAI_API_KEY environment variable is not set!")
+        print("Please set it in your terminal:")
+        print("   Windows CMD:        set OPENAI_API_KEY=your-api-key")
+        print("   PowerShell:         $env:OPENAI_API_KEY='your-api-key'")
+        print("Or run the rule-based baseline without an API key:")
+        print("   python run_pipeline.py --mode baseline\n")
+        sys.exit(1)
+
     print("\n" + "="*70)
-    print("[START] RUNNING GEOSPATIAL LLM QA PIPELINE (Prefect Orchestrated)")
+    print(f"[START] GEOSPATIAL QA PIPELINE (Prefect Orchestrated) | MODE: {args.mode.upper()}")
     print("="*70)
 
     data_dir = Path(args.data_dir)
@@ -35,11 +61,11 @@ def main():
     metrics = run_geospatial_pipeline(
         data_dir=data_dir,
         reports_dir=reports_dir,
-        use_live_api=args.live_api
+        mode=args.mode
     )
 
     print("\n" + "="*70)
-    print("[SUCCESS] PIPELINE EXECUTION COMPLETED")
+    print(f"[SUCCESS] PIPELINE EXECUTION COMPLETED ({args.mode.upper()})")
     print("="*70)
     attr = metrics["attributes"]
     print(f"Evaluated Segments:       {metrics['total_segments_evaluated']}")
