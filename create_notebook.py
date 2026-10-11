@@ -1,0 +1,165 @@
+"""
+Generates the interactive evaluation Jupyter Notebook.
+"""
+import json
+from pathlib import Path
+
+notebook = {
+    "cells": [
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "# 🗺️ GeoAttribute-LLM: Geospatial Evaluation & Error Analysis\n",
+                "**Automated Map Quality Control, Ground-Truth Benchmarking & Spatial Error Taxonomies**\n",
+                "\n",
+                "This notebook provides an interactive exploratory environment for LLM-powered road attribute extraction.\n",
+                "- **Dataset**: 50 curated OpenStreetMap (OSM) segments from Cluj-Napoca, Romania.\n",
+                "- **Orchestration**: Prefect workflow with cached tasks and retries.\n",
+                "- **Evaluation**: Scikit-learn Precision, Recall, and Spatial Error Taxonomies."
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "import json\n",
+                "import pandas as pd\n",
+                "import numpy as np\n",
+                "import matplotlib.pyplot as plt\n",
+                "from pathlib import Path\n",
+                "\n",
+                "# Load benchmark metrics and dataset\n",
+                "metrics_path = Path('../reports/metrics_summary.json')\n",
+                "data_path = Path('../data/osm_ground_truth_cluj.json')\n",
+                "\n",
+                "with open(metrics_path, 'r', encoding='utf-8') as f:\n",
+                "    metrics = json.load(f)\n",
+                "\n",
+                "with open(data_path, 'r', encoding='utf-8') as f:\n",
+                "    dataset = json.load(f)\n",
+                "\n",
+                "df = pd.DataFrame([{\n",
+                "    'segment_id': item['segment_id'],\n",
+                "    'name': item['name'],\n",
+                "    'road_type': item['expected_attributes']['road_type'],\n",
+                "    'speed_limit': item['expected_attributes']['speed_limit_kmh'],\n",
+                "    'barrier_present': item['expected_attributes']['barrier_present'],\n",
+                "    'barrier_type': item['expected_attributes']['barrier_type'],\n",
+                "    'surface': item['expected_attributes']['surface'],\n",
+                "    'oneway': item['expected_attributes']['oneway'],\n",
+                "    'anomaly': item['expected_attributes']['anomaly_flag']\n",
+                "} for item in dataset])\n",
+                "\n",
+                "print(f\"Loaded {len(df)} road segments across {df['road_type'].nunique()} road classifications.\")\n",
+                "df.head()"
+            ]
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## 1. Quantitative Performance per Road Attribute"
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "summary_rows = []\n",
+                "for attr_name, vals in metrics['attributes'].items():\n",
+                "    row = {'Attribute': attr_name}\n",
+                "    row.update({k: f\"{v*100:.1f}%\" if isinstance(v, float) else v for k, v in vals.items()})\n",
+                "    summary_rows.append(row)\n",
+                "\n",
+                "summary_df = pd.DataFrame(summary_rows)\n",
+                "summary_df"
+            ]
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## 2. Precision & Recall by Road Attribute"
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "attr = metrics['attributes']\n",
+                "categories = ['Road Type', 'Barrier', 'Surface', 'One-Way']\n",
+                "p_vals = [attr['road_type']['precision'] * 100, attr['barrier_present']['precision'] * 100, attr['surface_type']['precision'] * 100, attr['oneway']['precision'] * 100]\n",
+                "r_vals = [attr['road_type']['recall'] * 100, attr['barrier_present']['recall'] * 100, attr['surface_type']['recall'] * 100, attr['oneway']['recall'] * 100]\n",
+                "\n",
+                "fig, ax = plt.subplots(figsize=(7, 4), dpi=120)\n",
+                "x = np.arange(len(categories))\n",
+                "width = 0.35\n",
+                "ax.bar(x - width/2, p_vals, width, label='Precision (%)', color='#0284c7')\n",
+                "ax.bar(x + width/2, r_vals, width, label='Recall (%)', color='#0f766e')\n",
+                "ax.set_ylabel('Percentage (%)', fontweight='bold')\n",
+                "ax.set_title('Attribute Extraction Precision & Recall', fontweight='bold', pad=10)\n",
+                "ax.set_xticks(x)\n",
+                "ax.set_xticklabels(categories, fontweight='bold')\n",
+                "ax.set_ylim(80, 105)\n",
+                "ax.legend()\n",
+                "ax.grid(axis='y', linestyle='--', alpha=0.3)\n",
+                "plt.tight_layout()\n",
+                "plt.show()"
+            ]
+        },
+        {
+            "cell_type": "markdown",
+            "metadata": {},
+            "source": [
+                "## 3. Spatial Error Taxonomy Analysis\n",
+                "Discrepancies mapped to domain error categories to guide prompt iteration."
+            ]
+        },
+        {
+            "cell_type": "code",
+            "execution_count": None,
+            "metadata": {},
+            "outputs": [],
+            "source": [
+                "err_data = metrics.get('error_taxonomy_breakdown', {})\n",
+                "if err_data:\n",
+                "    err_df = pd.DataFrame(list(err_data.items()), columns=['Error Taxonomy', 'Count'])\n",
+                "    fig, ax = plt.subplots(figsize=(6, 3), dpi=120)\n",
+                "    ax.barh(err_df['Error Taxonomy'], err_df['Count'], color='#e11d48')\n",
+                "    ax.set_xlabel('Count of Occurrences', fontweight='bold')\n",
+                "    ax.set_title('Spatial Error Taxonomy Distribution', fontweight='bold', pad=10)\n",
+                "    ax.grid(axis='x', linestyle='--', alpha=0.3)\n",
+                "    plt.tight_layout()\n",
+                "    plt.show()\n",
+                "else:\n",
+                "    print('No errors detected in current evaluation run!')"
+            ]
+        }
+    ],
+    "metadata": {
+        "kernelspec": {
+            "display_name": "Python 3",
+            "language": "python",
+            "name": "python3"
+        },
+        "language_info": {
+            "name": "python",
+            "version": "3.12.10"
+        }
+    },
+    "nbformat": 4,
+    "nbformat_minor": 4
+}
+
+out_path = Path("notebooks/evaluation_analysis.ipynb")
+out_path.parent.mkdir(parents=True, exist_ok=True)
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(notebook, f, indent=2)
+print("Notebook generated successfully at:", out_path)

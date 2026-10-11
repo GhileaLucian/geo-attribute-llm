@@ -1,0 +1,1096 @@
+[
+  {
+    "segment_id": "OSM_CJ_001",
+    "name": "Bulevardul 21 Decembrie 1989 (Spre Piața Unirii)",
+    "osm_tags": {
+      "highway": "primary",
+      "lanes": "4",
+      "maxspeed": "50",
+      "oneway": "yes",
+      "surface": "asphalt",
+      "busway": "lane"
+    },
+    "context_description": "Busy 4-lane major arterial road heading into downtown Cluj-Napoca with dedicated public transit lanes and heavy traffic.",
+    "expected_attributes": {
+      "road_type": "primary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 0.98,
+      "reasoning_cot": "Primary urban arterial with standard urban speed limit of 50 km/h.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_002",
+    "name": "Calea Moților (Tronson Spitalul Clinic de Copii)",
+    "osm_tags": {
+      "highway": "primary",
+      "lanes": "3",
+      "maxspeed": "50",
+      "oneway": "no",
+      "surface": "asphalt"
+    },
+    "context_description": "Central thoroughfare connecting Mănăștur to central ring. Asphalt road in good condition, regulated at city limits.",
+    "expected_attributes": {
+      "road_type": "primary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.97,
+      "reasoning_cot": "Two-way primary road inside municipal boundaries.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_003",
+    "name": "Strada Memorandumului (Coridor Central)",
+    "osm_tags": {
+      "highway": "primary",
+      "lanes": "3",
+      "maxspeed": "50",
+      "oneway": "yes",
+      "surface": "asphalt",
+      "access:bus": "designated"
+    },
+    "context_description": "One-way primary connector in heart of university area. Regular pavement with transit priority.",
+    "expected_attributes": {
+      "road_type": "primary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 0.98,
+      "reasoning_cot": "One-way urban primary.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_004",
+    "name": "Strada Horea (Tronson Gară - Centru)",
+    "osm_tags": {
+      "highway": "primary",
+      "lanes": "2",
+      "maxspeed": "50",
+      "railway": "tram",
+      "surface": "asphalt"
+    },
+    "context_description": "Primary connector from Cluj Railway Station towards river bridge, shares roadbed with tram tracks.",
+    "expected_attributes": {
+      "road_type": "primary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Primary road with embedded tram rails.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_005",
+    "name": "Calea Turzii (Sector Urcare spre Feleacu)",
+    "osm_tags": {
+      "highway": "primary",
+      "lanes": "3",
+      "maxspeed": "60",
+      "surface": "asphalt",
+      "oneway": "no"
+    },
+    "context_description": "Ascending arterial towards Feleacu pass. Local signpost permits 60 km/h uphill gradient.",
+    "expected_attributes": {
+      "road_type": "primary",
+      "speed_limit_kmh": 60,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.96,
+      "reasoning_cot": "Signed higher speed limit of 60 km/h on ascending primary section.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_006",
+    "name": "Autostrada A3 Transilvania (Gilău - Turda)",
+    "osm_tags": {
+      "highway": "motorway",
+      "lanes": "2",
+      "maxspeed": "130",
+      "motorroad": "yes",
+      "oneway": "yes",
+      "surface": "asphalt",
+      "barrier": "guard_rail"
+    },
+    "context_description": "Grade-separated dual carriageway highway with steel crash barriers on both shoulders and central reservation.",
+    "expected_attributes": {
+      "road_type": "motorway",
+      "speed_limit_kmh": 130,
+      "barrier_present": true,
+      "barrier_type": "guard_rail",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 0.99,
+      "reasoning_cot": "High-speed motorway with guard rail safety barriers and statutory 130 km/h limit.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_007",
+    "name": "Drumul Național DN1 / E60 (Cluj - Florești Centru)",
+    "osm_tags": {
+      "highway": "trunk",
+      "lanes": "4",
+      "maxspeed": "70",
+      "oneway": "no",
+      "surface": "asphalt",
+      "barrier": "concrete_median"
+    },
+    "context_description": "High-capacity suburban commuter trunk corridor divided by continuous concrete New Jersey barrier.",
+    "expected_attributes": {
+      "road_type": "trunk",
+      "speed_limit_kmh": 70,
+      "barrier_present": true,
+      "barrier_type": "block",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Divided trunk expressway segment with median concrete block barriers.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_008",
+    "name": "Centura Ocolitoare Vâlcele - Dej (Varianta Ocolitoare)",
+    "osm_tags": {
+      "highway": "trunk",
+      "lanes": "2",
+      "maxspeed": "90",
+      "oneway": "no",
+      "surface": "asphalt"
+    },
+    "context_description": "Single-carriageway bypass trunk road for heavy freight bypassing the metropolitan zone.",
+    "expected_attributes": {
+      "road_type": "trunk",
+      "speed_limit_kmh": 90,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.96,
+      "reasoning_cot": "Rural trunk bypass with national road default 90 km/h limit.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_009",
+    "name": "Strada Republicii (Zona Grădina Botanică)",
+    "osm_tags": {
+      "highway": "secondary",
+      "lanes": "2",
+      "maxspeed": "50",
+      "oneway": "no",
+      "surface": "asphalt"
+    },
+    "context_description": "Collector street connecting city center to Zorilor district running past the Botanical Garden.",
+    "expected_attributes": {
+      "road_type": "secondary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.94,
+      "reasoning_cot": "Standard urban secondary connector.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_010",
+    "name": "Drum Județean DJ 107R (Făget spre Sălicea)",
+    "osm_tags": {
+      "highway": "secondary",
+      "lanes": "2",
+      "maxspeed": "90",
+      "surface": "asphalt",
+      "oneway": "no"
+    },
+    "context_description": "Scenic county road weaving through the southern hills and woods towards Sălicea village.",
+    "expected_attributes": {
+      "road_type": "secondary",
+      "speed_limit_kmh": 90,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "County road outside city perimeter, default speed limit 90 km/h.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_011",
+    "name": "Strada Frunzișului (Varianta Zorilor - Mănăștur)",
+    "osm_tags": {
+      "highway": "tertiary",
+      "lanes": "2",
+      "maxspeed": "50",
+      "surface": "asphalt",
+      "oneway": "no",
+      "barrier": "guard_rail"
+    },
+    "context_description": "Steep tertiary hillside bypass linking two major neighborhoods with metal safety barriers along the drop-off side.",
+    "expected_attributes": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": 50,
+      "barrier_present": true,
+      "barrier_type": "guard_rail",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.94,
+      "reasoning_cot": "Tertiary connecting street equipped with lateral crash guardrails.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_012",
+    "name": "Strada Uliului (Urcare Grigorescu)",
+    "osm_tags": {
+      "highway": "tertiary",
+      "lanes": "1",
+      "maxspeed": "30",
+      "surface": "concrete",
+      "oneway": "no"
+    },
+    "context_description": "Narrow winding hillside tertiary road with poured concrete surface, prone to land instability, signed for 30 km/h caution.",
+    "expected_attributes": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": 30,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "concrete",
+      "oneway": false,
+      "confidence_score": 0.92,
+      "reasoning_cot": "Tertiary hill access road with concrete slab surface.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_013",
+    "name": "Strada Andrei Mureșanu (Cartier Rezidențial)",
+    "osm_tags": {
+      "highway": "residential",
+      "maxspeed": "30",
+      "oneway": "no",
+      "surface": "asphalt"
+    },
+    "context_description": "Quiet leafy residential neighbourhood street in historic residential villa quarter, signed 30 km/h calm zone.",
+    "expected_attributes": {
+      "road_type": "residential",
+      "speed_limit_kmh": 30,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.96,
+      "reasoning_cot": "Residential street with signed 30 km/h speed calming.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_014",
+    "name": "Strada Kogălniceanu (Zona Universității Babeș-Bolyai)",
+    "osm_tags": {
+      "highway": "living_street",
+      "surface": "cobblestone",
+      "bollard": "yes",
+      "motor_vehicle": "permit"
+    },
+    "context_description": "Historic student avenue recently revitalized as shared pedestrian living street with granite pavers and retractable bollards.",
+    "expected_attributes": {
+      "road_type": "living_street",
+      "speed_limit_kmh": 20,
+      "barrier_present": true,
+      "barrier_type": "bollard",
+      "surface": "cobblestone",
+      "oneway": false,
+      "confidence_score": 0.97,
+      "reasoning_cot": "Living street shared zone with cobblestone pavers and entry bollards.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_015",
+    "name": "Strada Iuliu Maniu (Strada În Oglindă)",
+    "osm_tags": {
+      "highway": "pedestrian",
+      "surface": "paved",
+      "access": "destination"
+    },
+    "context_description": "Cobblestone and granite paved pedestrian street flanking the main cathedral square.",
+    "expected_attributes": {
+      "road_type": "living_street",
+      "speed_limit_kmh": 20,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "paved",
+      "oneway": false,
+      "confidence_score": 0.94,
+      "reasoning_cot": "Pedestrian/living street with urban statutory speed limit 20 km/h.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_016",
+    "name": "Strada Constantin Brâncuși (Segment Rezidențial Nou)",
+    "osm_tags": {
+      "highway": "residential",
+      "oneway": "no",
+      "surface": "asphalt"
+    },
+    "context_description": "Residential street with apartment buildings, no explicit speed limit sign posted in OSM.",
+    "expected_attributes": {
+      "road_type": "residential",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.92,
+      "reasoning_cot": "Residential road without maxspeed tag infers default Romanian urban limit of 50 km/h.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_017",
+    "name": "Aleea Gârbău (Mănăștur Nord)",
+    "osm_tags": {
+      "highway": "residential",
+      "oneway": "yes",
+      "surface": "asphalt",
+      "barrier": "bollard"
+    },
+    "context_description": "One-way residential alley between high-rise blocks, closed at one end with fixed cast-iron bollards to block cut-through cars.",
+    "expected_attributes": {
+      "road_type": "residential",
+      "speed_limit_kmh": 50,
+      "barrier_present": true,
+      "barrier_type": "bollard",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 0.95,
+      "reasoning_cot": "One-way residential street blocked by bollards at cul-de-sac terminus.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_018",
+    "name": "Alee Acces Tetarom I Industrial Park",
+    "osm_tags": {
+      "highway": "service",
+      "barrier": "lift_gate",
+      "access": "private",
+      "surface": "asphalt",
+      "maxspeed": "20"
+    },
+    "context_description": "Secured access road into regional technology park guarded by an automatic barrier arm and guard booth.",
+    "expected_attributes": {
+      "road_type": "service",
+      "speed_limit_kmh": 20,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.98,
+      "reasoning_cot": "Service compound road gated with automatic boom lift-gate.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_019",
+    "name": "Campus Universitar UTCN Observator (Alee Parcare)",
+    "osm_tags": {
+      "highway": "service",
+      "barrier": "gate",
+      "access": "permissive",
+      "surface": "paved"
+    },
+    "context_description": "Campus dormitory access driveway with sliding steel security gate operated via student keycards.",
+    "expected_attributes": {
+      "road_type": "service",
+      "speed_limit_kmh": 20,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "paved",
+      "oneway": false,
+      "confidence_score": 0.96,
+      "reasoning_cot": "Service road inside educational campus with entrance gate.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_020",
+    "name": "Drum Acces Benzinărie OMV Calea Florești",
+    "osm_tags": {
+      "highway": "service",
+      "service": "driveway",
+      "oneway": "yes",
+      "surface": "asphalt"
+    },
+    "context_description": "Driveway service slip road pulling off main highway into fueling station forecourt.",
+    "expected_attributes": {
+      "road_type": "service",
+      "speed_limit_kmh": 20,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 0.94,
+      "reasoning_cot": "One-way commercial service driveway.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_021",
+    "name": "Traseu Turistic Pădurea Făget (Biciclete & Drumeție)",
+    "osm_tags": {
+      "highway": "track",
+      "tracktype": "grade4",
+      "surface": "dirt",
+      "motor_vehicle": "no"
+    },
+    "context_description": "Dirt forest track with ruts used by mountain bikers and hikers, motorized transit forbidden.",
+    "expected_attributes": {
+      "road_type": "track",
+      "speed_limit_kmh": 20,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "dirt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Forestry dirt track for non-motorized usage.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_022",
+    "name": "Drum Agricol Dealul Fânațelor",
+    "osm_tags": {
+      "highway": "track",
+      "tracktype": "grade2",
+      "surface": "gravel",
+      "agricultural": "yes"
+    },
+    "context_description": "Compacted gravel farm road allowing tractors access to hay meadows north of Cluj-Napoca.",
+    "expected_attributes": {
+      "road_type": "track",
+      "speed_limit_kmh": 30,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "gravel",
+      "oneway": false,
+      "confidence_score": 0.94,
+      "reasoning_cot": "Agricultural track with gravel surface.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_023",
+    "name": "Drum Acces Cabană Muntele Băișorii",
+    "osm_tags": {
+      "highway": "track",
+      "surface": "unpaved",
+      "barrier": "gate",
+      "4wd_only": "yes"
+    },
+    "context_description": "Rough mountain track requiring 4x4 vehicles, gated near private sheepfold fence.",
+    "expected_attributes": {
+      "road_type": "track",
+      "speed_limit_kmh": 30,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unpaved",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Mountain unpaved track equipped with private access gate.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_024",
+    "name": "Tronson Eroare Test: Autostradă Fără Viteză",
+    "osm_tags": {
+      "highway": "motorway",
+      "oneway": "yes",
+      "surface": "asphalt"
+    },
+    "context_description": "A newly digitized highway segment in OSM missing explicit maxspeed tag in metadata.",
+    "expected_attributes": {
+      "road_type": "motorway",
+      "speed_limit_kmh": 130,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 0.91,
+      "reasoning_cot": "Motorway without tag defaults to statutory 130 km/h national limit.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_025",
+    "name": "Anomalie Calitate: Limitator Viteză Contradictoriu",
+    "osm_tags": {
+      "highway": "residential",
+      "maxspeed": "140",
+      "surface": "asphalt"
+    },
+    "context_description": "Suspicious user edit showing a narrow residential dead-end street tagged with 140 km/h speed limit.",
+    "expected_attributes": {
+      "road_type": "residential",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Contradiction detected: residential highway with maxspeed=140 is a tagging anomaly.",
+      "anomaly_flag": true
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_026",
+    "name": "Calea Baciului Vest",
+    "osm_tags": {
+      "highway": "primary",
+      "surface": "asphalt"
+    },
+    "context_description": "Two-way primary heading towards Baciu industrial node.",
+    "expected_attributes": {
+      "road_type": "primary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on primary highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_027",
+    "name": "Strada Soporului",
+    "osm_tags": {
+      "highway": "tertiary",
+      "surface": "asphalt"
+    },
+    "context_description": "Connecting collector road serving recent suburban expansion.",
+    "expected_attributes": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on tertiary highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_028",
+    "name": "Strada Teodor Mihali",
+    "osm_tags": {
+      "highway": "secondary",
+      "surface": "asphalt",
+      "oneway": "yes"
+    },
+    "context_description": "One-way secondary corridor past university economy faculty.",
+    "expected_attributes": {
+      "road_type": "secondary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on secondary highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_029",
+    "name": "Strada Observatorului",
+    "osm_tags": {
+      "highway": "primary",
+      "surface": "asphalt"
+    },
+    "context_description": "Zorilor crest primary connecting south ring to city.",
+    "expected_attributes": {
+      "road_type": "primary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on primary highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_030",
+    "name": "Strada Bună Ziua",
+    "osm_tags": {
+      "highway": "secondary",
+      "surface": "asphalt"
+    },
+    "context_description": "Recently modernized secondary road with cycle paths.",
+    "expected_attributes": {
+      "road_type": "secondary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on secondary highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_031",
+    "name": "Aleea Peana Mănăștur",
+    "osm_tags": {
+      "highway": "residential",
+      "surface": "asphalt",
+      "maxspeed": "30",
+      "oneway": "yes",
+      "barrier": "bollard"
+    },
+    "context_description": "Cul-de-sac residential branch blocked by steel bollards.",
+    "expected_attributes": {
+      "road_type": "residential",
+      "speed_limit_kmh": 30,
+      "barrier_present": true,
+      "barrier_type": "bollard",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on residential highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_032",
+    "name": "Strada Mihail Kogălniceanu Est",
+    "osm_tags": {
+      "highway": "living_street",
+      "surface": "cobblestone",
+      "maxspeed": "20",
+      "barrier": "bollard"
+    },
+    "context_description": "Granite paved shared space section.",
+    "expected_attributes": {
+      "road_type": "living_street",
+      "speed_limit_kmh": 20,
+      "barrier_present": true,
+      "barrier_type": "bollard",
+      "surface": "cobblestone",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on living_street highway tag and cobblestone surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_033",
+    "name": "Strada Plopilor Tronson Sala Polivalentă",
+    "osm_tags": {
+      "highway": "secondary",
+      "surface": "asphalt"
+    },
+    "context_description": "Secondary road running past polyvalent sports arena.",
+    "expected_attributes": {
+      "road_type": "secondary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on secondary highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_034",
+    "name": "DN1C / E576 Spre Apahida",
+    "osm_tags": {
+      "highway": "trunk",
+      "surface": "asphalt",
+      "maxspeed": "90",
+      "barrier": "guard_rail"
+    },
+    "context_description": "Four-lane trunk expressway with central steel guard rails.",
+    "expected_attributes": {
+      "road_type": "trunk",
+      "speed_limit_kmh": 90,
+      "barrier_present": true,
+      "barrier_type": "guard_rail",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on trunk highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_035",
+    "name": "Strada Fabricii de Zahăr",
+    "osm_tags": {
+      "highway": "tertiary",
+      "surface": "asphalt"
+    },
+    "context_description": "Industrial area tertiary link with commercial heavy traffic.",
+    "expected_attributes": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on tertiary highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_036",
+    "name": "Strada Fagului Zorilor",
+    "osm_tags": {
+      "highway": "residential",
+      "surface": "asphalt"
+    },
+    "context_description": "Residential neighborhood road without explicit maxspeed tag.",
+    "expected_attributes": {
+      "road_type": "residential",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on residential highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_037",
+    "name": "Alee Acces Iulius Mall Parcare",
+    "osm_tags": {
+      "highway": "service",
+      "surface": "asphalt",
+      "maxspeed": "20",
+      "oneway": "yes",
+      "barrier": "toll_booth"
+    },
+    "context_description": "Parking lot access ramp equipped with automated ticket toll booths.",
+    "expected_attributes": {
+      "road_type": "service",
+      "speed_limit_kmh": 20,
+      "barrier_present": true,
+      "barrier_type": "toll_booth",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on service highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_038",
+    "name": "Strada Donath Grigorescu",
+    "osm_tags": {
+      "highway": "secondary",
+      "surface": "asphalt"
+    },
+    "context_description": "Collector road tracing along the Somes river bank.",
+    "expected_attributes": {
+      "road_type": "secondary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on secondary highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_039",
+    "name": "Drum Forestier Valea Gârbăului",
+    "osm_tags": {
+      "highway": "track",
+      "surface": "gravel",
+      "maxspeed": "30",
+      "barrier": "gate"
+    },
+    "context_description": "Gravel track leading to sheep pastures with wooden gate.",
+    "expected_attributes": {
+      "road_type": "track",
+      "speed_limit_kmh": 30,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "gravel",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on track highway tag and gravel surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_040",
+    "name": "Alee Pietonală Parcul Feroviarilor",
+    "osm_tags": {
+      "highway": "living_street",
+      "surface": "compacted",
+      "maxspeed": "20",
+      "barrier": "bollard"
+    },
+    "context_description": "Compacted gravel park promenade protected by anti-vehicle bollards.",
+    "expected_attributes": {
+      "road_type": "living_street",
+      "speed_limit_kmh": 20,
+      "barrier_present": true,
+      "barrier_type": "bollard",
+      "surface": "compacted",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on living_street highway tag and compacted surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_041",
+    "name": "Strada Pajiștei Mănăștur",
+    "osm_tags": {
+      "highway": "residential",
+      "surface": "asphalt",
+      "maxspeed": "30"
+    },
+    "context_description": "Narrow dead-end residential street with speed cushions.",
+    "expected_attributes": {
+      "road_type": "residential",
+      "speed_limit_kmh": 30,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on residential highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_042",
+    "name": "Drum Ocolitor Florești Sud",
+    "osm_tags": {
+      "highway": "tertiary",
+      "surface": "asphalt"
+    },
+    "context_description": "Tertiary bypass road relieving DN1 congestion.",
+    "expected_attributes": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on tertiary highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_043",
+    "name": "Acces Depou Tramvaie Bucium",
+    "osm_tags": {
+      "highway": "service",
+      "surface": "concrete",
+      "maxspeed": "20",
+      "barrier": "gate"
+    },
+    "context_description": "Gated transit authority tram depot maintenance entrance.",
+    "expected_attributes": {
+      "road_type": "service",
+      "speed_limit_kmh": 20,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "concrete",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on service highway tag and concrete surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_044",
+    "name": "Traseu Culme Feleacu Deal",
+    "osm_tags": {
+      "highway": "track",
+      "surface": "dirt",
+      "maxspeed": "30"
+    },
+    "context_description": "Unimproved dirt track along ridge line.",
+    "expected_attributes": {
+      "road_type": "track",
+      "speed_limit_kmh": 30,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "dirt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on track highway tag and dirt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_045",
+    "name": "Strada Romulus Vuia",
+    "osm_tags": {
+      "highway": "tertiary",
+      "surface": "asphalt"
+    },
+    "context_description": "Undulating residential tertiary road in Dâmbul Rotund.",
+    "expected_attributes": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on tertiary highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_046",
+    "name": "Autostrada A3 Pod Gilău",
+    "osm_tags": {
+      "highway": "motorway",
+      "surface": "asphalt",
+      "maxspeed": "130",
+      "oneway": "yes",
+      "barrier": "guard_rail"
+    },
+    "context_description": "Motorway viaduct crossing river with reinforced concrete and metal barriers.",
+    "expected_attributes": {
+      "road_type": "motorway",
+      "speed_limit_kmh": 130,
+      "barrier_present": true,
+      "barrier_type": "guard_rail",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on motorway highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_047",
+    "name": "Strada Universității",
+    "osm_tags": {
+      "highway": "living_street",
+      "surface": "cobblestone",
+      "maxspeed": "20",
+      "barrier": "bollard"
+    },
+    "context_description": "Historic street turned living street pedestrian priority.",
+    "expected_attributes": {
+      "road_type": "living_street",
+      "speed_limit_kmh": 20,
+      "barrier_present": true,
+      "barrier_type": "bollard",
+      "surface": "cobblestone",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on living_street highway tag and cobblestone surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_048",
+    "name": "Acces Parc Fotovoltaic Câmpenești",
+    "osm_tags": {
+      "highway": "service",
+      "surface": "gravel",
+      "maxspeed": "30",
+      "oneway": "yes",
+      "barrier": "gate"
+    },
+    "context_description": "Fenced renewable utility facility access with heavy chain gate.",
+    "expected_attributes": {
+      "road_type": "service",
+      "speed_limit_kmh": 30,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "gravel",
+      "oneway": true,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on service highway tag and gravel surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_049",
+    "name": "Strada Borhanciului",
+    "osm_tags": {
+      "highway": "secondary",
+      "surface": "asphalt"
+    },
+    "context_description": "Hilly secondary artery undergoing widening.",
+    "expected_attributes": {
+      "road_type": "secondary",
+      "speed_limit_kmh": 50,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on secondary highway tag and asphalt surface context.",
+      "anomaly_flag": false
+    }
+  },
+  {
+    "segment_id": "OSM_CJ_050",
+    "name": "Drum Exploatare Carieră Baciu",
+    "osm_tags": {
+      "highway": "track",
+      "surface": "gravel",
+      "maxspeed": "30",
+      "barrier": "lift_gate"
+    },
+    "context_description": "Limestone quarry industrial track with check-point lift gate.",
+    "expected_attributes": {
+      "road_type": "track",
+      "speed_limit_kmh": 30,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "gravel",
+      "oneway": false,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Classified based on track highway tag and gravel surface context.",
+      "anomaly_flag": false
+    }
+  }
+]
