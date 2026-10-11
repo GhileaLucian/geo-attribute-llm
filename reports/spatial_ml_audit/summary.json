@@ -1,0 +1,362 @@
+{
+  "classification_only": true,
+  "crs": "EPSG:32634",
+  "snapshot_sha256": "513165894b25cf61c06cacc597d04243da8bf1a56a963e284cc532852b69b783",
+  "grouped_split": {
+    "train_n": 11042,
+    "test_n": 3549,
+    "train_class_support": {
+      "local_road": 5101,
+      "non_motorized": 4569,
+      "major_road": 1164,
+      "other": 208
+    },
+    "test_class_support": {
+      "local_road": 1632,
+      "non_motorized": 1573,
+      "major_road": 257,
+      "other": 87
+    },
+    "models": {
+      "majority": {
+        "features": [
+          "length_m",
+          "node_count",
+          "centroid_x_m",
+          "centroid_y_m",
+          "lanes",
+          "bridge",
+          "tunnel"
+        ],
+        "classification_report": {
+          "local_road": {
+            "precision": 0.45984784446322907,
+            "recall": 1.0,
+            "f1-score": 0.629994209612044,
+            "support": 1632.0
+          },
+          "major_road": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 257.0
+          },
+          "non_motorized": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1573.0
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 87.0
+          },
+          "accuracy": 0.45984784446322907,
+          "macro avg": {
+            "precision": 0.11496196111580727,
+            "recall": 0.25,
+            "f1-score": 0.157498552403011,
+            "support": 3549.0
+          },
+          "weighted avg": {
+            "precision": 0.21146004005747812,
+            "recall": 0.45984784446322907,
+            "f1-score": 0.2897014793144142,
+            "support": 3549.0
+          }
+        }
+      },
+      "forest_with_coordinates": {
+        "features": [
+          "length_m",
+          "node_count",
+          "centroid_x_m",
+          "centroid_y_m",
+          "lanes",
+          "bridge",
+          "tunnel"
+        ],
+        "classification_report": {
+          "local_road": {
+            "precision": 0.6851963746223565,
+            "recall": 0.6948529411764706,
+            "f1-score": 0.6899908731365987,
+            "support": 1632.0
+          },
+          "major_road": {
+            "precision": 0.7426900584795322,
+            "recall": 0.49416342412451364,
+            "f1-score": 0.5934579439252337,
+            "support": 257.0
+          },
+          "non_motorized": {
+            "precision": 0.7279110590988882,
+            "recall": 0.7908455181182454,
+            "f1-score": 0.7580743449116393,
+            "support": 1573.0
+          },
+          "other": {
+            "precision": 0.9285714285714286,
+            "recall": 0.14942528735632185,
+            "f1-score": 0.25742574257425743,
+            "support": 87.0
+          },
+          "accuracy": 0.7094956325725557,
+          "macro avg": {
+            "precision": 0.7710922301930514,
+            "recall": 0.5323217926938879,
+            "f1-score": 0.5747372261369323,
+            "support": 3549.0
+          },
+          "weighted avg": {
+            "precision": 0.7142579990592255,
+            "recall": 0.7094956325725557,
+            "f1-score": 0.7025727756262843,
+            "support": 3549.0
+          }
+        }
+      },
+      "forest_without_coordinates": {
+        "features": [
+          "length_m",
+          "node_count",
+          "lanes",
+          "bridge",
+          "tunnel"
+        ],
+        "classification_report": {
+          "local_road": {
+            "precision": 0.6236442516268981,
+            "recall": 0.7046568627450981,
+            "f1-score": 0.6616800920598389,
+            "support": 1632.0
+          },
+          "major_road": {
+            "precision": 0.680952380952381,
+            "recall": 0.556420233463035,
+            "f1-score": 0.6124197002141327,
+            "support": 257.0
+          },
+          "non_motorized": {
+            "precision": 0.7085868830290737,
+            "recall": 0.6662428480610298,
+            "f1-score": 0.6867627785058977,
+            "support": 1573.0
+          },
+          "other": {
+            "precision": 0.875,
+            "recall": 0.16091954022988506,
+            "f1-score": 0.27184466019417475,
+            "support": 87.0
+          },
+          "accuracy": 0.6635672020287405,
+          "macro avg": {
+            "precision": 0.7220458789020882,
+            "recall": 0.522059871124762,
+            "f1-score": 0.558176807743511,
+            "support": 3549.0
+          },
+          "weighted avg": {
+            "precision": 0.6716044935375014,
+            "recall": 0.6635672020287405,
+            "f1-score": 0.6596737416802929,
+            "support": 3549.0
+          }
+        }
+      }
+    }
+  },
+  "geographic_split": {
+    "train_n": 10432,
+    "test_n": 3601,
+    "train_class_support": {
+      "non_motorized": 4725,
+      "local_road": 4604,
+      "major_road": 960,
+      "other": 143
+    },
+    "test_class_support": {
+      "local_road": 1871,
+      "non_motorized": 1246,
+      "major_road": 345,
+      "other": 139
+    },
+    "models": {
+      "majority": {
+        "features": [
+          "length_m",
+          "node_count",
+          "centroid_x_m",
+          "centroid_y_m",
+          "lanes",
+          "bridge",
+          "tunnel"
+        ],
+        "classification_report": {
+          "local_road": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1871.0
+          },
+          "major_road": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 345.0
+          },
+          "non_motorized": {
+            "precision": 0.3460149958344904,
+            "recall": 1.0,
+            "f1-score": 0.5141324530637508,
+            "support": 1246.0
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 139.0
+          },
+          "accuracy": 0.3460149958344904,
+          "macro avg": {
+            "precision": 0.0865037489586226,
+            "recall": 0.25,
+            "f1-score": 0.1285331132659377,
+            "support": 3601.0
+          },
+          "weighted avg": {
+            "precision": 0.11972637734234243,
+            "recall": 0.3460149958344904,
+            "f1-score": 0.17789753860523005,
+            "support": 3601.0
+          }
+        }
+      },
+      "forest_with_coordinates": {
+        "features": [
+          "length_m",
+          "node_count",
+          "centroid_x_m",
+          "centroid_y_m",
+          "lanes",
+          "bridge",
+          "tunnel"
+        ],
+        "classification_report": {
+          "local_road": {
+            "precision": 0.6252545824847251,
+            "recall": 0.8204168893639765,
+            "f1-score": 0.7096625057790107,
+            "support": 1871.0
+          },
+          "major_road": {
+            "precision": 0.8974358974358975,
+            "recall": 0.4057971014492754,
+            "f1-score": 0.5588822355289421,
+            "support": 345.0
+          },
+          "non_motorized": {
+            "precision": 0.6737373737373737,
+            "recall": 0.5353130016051364,
+            "f1-score": 0.5966010733452594,
+            "support": 1246.0
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 139.0
+          },
+          "accuracy": 0.6503748958622605,
+          "macro avg": {
+            "precision": 0.5491069634144992,
+            "recall": 0.44038174810459707,
+            "f1-score": 0.466286453663303,
+            "support": 3601.0
+          },
+          "weighted avg": {
+            "precision": 0.6439720844546163,
+            "recall": 0.6503748958622605,
+            "f1-score": 0.6287025428931428,
+            "support": 3601.0
+          }
+        }
+      },
+      "forest_without_coordinates": {
+        "features": [
+          "length_m",
+          "node_count",
+          "lanes",
+          "bridge",
+          "tunnel"
+        ],
+        "classification_report": {
+          "local_road": {
+            "precision": 0.6498249124562281,
+            "recall": 0.6942811330839124,
+            "f1-score": 0.6713178294573643,
+            "support": 1871.0
+          },
+          "major_road": {
+            "precision": 0.7336065573770492,
+            "recall": 0.518840579710145,
+            "f1-score": 0.6078098471986417,
+            "support": 345.0
+          },
+          "non_motorized": {
+            "precision": 0.5982008995502249,
+            "recall": 0.6404494382022472,
+            "f1-score": 0.6186046511627907,
+            "support": 1246.0
+          },
+          "other": {
+            "precision": 0.9166666666666666,
+            "recall": 0.15827338129496402,
+            "f1-score": 0.26993865030674846,
+            "support": 139.0
+          },
+          "accuracy": 0.6381560677589558,
+          "macro avg": {
+            "precision": 0.7245747590125422,
+            "recall": 0.5029611330728171,
+            "f1-score": 0.5419177445313863,
+            "support": 3601.0
+          },
+          "weighted avg": {
+            "precision": 0.6502892699269457,
+            "recall": 0.6381560677589558,
+            "f1-score": 0.631500395428974,
+            "support": 3601.0
+          }
+        }
+      }
+    },
+    "policy": {
+      "method": "Eastern region: full geometry bounds; cutoff at 75th percentile centroid x",
+      "cutoff_x_m": 699509.244854342,
+      "buffer_m": 200,
+      "guaranteed_minimum_x_separation_m": 201.2613497901475,
+      "excluded_n": 558,
+      "train_n": 10432,
+      "test_n": 3601,
+      "road_group_overlap": 0
+    }
+  },
+  "fixed_before_fit": {
+    "seed": 42,
+    "n_estimators": 100,
+    "max_depth": 10,
+    "cutoff_quantile": 0.75,
+    "buffer_m": 200,
+    "hyperparameter_search": false
+  },
+  "limitations": [
+    "One geographic hold-out, not spatial cross-validation or independent ground truth.",
+    "Eastern roads can have a different class mix; scores across splits are not directly comparable.",
+    "Coordinate ablation uses identical rows within each split; it does not prove causation or previous leakage.",
+    "A 200m gap reduces immediate-neighbour leakage but not all spatial correlation.",
+    "Geometry and tags still reflect OSM mapping practice; no production accuracy claim."
+  ]
+}

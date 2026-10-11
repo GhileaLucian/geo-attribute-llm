@@ -1,0 +1,1372 @@
+[
+  {
+    "segment_id": "review-v2-31620337",
+    "source": {
+      "way_id": "31620337",
+      "road_group": "Strada Iașilor",
+      "url": "https://www.openstreetmap.org/way/31620337",
+      "tags": {
+        "alt_name:hu": "Nagyszamos utca",
+        "highway": "residential",
+        "lanes": "2",
+        "maxspeed": "RO:urban",
+        "name": "Strada Iașilor",
+        "name:hu": "Jászvásár utca",
+        "name:ro": "Strada Iașilor",
+        "note": "The way in usually 'oneway' but due to construction works at the Traian bridge, the oneway restriction has been removed.",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      },
+      "free_text": {
+        "note": "The way in usually 'oneway' but due to construction works at the Traian bridge, the oneway restriction has been removed."
+      },
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-97555065",
+    "source": {
+      "way_id": "97555065",
+      "road_group": "way:97555065",
+      "url": "https://www.openstreetmap.org/way/97555065",
+      "tags": {
+        "description": "Cluj-Napoca-Popești",
+        "highway": "tertiary",
+        "lanes": "2",
+        "ref": "DC142B",
+        "sidewalk": "no",
+        "source": "bing"
+      },
+      "free_text": {
+        "description": "Cluj-Napoca-Popești"
+      },
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-107904355",
+    "source": {
+      "way_id": "107904355",
+      "road_group": "way:107904355",
+      "url": "https://www.openstreetmap.org/way/107904355",
+      "tags": {
+        "BEARING": "231° 50' 52.5'",
+        "description": "Acces Facultatea de Geografie",
+        "hgv": "no",
+        "highway": "service",
+        "horse": "no",
+        "length": "266.12 m",
+        "motor_vehicle": "private",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      },
+      "free_text": {
+        "description": "Acces Facultatea de Geografie"
+      },
+      "connected_barrier_nodes": [
+        {
+          "node_id": "1239218396",
+          "tags": {
+            "barrier": "lift_gate",
+            "bicycle": "yes",
+            "foot": "yes"
+          },
+          "url": "https://www.openstreetmap.org/node/1239218396"
+        }
+      ]
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-108256015",
+    "source": {
+      "way_id": "108256015",
+      "road_group": "way:108256015",
+      "url": "https://www.openstreetmap.org/way/108256015",
+      "tags": {
+        "BEARING": "270° 52' 54.2'",
+        "access": "private",
+        "description": "Acces Clinici",
+        "highway": "service",
+        "length": "34.752 m"
+      },
+      "free_text": {
+        "description": "Acces Clinici"
+      },
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-108297378",
+    "source": {
+      "way_id": "108297378",
+      "road_group": "way:108297378",
+      "url": "https://www.openstreetmap.org/way/108297378",
+      "tags": {
+        "access": "private",
+        "description": "Acces Clinici",
+        "hgv": "no",
+        "highway": "service",
+        "service": "alley"
+      },
+      "free_text": {
+        "description": "Acces Clinici"
+      },
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-169234873",
+    "source": {
+      "way_id": "169234873",
+      "road_group": "Strada Romul Ladea",
+      "url": "https://www.openstreetmap.org/way/169234873",
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "maxspeed": "RO:urban",
+        "name": "Strada Romul Ladea",
+        "note": "unpaved road",
+        "sidewalk": "no",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2018SEP_"
+      },
+      "free_text": {
+        "note": "unpaved road"
+      },
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-169260491",
+    "source": {
+      "way_id": "169260491",
+      "road_group": "way:169260491",
+      "url": "https://www.openstreetmap.org/way/169260491",
+      "tags": {
+        "description": "Cluj-Napoca-Vârfu Soporu",
+        "highway": "track",
+        "ref": "DC142D",
+        "surface": "dirt"
+      },
+      "free_text": {
+        "description": "Cluj-Napoca-Vârfu Soporu"
+      },
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-277217612",
+    "source": {
+      "way_id": "277217612",
+      "road_group": "way:277217612",
+      "url": "https://www.openstreetmap.org/way/277217612",
+      "tags": {
+        "crossing": "traffic_signals",
+        "description": "trecere de pietoni",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "free_text": {
+        "description": "trecere de pietoni"
+      },
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-277217613",
+    "source": {
+      "way_id": "277217613",
+      "road_group": "way:277217613",
+      "url": "https://www.openstreetmap.org/way/277217613",
+      "tags": {
+        "access": "private",
+        "bicycle": "yes",
+        "description": "pasaj",
+        "foot": "yes",
+        "highway": "service",
+        "maxspeed": "RO:urban"
+      },
+      "free_text": {
+        "description": "pasaj"
+      },
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-277227463",
+    "source": {
+      "way_id": "277227463",
+      "road_group": "way:277227463",
+      "url": "https://www.openstreetmap.org/way/277227463",
+      "tags": {
+        "access": "private",
+        "description": "pasaj",
+        "highway": "service",
+        "oneway": "no",
+        "tunnel": "building_passage"
+      },
+      "free_text": {
+        "description": "pasaj"
+      },
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7851893",
+    "source": {
+      "way_id": "7851893",
+      "road_group": "Calea Turzii",
+      "url": "https://www.openstreetmap.org/way/7851893",
+      "tags": {
+        "highway": "primary",
+        "lanes": "4",
+        "maxspeed": "60",
+        "name": "Calea Turzii",
+        "name:hu": "Tordai út",
+        "name:ro": "Calea Turzii",
+        "nat_ref": "DN1",
+        "ref": "DN1",
+        "sidewalk": "both",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2019MAR_RobertH@peundemerg.ro"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7926735",
+    "source": {
+      "way_id": "7926735",
+      "road_group": "Strada Rapsodiei",
+      "url": "https://www.openstreetmap.org/way/7926735",
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "maxspeed": "30",
+        "name": "Strada Rapsodiei",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7932352",
+    "source": {
+      "way_id": "7932352",
+      "road_group": "Strada Louis Pasteur",
+      "url": "https://www.openstreetmap.org/way/7932352",
+      "tags": {
+        "cycleway:both": "no",
+        "hgv": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Strada Louis Pasteur",
+        "name:hu": "Louis Pasteur utca",
+        "old_name:hu": "Kert utca",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7932462",
+    "source": {
+      "way_id": "7932462",
+      "road_group": "Strada Ion Creangă",
+      "url": "https://www.openstreetmap.org/way/7932462",
+      "tags": {
+        "cycleway:both": "no",
+        "hgv": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Strada Ion Creangă",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "asphalt",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7933408",
+    "source": {
+      "way_id": "7933408",
+      "road_group": "Strada Victor Babeș",
+      "url": "https://www.openstreetmap.org/way/7933408",
+      "tags": {
+        "cycleway:both": "no",
+        "hgv": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Strada Victor Babeș",
+        "name:hu": "Victor Babeș utca",
+        "name:ro": "Strada Victor Babeș",
+        "old_name:hu": "Trefort utca",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7933944",
+    "source": {
+      "way_id": "7933944",
+      "road_group": "Strada Republicii",
+      "url": "https://www.openstreetmap.org/way/7933944",
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Strada Republicii",
+        "name:hu": "Köztársaság utca",
+        "name:ro": "Strada Republicii",
+        "old_name": "Strada Gheorghe Bilașcu",
+        "old_name:hu": "Majális utca",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2020DEC_RobertH@peundemerg.ro",
+        "turn:lanes": "left|left;through"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7934957",
+    "source": {
+      "way_id": "7934957",
+      "road_group": "Splaiul Independenței",
+      "url": "https://www.openstreetmap.org/way/7934957",
+      "tags": {
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "maxspeed:type": "RO:urban",
+        "name": "Splaiul Independenței",
+        "name:hu": "Függetlenség út",
+        "name:ro": "Splaiul Independenței",
+        "old_name": "Aleea Tineretului",
+        "oneway": "no",
+        "sidewalk": "both",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2019MAR_RobertH@peundemerg.ro"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7936303",
+    "source": {
+      "way_id": "7936303",
+      "road_group": "Piața Ștefan cel Mare",
+      "url": "https://www.openstreetmap.org/way/7936303",
+      "tags": {
+        "highway": "primary",
+        "lanes": "5",
+        "maxspeed": "60",
+        "name": "Piața Ștefan cel Mare",
+        "name:hu": "Tordai út",
+        "name:ro": "Piața Ștefan cel Mare",
+        "nat_ref": "DN1",
+        "oneway": "yes",
+        "ref": "DN1",
+        "sidewalk": "both",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2019AUG_IonutPaduretu",
+        "trolley_wire": "yes"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7936346",
+    "source": {
+      "way_id": "7936346",
+      "road_group": "Strada Posada",
+      "url": "https://www.openstreetmap.org/way/7936346",
+      "tags": {
+        "highway": "primary",
+        "lanes": "4",
+        "maxspeed": "60",
+        "name": "Strada Posada",
+        "name:ro": "Strada Posada",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2019AUG_IonutPaduretu",
+        "turn:lanes": "left|left|left|left"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-8028433",
+    "source": {
+      "way_id": "8028433",
+      "road_group": "way:8028433",
+      "url": "https://www.openstreetmap.org/way/8028433",
+      "tags": {
+        "highway": "primary",
+        "lanes": "3",
+        "maxspeed": "60",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2019MAR_RobertH@peundemerg.ro"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-8028548",
+    "source": {
+      "way_id": "8028548",
+      "road_group": "Strada Lunii",
+      "url": "https://www.openstreetmap.org/way/8028548",
+      "tags": {
+        "hgv": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Strada Lunii",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-10508024",
+    "source": {
+      "way_id": "10508024",
+      "road_group": "Strada Napoca",
+      "url": "https://www.openstreetmap.org/way/10508024",
+      "tags": {
+        "cycleway:right": "lane",
+        "cycleway:right:buffer": "no",
+        "cycleway:right:lane": "advisory",
+        "cycleway:right:oneway": "yes",
+        "cycleway:right:smoothness": "excellent",
+        "cycleway:right:surface": "asphalt",
+        "cycleway:right:surface:colour": "green",
+        "cycleway:right:width": "1.5",
+        "highway": "primary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Strada Napoca",
+        "name:hu": "Napoca utca",
+        "name:ro": "Strada Napoca",
+        "nat_ref": "DN1",
+        "old_name:hu": "Jókai utca",
+        "oneway": "yes",
+        "oneway:bicycle": "yes",
+        "ref": "DN1",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2020DEC_RobertH@peundemerg.ro"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-23892970",
+    "source": {
+      "way_id": "23892970",
+      "road_group": "way:23892970",
+      "url": "https://www.openstreetmap.org/way/23892970",
+      "tags": {
+        "access": "private",
+        "foot": "yes",
+        "highway": "service",
+        "lanes": "1",
+        "maxspeed": "20",
+        "service": "driveway",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": [
+        {
+          "node_id": "7990892934",
+          "tags": {
+            "access": "permit",
+            "barrier": "gate",
+            "bicycle": "yes",
+            "foot": "yes"
+          },
+          "url": "https://www.openstreetmap.org/node/7990892934"
+        },
+        {
+          "node_id": "8367158717",
+          "tags": {
+            "barrier": "lift_gate"
+          },
+          "url": "https://www.openstreetmap.org/node/8367158717"
+        }
+      ]
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-23893000",
+    "source": {
+      "way_id": "23893000",
+      "road_group": "way:23893000",
+      "url": "https://www.openstreetmap.org/way/23893000",
+      "tags": {
+        "access": "private",
+        "foot": "yes",
+        "highway": "service"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": [
+        {
+          "node_id": "7990892935",
+          "tags": {
+            "access": "permit",
+            "barrier": "gate",
+            "bicycle": "yes",
+            "foot": "yes"
+          },
+          "url": "https://www.openstreetmap.org/node/7990892935"
+        }
+      ]
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-23893005",
+    "source": {
+      "way_id": "23893005",
+      "road_group": "way:23893005",
+      "url": "https://www.openstreetmap.org/way/23893005",
+      "tags": {
+        "access": "private",
+        "foot": "yes",
+        "highway": "service"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": [
+        {
+          "node_id": "7990892936",
+          "tags": {
+            "access": "permit",
+            "barrier": "gate",
+            "bicycle": "yes",
+            "foot": "yes"
+          },
+          "url": "https://www.openstreetmap.org/node/7990892936"
+        }
+      ]
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-24476957",
+    "source": {
+      "way_id": "24476957",
+      "road_group": "Strada Țebei",
+      "url": "https://www.openstreetmap.org/way/24476957",
+      "tags": {
+        "highway": "pedestrian",
+        "lanes": "1",
+        "motor_vehicle": "destination",
+        "name": "Strada Țebei",
+        "name:hu": "Sándor László utca",
+        "name:ro": "Strada Țebei",
+        "service": "driveway",
+        "sidewalk": "both",
+        "status": "AC,builder:ACI Cluj,progress_estimate:75%/13.04.2023",
+        "surface": "paving_stones"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": [
+        {
+          "node_id": "10945753108",
+          "tags": {
+            "barrier": "bollard",
+            "bollard": "fixed",
+            "material": "concrete"
+          },
+          "url": "https://www.openstreetmap.org/node/10945753108"
+        }
+      ]
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-26614937",
+    "source": {
+      "way_id": "26614937",
+      "road_group": "way:26614937",
+      "url": "https://www.openstreetmap.org/way/26614937",
+      "tags": {
+        "highway": "footway"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": [
+        {
+          "node_id": "9428849048",
+          "tags": {
+            "barrier": "gate"
+          },
+          "url": "https://www.openstreetmap.org/node/9428849048"
+        }
+      ]
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-26615062",
+    "source": {
+      "way_id": "26615062",
+      "road_group": "way:26615062",
+      "url": "https://www.openstreetmap.org/way/26615062",
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "maxspeed": "RO:urban",
+        "service": "driveway"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": [
+        {
+          "node_id": "8366980839",
+          "tags": {
+            "barrier": "gate"
+          },
+          "url": "https://www.openstreetmap.org/node/8366980839"
+        }
+      ]
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-26615174",
+    "source": {
+      "way_id": "26615174",
+      "road_group": "Strada Șoimului",
+      "url": "https://www.openstreetmap.org/way/26615174",
+      "tags": {
+        "hgv": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Strada Șoimului",
+        "name:hu": "Sólyom utca",
+        "name:ro": "Strada Șoimului",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": [
+        {
+          "node_id": "2500463112",
+          "tags": {
+            "access": "yes",
+            "barrier": "gate"
+          },
+          "url": "https://www.openstreetmap.org/node/2500463112"
+        }
+      ]
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-26615581",
+    "source": {
+      "way_id": "26615581",
+      "road_group": "way:26615581",
+      "url": "https://www.openstreetmap.org/way/26615581",
+      "tags": {
+        "highway": "service",
+        "maxspeed": "RO:urban",
+        "surface": "paving_stones"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": [
+        {
+          "node_id": "291940587",
+          "tags": {
+            "access": "yes",
+            "barrier": "gate",
+            "entrance": "main",
+            "foot": "yes",
+            "wheelchair": "yes"
+          },
+          "url": "https://www.openstreetmap.org/node/291940587"
+        }
+      ]
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-26615626",
+    "source": {
+      "way_id": "26615626",
+      "road_group": "way:26615626",
+      "url": "https://www.openstreetmap.org/way/26615626",
+      "tags": {
+        "access": "private",
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "service"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": [
+        {
+          "node_id": "8560013082",
+          "tags": {
+            "barrier": "gate"
+          },
+          "url": "https://www.openstreetmap.org/node/8560013082"
+        },
+        {
+          "node_id": "10696542537",
+          "tags": {
+            "barrier": "gate"
+          },
+          "url": "https://www.openstreetmap.org/node/10696542537"
+        }
+      ]
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-26616176",
+    "source": {
+      "way_id": "26616176",
+      "road_group": "way:26616176",
+      "url": "https://www.openstreetmap.org/way/26616176",
+      "tags": {
+        "access": "private",
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "footway",
+        "motor_vehicle": "private"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": [
+        {
+          "node_id": "4057203287",
+          "tags": {
+            "barrier": "lift_gate"
+          },
+          "url": "https://www.openstreetmap.org/node/4057203287"
+        }
+      ]
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7742924",
+    "source": {
+      "way_id": "7742924",
+      "road_group": "Strada Frunzișului",
+      "url": "https://www.openstreetmap.org/way/7742924",
+      "tags": {
+        "check_date:sidewalk:surface": "2023-07-16",
+        "highway": "secondary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Strada Frunzișului",
+        "name:hu": "Lomb utca",
+        "name:ro": "Strada Frunzișului",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "asphalt",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2019MAR_RobertH@peundemerg.ro"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7851204",
+    "source": {
+      "way_id": "7851204",
+      "road_group": "Strada Ion Mincu",
+      "url": "https://www.openstreetmap.org/way/7851204",
+      "tags": {
+        "hgv": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Strada Ion Mincu",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7926873",
+    "source": {
+      "way_id": "7926873",
+      "road_group": "way:7926873",
+      "url": "https://www.openstreetmap.org/way/7926873",
+      "tags": {
+        "highway": "service",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7926931",
+    "source": {
+      "way_id": "7926931",
+      "road_group": "way:7926931",
+      "url": "https://www.openstreetmap.org/way/7926931",
+      "tags": {
+        "foot": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7932117",
+    "source": {
+      "way_id": "7932117",
+      "road_group": "Strada Zorilor",
+      "url": "https://www.openstreetmap.org/way/7932117",
+      "tags": {
+        "cycleway:right": "lane",
+        "hgv": "no",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Strada Zorilor",
+        "name:hu": "Hajnal utca",
+        "name:ro": "Strada Zorilor",
+        "sidewalk": "both",
+        "smoothness": "good",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7932203",
+    "source": {
+      "way_id": "7932203",
+      "road_group": "Strada Viilor",
+      "url": "https://www.openstreetmap.org/way/7932203",
+      "tags": {
+        "cycleway:right": "lane",
+        "hgv": "no",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Strada Viilor",
+        "name:hu": "Szőlő utca",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7932712",
+    "source": {
+      "way_id": "7932712",
+      "road_group": "Strada Avram Iancu",
+      "url": "https://www.openstreetmap.org/way/7932712",
+      "tags": {
+        "cycleway:left": "separate",
+        "cycleway:right": "no",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "RO:urban",
+        "maxweight": "3.5",
+        "name": "Strada Avram Iancu",
+        "name:hu": "Avram Iancu utca",
+        "name:ro": "Strada Avram Iancu",
+        "old_name": "Strada Petofi",
+        "old_name:hu": "Petőfi utca",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "paving_stones",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2020DEC_RobertH@peundemerg.ro"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  },
+  {
+    "segment_id": "review-v2-7933104",
+    "source": {
+      "way_id": "7933104",
+      "road_group": "Strada Mihail Kogălniceanu",
+      "url": "https://www.openstreetmap.org/way/7933104",
+      "tags": {
+        "bicycle": "yes",
+        "highway": "pedestrian",
+        "maxweight": "3.5",
+        "motor_vehicle": "private",
+        "name": "Strada Mihail Kogălniceanu",
+        "name:hu": "Farkas utca",
+        "name:ro": "Strada Mihail Kogălniceanu",
+        "old_name:hu": "Farkas utca",
+        "status": "AC,builder:Astor Com",
+        "surface": "paving_stones",
+        "wikidata": "Q996395"
+      },
+      "free_text": {},
+      "connected_barrier_nodes": []
+    },
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewer_kind": null,
+      "reviewed_at": null,
+      "input_origin": null,
+      "input": null,
+      "evidence": [],
+      "expected_attributes": null
+    }
+  }
+]
