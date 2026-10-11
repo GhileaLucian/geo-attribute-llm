@@ -1,0 +1,28 @@
+{
+  "prompt": "v5",
+  "model": "qwen2.5:3b",
+  "frozen_at": "2026-10-11T18:32:27.569876+00:00",
+  "criterion": "Fewest failures, then most exact matches across dev+fictional hard; v4 tie-break.",
+  "holdout_used_for_selection": false,
+  "candidates": [
+    {
+      "prompt": "v4",
+      "failures": 0.0,
+      "exact_matches": 4.0,
+      "dataset_sha256": [
+        "8c62398c36b596df09e3011c157d8295f0b8c9f74fa6751a524d547fe127ab35",
+        "563b459b1de953595ea1f2c8fce635c22bb004e89328b46bc1345028e0121753"
+      ]
+    },
+    {
+      "prompt": "v5",
+      "failures": 0.0,
+      "exact_matches": 7.0,
+      "dataset_sha256": [
+        "8c62398c36b596df09e3011c157d8295f0b8c9f74fa6751a524d547fe127ab35",
+        "563b459b1de953595ea1f2c8fce635c22bb004e89328b46bc1345028e0121753"
+      ]
+    }
+  ],
+  "limitations": "Development hard cases reused in few-shots; new grouped hold-out used only after selection."
+}

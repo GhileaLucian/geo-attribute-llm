@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service category, with a numeric maxspeed of 30 km/h, concrete surface, and no one-way restriction. There is a barrier of type lift_gate. No anomalies are detected.\"\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:28:27.3431836Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2090952700,
+      "load_duration": 8760300,
+      "prompt_eval_count": 377,
+      "prompt_eval_duration": 574501000,
+      "eval_count": 74,
+      "eval_duration": 1499722000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c39-2613-7fe3-887a-1f67d97ab759-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 377,
+      "output_tokens": 74,
+      "total_tokens": 451
+    }
+  },
+  "token_usage": {
+    "input_tokens": 377,
+    "output_tokens": 74,
+    "total_tokens": 451
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input data specifies the road as a service category, with a numeric maxspeed of 30 km/h, concrete surface, and no one-way restriction. There is a barrier of type lift_gate. No anomalies are detected.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "f7257b18ed68e378ec218dedaf9677a9b657c9b428da73afdb2a82f2790ed002",
+  "elapsed_s": 2.134784399997443,
+  "recorded_at": "2026-10-11T18:28:27.347097+00:00"
+}

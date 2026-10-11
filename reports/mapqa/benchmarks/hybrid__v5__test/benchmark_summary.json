@@ -1,0 +1,493 @@
+{
+  "n": 40,
+  "exact_match_rate": 0.0,
+  "failure_rate": 0.0,
+  "invalid_output_rate": 0.0,
+  "error_taxonomy": {
+    "surface": 21,
+    "barrier_present": 40,
+    "barrier_type": 36,
+    "speed_limit_kmh": 7,
+    "oneway": 4
+  },
+  "attributes": {
+    "road_type": {
+      "count": 40,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "unknown_reference_count": 0,
+      "known_reference_accuracy": 1.0,
+      "per_class": {
+        "footway": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 3
+        },
+        "living_street": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 3
+        },
+        "residential": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 2
+        },
+        "service": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 32
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "footway",
+          "living_street",
+          "residential",
+          "service"
+        ],
+        "values": [
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            32
+          ]
+        ]
+      }
+    },
+    "speed_limit_kmh": {
+      "count": 40,
+      "accuracy": 0.825,
+      "precision": 0.6806249999999999,
+      "recall": 0.825,
+      "f1_score": 0.7458904109589041,
+      "macro_f1": 0.22602739726027396,
+      "unknown_reference_count": 33,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "30": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 3
+        },
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 3
+        },
+        "unknown": {
+          "precision": 0.825,
+          "recall": 1.0,
+          "f1_score": 0.9041095890410958,
+          "support": 33
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "20",
+          "30",
+          "5",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            33
+          ]
+        ]
+      },
+      "known_exact_accuracy": 0.0
+    },
+    "surface": {
+      "count": 40,
+      "accuracy": 0.475,
+      "precision": 0.22562500000000002,
+      "recall": 0.475,
+      "f1_score": 0.3059322033898305,
+      "macro_f1": 0.1288135593220339,
+      "unknown_reference_count": 19,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "asphalt": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 13
+        },
+        "cobblestone": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "paved": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "paving_stones": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 6
+        },
+        "unknown": {
+          "precision": 0.475,
+          "recall": 1.0,
+          "f1_score": 0.6440677966101694,
+          "support": 19
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "asphalt",
+          "cobblestone",
+          "paved",
+          "paving_stones",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0,
+            13
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            19
+          ]
+        ]
+      }
+    },
+    "oneway": {
+      "count": 40,
+      "accuracy": 0.9,
+      "precision": 0.8099999999999999,
+      "recall": 0.9,
+      "f1_score": 0.8526315789473683,
+      "macro_f1": 0.3157894736842105,
+      "unknown_reference_count": 36,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "false": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 2
+        },
+        "true": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 2
+        },
+        "unknown": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1_score": 0.9473684210526315,
+          "support": 36
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "false",
+          "true",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            36
+          ]
+        ]
+      }
+    },
+    "barrier_present": {
+      "count": 40,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "macro_f1": 0.0,
+      "unknown_reference_count": 0,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "true": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 40
+        },
+        "unknown": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "true",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            40
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "barrier_type": {
+      "count": 40,
+      "accuracy": 0.1,
+      "precision": 0.01,
+      "recall": 0.1,
+      "f1_score": 0.01818181818181818,
+      "macro_f1": 0.03636363636363636,
+      "unknown_reference_count": 4,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "block": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "bollard": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "gate": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 18
+        },
+        "lift_gate": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 16
+        },
+        "unknown": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1_score": 0.18181818181818182,
+          "support": 4
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "block",
+          "bollard",
+          "gate",
+          "lift_gate",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            18
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            16
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            4
+          ]
+        ]
+      }
+    },
+    "anomaly_flag": {
+      "count": 40,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "unknown_reference_count": 0,
+      "known_reference_accuracy": 1.0,
+      "per_class": {
+        "false": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 40
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "false"
+        ],
+        "values": [
+          [
+            40
+          ]
+        ]
+      }
+    },
+    "input_instruction_detected": {
+      "count": 40,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "unknown_reference_count": 0,
+      "known_reference_accuracy": 1.0,
+      "per_class": {
+        "false": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 40
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "false"
+        ],
+        "values": [
+          [
+            40
+          ]
+        ]
+      }
+    }
+  },
+  "mode": "hybrid",
+  "prompt": "v5",
+  "model": "qwen2.5:3b",
+  "split": "test",
+  "dataset_sha256": "ddce1d2156cec86d8d0efe95bc8d0f86b1fb97973e5418314100c1b258229991",
+  "run_at": "2026-10-11T18:32:48.308468+00:00",
+  "model_digests": [
+    "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b"
+  ],
+  "cached_responses": 40,
+  "task": "OSM-derived controlled text extraction; synthetic hard scenarios; NOT independently verified map truth."
+}

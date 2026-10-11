@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"residential\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as residential with a maxspeed of 30 km/h and a surface of asphalt. There is a barrier on the road, identified as a lift gate. No conflicting observations or anomalies are detected based on the provided information.\"\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:29:20.5999536Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1984207800,
+      "load_duration": 11046800,
+      "prompt_eval_count": 372,
+      "prompt_eval_duration": 279645000,
+      "eval_count": 81,
+      "eval_duration": 1687454000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c39-f696-7fa2-834c-47457ebc2126-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 372,
+      "output_tokens": 81,
+      "total_tokens": 453
+    }
+  },
+  "token_usage": {
+    "input_tokens": 372,
+    "output_tokens": 81,
+    "total_tokens": 453
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "residential",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input data specifies the road as residential with a maxspeed of 30 km/h and a surface of asphalt. There is a barrier on the road, identified as a lift gate. No conflicting observations or anomalies are detected based on the provided information.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "6261af6c3ec16acec06813df2f1b2f9b977bfc3fce320ac6960b81ff2edefde4",
+  "elapsed_s": 1.9916609000065364,
+  "recorded_at": "2026-10-11T18:29:20.603739+00:00"
+}

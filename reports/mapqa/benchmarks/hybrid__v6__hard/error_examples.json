@@ -1,0 +1,72 @@
+[
+  {
+    "segment_id": "evidence-hard-07",
+    "input": {
+      "osm_tags": {
+        "highway": "service",
+        "oneway": "-1"
+      },
+      "context_description": "Sens unic opus ordinii nodurilor."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 0.5,
+      "reasoning_cot": "oneway=-1 is one-way; instruction is not speed evidence.",
+      "anomaly_flag": false,
+      "input_instruction_detected": true
+    },
+    "errors": [
+      "input_instruction_detected"
+    ],
+    "detail_categories": [
+      "input_instruction_detected_false_positive"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-12",
+    "input": {
+      "osm_tags": {
+        "highway": "service",
+        "barrier": "no",
+        "oneway": "no"
+      },
+      "context_description": "Nu exista bariera; circulatie in ambele sensuri."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "unknown",
+      "oneway": false,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": null,
+    "errors": [
+      "invalid_output"
+    ],
+    "detail_categories": [
+      "invalid_output"
+    ]
+  }
+]

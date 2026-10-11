@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"residential\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input does not provide a numeric maxspeed tag, and the context description indicates a residential zone without a specified speed limit. Therefore, no maxspeed tag is provided, and the oneway flag is null.\"\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:30:21.6758555Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1810084500,
+      "load_duration": 11076000,
+      "prompt_eval_count": 362,
+      "prompt_eval_duration": 283048000,
+      "eval_count": 71,
+      "eval_duration": 1508251000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3a-e5d8-7e60-b975-89b1b1a7b2c1-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 362,
+      "output_tokens": 71,
+      "total_tokens": 433
+    }
+  },
+  "token_usage": {
+    "input_tokens": 362,
+    "output_tokens": 71,
+    "total_tokens": 433
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "residential",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input does not provide a numeric maxspeed tag, and the context description indicates a residential zone without a specified speed limit. Therefore, no maxspeed tag is provided, and the oneway flag is null.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "43cd4b33a71446802b8c6d3d6caffd038eb01984b036e571a561acda99272b74",
+  "elapsed_s": 1.818392599991057,
+  "recorded_at": "2026-10-11T18:30:21.678773+00:00"
+}

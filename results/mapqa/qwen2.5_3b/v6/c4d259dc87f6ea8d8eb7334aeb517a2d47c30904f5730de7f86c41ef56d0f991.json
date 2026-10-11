@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\": \"pedestrian\", \"speed_limit_kmh\": null, \"barrier_present\": true, \"barrier_type\": \"gate\", \"surface\": \"cobblestone\", \"oneway\": null, \"confidence_score\": 0.5, \"reasoning_cot\": \"No OSM tags provided, context describes pedestrian road with cobblestone surface and gate barrier.\", \"anomaly_flag\": false, \"input_instruction_detected\": false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:36:21.5650724Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2050811000,
+      "load_duration": 10295000,
+      "prompt_eval_count": 774,
+      "prompt_eval_duration": 178078000,
+      "eval_count": 96,
+      "eval_duration": 1853574000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c40-62ba-7191-b2b1-5cc8d398c280-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 774,
+      "output_tokens": 96,
+      "total_tokens": 870
+    }
+  },
+  "token_usage": {
+    "input_tokens": 774,
+    "output_tokens": 96,
+    "total_tokens": 870
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "pedestrian",
+    "speed_limit_kmh": null,
+    "barrier_present": true,
+    "barrier_type": "gate",
+    "surface": "cobblestone",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "No OSM tags provided, context describes pedestrian road with cobblestone surface and gate barrier.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "c4d259dc87f6ea8d8eb7334aeb517a2d47c30904f5730de7f86c41ef56d0f991",
+  "elapsed_s": 2.0563244000077248,
+  "recorded_at": "2026-10-11T18:36:21.568292+00:00"
+}

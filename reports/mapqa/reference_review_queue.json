@@ -1,0 +1,3195 @@
+[
+  {
+    "segment_id": "evidence-987114526",
+    "split": "dev",
+    "way_id": "987114526",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "lanes": "1",
+      "maxspeed": "30",
+      "oneway": "no",
+      "service": "parking_aisle",
+      "sidewalk": "no",
+      "surface": "concrete"
+    },
+    "connected_barrier_node_ids": [
+      "3110629628"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/987114526",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-896274660",
+    "split": "dev",
+    "way_id": "896274660",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "13355015048"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/896274660",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-107938804",
+    "split": "dev",
+    "way_id": "107938804",
+    "source_tags": {
+      "BEARING": "63° 31' 26.9'",
+      "access": "permit",
+      "cycleway:both": "no",
+      "hgv": "no",
+      "highway": "service",
+      "length": "503.42 m",
+      "maxspeed": "10",
+      "service": "driveway",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "1239467303"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/107938804",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1043351607",
+    "split": "dev",
+    "way_id": "1043351607",
+    "source_tags": {
+      "access": "private",
+      "covered": "yes",
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "9602536265"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1043351607",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-678894817",
+    "split": "dev",
+    "way_id": "678894817",
+    "source_tags": {
+      "highway": "footway",
+      "surface": "paved"
+    },
+    "connected_barrier_node_ids": [
+      "6356671466"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/678894817",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1156059484",
+    "split": "dev",
+    "way_id": "1156059484",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "10750903046"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1156059484",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1063554413",
+    "split": "dev",
+    "way_id": "1063554413",
+    "source_tags": {
+      "highway": "service",
+      "maxspeed": "5",
+      "maxweight": "3.5",
+      "oneway": "yes",
+      "source:maxspeed": "sign",
+      "source:maxweight": "sign",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "3627354854"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1063554413",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1565172679",
+    "split": "dev",
+    "way_id": "1565172679",
+    "source_tags": {
+      "highway": "service",
+      "tunnel": "building_passage"
+    },
+    "connected_barrier_node_ids": [
+      "14252011396"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1565172679",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1217764262",
+    "split": "dev",
+    "way_id": "1217764262",
+    "source_tags": {
+      "footway": "sidewalk",
+      "highway": "footway",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "4777695484"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1217764262",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-169149959",
+    "split": "dev",
+    "way_id": "169149959",
+    "source_tags": {
+      "highway": "service",
+      "lanes": "2",
+      "lit": "yes",
+      "maxspeed": "RO:urban",
+      "name": "Strada Bună Ziua",
+      "service": "alley",
+      "sidewalk": "both",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "6720508636"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/169149959",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1166328070",
+    "split": "dev",
+    "way_id": "1166328070",
+    "source_tags": {
+      "footway": "sidewalk",
+      "highway": "footway",
+      "smoothness": "excellent",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "8335036015"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1166328070",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-411074276",
+    "split": "dev",
+    "way_id": "411074276",
+    "source_tags": {
+      "highway": "footway",
+      "surface": "ground"
+    },
+    "connected_barrier_node_ids": [
+      "8730578175"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/411074276",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1062825462",
+    "split": "dev",
+    "way_id": "1062825462",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "maxspeed": "5",
+      "service": "driveway",
+      "source:maxspeed": "sign",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "9769279540"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1062825462",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-896747610",
+    "split": "dev",
+    "way_id": "896747610",
+    "source_tags": {
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "8335678645"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/896747610",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1075037724",
+    "split": "dev",
+    "way_id": "1075037724",
+    "source_tags": {
+      "bicycle": "yes",
+      "foot": "yes",
+      "highway": "pedestrian",
+      "horse": "no",
+      "lanes": "1",
+      "motor_vehicle": "private",
+      "name": "Strada Sextil Pușcariu",
+      "name:hu": "Sextil Pușcariu utca",
+      "name:ro": "Strada Sextil Pușcariu",
+      "old_name": "Strada Toplița",
+      "old_name:hu": "Bocskai utca",
+      "smoothness": "excellent",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "9009713780"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1075037724",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-581522468",
+    "split": "dev",
+    "way_id": "581522468",
+    "source_tags": {
+      "highway": "footway"
+    },
+    "connected_barrier_node_ids": [
+      "5563882379"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/581522468",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1066963672",
+    "split": "dev",
+    "way_id": "1066963672",
+    "source_tags": {
+      "highway": "service",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "9797003388"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1066963672",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-400792111",
+    "split": "dev",
+    "way_id": "400792111",
+    "source_tags": {
+      "access": "private",
+      "bicycle": "permissive",
+      "highway": "service",
+      "motor_vehicle": "private",
+      "surface": "paved"
+    },
+    "connected_barrier_node_ids": [
+      "4125864690",
+      "4125871689"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/400792111",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1555090326",
+    "split": "dev",
+    "way_id": "1555090326",
+    "source_tags": {
+      "area": "yes",
+      "highway": "pedestrian",
+      "lit": "yes",
+      "noname": "yes",
+      "smoothness": "excellent",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "14145398097",
+      "14145398099"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1555090326",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-941748981",
+    "split": "dev",
+    "way_id": "941748981",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "parking_aisle"
+    },
+    "connected_barrier_node_ids": [
+      "8721139576"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/941748981",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-439035256",
+    "split": "dev",
+    "way_id": "439035256",
+    "source_tags": {
+      "access": "private",
+      "addr:housenumber": "1",
+      "addr:postcode": "400562",
+      "addr:street": "Strada Agricultorilor",
+      "highway": "service",
+      "lanes:both_ways": "2",
+      "maxspeed": "30",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "4366612426"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/439035256",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1189367624",
+    "split": "dev",
+    "way_id": "1189367624",
+    "source_tags": {
+      "highway": "service",
+      "oneway": "yes"
+    },
+    "connected_barrier_node_ids": [
+      "11043911781"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1189367624",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-31665014",
+    "split": "dev",
+    "way_id": "31665014",
+    "source_tags": {
+      "highway": "residential",
+      "lanes": "1",
+      "maxspeed": "30",
+      "name": "Strada Arieșului",
+      "sidewalk": "no",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "3813447479"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/31665014",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-701238307",
+    "split": "dev",
+    "way_id": "701238307",
+    "source_tags": {
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "6585784846"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/701238307",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-858076179",
+    "split": "dev",
+    "way_id": "858076179",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "maxspeed": "5",
+      "service": "parking_aisle",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "12230127398"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/858076179",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-690881710",
+    "split": "dev",
+    "way_id": "690881710",
+    "source_tags": {
+      "highway": "path",
+      "surface": "gravel"
+    },
+    "connected_barrier_node_ids": [
+      "2860098626"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/690881710",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-108467060",
+    "split": "dev",
+    "way_id": "108467060",
+    "source_tags": {
+      "access": "permit",
+      "highway": "service",
+      "maxspeed": "10",
+      "service": "driveway",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "3107402666"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/108467060",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-888883314",
+    "split": "dev",
+    "way_id": "888883314",
+    "source_tags": {
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "8263979531"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/888883314",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-466410203",
+    "split": "dev",
+    "way_id": "466410203",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "lanes": "2",
+      "maxspeed": "RO:urban",
+      "sidewalk": "right"
+    },
+    "connected_barrier_node_ids": [
+      "9650335825"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/466410203",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-779543394",
+    "split": "dev",
+    "way_id": "779543394",
+    "source_tags": {
+      "highway": "service",
+      "maxspeed": "30",
+      "maxwidth": "5"
+    },
+    "connected_barrier_node_ids": [
+      "7279381333"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/779543394",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-858096567",
+    "split": "dev",
+    "way_id": "858096567",
+    "source_tags": {
+      "highway": "service",
+      "service": "parking_aisle"
+    },
+    "connected_barrier_node_ids": [
+      "7999717681"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/858096567",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-880003279",
+    "split": "dev",
+    "way_id": "880003279",
+    "source_tags": {
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "11029772484"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/880003279",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-854987288",
+    "split": "dev",
+    "way_id": "854987288",
+    "source_tags": {
+      "access": "private",
+      "highway": "residential",
+      "lanes": "1",
+      "lit": "no",
+      "maxspeed": "30",
+      "name": "Strada Leonardo Da Vinci",
+      "sidewalk": "no",
+      "surface": "paved"
+    },
+    "connected_barrier_node_ids": [
+      "9122493120"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/854987288",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-188147420",
+    "split": "dev",
+    "way_id": "188147420",
+    "source_tags": {
+      "highway": "service",
+      "maxspeed": "5",
+      "maxweight": "3.5",
+      "maxwidth": "5",
+      "oneway": "yes",
+      "service": "parking_aisle",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "1987712089"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/188147420",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1237987909",
+    "split": "dev",
+    "way_id": "1237987909",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "11499467849"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1237987909",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-305996485",
+    "split": "dev",
+    "way_id": "305996485",
+    "source_tags": {
+      "access": "permit",
+      "highway": "service",
+      "maxspeed": "30",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "3164471872"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/305996485",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-879928285",
+    "split": "dev",
+    "way_id": "879928285",
+    "source_tags": {
+      "highway": "service",
+      "horse": "no",
+      "motor_vehicle": "private",
+      "service": "parking_aisle"
+    },
+    "connected_barrier_node_ids": [
+      "9051296639",
+      "9051296646"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/879928285",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1240092660",
+    "split": "dev",
+    "way_id": "1240092660",
+    "source_tags": {
+      "covered": "yes",
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "11521296525"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1240092660",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1246879208",
+    "split": "dev",
+    "way_id": "1246879208",
+    "source_tags": {
+      "footway": "sidewalk",
+      "highway": "footway",
+      "lit": "yes",
+      "smoothness": "excellent",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "11591861783"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1246879208",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-690719067",
+    "split": "dev",
+    "way_id": "690719067",
+    "source_tags": {
+      "highway": "service",
+      "service": "driveway",
+      "surface": "gravel"
+    },
+    "connected_barrier_node_ids": [
+      "6480811989"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/690719067",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-895922184",
+    "split": "dev",
+    "way_id": "895922184",
+    "source_tags": {
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "8327923913"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/895922184",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1159336592",
+    "split": "dev",
+    "way_id": "1159336592",
+    "source_tags": {
+      "highway": "service",
+      "lit": "yes",
+      "oneway": "yes",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "10907433749"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1159336592",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-814527195",
+    "split": "dev",
+    "way_id": "814527195",
+    "source_tags": {
+      "access": "private",
+      "hgv": "no",
+      "highway": "service",
+      "lit": "yes",
+      "maxspeed": "30",
+      "service": "alley",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "7608551168"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/814527195",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-694349387",
+    "split": "dev",
+    "way_id": "694349387",
+    "source_tags": {
+      "access": "private",
+      "hgv": "no",
+      "highway": "service",
+      "maxspeed": "30",
+      "service": "alley",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "7608551168"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/694349387",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1215984155",
+    "split": "dev",
+    "way_id": "1215984155",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "oneway": "yes",
+      "surface": "asphalt",
+      "tunnel": "building_passage"
+    },
+    "connected_barrier_node_ids": [
+      "11266544067"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1215984155",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-681370535",
+    "split": "dev",
+    "way_id": "681370535",
+    "source_tags": {
+      "covered": "yes",
+      "highway": "service",
+      "maxheight": "2",
+      "oneway": "yes",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "5040315928",
+      "5040315929"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/681370535",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1169899003",
+    "split": "dev",
+    "way_id": "1169899003",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "10877847565"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1169899003",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-608215424",
+    "split": "dev",
+    "way_id": "608215424",
+    "source_tags": {
+      "footway": "sidewalk",
+      "highway": "footway",
+      "lit": "yes",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "5762897910"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/608215424",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-896809798",
+    "split": "dev",
+    "way_id": "896809798",
+    "source_tags": {
+      "footway": "sidewalk",
+      "highway": "footway"
+    },
+    "connected_barrier_node_ids": [
+      "6336724199"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/896809798",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1486876308",
+    "split": "dev",
+    "way_id": "1486876308",
+    "source_tags": {
+      "hgv": "no",
+      "highway": "residential",
+      "lanes": "2",
+      "lanes:backward": "1",
+      "lanes:forward": "1",
+      "maxspeed": "RO:urban"
+    },
+    "connected_barrier_node_ids": [
+      "12714066412"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1486876308",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-994996522",
+    "split": "dev",
+    "way_id": "994996522",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "9680822365"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/994996522",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-287684416",
+    "split": "dev",
+    "way_id": "287684416",
+    "source_tags": {
+      "access": "no",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "2912549497"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/287684416",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1554877171",
+    "split": "dev",
+    "way_id": "1554877171",
+    "source_tags": {
+      "footway": "traffic_island",
+      "highway": "footway",
+      "lit": "yes",
+      "smoothness": "excellent",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "14145398097",
+      "14145398099"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1554877171",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-177922290",
+    "split": "dev",
+    "way_id": "177922290",
+    "source_tags": {
+      "highway": "living_street",
+      "lanes": "1",
+      "maxspeed": "30",
+      "name": "Strada Ioan Rațiu",
+      "name:hu": "Ioan Rațiu utca",
+      "name:ro": "Strada Ioan Rațiu",
+      "old_name:hu": "Kötő utca",
+      "smoothness": "good",
+      "surface": "sett"
+    },
+    "connected_barrier_node_ids": [
+      "8942417966"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/177922290",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-390028239",
+    "split": "dev",
+    "way_id": "390028239",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "sidewalk": "left"
+    },
+    "connected_barrier_node_ids": [
+      "8366679459"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/390028239",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1120335378",
+    "split": "dev",
+    "way_id": "1120335378",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "surface": "pebblestone"
+    },
+    "connected_barrier_node_ids": [
+      "10246754566"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1120335378",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-858157094",
+    "split": "dev",
+    "way_id": "858157094",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "8000213587"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/858157094",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-985208457",
+    "split": "dev",
+    "way_id": "985208457",
+    "source_tags": {
+      "highway": "service",
+      "motor_vehicle": "private"
+    },
+    "connected_barrier_node_ids": [
+      "9431126044"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/985208457",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1554806083",
+    "split": "dev",
+    "way_id": "1554806083",
+    "source_tags": {
+      "footway": "sidewalk",
+      "highway": "footway",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "9408060331"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1554806083",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1240155890",
+    "split": "dev",
+    "way_id": "1240155890",
+    "source_tags": {
+      "cycleway:both": "no",
+      "highway": "service",
+      "maxspeed": "10",
+      "service": "driveway",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "11521826437"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1240155890",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-23892988",
+    "split": "dev",
+    "way_id": "23892988",
+    "source_tags": {
+      "access": "private",
+      "foot": "yes",
+      "highway": "service",
+      "maxspeed": "20",
+      "service": "driveway",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "7990892942"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/23892988",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-466389970",
+    "split": "dev",
+    "way_id": "466389970",
+    "source_tags": {
+      "hgv": "no",
+      "highway": "residential",
+      "lanes": "2",
+      "maxspeed": "30",
+      "name": "Strada Alexandru Vaida Voevod",
+      "name:hu": "Alexandru Vaida Voevod utca",
+      "name:ro": "Strada Alexandru Vaida Voevod",
+      "old_name:hu": "Szopori út",
+      "sidewalk": "no",
+      "source": "www.norc.ro",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "12339477198"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/466389970",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-485017728",
+    "split": "dev",
+    "way_id": "485017728",
+    "source_tags": {
+      "crossing": "zebra",
+      "footway": "crossing",
+      "highway": "footway",
+      "lit": "yes",
+      "smoothness": "excellent",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "4777695486"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/485017728",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1081078907",
+    "split": "dev",
+    "way_id": "1081078907",
+    "source_tags": {
+      "covered": "yes",
+      "highway": "footway"
+    },
+    "connected_barrier_node_ids": [
+      "9908928578"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1081078907",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1237221644",
+    "split": "dev",
+    "way_id": "1237221644",
+    "source_tags": {
+      "access": "customers",
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "11491276272"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1237221644",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1169899001",
+    "split": "dev",
+    "way_id": "1169899001",
+    "source_tags": {
+      "bridge": "yes",
+      "highway": "footway",
+      "layer": "1"
+    },
+    "connected_barrier_node_ids": [
+      "10877847562"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1169899001",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-850560704",
+    "split": "dev",
+    "way_id": "850560704",
+    "source_tags": {
+      "highway": "service",
+      "oneway": "yes",
+      "service": "driveway",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "7935030039"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/850560704",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1456243546",
+    "split": "dev",
+    "way_id": "1456243546",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "13355399357"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1456243546",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-466365922",
+    "split": "dev",
+    "way_id": "466365922",
+    "source_tags": {
+      "highway": "service",
+      "maxspeed": "5",
+      "maxweight": "3.5",
+      "service": "parking_aisle",
+      "sidewalk": "no",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "6354293078"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/466365922",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1087516974",
+    "split": "dev",
+    "way_id": "1087516974",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "9964094690"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1087516974",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1120335374",
+    "split": "dev",
+    "way_id": "1120335374",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "surface": "pebblestone"
+    },
+    "connected_barrier_node_ids": [
+      "10246754566",
+      "11118555499"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1120335374",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-807316229",
+    "split": "dev",
+    "way_id": "807316229",
+    "source_tags": {
+      "highway": "service",
+      "maxspeed": "30",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "8764398992"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/807316229",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-858090609",
+    "split": "dev",
+    "way_id": "858090609",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "7999691183"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/858090609",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-378635589",
+    "split": "dev",
+    "way_id": "378635589",
+    "source_tags": {
+      "access": "no",
+      "hgv": "no",
+      "highway": "service",
+      "maxspeed": "30",
+      "maxwidth": "5"
+    },
+    "connected_barrier_node_ids": [
+      "2500463112",
+      "7279381333"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/378635589",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-809220317",
+    "split": "dev",
+    "way_id": "809220317",
+    "source_tags": {
+      "footway": "sidewalk",
+      "footway:surface": "paving_stones",
+      "highway": "footway"
+    },
+    "connected_barrier_node_ids": [
+      "7232407480"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/809220317",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1063554410",
+    "split": "dev",
+    "way_id": "1063554410",
+    "source_tags": {
+      "highway": "service",
+      "maxspeed": "5",
+      "maxweight": "3.5",
+      "oneway": "yes",
+      "service": "driveway",
+      "source:maxspeed": "sign",
+      "source:maxweight": "sign",
+      "surface": "concrete"
+    },
+    "connected_barrier_node_ids": [
+      "3627354854"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1063554410",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-540953933",
+    "split": "dev",
+    "way_id": "540953933",
+    "source_tags": {
+      "highway": "service",
+      "maxspeed": "5",
+      "maxweight": "3.5",
+      "oneway": "yes",
+      "source:maxspeed": "sign",
+      "source:maxweight": "sign",
+      "surface": "concrete"
+    },
+    "connected_barrier_node_ids": [
+      "3627354854"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/540953933",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-188140645",
+    "split": "dev",
+    "way_id": "188140645",
+    "source_tags": {
+      "highway": "service",
+      "sidewalk": "left"
+    },
+    "connected_barrier_node_ids": [
+      "1987645385"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/188140645",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1156059498",
+    "split": "dev",
+    "way_id": "1156059498",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "10750903083"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1156059498",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-418901702",
+    "split": "dev",
+    "way_id": "418901702",
+    "source_tags": {
+      "access": "permit",
+      "cycleway:both": "no",
+      "highway": "service",
+      "maxspeed": "10",
+      "service": "driveway",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "11521826437"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/418901702",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1554806088",
+    "split": "test",
+    "way_id": "1554806088",
+    "source_tags": {
+      "footway": "sidewalk",
+      "highway": "footway",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "11710799788"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1554806088",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-714476776",
+    "split": "test",
+    "way_id": "714476776",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "maxspeed": "RO:urban",
+      "service": "parking_aisle",
+      "tunnel": "building_passage"
+    },
+    "connected_barrier_node_ids": [
+      "6716060256"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/714476776",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1335708326",
+    "split": "test",
+    "way_id": "1335708326",
+    "source_tags": {
+      "access": "private",
+      "highway": "residential",
+      "lanes": "1",
+      "maxspeed": "RO:urban",
+      "name": "Strada Nicolae Labiș",
+      "sidewalk": "no",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "3623076408"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1335708326",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-31583259",
+    "split": "test",
+    "way_id": "31583259",
+    "source_tags": {
+      "hgv": "no",
+      "highway": "service",
+      "horse": "no",
+      "maxspeed": "30",
+      "motor_vehicle": "private",
+      "name": "Strada Căminele Hașdeu",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "1681456581"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/31583259",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-169236169",
+    "split": "test",
+    "way_id": "169236169",
+    "source_tags": {
+      "highway": "living_street",
+      "maxspeed": "RO:urban",
+      "name": "Strada Ioan Buteanu",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "6344907772"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/169236169",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1153197359",
+    "split": "test",
+    "way_id": "1153197359",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "10725441841"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1153197359",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-714476780",
+    "split": "test",
+    "way_id": "714476780",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "maxspeed": "30",
+      "service": "parking_aisle",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "6716060272"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/714476780",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1101500286",
+    "split": "test",
+    "way_id": "1101500286",
+    "source_tags": {
+      "access": "private",
+      "covered": "yes",
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "10080106999"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1101500286",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1201351801",
+    "split": "test",
+    "way_id": "1201351801",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "11138248178"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1201351801",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-889604484",
+    "split": "test",
+    "way_id": "889604484",
+    "source_tags": {
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "8270501727"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/889604484",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-931294198",
+    "split": "test",
+    "way_id": "931294198",
+    "source_tags": {
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "10792484973"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/931294198",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-23893754",
+    "split": "test",
+    "way_id": "23893754",
+    "source_tags": {
+      "highway": "residential",
+      "lanes": "1",
+      "maxspeed": "RO:urban",
+      "maxweight": "3.5",
+      "motor_vehicle": "private",
+      "name": "Strada Ion C. Brătianu",
+      "name:hu": "Ion C. Brătianu utca",
+      "name:ro": "Strada Ion C. Brătianu",
+      "old_name:hu": "Király utca",
+      "oneway": "no",
+      "sidewalk": "both",
+      "sidewalk:both:surface": "paving_stones",
+      "smoothness": "excellent",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "258985585"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/23893754",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1247005596",
+    "split": "test",
+    "way_id": "1247005596",
+    "source_tags": {
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "11592937640"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1247005596",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1513750113",
+    "split": "test",
+    "way_id": "1513750113",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "13829297158"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1513750113",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-920685371",
+    "split": "test",
+    "way_id": "920685371",
+    "source_tags": {
+      "cycleway:both": "no",
+      "highway": "living_street",
+      "lanes": "1",
+      "maxspeed": "20",
+      "maxweight": "3.5",
+      "name": "Strada Tipografiei",
+      "name:hu": "Nyomda utca",
+      "name:ro": "Strada Tipografiei",
+      "oneway": "yes",
+      "sidewalk": "both",
+      "smoothness": "excellent",
+      "surface": "sett"
+    },
+    "connected_barrier_node_ids": [
+      "10848354839"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/920685371",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-879928284",
+    "split": "test",
+    "way_id": "879928284",
+    "source_tags": {
+      "highway": "service",
+      "motor_vehicle": "private",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "9051296640"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/879928284",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-295334628",
+    "split": "test",
+    "way_id": "295334628",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "2990470184"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/295334628",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-596851982",
+    "split": "test",
+    "way_id": "596851982",
+    "source_tags": {
+      "access": "private",
+      "foot": "yes",
+      "highway": "living_street",
+      "name": "Strada Soporului",
+      "sidewalk": "both",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "8383953305"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/596851982",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1086730857",
+    "split": "test",
+    "way_id": "1086730857",
+    "source_tags": {
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "10805294491"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1086730857",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-713721934",
+    "split": "test",
+    "way_id": "713721934",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "maxspeed": "5",
+      "service": "parking_aisle",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "6710441275"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/713721934",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-858187839",
+    "split": "test",
+    "way_id": "858187839",
+    "source_tags": {
+      "highway": "service",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "9708624300"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/858187839",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-893962055",
+    "split": "test",
+    "way_id": "893962055",
+    "source_tags": {
+      "highway": "service",
+      "lanes": "1",
+      "lit": "no",
+      "maxspeed": "30",
+      "oneway": "no",
+      "sidewalk": "no",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "3110629628"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/893962055",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-179900185",
+    "split": "test",
+    "way_id": "179900185",
+    "source_tags": {
+      "highway": "service",
+      "service": "alley",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "1903307724"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/179900185",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1117217700",
+    "split": "test",
+    "way_id": "1117217700",
+    "source_tags": {
+      "highway": "service",
+      "service": "driveway",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "10218258688"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1117217700",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-24676375",
+    "split": "test",
+    "way_id": "24676375",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "maxspeed": "RO:urban",
+      "sidewalk": "no"
+    },
+    "connected_barrier_node_ids": [
+      "4537625044"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/24676375",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-880003286",
+    "split": "test",
+    "way_id": "880003286",
+    "source_tags": {
+      "highway": "service",
+      "service": "parking_aisle"
+    },
+    "connected_barrier_node_ids": [
+      "8185777703"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/880003286",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-568300407",
+    "split": "test",
+    "way_id": "568300407",
+    "source_tags": {
+      "access": "private",
+      "check_date": "2024-03-31",
+      "highway": "service",
+      "lanes": "2",
+      "maxspeed": "RO:urban",
+      "name": "Strada Zarandului",
+      "sidewalk": "both",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "6583914195",
+      "6583914196"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/568300407",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-713716031",
+    "split": "test",
+    "way_id": "713716031",
+    "source_tags": {
+      "highway": "service",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "6710371274"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/713716031",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-987113781",
+    "split": "test",
+    "way_id": "987113781",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "driveway",
+      "surface": "paved"
+    },
+    "connected_barrier_node_ids": [
+      "9124102863"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/987113781",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1554877172",
+    "split": "test",
+    "way_id": "1554877172",
+    "source_tags": {
+      "footway": "crossing",
+      "highway": "footway",
+      "smoothness": "excellent",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "8566746721"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1554877172",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-858080245",
+    "split": "test",
+    "way_id": "858080245",
+    "source_tags": {
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "7999597087"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/858080245",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-586976407",
+    "split": "test",
+    "way_id": "586976407",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "5607480956"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/586976407",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-887429950",
+    "split": "test",
+    "way_id": "887429950",
+    "source_tags": {
+      "highway": "service",
+      "incline": "down",
+      "maxheight": "2.10",
+      "maxspeed": "5",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "8250850232"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/887429950",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-516286415",
+    "split": "test",
+    "way_id": "516286415",
+    "source_tags": {
+      "highway": "service",
+      "oneway": "yes",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "5040315929"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/516286415",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-688086191",
+    "split": "test",
+    "way_id": "688086191",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "parking_aisle",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "6451213144"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/688086191",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-188140650",
+    "split": "test",
+    "way_id": "188140650",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "1987645385"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/188140650",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-677218669",
+    "split": "test",
+    "way_id": "677218669",
+    "source_tags": {
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "6341183387"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/677218669",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1160393701",
+    "split": "test",
+    "way_id": "1160393701",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "10792375177"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1160393701",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-677078045",
+    "split": "test",
+    "way_id": "677078045",
+    "source_tags": {
+      "access": "permissive",
+      "highway": "service",
+      "maxspeed": "5",
+      "smoothness": "excellent",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "6340048118"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/677078045",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "evidence-1554806081",
+    "split": "test",
+    "way_id": "1554806081",
+    "source_tags": {
+      "footway": "sidewalk",
+      "highway": "footway",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "11710799786"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1554806081",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1138270890",
+    "split": "test_final",
+    "way_id": "1138270890",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "10610610243"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1138270890",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-897177177",
+    "split": "test_final",
+    "way_id": "897177177",
+    "source_tags": {
+      "footway": "sidewalk",
+      "highway": "footway",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "8339038614"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/897177177",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-221452296",
+    "split": "test_final",
+    "way_id": "221452296",
+    "source_tags": {
+      "access": "private",
+      "hgv": "no",
+      "highway": "service",
+      "lanes": "2",
+      "maxspeed": "RO:urban",
+      "name": "Strada A. E. Baconsky",
+      "service": "alley",
+      "sidewalk": "left",
+      "surface": "concrete"
+    },
+    "connected_barrier_node_ids": [
+      "6358085150"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/221452296",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1554806079",
+    "split": "test_final",
+    "way_id": "1554806079",
+    "source_tags": {
+      "footway": "sidewalk",
+      "highway": "footway",
+      "smoothness": "excellent",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "8566746730"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1554806079",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-586976397",
+    "split": "test_final",
+    "way_id": "586976397",
+    "source_tags": {
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "5607480907"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/586976397",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-26433067",
+    "split": "test_final",
+    "way_id": "26433067",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "lanes": "1",
+      "maxspeed": "RO:urban",
+      "service": "driveway",
+      "sidewalk": "no"
+    },
+    "connected_barrier_node_ids": [
+      "11851000634"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/26433067",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-917143884",
+    "split": "test_final",
+    "way_id": "917143884",
+    "source_tags": {
+      "area": "yes",
+      "highway": "pedestrian",
+      "lit": "yes",
+      "surface": "sett"
+    },
+    "connected_barrier_node_ids": [
+      "6345106757"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/917143884",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1329108518",
+    "split": "test_final",
+    "way_id": "1329108518",
+    "source_tags": {
+      "highway": "footway"
+    },
+    "connected_barrier_node_ids": [
+      "12296977667"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1329108518",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-911239843",
+    "split": "test_final",
+    "way_id": "911239843",
+    "source_tags": {
+      "area": "yes",
+      "highway": "pedestrian",
+      "lit": "yes",
+      "surface": "sett"
+    },
+    "connected_barrier_node_ids": [
+      "6345106745"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/911239843",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1201637798",
+    "split": "test_final",
+    "way_id": "1201637798",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "driveway",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "11140737727"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1201637798",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-321421021",
+    "split": "test_final",
+    "way_id": "321421021",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "parking_aisle"
+    },
+    "connected_barrier_node_ids": [
+      "4332669987"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/321421021",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-678855969",
+    "split": "test_final",
+    "way_id": "678855969",
+    "source_tags": {
+      "handrail": "no",
+      "highway": "steps",
+      "incline": "down",
+      "ramp": "no",
+      "ramp:wheelchair": "no",
+      "step_count": "9",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "6356323440"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/678855969",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-584407108",
+    "split": "test_final",
+    "way_id": "584407108",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "5586335662"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/584407108",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-679033926",
+    "split": "test_final",
+    "way_id": "679033926",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "6358025767"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/679033926",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-714479680",
+    "split": "test_final",
+    "way_id": "714479680",
+    "source_tags": {
+      "highway": "service",
+      "motor_vehicle": "private",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "6716073801"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/714479680",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1275433085",
+    "split": "test_final",
+    "way_id": "1275433085",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "11842542748"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1275433085",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-957442058",
+    "split": "test_final",
+    "way_id": "957442058",
+    "source_tags": {
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "8859382053"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/957442058",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-894331119",
+    "split": "test_final",
+    "way_id": "894331119",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "8312488965"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/894331119",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-701238310",
+    "split": "test_final",
+    "way_id": "701238310",
+    "source_tags": {
+      "access": "permissive",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "6585784846"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/701238310",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-867221787",
+    "split": "test_final",
+    "way_id": "867221787",
+    "source_tags": {
+      "foot": "yes",
+      "highway": "service",
+      "service": "driveway",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "7990892942"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/867221787",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-987146386",
+    "split": "test_final",
+    "way_id": "987146386",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "parking_aisle",
+      "surface": "paved"
+    },
+    "connected_barrier_node_ids": [
+      "9124364419"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/987146386",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1309443548",
+    "split": "test_final",
+    "way_id": "1309443548",
+    "source_tags": {
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "10610593615"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1309443548",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1022655481",
+    "split": "test_final",
+    "way_id": "1022655481",
+    "source_tags": {
+      "highway": "footway"
+    },
+    "connected_barrier_node_ids": [
+      "9431743901"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1022655481",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-993082085",
+    "split": "test_final",
+    "way_id": "993082085",
+    "source_tags": {
+      "highway": "service",
+      "oneway": "yes"
+    },
+    "connected_barrier_node_ids": [
+      "11055395819"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/993082085",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-833863533",
+    "split": "test_final",
+    "way_id": "833863533",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "driveway",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "6710523485"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/833863533",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1190532015",
+    "split": "test_final",
+    "way_id": "1190532015",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "driveway"
+    },
+    "connected_barrier_node_ids": [
+      "11054293980"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1190532015",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-900676387",
+    "split": "test_final",
+    "way_id": "900676387",
+    "source_tags": {
+      "highway": "footway",
+      "lit": "yes",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "8366704401"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/900676387",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-356910516",
+    "split": "test_final",
+    "way_id": "356910516",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "maxspeed": "RO:urban",
+      "name": "Strada Armoniei",
+      "oneway": "no",
+      "sidewalk": "no"
+    },
+    "connected_barrier_node_ids": [
+      "1804350259",
+      "2250288934"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/356910516",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-939771015",
+    "split": "test_final",
+    "way_id": "939771015",
+    "source_tags": {
+      "highway": "service",
+      "oneway": "yes",
+      "surface": "paving_stones"
+    },
+    "connected_barrier_node_ids": [
+      "8704940188"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/939771015",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1201353254",
+    "split": "test_final",
+    "way_id": "1201353254",
+    "source_tags": {
+      "access": "private",
+      "highway": "service",
+      "service": "driveway",
+      "surface": "gravel"
+    },
+    "connected_barrier_node_ids": [
+      "11138327407"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1201353254",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-244911085",
+    "split": "test_final",
+    "way_id": "244911085",
+    "source_tags": {
+      "access": "private",
+      "hgv": "no",
+      "highway": "service",
+      "maxspeed": "RO:urban",
+      "service": "alley"
+    },
+    "connected_barrier_node_ids": [
+      "7577056715"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/244911085",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1152358109",
+    "split": "test_final",
+    "way_id": "1152358109",
+    "source_tags": {
+      "highway": "footway"
+    },
+    "connected_barrier_node_ids": [
+      "10718559223"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1152358109",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-606868552",
+    "split": "test_final",
+    "way_id": "606868552",
+    "source_tags": {
+      "highway": "residential",
+      "lit": "no",
+      "name": "Aleea Bâlea",
+      "surface": "pebblestone"
+    },
+    "connected_barrier_node_ids": [
+      "8191852503"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/606868552",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1555090321",
+    "split": "test_final",
+    "way_id": "1555090321",
+    "source_tags": {
+      "footway": "crossing",
+      "highway": "footway",
+      "lit": "yes",
+      "smoothness": "excellent",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "8296476563",
+      "14148488150"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1555090321",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1247781474",
+    "split": "test_final",
+    "way_id": "1247781474",
+    "source_tags": {
+      "access": "private",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "11599184916"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1247781474",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1124475485",
+    "split": "test_final",
+    "way_id": "1124475485",
+    "source_tags": {
+      "access": "private",
+      "covered": "yes",
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "10282763365"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1124475485",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1275399053",
+    "split": "test_final",
+    "way_id": "1275399053",
+    "source_tags": {
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "11842241764"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1275399053",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1504445190",
+    "split": "test_final",
+    "way_id": "1504445190",
+    "source_tags": {
+      "highway": "service"
+    },
+    "connected_barrier_node_ids": [
+      "11842542748"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1504445190",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1227397602",
+    "split": "test_final",
+    "way_id": "1227397602",
+    "source_tags": {
+      "highway": "service",
+      "sidewalk": "no",
+      "surface": "concrete"
+    },
+    "connected_barrier_node_ids": [
+      "11381962898"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1227397602",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  },
+  {
+    "segment_id": "final-1467180503",
+    "split": "test_final",
+    "way_id": "1467180503",
+    "source_tags": {
+      "highway": "service",
+      "service": "parking_aisle",
+      "surface": "asphalt"
+    },
+    "connected_barrier_node_ids": [
+      "13457134687"
+    ],
+    "osm_url": "https://www.openstreetmap.org/way/1467180503",
+    "automatic_source_integrity": "passed",
+    "human_review_status": "pending",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": null
+  }
+]

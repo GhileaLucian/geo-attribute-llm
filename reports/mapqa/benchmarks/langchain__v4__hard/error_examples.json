@@ -1,0 +1,412 @@
+[
+  {
+    "segment_id": "evidence-hard-01",
+    "input": {
+      "osm_tags": {
+        "highway": "pedestrian"
+      },
+      "context_description": "La intrare sunt stalpisori metalici."
+    },
+    "expected": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "bollard",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as 'pedestrian' with no conflicting tags. The context description mentions metalic bollards at the entrance, which is consistent with the 'pedestrian' category. No anomaly flag is set as there are no conflicting observations or numeric speed values provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-02",
+    "input": {
+      "osm_tags": {
+        "highway": "service"
+      },
+      "context_description": "Accesul este blocat de o bariera cu brat."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a 'service' highway with a 'lift_gate' (Romanian: bariera cu brat) as the barrier. There are no conflicting observations or anomalies based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-03",
+    "input": {
+      "osm_tags": {
+        "highway": "track"
+      },
+      "context_description": "La intrare este o poarta inchisa."
+    },
+    "expected": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input specifies a highway type of 'track' and provides context that there is a closed gate at the entrance. There are no conflicting tags or numeric maxspeed values provided. The road category is specified as per OSM names, and no one-way or barrier information is inferred from the given tags. The road is considered observed without anomalies.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-05",
+    "input": {
+      "osm_tags": {
+        "highway": "residential"
+      },
+      "context_description": "Indicatorul arata limita de viteza 30 km/h."
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input indicates a maxspeed of 30 km/h, which is a valid and observed fact. The context description explicitly states this information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-06",
+    "input": {
+      "osm_tags": {
+        "highway": "residential",
+        "maxspeed": "30"
+      },
+      "context_description": "Textul spune limita 50 km/h."
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": true,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input contains a maxspeed tag of 30, which contradicts the context description stating a limit of 50 km/h. The maxspeed tag takes precedence in this case, so the observed speed is 30 km/h. The input_instruction_detected flag is false as there are no malicious instructions present.",
+      "anomaly_flag": true,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-07",
+    "input": {
+      "osm_tags": {
+        "highway": "service",
+        "oneway": "-1"
+      },
+      "context_description": "Sens unic opus ordinii nodurilor."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input specifies 'oneway': -1, which indicates the road is in reverse direction. The context description in Romanian translates to 'unic sens opus nodurilor', which also confirms the road is in reverse direction. Therefore, no anomaly flag is set.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-08",
+    "input": {
+      "osm_tags": {
+        "highway": "secondary",
+        "maxspeed:conditional": "30 @ (wet)"
+      },
+      "context_description": "Limita conditionala cand carosabilul este ud."
+    },
+    "expected": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "secondary",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input specifies a conditional speed of 30 km/h for wet conditions. The highway tag is 'secondary', and the context description indicates this is a conditional speed for wet road conditions.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-11",
+    "input": {
+      "osm_tags": {
+        "highway": "primary",
+        "barrier": "guard_rail"
+      },
+      "context_description": "Parapet lateral; nu blocheaza accesul."
+    },
+    "expected": {
+      "road_type": "primary",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "guard_rail",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "primary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The road is tagged as 'primary' highway. The barrier is explicitly tagged as 'guard_rail'. The context description confirms it is a lateral guard rail that does not block access. No conflicting observations or anomalies are found.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-12",
+    "input": {
+      "osm_tags": {
+        "highway": "service",
+        "barrier": "no",
+        "oneway": "no"
+      },
+      "context_description": "Nu exista bariera; circulatie in ambele sensuri."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "unknown",
+      "oneway": false,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input does not specify a barrier, and the context description confirms the absence of a barrier. Therefore, barrier is null and barrier_type is unknown.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "oneway",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-13",
+    "input": {
+      "osm_tags": {
+        "highway": "track"
+      },
+      "context_description": "The road surface is gravel."
+    },
+    "expected": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "gravel",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road surface as gravel, which is explicitly provided in the OSM tags. There are no conflicting observations or anomalies related to the surface.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-15",
+    "input": {
+      "osm_tags": {
+        "highway": "residential",
+        "maxspeed": "140"
+      },
+      "context_description": "Valoare suspecta in tag; trebuie pastrata pentru inspectie."
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": 140,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": true,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Maxspeed tag is explicitly provided as 140, which is higher than the general residential speed limit. The context description indicates that this value should be preserved for inspection. No other anomalies or conflicts are detected.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh",
+      "anomaly_flag"
+    ]
+  }
+]

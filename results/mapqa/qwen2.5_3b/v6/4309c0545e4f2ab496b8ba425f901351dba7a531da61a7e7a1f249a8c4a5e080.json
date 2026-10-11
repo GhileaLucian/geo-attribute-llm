@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"residential\",\"speed_limit_kmh\":null,\"barrier_present\":true,\"barrier_type\":\"gate\",\"surface\":\"unknown\",\"oneway\":null,\"confidence_score\":0.5,\"reasoning_cot\":\"Barrier observed and road category is residential.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:34:55.9449719Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1427983000,
+      "load_duration": 8482900,
+      "prompt_eval_count": 765,
+      "prompt_eval_duration": 139417000,
+      "eval_count": 68,
+      "eval_duration": 1271309000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3f-16b4-7a11-b011-9ca92305ddb9-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 765,
+      "output_tokens": 68,
+      "total_tokens": 833
+    }
+  },
+  "token_usage": {
+    "input_tokens": 765,
+    "output_tokens": 68,
+    "total_tokens": 833
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "residential",
+    "speed_limit_kmh": null,
+    "barrier_present": true,
+    "barrier_type": "gate",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "Barrier observed and road category is residential.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "4309c0545e4f2ab496b8ba425f901351dba7a531da61a7e7a1f249a8c4a5e080",
+  "elapsed_s": 1.4340768000110984,
+  "recorded_at": "2026-10-11T18:34:55.947675+00:00"
+}

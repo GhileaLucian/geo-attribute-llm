@@ -1,0 +1,16 @@
+{
+  "snapshot_sha256": "513165894b25cf61c06cacc597d04243da8bf1a56a963e284cc532852b69b783",
+  "seed": 42,
+  "dev_count": 80,
+  "test_count": 40,
+  "hard_count": 15,
+  "road_group_overlap": 0,
+  "independent_field_verification": false,
+  "task": "Extract explicit facts from controlled bilingual transcriptions of actual OSM tags; not missing-tag recovery.",
+  "selection": "Distinct road names/IDs; prioritise topological barriers and numeric speeds. Not representative.",
+  "file_sha256": {
+    "evidence_dev.json": "8c62398c36b596df09e3011c157d8295f0b8c9f74fa6751a524d547fe127ab35",
+    "evidence_test.json": "ddce1d2156cec86d8d0efe95bc8d0f86b1fb97973e5418314100c1b258229991",
+    "evidence_hard.json": "563b459b1de953595ea1f2c8fce635c22bb004e89328b46bc1345028e0121753"
+  }
+}

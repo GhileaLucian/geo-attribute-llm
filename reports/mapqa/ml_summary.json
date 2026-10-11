@@ -1,0 +1,211 @@
+{
+  "classification": {
+    "majority": {
+      "report": {
+        "local_road": {
+          "precision": 0.45984784446322907,
+          "recall": 1.0,
+          "f1-score": 0.629994209612044,
+          "support": 1632.0
+        },
+        "major_road": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 257.0
+        },
+        "non_motorized": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1573.0
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 87.0
+        },
+        "accuracy": 0.45984784446322907,
+        "macro avg": {
+          "precision": 0.11496196111580727,
+          "recall": 0.25,
+          "f1-score": 0.157498552403011,
+          "support": 3549.0
+        },
+        "weighted avg": {
+          "precision": 0.21146004005747812,
+          "recall": 0.45984784446322907,
+          "f1-score": 0.2897014793144142,
+          "support": 3549.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "local_road",
+          "major_road",
+          "non_motorized",
+          "other"
+        ],
+        "values": [
+          [
+            1632,
+            0,
+            0,
+            0
+          ],
+          [
+            257,
+            0,
+            0,
+            0
+          ],
+          [
+            1573,
+            0,
+            0,
+            0
+          ],
+          [
+            87,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "random_forest": {
+      "report": {
+        "local_road": {
+          "precision": 0.6851963746223565,
+          "recall": 0.6948529411764706,
+          "f1-score": 0.6899908731365987,
+          "support": 1632.0
+        },
+        "major_road": {
+          "precision": 0.7426900584795322,
+          "recall": 0.49416342412451364,
+          "f1-score": 0.5934579439252337,
+          "support": 257.0
+        },
+        "non_motorized": {
+          "precision": 0.7279110590988882,
+          "recall": 0.7908455181182454,
+          "f1-score": 0.7580743449116393,
+          "support": 1573.0
+        },
+        "other": {
+          "precision": 0.9285714285714286,
+          "recall": 0.14942528735632185,
+          "f1-score": 0.25742574257425743,
+          "support": 87.0
+        },
+        "accuracy": 0.7094956325725557,
+        "macro avg": {
+          "precision": 0.7710922301930514,
+          "recall": 0.5323217926938879,
+          "f1-score": 0.5747372261369323,
+          "support": 3549.0
+        },
+        "weighted avg": {
+          "precision": 0.7142579990592255,
+          "recall": 0.7094956325725557,
+          "f1-score": 0.7025727756262843,
+          "support": 3549.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "local_road",
+          "major_road",
+          "non_motorized",
+          "other"
+        ],
+        "values": [
+          [
+            1134,
+            42,
+            456,
+            0
+          ],
+          [
+            127,
+            127,
+            2,
+            1
+          ],
+          [
+            327,
+            2,
+            1244,
+            0
+          ],
+          [
+            67,
+            0,
+            7,
+            13
+          ]
+        ]
+      }
+    }
+  },
+  "classification_train_n": 11042,
+  "classification_test_n": 3549,
+  "class_support": {
+    "local_road": 6733,
+    "non_motorized": 6142,
+    "major_road": 1421,
+    "other": 295
+  },
+  "split": "GroupShuffleSplit by road name, unnamed roads by way ID; seed 42; no hyperparameter search.",
+  "features": [
+    "length_m",
+    "node_count",
+    "centroid_x_m",
+    "centroid_y_m",
+    "lanes",
+    "bridge",
+    "tunnel"
+  ],
+  "target_leakage_policy": "Highway excluded from classification; maxspeed and its aliases excluded from regression features.",
+  "regression": {
+    "status": "evaluated",
+    "labeled_records": 1036,
+    "train_n": 781,
+    "test_n": 255,
+    "target": "Recorded numeric OSM maxspeed; NOT a verified legal speed or automatic map update.",
+    "models": {
+      "median": {
+        "mae_kmh": 5.96078431372549,
+        "rmse_kmh": 10.810307354466811,
+        "r2": -0.06080911299103753
+      },
+      "random_forest": {
+        "mae_kmh": 3.6228360553769687,
+        "rmse_kmh": 6.526384802352128,
+        "r2": 0.613360240848069
+      }
+    }
+  },
+  "clustering": {
+    "method": "DBSCAN on projected road centroids",
+    "eps_m": 200,
+    "min_samples": 8,
+    "clusters": 8,
+    "noise_count": 226,
+    "reference_labels": null
+  },
+  "anomalies": {
+    "method": "IsolationForest",
+    "suggestions": 438,
+    "verified_errors": null
+  },
+  "limitations": [
+    "Exploratory OSM-label experiments, not production models.",
+    "Road-name groups reduce same-road leakage but nearby roads may still cross splits.",
+    "Geometry/node-count correlations can reflect mapping practices.",
+    "Cluster and anomaly outputs require expert review."
+  ]
+}

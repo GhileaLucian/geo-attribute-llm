@@ -1,0 +1,86 @@
+{
+  "status": "pending_human_review",
+  "benchmark_eligible": false,
+  "model": "qwen2.5:3b",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "generated_at": "2026-10-11T18:30:00.945360+00:00",
+  "scenarios": [
+    {
+      "name": "Contradictory Explicit Speed Tag",
+      "osm_tags": {
+        "highway": "unclassified",
+        "speed": "50"
+      },
+      "context_description": "A road marked as unclassified but with a speed limit of 50 km/h.",
+      "proposed_expected": {
+        "road_type": "unclassified",
+        "speed_limit_kmh": null,
+        "barrier_present": null,
+        "barrier_type": "unknown",
+        "surface": "unknown",
+        "oneway": null,
+        "confidence_score": 0.95,
+        "reasoning_cot": "The speed tag contradicts the road type, suggesting a possible error in tagging.",
+        "anomaly_flag": false,
+        "input_instruction_detected": false
+      },
+      "purpose": "To identify and resolve the inconsistency between the road type and the speed limit."
+    },
+    {
+      "name": "Ambiguous Barrier Evidence Without Connected Node",
+      "osm_tags": {
+        "barrier": "fence",
+        "amenity": "parking"
+      },
+      "context_description": "A fence near a parking area with no connecting node to the road.",
+      "proposed_expected": {
+        "road_type": "unknown",
+        "speed_limit_kmh": null,
+        "barrier_present": null,
+        "barrier_type": "unknown",
+        "surface": "unknown",
+        "oneway": null,
+        "confidence_score": 0.8,
+        "reasoning_cot": "The lack of a connected node makes it unclear how the fence relates to the road, and the presence of 'amenity:parking' suggests it might be a parking area barrier.",
+        "anomaly_flag": false,
+        "input_instruction_detected": false
+      },
+      "purpose": "To determine the relationship between the fence and the road, and to clarify the purpose of the 'amenity:parking' tag."
+    }
+  ],
+  "raw_response": {
+    "content": "{ \"scenarios\": [\n    {\n      \"name\": \"Contradictory Explicit Speed Tag\",\n      \"osm_tags\": {\n        \"highway\": \"unclassified\",\n        \"speed\": \"50\"\n      },\n      \"context_description\": \"A road marked as unclassified but with a speed limit of 50 km/h.\",\n      \"proposed_expected\": {\n        \"road_type\": \"unclassified\",\n        \"confidence_score\": 0.95,\n        \"reasoning_cot\": \"The speed tag contradicts the road type, suggesting a possible error in tagging.\"\n      },\n      \"purpose\": \"To identify and resolve the inconsistency between the road type and the speed limit.\"\n    },\n    {\n      \"name\": \"Ambiguous Barrier Evidence Without Connected Node\",\n      \"osm_tags\": {\n        \"barrier\": \"fence\",\n        \"amenity\": \"parking\"\n      },\n      \"context_description\": \"A fence near a parking area with no connecting node to the road.\",\n      \"proposed_expected\": {\n        \"road_type\": \"unknown\",\n        \"confidence_score\": 0.8,\n        \"reasoning_cot\": \"The lack of a connected node makes it unclear how the fence relates to the road, and the presence of 'amenity:parking' suggests it might be a parking area barrier.\"\n      },\n      \"purpose\": \"To determine the relationship between the fence and the road, and to clarify the purpose of the 'amenity:parking' tag.\"\n    }\n  ]\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:30:00.9413351Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 9575767900,
+      "load_duration": 12733700,
+      "prompt_eval_count": 85,
+      "prompt_eval_duration": 505421000,
+      "eval_count": 332,
+      "eval_duration": 6846765000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3a-7680-7b83-9761-142e31783dd2-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 85,
+      "output_tokens": 332,
+      "total_tokens": 417
+    }
+  },
+  "token_usage": {
+    "input_tokens": 85,
+    "output_tokens": 332,
+    "total_tokens": 417
+  },
+  "policy": "Human must audit labels and approve a separate versioned dataset before evaluation. This file is never loaded by benchmark()."
+}

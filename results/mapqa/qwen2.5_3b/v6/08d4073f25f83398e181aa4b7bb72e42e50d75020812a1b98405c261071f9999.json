@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"service\",\"speed_limit_kmh\":null,\"barrier_present\":true,\"barrier_type\":\"gate\",\"surface\":\"unknown\",\"oneway\":null,\"confidence_score\":0.5,\"reasoning_cot\":\"No explicit tags provide speed information, and the context describes a service road with a gate as a barrier.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:34:42.8030075Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1611658300,
+      "load_duration": 10220000,
+      "prompt_eval_count": 766,
+      "prompt_eval_duration": 137589000,
+      "eval_count": 80,
+      "eval_duration": 1456977000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3e-e2a6-71f0-a1e4-979129bc94bd-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 766,
+      "output_tokens": 80,
+      "total_tokens": 846
+    }
+  },
+  "token_usage": {
+    "input_tokens": 766,
+    "output_tokens": 80,
+    "total_tokens": 846
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": true,
+    "barrier_type": "gate",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "No explicit tags provide speed information, and the context describes a service road with a gate as a barrier.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "08d4073f25f83398e181aa4b7bb72e42e50d75020812a1b98405c261071f9999",
+  "elapsed_s": 1.6197404999984428,
+  "recorded_at": "2026-10-11T18:34:42.808025+00:00"
+}

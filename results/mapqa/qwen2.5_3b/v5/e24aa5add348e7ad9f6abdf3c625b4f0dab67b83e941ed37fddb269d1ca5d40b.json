@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"service\",\"confidence_score\":0.5,\"reasoning_cot\":\"Tag maxspeed=30 takes precedence over context description. Surface is asphalt. Barrier type is lift_gate.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:31:16.6851601Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1383902200,
+      "load_duration": 10603400,
+      "prompt_eval_count": 741,
+      "prompt_eval_duration": 283688000,
+      "eval_count": 53,
+      "eval_duration": 1080961000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3b-be64-7900-bb9d-efaffbb4ecd5-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 741,
+      "output_tokens": 53,
+      "total_tokens": 794
+    }
+  },
+  "token_usage": {
+    "input_tokens": 741,
+    "output_tokens": 53,
+    "total_tokens": 794
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "Tag maxspeed=30 takes precedence over context description. Surface is asphalt. Barrier type is lift_gate.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "e24aa5add348e7ad9f6abdf3c625b4f0dab67b83e941ed37fddb269d1ca5d40b",
+  "elapsed_s": 1.3914716999861412,
+  "recorded_at": "2026-10-11T18:31:16.688563+00:00"
+}

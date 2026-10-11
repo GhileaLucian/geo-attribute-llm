@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"residential\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input contains a maxspeed tag of 30, which contradicts the context description stating a limit of 50 km/h. The maxspeed tag takes precedence in this case, so the observed speed is 30 km/h. The input_instruction_detected flag is false as there are no malicious instructions present.\",\n  \"anomaly_flag\": true\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:30:26.1235481Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2508108200,
+      "load_duration": 9588000,
+      "prompt_eval_count": 364,
+      "prompt_eval_duration": 350019000,
+      "eval_count": 104,
+      "eval_duration": 2141065000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3a-f47f-7d61-84ee-7a4890728b34-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 364,
+      "output_tokens": 104,
+      "total_tokens": 468
+    }
+  },
+  "token_usage": {
+    "input_tokens": 364,
+    "output_tokens": 104,
+    "total_tokens": 468
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "residential",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input contains a maxspeed tag of 30, which contradicts the context description stating a limit of 50 km/h. The maxspeed tag takes precedence in this case, so the observed speed is 30 km/h. The input_instruction_detected flag is false as there are no malicious instructions present.",
+    "anomaly_flag": true,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "5c6facbfd4b9dbff3d976c107d82dc260a0a4542211883bee785197941b668ca",
+  "elapsed_s": 2.514356699975906,
+  "recorded_at": "2026-10-11T18:30:26.126967+00:00"
+}

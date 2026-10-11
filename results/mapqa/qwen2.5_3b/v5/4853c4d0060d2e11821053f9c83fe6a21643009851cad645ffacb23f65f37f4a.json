@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"footway\",\"confidence_score\":0.5,\"reasoning_cot\":\"No OSM tags provided, only context description.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:31:03.6074623Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1109696200,
+      "load_duration": 11460400,
+      "prompt_eval_count": 723,
+      "prompt_eval_duration": 189042000,
+      "eval_count": 42,
+      "eval_duration": 898851000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3b-8c60-7241-8c57-02d16c47611a-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 723,
+      "output_tokens": 42,
+      "total_tokens": 765
+    }
+  },
+  "token_usage": {
+    "input_tokens": 723,
+    "output_tokens": 42,
+    "total_tokens": 765
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "footway",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "No OSM tags provided, only context description.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "4853c4d0060d2e11821053f9c83fe6a21643009851cad645ffacb23f65f37f4a",
+  "elapsed_s": 1.1196359999885317,
+  "recorded_at": "2026-10-11T18:31:03.611971+00:00"
+}

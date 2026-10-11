@@ -1,0 +1,29 @@
+{
+  "deployment_id": "e04dbe47-ecc3-41e1-aabb-21158fe8aca7",
+  "flow_run_id": "01a12c4a-6ee2-79a8-b65c-6b41d6621912",
+  "state": "Completed",
+  "schedule_interval_seconds": 60,
+  "observed_states": [
+    {
+      "state": "Scheduled",
+      "observed_at": "2026-10-11T18:47:19.462956+00:00"
+    },
+    {
+      "state": "Submitting",
+      "observed_at": "2026-10-11T18:47:38.007222+00:00"
+    },
+    {
+      "state": "Running",
+      "observed_at": "2026-10-11T18:47:48.344292+00:00"
+    },
+    {
+      "state": "Completed",
+      "observed_at": "2026-10-11T18:47:59.928459+00:00"
+    }
+  ],
+  "run_created_by_scheduler": true,
+  "scheduled_start": "2026-10-11 18:47:36.606064+00:00",
+  "deployment_paused": true,
+  "local_only": true,
+  "runner_stopped_after_test": true
+}

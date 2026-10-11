@@ -1,0 +1,28 @@
+{
+  "prompt": "v6",
+  "model": "qwen2.5:3b",
+  "model_digests": [
+    "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b"
+  ],
+  "frozen_at": "2026-10-11T18:36:13.445511+00:00",
+  "reason": "Explicitly required output fields, diagnosed from development omissions in v4/v5.",
+  "development_scores": [
+    {
+      "split": "dev",
+      "n": 80,
+      "exact_match_rate": 0.8125,
+      "failure_rate": 0.0,
+      "dataset_sha256": "8c62398c36b596df09e3011c157d8295f0b8c9f74fa6751a524d547fe127ab35"
+    },
+    {
+      "split": "hard",
+      "n": 15,
+      "exact_match_rate": 0.8,
+      "failure_rate": 0.06666666666666667,
+      "dataset_sha256": "563b459b1de953595ea1f2c8fce635c22bb004e89328b46bc1345028e0121753"
+    }
+  ],
+  "initial_holdout_already_used": true,
+  "final_holdout_used_for_selection": false,
+  "policy": "No further tuning against evidence_test_final. Reuse its saved outputs only."
+}

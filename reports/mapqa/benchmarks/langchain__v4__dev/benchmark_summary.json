@@ -1,0 +1,597 @@
+{
+  "n": 80,
+  "exact_match_rate": 0.0,
+  "failure_rate": 0.0,
+  "invalid_output_rate": 0.0,
+  "error_taxonomy": {
+    "speed_limit_kmh": 24,
+    "surface": 42,
+    "oneway": 10,
+    "barrier_present": 80,
+    "barrier_type": 67
+  },
+  "attributes": {
+    "road_type": {
+      "count": 80,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "unknown_reference_count": 0,
+      "known_reference_accuracy": 1.0,
+      "per_class": {
+        "footway": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 14
+        },
+        "living_street": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "path": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "pedestrian": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 2
+        },
+        "residential": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 4
+        },
+        "service": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 58
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "footway",
+          "living_street",
+          "path",
+          "pedestrian",
+          "residential",
+          "service"
+        ],
+        "values": [
+          [
+            14,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            58
+          ]
+        ]
+      }
+    },
+    "speed_limit_kmh": {
+      "count": 80,
+      "accuracy": 0.7,
+      "precision": 0.48999999999999994,
+      "recall": 0.7,
+      "f1_score": 0.5764705882352941,
+      "macro_f1": 0.16470588235294117,
+      "unknown_reference_count": 56,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "10": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 4
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "30": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 12
+        },
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 7
+        },
+        "unknown": {
+          "precision": 0.7,
+          "recall": 1.0,
+          "f1_score": 0.8235294117647058,
+          "support": 56
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "10",
+          "20",
+          "30",
+          "5",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            56
+          ]
+        ]
+      },
+      "known_exact_accuracy": 0.0
+    },
+    "surface": {
+      "count": 80,
+      "accuracy": 0.475,
+      "precision": 0.22562500000000002,
+      "recall": 0.475,
+      "f1_score": 0.3059322033898305,
+      "macro_f1": 0.08050847457627118,
+      "unknown_reference_count": 38,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "asphalt": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 24
+        },
+        "cobblestone": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "concrete": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 3
+        },
+        "gravel": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 2
+        },
+        "ground": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "paved": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 3
+        },
+        "paving_stones": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 8
+        },
+        "unknown": {
+          "precision": 0.475,
+          "recall": 1.0,
+          "f1_score": 0.6440677966101694,
+          "support": 38
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "asphalt",
+          "cobblestone",
+          "concrete",
+          "gravel",
+          "ground",
+          "paved",
+          "paving_stones",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            24
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            38
+          ]
+        ]
+      }
+    },
+    "oneway": {
+      "count": 80,
+      "accuracy": 0.875,
+      "precision": 0.765625,
+      "recall": 0.875,
+      "f1_score": 0.8166666666666667,
+      "macro_f1": 0.3111111111111111,
+      "unknown_reference_count": 70,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "false": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "true": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 9
+        },
+        "unknown": {
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1_score": 0.9333333333333333,
+          "support": 70
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "false",
+          "true",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            9
+          ],
+          [
+            0,
+            0,
+            70
+          ]
+        ]
+      }
+    },
+    "barrier_present": {
+      "count": 80,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "macro_f1": 0.0,
+      "unknown_reference_count": 0,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "true": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 80
+        },
+        "unknown": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "true",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            80
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "barrier_type": {
+      "count": 80,
+      "accuracy": 0.1625,
+      "precision": 0.026406250000000003,
+      "recall": 0.1625,
+      "f1_score": 0.045430107526881716,
+      "macro_f1": 0.06989247311827956,
+      "unknown_reference_count": 13,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "bollard": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 2
+        },
+        "gate": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 34
+        },
+        "lift_gate": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 31
+        },
+        "unknown": {
+          "precision": 0.1625,
+          "recall": 1.0,
+          "f1_score": 0.27956989247311825,
+          "support": 13
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "bollard",
+          "gate",
+          "lift_gate",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            34
+          ],
+          [
+            0,
+            0,
+            0,
+            31
+          ],
+          [
+            0,
+            0,
+            0,
+            13
+          ]
+        ]
+      }
+    },
+    "anomaly_flag": {
+      "count": 80,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "unknown_reference_count": 0,
+      "known_reference_accuracy": 1.0,
+      "per_class": {
+        "false": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 80
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "false"
+        ],
+        "values": [
+          [
+            80
+          ]
+        ]
+      }
+    },
+    "input_instruction_detected": {
+      "count": 80,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "unknown_reference_count": 0,
+      "known_reference_accuracy": 1.0,
+      "per_class": {
+        "false": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 80
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "false"
+        ],
+        "values": [
+          [
+            80
+          ]
+        ]
+      }
+    }
+  },
+  "mode": "langchain",
+  "prompt": "v4",
+  "model": "qwen2.5:3b",
+  "split": "dev",
+  "dataset_sha256": "8c62398c36b596df09e3011c157d8295f0b8c9f74fa6751a524d547fe127ab35",
+  "run_at": "2026-10-11T18:30:09.828886+00:00",
+  "model_digests": [
+    "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b"
+  ],
+  "cached_responses": 35,
+  "task": "OSM-derived controlled text extraction; synthetic hard scenarios; NOT independently verified map truth."
+}

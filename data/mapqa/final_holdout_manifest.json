@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-10-11T18:34:52.308197+00:00",
+  "seed": 31415,
+  "n": 40,
+  "file_sha256": {
+    "evidence_test_final.json": "70d0b8e783679920ab86cae206491f741d18397e4cb1371d0dee6afe11937ca3"
+  },
+  "excluded_groups": "All evidence_dev and initial evidence_test groups",
+  "selection": "Only source-connected barrier roads; nonrepresentative positive-barrier sample.",
+  "reason": "Initial hold-out consumed by v5. v6 contract corrected from development raw responses; fresh final test reserved before v6 selection.",
+  "independent_field_verification": false
+}

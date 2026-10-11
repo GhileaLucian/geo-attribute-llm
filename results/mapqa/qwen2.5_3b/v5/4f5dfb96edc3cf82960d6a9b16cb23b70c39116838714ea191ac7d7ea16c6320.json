@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"residential\",\"confidence_score\":0.5,\"reasoning_cot\":\"Tag maxspeed=30 is overridden by the contradictory text.\",\"anomaly_flag\":true,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:32:04.0572683Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1324563600,
+      "load_duration": 9381000,
+      "prompt_eval_count": 731,
+      "prompt_eval_duration": 340933000,
+      "eval_count": 45,
+      "eval_duration": 964263000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3c-77ac-7543-b8a2-5136093358e3-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 731,
+      "output_tokens": 45,
+      "total_tokens": 776
+    }
+  },
+  "token_usage": {
+    "input_tokens": 731,
+    "output_tokens": 45,
+    "total_tokens": 776
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "residential",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "Tag maxspeed=30 is overridden by the contradictory text.",
+    "anomaly_flag": true,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "4f5dfb96edc3cf82960d6a9b16cb23b70c39116838714ea191ac7d7ea16c6320",
+  "elapsed_s": 1.3334740999853238,
+  "recorded_at": "2026-10-11T18:32:04.062278+00:00"
+}

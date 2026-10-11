@@ -1,0 +1,1052 @@
+[
+  {
+    "way_id": "26229066",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "29291298",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "31619902",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "42157255",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "49989180",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "123835907",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "188148197",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "266084205",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "267732225",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "273813264",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "277515450",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "307882567",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "338004135",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "340690199",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "344266101",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "344266106",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "348015438",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "348015440",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "348015441",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "348015442",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "348015443",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "357882484",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "377827010",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "388396640",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "388396659",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "388399693",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "388399702",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "412023237",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "414327139",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "438361473",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "439032665",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "466410196",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "479011828",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "482737544",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "518516976",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "525510132",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "525510171",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "585545352",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "606868543",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "639462379",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "649531973",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "677218668",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "677657787",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "678887438",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "693750200",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "693790010",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "694304365",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "701650590",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "831196714",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "855266096",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "855363511",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "855909862",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "856396008",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "856396011",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "856663671",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "856711832",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "857145845",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "857181039",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "858046271",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "858073476",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "880406978",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "892692966",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "914636835",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "914636840",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "917075137",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "920854863",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "927531468",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "933046342",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "954169215",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "954169216",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "993082086",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "995469377",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "999035094",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "999035097",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "999035098",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "999035099",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1041380815",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1053640888",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1056384264",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1056384302",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1056478494",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1056478497",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1056478498",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1056478499",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1056478501",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1056478502",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1056478537",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1056478539",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1064048279",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1064048280",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1065047180",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1101500287",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1118896498",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1137564042",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1151055071",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1152358122",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1156059487",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1159707989",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1161610053",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1164376140",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1165372905",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1165372907",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1165373268",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1169859356",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1169860005",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1169860009",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1169861937",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1169861939",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1169866580",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1169868341",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1169899002",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1169904287",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1169929841",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1173875438",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1173875439",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1173875442",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1175555928",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1175566782",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1185700370",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1185772014",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1185772016",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1187568158",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1190132082",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1192126313",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1198585767",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1199402662",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1201636321",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1201636341",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1201637795",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1201637796",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1204821270",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1204822106",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1212438771",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1214773877",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1219776711",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1220462201",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1223158208",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1223158210",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1223175056",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1227318240",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1227318241",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1232413321",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1232453176",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1237218948",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1237656829",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1237656830",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1237656838",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1237656850",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1238517907",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1238517910",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1238803273",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1238836067",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1239052756",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1242199381",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1247781474",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1292315175",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1308980177",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1353611027",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1366654248",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1411165923",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1411165924",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1411165929",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1411165930",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1415939342",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1417065957",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1467149959",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1467270877",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1467270896",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1467288381",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1467288407",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1467288414",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1467333885",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1467333914",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1475469042",
+    "category": "self_intersection",
+    "severity": "review"
+  },
+  {
+    "way_id": "1484940742",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1487706963",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1487706979",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1487706980",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1487706983",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1488260029",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1488260030",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1488260031",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1488260034",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1488260035",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1488303473",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1517004586",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1534259024",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1534893748",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1534893751",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1534893756",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1534893758",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1534893796",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1534893841",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1535561475",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1546922909",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1546922910",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1554003788",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1554003792",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1554003794",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1554003795",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1554806081",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1554806082",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1554877166",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1554877170",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1554877174",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1555090322",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1555090330",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1555189986",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1555189989",
+    "category": "very_short_geometry",
+    "severity": "review"
+  },
+  {
+    "way_id": "1555874579",
+    "category": "very_short_geometry",
+    "severity": "review"
+  }
+]

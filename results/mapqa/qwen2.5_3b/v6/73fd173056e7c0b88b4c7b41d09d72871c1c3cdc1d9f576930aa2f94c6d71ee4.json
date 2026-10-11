@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"residential\",\"speed_limit_kmh\":30,\"barrier_present\":true,\"barrier_type\":\"lift_gate\",\"surface\":\"asphalt\",\"oneway\":null,\"confidence_score\":0.5,\"reasoning_cot\":\"Tag maxspeed=30 takes precedence over context description. Barrier is explicitly stated.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:34:39.641538Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1734999600,
+      "load_duration": 9831000,
+      "prompt_eval_count": 789,
+      "prompt_eval_duration": 263509000,
+      "eval_count": 80,
+      "eval_duration": 1453936000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3e-d5d1-7173-9bdb-e6ea211595ce-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 789,
+      "output_tokens": 80,
+      "total_tokens": 869
+    }
+  },
+  "token_usage": {
+    "input_tokens": 789,
+    "output_tokens": 80,
+    "total_tokens": 869
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "residential",
+    "speed_limit_kmh": 30,
+    "barrier_present": true,
+    "barrier_type": "lift_gate",
+    "surface": "asphalt",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "Tag maxspeed=30 takes precedence over context description. Barrier is explicitly stated.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "73fd173056e7c0b88b4c7b41d09d72871c1c3cdc1d9f576930aa2f94c6d71ee4",
+  "elapsed_s": 1.7420295999909285,
+  "recorded_at": "2026-10-11T18:34:39.645271+00:00"
+}

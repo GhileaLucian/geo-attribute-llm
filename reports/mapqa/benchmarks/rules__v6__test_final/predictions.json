@@ -1,0 +1,762 @@
+[
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1138270890"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-897177177"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "concrete",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-221452296"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1554806079"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-586976397"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-26433067"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-917143884"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1329108518"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-911239843"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1201637798"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-321421021"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-678855969"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-584407108"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-679033926"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "bollard",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-714479680"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1275433085"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-957442058"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-894331119"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-701238310"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-867221787"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "paved",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-987146386"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1309443548"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1022655481"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-993082085"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-833863533"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1190532015"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-900676387"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": false,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-356910516"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "paving_stones",
+      "oneway": true,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-939771015"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "gravel",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1201353254"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-244911085"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1152358109"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-606868552"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1555090321"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1247781474"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1124475485"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1275399053"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1504445190"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "concrete",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1227397602"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "final-1467180503"
+  }
+]

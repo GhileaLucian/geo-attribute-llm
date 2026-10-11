@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'footway', and the surface as 'asphalt'. The barrier is marked as 'unknown'. No conflicting observations or anomalies are provided in the input data.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:28:40.0419212Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2098553800,
+      "load_duration": 10203500,
+      "prompt_eval_count": 357,
+      "prompt_eval_duration": 163110000,
+      "eval_count": 87,
+      "eval_duration": 1917274000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c39-57b6-7bb0-859b-1456aa47b021-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 357,
+      "output_tokens": 87,
+      "total_tokens": 444
+    }
+  },
+  "token_usage": {
+    "input_tokens": 357,
+    "output_tokens": 87,
+    "total_tokens": 444
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "footway",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input data specifies the road type as 'footway', and the surface as 'asphalt'. The barrier is marked as 'unknown'. No conflicting observations or anomalies are provided in the input data.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "0be7c49a40e5510b527ccc1dffe72786e17be28a018e23856fb88632639e89e8",
+  "elapsed_s": 2.1064441000053193,
+  "recorded_at": "2026-10-11T18:28:40.046538+00:00"
+}

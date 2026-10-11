@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.\"\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:29:24.682031Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1964141900,
+      "load_duration": 8993100,
+      "prompt_eval_count": 349,
+      "prompt_eval_duration": 160747000,
+      "eval_count": 78,
+      "eval_duration": 1786830000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3a-069c-7b10-8bac-3b306e826ba3-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 349,
+      "output_tokens": 78,
+      "total_tokens": 427
+    }
+  },
+  "token_usage": {
+    "input_tokens": 349,
+    "output_tokens": 78,
+    "total_tokens": 427
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "fdd0a5a073d207a2abd39efc429cb4efd64fc51ff470b1ae31226e62203dbbd4",
+  "elapsed_s": 1.97269779999624,
+  "recorded_at": "2026-10-11T18:29:24.685998+00:00"
+}

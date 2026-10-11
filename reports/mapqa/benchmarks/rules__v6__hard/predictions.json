@@ -1,0 +1,287 @@
+[
+  {
+    "status": "success",
+    "output": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "bollard",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-01"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-02"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-03"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-04"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-05"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": true,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-06"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-07"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-08"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-09"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-10"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "primary",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "guard_rail",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-11"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": false,
+      "barrier_type": "none",
+      "surface": "unknown",
+      "oneway": false,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-12"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "gravel",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-13"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": true
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-14"
+  },
+  {
+    "status": "success",
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": 140,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": true,
+      "input_instruction_detected": false
+    },
+    "token_usage": {},
+    "model_digest": "not-applicable",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-15"
+  }
+]

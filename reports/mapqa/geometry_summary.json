@@ -1,0 +1,21 @@
+{
+  "roads": 14591,
+  "barrier_nodes": 849,
+  "excluded_geometries": 0,
+  "metric_crs": "EPSG:32634",
+  "topological_associations": 1076,
+  "nearest_candidates": 65,
+  "unassociated_barriers": 5,
+  "qa_issue_count": 210,
+  "spatial_error_taxonomy": [
+    "missing_geometry",
+    "invalid_geometry",
+    "very_short_geometry",
+    "self_intersection",
+    "unusual_residential_speed",
+    "unrecognized_oneway",
+    "nearest_candidate",
+    "unassociated"
+  ],
+  "note": "QA flags are review suggestions, not verified map errors. Nearest is not a confirmed connection."
+}

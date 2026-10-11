@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"service\",\"confidence_score\":0.5,\"reasoning_cot\":\"No OSM tags provided, using context description. Surface is specified as paving_stones. Barrier is explicitly observed as lift_gate.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:32:42.3028444Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1337060100,
+      "load_duration": 10959600,
+      "prompt_eval_count": 722,
+      "prompt_eval_duration": 138572000,
+      "eval_count": 57,
+      "eval_duration": 1177202000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3d-0d04-70a3-a4ba-aa05a8779b7d-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 722,
+      "output_tokens": 57,
+      "total_tokens": 779
+    }
+  },
+  "token_usage": {
+    "input_tokens": 722,
+    "output_tokens": 57,
+    "total_tokens": 779
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "No OSM tags provided, using context description. Surface is specified as paving_stones. Barrier is explicitly observed as lift_gate.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "91071cd420cf5a5e12292dca36712eb84e3907fdf15264fc57dc67dd3ff2be7e",
+  "elapsed_s": 1.3459169999987353,
+  "recorded_at": "2026-10-11T18:32:42.306669+00:00"
+}

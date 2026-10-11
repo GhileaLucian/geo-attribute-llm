@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"pedestrian\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a pedestrian category, with asfalt (asphalt) as the surface and stalpisori (bollard) as the barrier. There are no conflicting observations or anomalies noted in the provided data.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:28:50.5494935Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2223340700,
+      "load_duration": 9919800,
+      "prompt_eval_count": 357,
+      "prompt_eval_duration": 162976000,
+      "eval_count": 96,
+      "eval_duration": 2042498000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c39-8045-7f63-8a7c-a5a76f1f3530-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 357,
+      "output_tokens": 96,
+      "total_tokens": 453
+    }
+  },
+  "token_usage": {
+    "input_tokens": 357,
+    "output_tokens": 96,
+    "total_tokens": 453
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "pedestrian",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input data specifies the road as a pedestrian category, with asfalt (asphalt) as the surface and stalpisori (bollard) as the barrier. There are no conflicting observations or anomalies noted in the provided data.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "21b68ec05f8879f08af83bcb5125f23e143a95b7c57e8ae3cf31e4fa516ff1e8",
+  "elapsed_s": 2.2297269999980927,
+  "recorded_at": "2026-10-11T18:28:50.552149+00:00"
+}

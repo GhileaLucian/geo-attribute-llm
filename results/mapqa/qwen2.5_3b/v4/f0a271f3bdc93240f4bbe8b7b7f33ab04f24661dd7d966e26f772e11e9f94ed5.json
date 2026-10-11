@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service category, with asphalt surface and one-way traffic. A lift_gate barrier was observed on the road.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:29:35.2261777Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1978628900,
+      "load_duration": 12898000,
+      "prompt_eval_count": 358,
+      "prompt_eval_duration": 210343000,
+      "eval_count": 76,
+      "eval_duration": 1748083000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3a-2fbe-7721-9153-91b622656d88-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 358,
+      "output_tokens": 76,
+      "total_tokens": 434
+    }
+  },
+  "token_usage": {
+    "input_tokens": 358,
+    "output_tokens": 76,
+    "total_tokens": 434
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input data specifies the road as a service category, with asphalt surface and one-way traffic. A lift_gate barrier was observed on the road.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "f0a271f3bdc93240f4bbe8b7b7f33ab04f24661dd7d966e26f772e11e9f94ed5",
+  "elapsed_s": 1.9863944000098854,
+  "recorded_at": "2026-10-11T18:29:35.229597+00:00"
+}

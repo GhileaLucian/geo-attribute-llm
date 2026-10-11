@@ -1,0 +1,4482 @@
+[
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service category, with a numeric maxspeed of 30 km/h, concrete surface, and no one-way restriction. There is a barrier of type lift_gate. No anomalies are detected.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:27.3431836Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2090952700,
+        "load_duration": 8760300,
+        "prompt_eval_count": 377,
+        "prompt_eval_duration": 574501000,
+        "eval_count": 74,
+        "eval_duration": 1499722000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2613-7fe3-887a-1f67d97ab759-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 377,
+        "output_tokens": 74,
+        "total_tokens": 451
+      }
+    },
+    "token_usage": {
+      "input_tokens": 377,
+      "output_tokens": 74,
+      "total_tokens": 451
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a service category, with a numeric maxspeed of 30 km/h, concrete surface, and no one-way restriction. There is a barrier of type lift_gate. No anomalies are detected.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "f7257b18ed68e378ec218dedaf9677a9b657c9b428da73afdb2a82f2790ed002",
+    "elapsed_s": 2.134784399997443,
+    "recorded_at": "2026-10-11T18:28:27.347097+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-987114526"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-896274660"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service', with a numeric maxspeed of 10 km/h and a surface of 'asphalt'. There is a barrier described as a 'lift_gate' on the road. No conflicting observations or anomalies are detected based on the provided data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:31.3523455Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2047205800,
+        "load_duration": 10828300,
+        "prompt_eval_count": 374,
+        "prompt_eval_duration": 277888000,
+        "eval_count": 87,
+        "eval_duration": 1751243000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-35f8-75c1-9de9-44385d3f4c05-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 374,
+        "output_tokens": 87,
+        "total_tokens": 461
+      }
+    },
+    "token_usage": {
+      "input_tokens": 374,
+      "output_tokens": 87,
+      "total_tokens": 461
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service', with a numeric maxspeed of 10 km/h and a surface of 'asphalt'. There is a barrier described as a 'lift_gate' on the road. No conflicting observations or anomalies are detected based on the provided data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "0b63e53ef8291ec87817d98ff865b778ad776580ff6aba02e9db1553cb174e97",
+    "elapsed_s": 2.055614200013224,
+    "recorded_at": "2026-10-11T18:28:31.357576+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-107938804"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road category as 'service' and indicates that a barrier is observed on the road, with the value 'unknown'. No observed road facts were provided in the JSON input, so the only information available is the specified road category and the observed barrier status.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:33.664941Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2296725400,
+        "load_duration": 9114300,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 157992000,
+        "eval_count": 100,
+        "eval_duration": 2123047000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-3e07-7bf3-b14b-41ce9d575d3a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 100,
+        "total_tokens": 448
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 100,
+      "total_tokens": 448
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road category as 'service' and indicates that a barrier is observed on the road, with the value 'unknown'. No observed road facts were provided in the JSON input, so the only information available is the specified road category and the observed barrier status.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "96e01d4ec0c42515154859b3583db158cb6515572d4dc7aacdd474757ca1dcac",
+    "elapsed_s": 2.303998399991542,
+    "recorded_at": "2026-10-11T18:28:33.668386+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1043351607"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'footway', the surface as 'paved', and the presence of a barrier as 'gate'. There are no conflicting observations or anomalies provided in the input data. The context description confirms these tags.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:35.9871839Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2308950400,
+        "load_duration": 12380500,
+        "prompt_eval_count": 356,
+        "prompt_eval_duration": 204549000,
+        "eval_count": 96,
+        "eval_duration": 2085045999,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-470d-7883-bea2-ca76deea35cd-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 356,
+        "output_tokens": 96,
+        "total_tokens": 452
+      }
+    },
+    "token_usage": {
+      "input_tokens": 356,
+      "output_tokens": 96,
+      "total_tokens": 452
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'footway', the surface as 'paved', and the presence of a barrier as 'gate'. There are no conflicting observations or anomalies provided in the input data. The context description confirms these tags.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "8ceca068232878ac61aecb0af9daf6cd49f9b76e8d4ca51b027483a0fc8708a5",
+    "elapsed_s": 2.3171953999844845,
+    "recorded_at": "2026-10-11T18:28:35.991385+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-678894817"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1156059484"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service category, with a numeric maxspeed of 5 km/h, asphalt surface, and a lift gate barrier. There are no conflicting observations or anomalies noted in the provided data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:37.927104Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1915120300,
+        "load_duration": 8503800,
+        "prompt_eval_count": 378,
+        "prompt_eval_duration": 286020000,
+        "eval_count": 73,
+        "eval_duration": 1613146000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-502b-7191-9ae0-28bd0b17da8a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 378,
+        "output_tokens": 73,
+        "total_tokens": 451
+      }
+    },
+    "token_usage": {
+      "input_tokens": 378,
+      "output_tokens": 73,
+      "total_tokens": 451
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a service category, with a numeric maxspeed of 5 km/h, asphalt surface, and a lift gate barrier. There are no conflicting observations or anomalies noted in the provided data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "8f071683f0cbb589d2afbb7bcebd11ea4ddfbef342c1fadf505c117f8c07e2a4",
+    "elapsed_s": 1.9263638000120409,
+    "recorded_at": "2026-10-11T18:28:37.932671+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1063554413"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1565172679"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'footway', and the surface as 'asphalt'. The barrier is marked as 'unknown'. No conflicting observations or anomalies are provided in the input data.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:40.0419212Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2098553800,
+        "load_duration": 10203500,
+        "prompt_eval_count": 357,
+        "prompt_eval_duration": 163110000,
+        "eval_count": 87,
+        "eval_duration": 1917274000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-57b6-7bb0-859b-1456aa47b021-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 357,
+        "output_tokens": 87,
+        "total_tokens": 444
+      }
+    },
+    "token_usage": {
+      "input_tokens": 357,
+      "output_tokens": 87,
+      "total_tokens": 444
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'footway', and the surface as 'asphalt'. The barrier is marked as 'unknown'. No conflicting observations or anomalies are provided in the input data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "0be7c49a40e5510b527ccc1dffe72786e17be28a018e23856fb88632639e89e8",
+    "elapsed_s": 2.1064441000053193,
+    "recorded_at": "2026-10-11T18:28:40.046538+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1217764262"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service', surface 'asphalt', and a barrier observed as 'lift_gate'. No conflicting observations or anomalies are provided in the input data.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:42.0144877Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1956155800,
+        "load_duration": 11837700,
+        "prompt_eval_count": 353,
+        "prompt_eval_duration": 162011000,
+        "eval_count": 84,
+        "eval_duration": 1774230000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-5ff8-7df0-8881-91a8e718c7ed-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 353,
+        "output_tokens": 84,
+        "total_tokens": 437
+      }
+    },
+    "token_usage": {
+      "input_tokens": 353,
+      "output_tokens": 84,
+      "total_tokens": 437
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service', surface 'asphalt', and a barrier observed as 'lift_gate'. No conflicting observations or anomalies are provided in the input data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "6b917fe92efbeeafb1e82872af656e1970c90338079509f7049cb2b3eb5a6923",
+    "elapsed_s": 1.9658331999962684,
+    "recorded_at": "2026-10-11T18:28:42.018349+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-169149959"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'footway' and the surface as 'pavele' (paving stones). There is no information about barriers. The context description confirms these tags.\",\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:43.9498033Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1920783200,
+        "load_duration": 12015800,
+        "prompt_eval_count": 356,
+        "prompt_eval_duration": 196788000,
+        "eval_count": 78,
+        "eval_duration": 1704146000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-67ac-7301-88df-d86bb4093a1c-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 356,
+        "output_tokens": 78,
+        "total_tokens": 434
+      }
+    },
+    "token_usage": {
+      "input_tokens": 356,
+      "output_tokens": 78,
+      "total_tokens": 434
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'footway' and the surface as 'pavele' (paving stones). There is no information about barriers. The context description confirms these tags.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "a06ae7d320ef436cea04151b031762845dc33b50a7ef1f92e19d63faf1b883fd",
+    "elapsed_s": 1.9304248999978881,
+    "recorded_at": "2026-10-11T18:28:43.953557+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1166328070"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input does not provide any observed road facts. The context description specifies the road category as 'footway', surface as 'ground', and a barrier is observed as 'unknown'. No numeric maxspeed or other observed facts are provided.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:46.1715605Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2208109100,
+        "load_duration": 10130700,
+        "prompt_eval_count": 353,
+        "prompt_eval_duration": 158552000,
+        "eval_count": 92,
+        "eval_duration": 2032009000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-6f3a-7c90-8613-10bbef34f2e4-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 353,
+        "output_tokens": 92,
+        "total_tokens": 445
+      }
+    },
+    "token_usage": {
+      "input_tokens": 353,
+      "output_tokens": 92,
+      "total_tokens": 445
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input does not provide any observed road facts. The context description specifies the road category as 'footway', surface as 'ground', and a barrier is observed as 'unknown'. No numeric maxspeed or other observed facts are provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "ccb52ed134e0b81731ad77fc439372bf63fb330301ce5f4d8f0cc0344664246c",
+    "elapsed_s": 2.2161657999968156,
+    "recorded_at": "2026-10-11T18:28:46.174683+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-411074276"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service', with a numeric maxspeed of 5 km/h and asfalt (asphalt) surface. There is a door (poarta) mentioned as a barrier on the road. No conflicting observations or anomalies are detected based on the provided data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:48.3126923Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2129107100,
+        "load_duration": 8615800,
+        "prompt_eval_count": 370,
+        "prompt_eval_duration": 282619000,
+        "eval_count": 89,
+        "eval_duration": 1829123000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-77e6-7290-a66e-e85ea12cca44-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 370,
+        "output_tokens": 89,
+        "total_tokens": 459
+      }
+    },
+    "token_usage": {
+      "input_tokens": 370,
+      "output_tokens": 89,
+      "total_tokens": 459
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service', with a numeric maxspeed of 5 km/h and asfalt (asphalt) surface. There is a door (poarta) mentioned as a barrier on the road. No conflicting observations or anomalies are detected based on the provided data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "5f1bf8e14bc982ed3cfb7d87a7599ada51d22608fc92540ff4dbe1d145ab0e89",
+    "elapsed_s": 2.1370209000015166,
+    "recorded_at": "2026-10-11T18:28:48.316003+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1062825462"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-896747610"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"pedestrian\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a pedestrian category, with asfalt (asphalt) as the surface and stalpisori (bollard) as the barrier. There are no conflicting observations or anomalies noted in the provided data.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:50.5494935Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2223340700,
+        "load_duration": 9919800,
+        "prompt_eval_count": 357,
+        "prompt_eval_duration": 162976000,
+        "eval_count": 96,
+        "eval_duration": 2042498000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-8045-7f63-8a7c-a5a76f1f3530-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 357,
+        "output_tokens": 96,
+        "total_tokens": 453
+      }
+    },
+    "token_usage": {
+      "input_tokens": 357,
+      "output_tokens": 96,
+      "total_tokens": 453
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a pedestrian category, with asfalt (asphalt) as the surface and stalpisori (bollard) as the barrier. There are no conflicting observations or anomalies noted in the provided data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "21b68ec05f8879f08af83bcb5125f23e143a95b7c57e8ae3cf31e4fa516ff1e8",
+    "elapsed_s": 2.2297269999980927,
+    "recorded_at": "2026-10-11T18:28:50.552149+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1075037724"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment of type 'footway' and a barrier observed as 'gate'. No other tags or context are provided, so these are the observed facts.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:52.5687281Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2007246000,
+        "load_duration": 8615000,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 161520000,
+        "eval_count": 81,
+        "eval_duration": 1829309000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-8900-7941-a223-b45cfd4b8d57-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 81,
+        "total_tokens": 430
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 81,
+      "total_tokens": 430
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment of type 'footway' and a barrier observed as 'gate'. No other tags or context are provided, so these are the observed facts.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "c8890e0ce16a371de0768733163ffe43a509c9c544643629ba5e393e681ac638",
+    "elapsed_s": 2.0148173000197858,
+    "recorded_at": "2026-10-11T18:28:52.573054+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-581522468"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service', the surface as 'asphalt', and a barrier as 'lift_gate'. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:54.6413949Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2058862900,
+        "load_duration": 9572200,
+        "prompt_eval_count": 360,
+        "prompt_eval_duration": 203174000,
+        "eval_count": 86,
+        "eval_duration": 1838140000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-90e5-7ec1-a69b-ebebb49b1ffe-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 360,
+        "output_tokens": 86,
+        "total_tokens": 446
+      }
+    },
+    "token_usage": {
+      "input_tokens": 360,
+      "output_tokens": 86,
+      "total_tokens": 446
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service', the surface as 'asphalt', and a barrier as 'lift_gate'. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "a1dfe5ddd0c73e2a24bd2e8ace253a835597b0ce0c7669750c00a35f5d333e4d",
+    "elapsed_s": 2.066817600018112,
+    "recorded_at": "2026-10-11T18:28:54.644602+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1066963672"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input does not provide any observed road facts, only the OSM tags and context description. The context description indicates the road category is 'service', the surface is 'paved', and there is an unknown barrier. No observed facts are provided.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:56.9446491Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2291360700,
+        "load_duration": 8660200,
+        "prompt_eval_count": 352,
+        "prompt_eval_duration": 162173000,
+        "eval_count": 95,
+        "eval_duration": 2113123000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-98fc-76e3-9810-ac259d5228be-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 352,
+        "output_tokens": 95,
+        "total_tokens": 447
+      }
+    },
+    "token_usage": {
+      "input_tokens": 352,
+      "output_tokens": 95,
+      "total_tokens": 447
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input does not provide any observed road facts, only the OSM tags and context description. The context description indicates the road category is 'service', the surface is 'paved', and there is an unknown barrier. No observed facts are provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "e5a7e179b2ceb1c12037c21da8e3b7877eedf34dee7338f984da5ec8376b8d0d",
+    "elapsed_s": 2.2981208999990486,
+    "recorded_at": "2026-10-11T18:28:56.947904+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-400792111"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"pedestrian\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a pedestrian category with a surface of pavele (paving stones) and an unknown barrier. No conflicting observations or anomalies are provided in the input data.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:58.999154Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2042120900,
+        "load_duration": 9629700,
+        "prompt_eval_count": 355,
+        "prompt_eval_duration": 197904000,
+        "eval_count": 85,
+        "eval_duration": 1827010000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-a1fc-73a3-a228-4ab18479cc3a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 355,
+        "output_tokens": 85,
+        "total_tokens": 440
+      }
+    },
+    "token_usage": {
+      "input_tokens": 355,
+      "output_tokens": 85,
+      "total_tokens": 440
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a pedestrian category with a surface of pavele (paving stones) and an unknown barrier. No conflicting observations or anomalies are provided in the input data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "0949455a99c54aba33ab7b07e33c6417ddf9a6050ee80a1513e93b3c74368980",
+    "elapsed_s": 2.0503544000093825,
+    "recorded_at": "2026-10-11T18:28:59.003684+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1555090326"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a 'lift_gate'. No other tags or context information are provided.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:00.9679297Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1955384900,
+        "load_duration": 9580200,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 161812000,
+        "eval_count": 77,
+        "eval_duration": 1776513000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-aa03-7842-9023-bca854c1a794-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 77,
+        "total_tokens": 426
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 77,
+      "total_tokens": 426
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a 'lift_gate'. No other tags or context information are provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "aa1342d7cb978481019c25ce80948cf68c927a3fa7ae07d810458fab1302ecc3",
+    "elapsed_s": 1.9627832999976818,
+    "recorded_at": "2026-10-11T18:29:00.971251+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-941748981"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service', a numeric maxspeed of 30 km/h, asphalt surface, and a barrier of 'bariera cu brat' (lift gate). No anomalies are detected as the data is consistent and does not contain conflicting information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:03.3622767Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2382880600,
+        "load_duration": 8070200,
+        "prompt_eval_count": 374,
+        "prompt_eval_duration": 282086000,
+        "eval_count": 101,
+        "eval_duration": 2085341000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-b1b2-7490-9ece-c3b77cccc086-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 374,
+        "output_tokens": 101,
+        "total_tokens": 475
+      }
+    },
+    "token_usage": {
+      "input_tokens": 374,
+      "output_tokens": 101,
+      "total_tokens": 475
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service', a numeric maxspeed of 30 km/h, asphalt surface, and a barrier of 'bariera cu brat' (lift gate). No anomalies are detected as the data is consistent and does not contain conflicting information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "124b28de63c03a89e8fafda98e68dda291f52629a63988437c125695252897f9",
+    "elapsed_s": 2.391088899981696,
+    "recorded_at": "2026-10-11T18:29:03.366413+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-439035256"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a 'service' category, one-way traffic, and a lift_gate barrier. No conflicting observations or anomalies are noted.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:05.3942277Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2018836000,
+        "load_duration": 9205500,
+        "prompt_eval_count": 354,
+        "prompt_eval_duration": 200908000,
+        "eval_count": 77,
+        "eval_duration": 1802408000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-bb0e-7642-9ca1-aab0569dfb4d-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 354,
+        "output_tokens": 77,
+        "total_tokens": 431
+      }
+    },
+    "token_usage": {
+      "input_tokens": 354,
+      "output_tokens": 77,
+      "total_tokens": 431
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a 'service' category, one-way traffic, and a lift_gate barrier. No conflicting observations or anomalies are noted.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "d681a77c91d98ca3eb9a55a6081ef263d457bdf85e108322545e8ea27dd204d9",
+    "elapsed_s": 2.0256599000131246,
+    "recorded_at": "2026-10-11T18:29:05.397476+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1189367624"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"residential\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a residential road with a maxspeed of 30 km/h and asfalt (asphalt) surface. There is a door (poarta) mentioned as a barrier. No conflicting observations or anomalies are detected.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:07.6760372Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2269816100,
+        "load_duration": 9121700,
+        "prompt_eval_count": 371,
+        "prompt_eval_duration": 280937000,
+        "eval_count": 94,
+        "eval_duration": 1972976000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-c2fd-74a0-9158-e2477162b309-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 371,
+        "output_tokens": 94,
+        "total_tokens": 465
+      }
+    },
+    "token_usage": {
+      "input_tokens": 371,
+      "output_tokens": 94,
+      "total_tokens": 465
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a residential road with a maxspeed of 30 km/h and asfalt (asphalt) surface. There is a door (poarta) mentioned as a barrier. No conflicting observations or anomalies are detected.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "bd5f05b97b5a0b5343cc38923d5095b3a25ffd9c344d9c5140543bd429dd5c3f",
+    "elapsed_s": 2.2779346000170335,
+    "recorded_at": "2026-10-11T18:29:07.679883+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-31665014"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a 'lift_gate'. No other tags or context information are provided.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:00.9679297Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1955384900,
+        "load_duration": 9580200,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 161812000,
+        "eval_count": 77,
+        "eval_duration": 1776513000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-aa03-7842-9023-bca854c1a794-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 77,
+        "total_tokens": 426
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 77,
+      "total_tokens": 426
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a 'lift_gate'. No other tags or context information are provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "aa1342d7cb978481019c25ce80948cf68c927a3fa7ae07d810458fab1302ecc3",
+    "elapsed_s": 1.9627832999976818,
+    "recorded_at": "2026-10-11T18:29:00.971251+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-701238307"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service', with a numeric maxspeed of 5 km/h and a surface of 'pavele' (paving stones). There is a barrier described as a 'bariera cu brat' (lift gate). No conflicting observations or anomalies are detected based on the provided information.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:09.9228682Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2224822200,
+        "load_duration": 10836800,
+        "prompt_eval_count": 372,
+        "prompt_eval_duration": 242959000,
+        "eval_count": 95,
+        "eval_duration": 1964168000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-cbf1-7b51-88db-d324248189a3-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 372,
+        "output_tokens": 95,
+        "total_tokens": 467
+      }
+    },
+    "token_usage": {
+      "input_tokens": 372,
+      "output_tokens": 95,
+      "total_tokens": 467
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service', with a numeric maxspeed of 5 km/h and a surface of 'pavele' (paving stones). There is a barrier described as a 'bariera cu brat' (lift gate). No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "cd4f7da22db8c10907c73b34195894e92850f38310e6c29b9a2795682ec16a3d",
+    "elapsed_s": 2.2318313000141643,
+    "recorded_at": "2026-10-11T18:29:09.926123+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-858076179"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"path\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment as a path with a gravel surface and a gate as a barrier. No conflicting observations or anomalies are noted.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:11.7125375Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1777275000,
+        "load_duration": 8592200,
+        "prompt_eval_count": 352,
+        "prompt_eval_duration": 161845000,
+        "eval_count": 74,
+        "eval_duration": 1599108000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-d4ae-7403-94de-fff3e77b83b7-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 352,
+        "output_tokens": 74,
+        "total_tokens": 426
+      }
+    },
+    "token_usage": {
+      "input_tokens": 352,
+      "output_tokens": 74,
+      "total_tokens": 426
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment as a path with a gravel surface and a gate as a barrier. No conflicting observations or anomalies are noted.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "4c4afab2c8e73f9491f95ef420972e976cbfafd50308f37c4dd8c4499e9d07ef",
+    "elapsed_s": 1.7850082000077236,
+    "recorded_at": "2026-10-11T18:29:11.716397+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-690881710"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service', with a numeric maxspeed of 10 km/h and a surface of 'asphalt'. There is a door (poarta) mentioned as a barrier on the road. No conflicting observations or anomalies are detected based on the provided data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:13.8339755Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2108515200,
+        "load_duration": 10134400,
+        "prompt_eval_count": 371,
+        "prompt_eval_duration": 278309000,
+        "eval_count": 88,
+        "eval_duration": 1813113000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-dbac-7bf3-a5fd-98001e542efe-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 371,
+        "output_tokens": 88,
+        "total_tokens": 459
+      }
+    },
+    "token_usage": {
+      "input_tokens": 371,
+      "output_tokens": 88,
+      "total_tokens": 459
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service', with a numeric maxspeed of 10 km/h and a surface of 'asphalt'. There is a door (poarta) mentioned as a barrier on the road. No conflicting observations or anomalies are detected based on the provided data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "eb178c8a460b8fd4f455de11dc1bba2c810c3fde52dfe5d30206f9a0caba6fd3",
+    "elapsed_s": 2.1163080999976955,
+    "recorded_at": "2026-10-11T18:29:13.837280+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-108467060"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-888883314"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:16.3822614Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2534829300,
+        "load_duration": 10101100,
+        "prompt_eval_count": 352,
+        "prompt_eval_duration": 156799000,
+        "eval_count": 109,
+        "eval_duration": 2360205000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-e3f6-7d83-b53f-2e5cae27f19a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 352,
+        "output_tokens": 109,
+        "total_tokens": 461
+      }
+    },
+    "token_usage": {
+      "input_tokens": 352,
+      "output_tokens": 109,
+      "total_tokens": 461
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "059bbc0d31150c5692f0523a60b1995495967d8cb9faec463b5141e2a913ca68",
+    "elapsed_s": 2.5426665999984834,
+    "recorded_at": "2026-10-11T18:29:16.386721+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-466410203"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road category as 'service' and a speed limit of 30 km/h. A barrier, specifically a gate, was observed on the road. No conflicting observations or anomalies were detected.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:18.5888876Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2194717100,
+        "load_duration": 9233300,
+        "prompt_eval_count": 358,
+        "prompt_eval_duration": 201262000,
+        "eval_count": 88,
+        "eval_duration": 1977447000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-ede9-7ce2-b5bd-c3cab9a12be0-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 358,
+        "output_tokens": 88,
+        "total_tokens": 446
+      }
+    },
+    "token_usage": {
+      "input_tokens": 358,
+      "output_tokens": 88,
+      "total_tokens": 446
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road category as 'service' and a speed limit of 30 km/h. A barrier, specifically a gate, was observed on the road. No conflicting observations or anomalies were detected.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "7484edcfb4fbc575dcac9916d006cc503018e6358bfe63a6cde0decf3e1c323e",
+    "elapsed_s": 2.2013326000014786,
+    "recorded_at": "2026-10-11T18:29:18.592194+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-779543394"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:16.3822614Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2534829300,
+        "load_duration": 10101100,
+        "prompt_eval_count": 352,
+        "prompt_eval_duration": 156799000,
+        "eval_count": 109,
+        "eval_duration": 2360205000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-e3f6-7d83-b53f-2e5cae27f19a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 352,
+        "output_tokens": 109,
+        "total_tokens": 461
+      }
+    },
+    "token_usage": {
+      "input_tokens": 352,
+      "output_tokens": 109,
+      "total_tokens": 461
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "059bbc0d31150c5692f0523a60b1995495967d8cb9faec463b5141e2a913ca68",
+    "elapsed_s": 2.5426665999984834,
+    "recorded_at": "2026-10-11T18:29:16.386721+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-858096567"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-880003279"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"residential\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as residential with a maxspeed of 30 km/h and a surface of asphalt. There is a barrier on the road, identified as a lift gate. No conflicting observations or anomalies are detected based on the provided information.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:20.5999536Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1984207800,
+        "load_duration": 11046800,
+        "prompt_eval_count": 372,
+        "prompt_eval_duration": 279645000,
+        "eval_count": 81,
+        "eval_duration": 1687454000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-f696-7fa2-834c-47457ebc2126-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 372,
+        "output_tokens": 81,
+        "total_tokens": 453
+      }
+    },
+    "token_usage": {
+      "input_tokens": 372,
+      "output_tokens": 81,
+      "total_tokens": 453
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as residential with a maxspeed of 30 km/h and a surface of asphalt. There is a barrier on the road, identified as a lift gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "6261af6c3ec16acec06813df2f1b2f9b977bfc3fce320ac6960b81ff2edefde4",
+    "elapsed_s": 1.9916609000065364,
+    "recorded_at": "2026-10-11T18:29:20.603739+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-854987288"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service category, a speed limit of 5 km/h, asphalt surface, one-way traffic, and a lift_gate barrier. No conflicting or anomalous observations are provided.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:22.7062569Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2091913000,
+        "load_duration": 8768600,
+        "prompt_eval_count": 367,
+        "prompt_eval_duration": 238940000,
+        "eval_count": 87,
+        "eval_duration": 1837082000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-fe65-7513-98e4-cb385f3e6e67-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 367,
+        "output_tokens": 87,
+        "total_tokens": 454
+      }
+    },
+    "token_usage": {
+      "input_tokens": 367,
+      "output_tokens": 87,
+      "total_tokens": 454
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a service category, a speed limit of 5 km/h, asphalt surface, one-way traffic, and a lift_gate barrier. No conflicting or anomalous observations are provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "a16274b57783cb7eab500be742c441971c2cd54bb51c0b5e28017f91463fceca",
+    "elapsed_s": 2.098069600004237,
+    "recorded_at": "2026-10-11T18:29:22.709058+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-188147420"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:24.682031Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1964141900,
+        "load_duration": 8993100,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 160747000,
+        "eval_count": 78,
+        "eval_duration": 1786830000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-069c-7b10-8bac-3b306e826ba3-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 78,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 78,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "fdd0a5a073d207a2abd39efc429cb4efd64fc51ff470b1ae31226e62203dbbd4",
+    "elapsed_s": 1.97269779999624,
+    "recorded_at": "2026-10-11T18:29:24.685998+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1237987909"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data provided a road category of 'service', a speed limit of 30 km/h, and a surface of asphalt. A barrier was explicitly observed as a gate. No conflicting observations or anomalies were detected.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:26.8384632Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2142212400,
+        "load_duration": 8785800,
+        "prompt_eval_count": 362,
+        "prompt_eval_duration": 239250000,
+        "eval_count": 89,
+        "eval_duration": 1885810000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-0e57-7883-8dcc-39f667730d7f-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 362,
+        "output_tokens": 89,
+        "total_tokens": 451
+      }
+    },
+    "token_usage": {
+      "input_tokens": 362,
+      "output_tokens": 89,
+      "total_tokens": 451
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data provided a road category of 'service', a speed limit of 30 km/h, and a surface of asphalt. A barrier was explicitly observed as a gate. No conflicting observations or anomalies were detected.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "427b1d4a44d5b74b67a08c9916ef27283f511a41df128e4f4639425dd53b3168",
+    "elapsed_s": 2.1507831000199076,
+    "recorded_at": "2026-10-11T18:29:26.842429+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-305996485"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:16.3822614Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2534829300,
+        "load_duration": 10101100,
+        "prompt_eval_count": 352,
+        "prompt_eval_duration": 156799000,
+        "eval_count": 109,
+        "eval_duration": 2360205000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-e3f6-7d83-b53f-2e5cae27f19a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 352,
+        "output_tokens": 109,
+        "total_tokens": 461
+      }
+    },
+    "token_usage": {
+      "input_tokens": 352,
+      "output_tokens": 109,
+      "total_tokens": 461
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "059bbc0d31150c5692f0523a60b1995495967d8cb9faec463b5141e2a913ca68",
+    "elapsed_s": 2.5426665999984834,
+    "recorded_at": "2026-10-11T18:29:16.386721+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-879928285"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1240092660"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'footway' and the surface as 'pavele' (paving stones). There is no information about barriers. The context description confirms these tags.\",\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:43.9498033Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1920783200,
+        "load_duration": 12015800,
+        "prompt_eval_count": 356,
+        "prompt_eval_duration": 196788000,
+        "eval_count": 78,
+        "eval_duration": 1704146000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-67ac-7301-88df-d86bb4093a1c-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 356,
+        "output_tokens": 78,
+        "total_tokens": 434
+      }
+    },
+    "token_usage": {
+      "input_tokens": 356,
+      "output_tokens": 78,
+      "total_tokens": 434
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'footway' and the surface as 'pavele' (paving stones). There is no information about barriers. The context description confirms these tags.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "a06ae7d320ef436cea04151b031762845dc33b50a7ef1f92e19d63faf1b883fd",
+    "elapsed_s": 1.9304248999978881,
+    "recorded_at": "2026-10-11T18:28:43.953557+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1246879208"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road category as 'service', surface as 'gravel', and a barrier observed as 'gate'. No conflicting or anomalous observations are provided.\",\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:28.7986413Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1932763500,
+        "load_duration": 9934200,
+        "prompt_eval_count": 352,
+        "prompt_eval_duration": 159468000,
+        "eval_count": 71,
+        "eval_duration": 1756714000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-16d0-7a42-a982-8b941b9b6ab8-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 352,
+        "output_tokens": 71,
+        "total_tokens": 423
+      }
+    },
+    "token_usage": {
+      "input_tokens": 352,
+      "output_tokens": 71,
+      "total_tokens": 423
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road category as 'service', surface as 'gravel', and a barrier observed as 'gate'. No conflicting or anomalous observations are provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "6e100414bad774b910f543135d7e7a4e15406d8e4f0eb31321a74bf98f720578",
+    "elapsed_s": 1.9419427000102587,
+    "recorded_at": "2026-10-11T18:29:28.804121+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-690719067"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:16.3822614Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2534829300,
+        "load_duration": 10101100,
+        "prompt_eval_count": 352,
+        "prompt_eval_duration": 156799000,
+        "eval_count": 109,
+        "eval_duration": 2360205000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-e3f6-7d83-b53f-2e5cae27f19a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 352,
+        "output_tokens": 109,
+        "total_tokens": 461
+      }
+    },
+    "token_usage": {
+      "input_tokens": 352,
+      "output_tokens": 109,
+      "total_tokens": 461
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "059bbc0d31150c5692f0523a60b1995495967d8cb9faec463b5141e2a913ca68",
+    "elapsed_s": 2.5426665999984834,
+    "recorded_at": "2026-10-11T18:29:16.386721+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-895922184"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a 'service' category, one-way traffic, and a lift_gate barrier. No conflicting observations or anomalies are noted.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:05.3942277Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2018836000,
+        "load_duration": 9205500,
+        "prompt_eval_count": 354,
+        "prompt_eval_duration": 200908000,
+        "eval_count": 77,
+        "eval_duration": 1802408000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-bb0e-7642-9ca1-aab0569dfb4d-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 354,
+        "output_tokens": 77,
+        "total_tokens": 431
+      }
+    },
+    "token_usage": {
+      "input_tokens": 354,
+      "output_tokens": 77,
+      "total_tokens": 431
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a 'service' category, one-way traffic, and a lift_gate barrier. No conflicting observations or anomalies are noted.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "d681a77c91d98ca3eb9a55a6081ef263d457bdf85e108322545e8ea27dd204d9",
+    "elapsed_s": 2.0256599000131246,
+    "recorded_at": "2026-10-11T18:29:05.397476+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1159336592"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service', a numeric maxspeed of 30 km/h, a surface of 'pavele' (paving stones), and a barrier of 'poarta' (gate). There are no conflicting observations or anomalies noted in the input data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:31.0505316Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2223542200,
+        "load_duration": 12237700,
+        "prompt_eval_count": 370,
+        "prompt_eval_duration": 288698000,
+        "eval_count": 88,
+        "eval_duration": 1913969000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-1e7a-7d03-bd13-aef6d3423c00-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 370,
+        "output_tokens": 88,
+        "total_tokens": 458
+      }
+    },
+    "token_usage": {
+      "input_tokens": 370,
+      "output_tokens": 88,
+      "total_tokens": 458
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service', a numeric maxspeed of 30 km/h, a surface of 'pavele' (paving stones), and a barrier of 'poarta' (gate). There are no conflicting observations or anomalies noted in the input data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "5fc06e9013e0a41dd38996f182988a697876f1d705eefc212bff6c77d926f291",
+    "elapsed_s": 2.2336276000132784,
+    "recorded_at": "2026-10-11T18:29:31.054949+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-814527195"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data provided a road category of 'service', a speed limit of 30 km/h, and a surface of asphalt. A barrier was explicitly observed as a gate. No conflicting observations or anomalies were detected.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:26.8384632Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2142212400,
+        "load_duration": 8785800,
+        "prompt_eval_count": 362,
+        "prompt_eval_duration": 239250000,
+        "eval_count": 89,
+        "eval_duration": 1885810000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-0e57-7883-8dcc-39f667730d7f-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 362,
+        "output_tokens": 89,
+        "total_tokens": 451
+      }
+    },
+    "token_usage": {
+      "input_tokens": 362,
+      "output_tokens": 89,
+      "total_tokens": 451
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data provided a road category of 'service', a speed limit of 30 km/h, and a surface of asphalt. A barrier was explicitly observed as a gate. No conflicting observations or anomalies were detected.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "427b1d4a44d5b74b67a08c9916ef27283f511a41df128e4f4639425dd53b3168",
+    "elapsed_s": 2.1507831000199076,
+    "recorded_at": "2026-10-11T18:29:26.842429+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-694349387"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service road with asphalt surface and one-way traffic. There is a barrier on the road, specifically a lift gate. No conflicting observations or anomalies are detected.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:33.2333482Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2160175800,
+        "load_duration": 13013000,
+        "prompt_eval_count": 365,
+        "prompt_eval_duration": 205614000,
+        "eval_count": 86,
+        "eval_duration": 1933383000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-2740-7211-8216-32581a27ce71-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 365,
+        "output_tokens": 86,
+        "total_tokens": 451
+      }
+    },
+    "token_usage": {
+      "input_tokens": 365,
+      "output_tokens": 86,
+      "total_tokens": 451
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a service road with asphalt surface and one-way traffic. There is a barrier on the road, specifically a lift gate. No conflicting observations or anomalies are detected.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "d3a2405d8210b800b7e1d3504be93abc29a3ca53c2bb17d7667d7790a8b6fcfc",
+    "elapsed_s": 2.1697751999890897,
+    "recorded_at": "2026-10-11T18:29:33.238408+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1215984155"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service category, with asphalt surface and one-way traffic. A lift_gate barrier was observed on the road.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:35.2261777Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1978628900,
+        "load_duration": 12898000,
+        "prompt_eval_count": 358,
+        "prompt_eval_duration": 210343000,
+        "eval_count": 76,
+        "eval_duration": 1748083000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-2fbe-7721-9153-91b622656d88-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 358,
+        "output_tokens": 76,
+        "total_tokens": 434
+      }
+    },
+    "token_usage": {
+      "input_tokens": 358,
+      "output_tokens": 76,
+      "total_tokens": 434
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a service category, with asphalt surface and one-way traffic. A lift_gate barrier was observed on the road.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "f0a271f3bdc93240f4bbe8b7b7f33ab04f24661dd7d966e26f772e11e9f94ed5",
+    "elapsed_s": 1.9863944000098854,
+    "recorded_at": "2026-10-11T18:29:35.229597+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-681370535"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:24.682031Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1964141900,
+        "load_duration": 8993100,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 160747000,
+        "eval_count": 78,
+        "eval_duration": 1786830000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-069c-7b10-8bac-3b306e826ba3-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 78,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 78,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "fdd0a5a073d207a2abd39efc429cb4efd64fc51ff470b1ae31226e62203dbbd4",
+    "elapsed_s": 1.97269779999624,
+    "recorded_at": "2026-10-11T18:29:24.685998+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1169899003"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input does not provide any observed road facts, only the OSM tags and context description. The context description specifies the road category as 'footway', the surface as 'asphalt', and the barrier as 'unknown'. The schema is provided but no observed facts are extracted.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:37.7520336Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2503750500,
+        "load_duration": 10085700,
+        "prompt_eval_count": 353,
+        "prompt_eval_duration": 166676000,
+        "eval_count": 102,
+        "eval_duration": 2319575000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-3790-7420-a7a0-7f48015a5432-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 353,
+        "output_tokens": 102,
+        "total_tokens": 455
+      }
+    },
+    "token_usage": {
+      "input_tokens": 353,
+      "output_tokens": 102,
+      "total_tokens": 455
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input does not provide any observed road facts, only the OSM tags and context description. The context description specifies the road category as 'footway', the surface as 'asphalt', and the barrier as 'unknown'. The schema is provided but no observed facts are extracted.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "0e274acc45b353068e22f26ee8416c5ca26d2cd93eeb4926cabe6d89ea5a3d89",
+    "elapsed_s": 2.512533799977973,
+    "recorded_at": "2026-10-11T18:29:37.757054+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-608215424"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input does not contain any observed road facts. The provided context only specifies the road category as 'footway' and the bariera (barrier) as 'unknown'. There are no observed facts to extract from the JSON input.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:39.7675128Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2001388800,
+        "load_duration": 11162100,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 162365000,
+        "eval_count": 77,
+        "eval_duration": 1820466000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-4165-7293-ba8c-8e017edb1d4e-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 77,
+        "total_tokens": 426
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 77,
+      "total_tokens": 426
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input does not contain any observed road facts. The provided context only specifies the road category as 'footway' and the bariera (barrier) as 'unknown'. There are no observed facts to extract from the JSON input.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "d22d6164468205eeb9e3b858eb76025dc53fe40ea03c987b1163b8c0e8fe4c0a",
+    "elapsed_s": 2.011106399993878,
+    "recorded_at": "2026-10-11T18:29:39.772398+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-896809798"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"residential\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'residential' and a barrier observed as a 'gate'. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:41.8288036Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2046666000,
+        "load_duration": 11376900,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 165731000,
+        "eval_count": 82,
+        "eval_duration": 1861574000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-4945-7372-8c57-be8924a6979c-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 82,
+        "total_tokens": 430
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 82,
+      "total_tokens": 430
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'residential' and a barrier observed as a 'gate'. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "924a3f332e12f8ab2dd4bf54f23dfffb4392bcc04a5b4c2c864dd756623f894e",
+    "elapsed_s": 2.0554229999834206,
+    "recorded_at": "2026-10-11T18:29:41.833207+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1486876308"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:24.682031Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1964141900,
+        "load_duration": 8993100,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 160747000,
+        "eval_count": 78,
+        "eval_duration": 1786830000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-069c-7b10-8bac-3b306e826ba3-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 78,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 78,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "fdd0a5a073d207a2abd39efc429cb4efd64fc51ff470b1ae31226e62203dbbd4",
+    "elapsed_s": 1.97269779999624,
+    "recorded_at": "2026-10-11T18:29:24.685998+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-994996522"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-287684416"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'footway' and the surface as 'pavele' (paving stones). There is no information about barriers. The context description confirms these tags.\",\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:43.9498033Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1920783200,
+        "load_duration": 12015800,
+        "prompt_eval_count": 356,
+        "prompt_eval_duration": 196788000,
+        "eval_count": 78,
+        "eval_duration": 1704146000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-67ac-7301-88df-d86bb4093a1c-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 356,
+        "output_tokens": 78,
+        "total_tokens": 434
+      }
+    },
+    "token_usage": {
+      "input_tokens": 356,
+      "output_tokens": 78,
+      "total_tokens": 434
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'footway' and the surface as 'pavele' (paving stones). There is no information about barriers. The context description confirms these tags.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "a06ae7d320ef436cea04151b031762845dc33b50a7ef1f92e19d63faf1b883fd",
+    "elapsed_s": 1.9304248999978881,
+    "recorded_at": "2026-10-11T18:28:43.953557+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1554877171"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"living_street\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment as a 'living_street' with a speed limit of 30 km/h. The surface is described as cobblestone, and a bollard is observed on the road. There are no conflicting observations or anomalies noted in the input data.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:44.3697996Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2521494500,
+        "load_duration": 8902800,
+        "prompt_eval_count": 367,
+        "prompt_eval_duration": 243360000,
+        "eval_count": 103,
+        "eval_duration": 2261929000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-5157-76d1-a1ed-6b403fa0159a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 367,
+        "output_tokens": 103,
+        "total_tokens": 470
+      }
+    },
+    "token_usage": {
+      "input_tokens": 367,
+      "output_tokens": 103,
+      "total_tokens": 470
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment as a 'living_street' with a speed limit of 30 km/h. The surface is described as cobblestone, and a bollard is observed on the road. There are no conflicting observations or anomalies noted in the input data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "32c4795f0cb27b20d21907edb3f0a030eda1e1e72c96841e7f7dbe1faa812a0e",
+    "elapsed_s": 2.5307585999835283,
+    "recorded_at": "2026-10-11T18:29:44.374250+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-177922290"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:16.3822614Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2534829300,
+        "load_duration": 10101100,
+        "prompt_eval_count": 352,
+        "prompt_eval_duration": 156799000,
+        "eval_count": 109,
+        "eval_duration": 2360205000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-e3f6-7d83-b53f-2e5cae27f19a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 352,
+        "output_tokens": 109,
+        "total_tokens": 461
+      }
+    },
+    "token_usage": {
+      "input_tokens": 352,
+      "output_tokens": 109,
+      "total_tokens": 461
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "059bbc0d31150c5692f0523a60b1995495967d8cb9faec463b5141e2a913ca68",
+    "elapsed_s": 2.5426665999984834,
+    "recorded_at": "2026-10-11T18:29:16.386721+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-390028239"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1120335378"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:16.3822614Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2534829300,
+        "load_duration": 10101100,
+        "prompt_eval_count": 352,
+        "prompt_eval_duration": 156799000,
+        "eval_count": 109,
+        "eval_duration": 2360205000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-e3f6-7d83-b53f-2e5cae27f19a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 352,
+        "output_tokens": 109,
+        "total_tokens": 461
+      }
+    },
+    "token_usage": {
+      "input_tokens": 352,
+      "output_tokens": 109,
+      "total_tokens": 461
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "059bbc0d31150c5692f0523a60b1995495967d8cb9faec463b5141e2a913ca68",
+    "elapsed_s": 2.5426665999984834,
+    "recorded_at": "2026-10-11T18:29:16.386721+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-858157094"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a 'lift_gate'. No other tags or context information are provided.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:00.9679297Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1955384900,
+        "load_duration": 9580200,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 161812000,
+        "eval_count": 77,
+        "eval_duration": 1776513000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-aa03-7842-9023-bca854c1a794-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 77,
+        "total_tokens": 426
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 77,
+      "total_tokens": 426
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a 'lift_gate'. No other tags or context information are provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "aa1342d7cb978481019c25ce80948cf68c927a3fa7ae07d810458fab1302ecc3",
+    "elapsed_s": 1.9627832999976818,
+    "recorded_at": "2026-10-11T18:29:00.971251+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-985208457"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'footway' and the surface as 'pavele' (paving stones). There is no information about barriers. The context description confirms these tags.\",\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:43.9498033Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1920783200,
+        "load_duration": 12015800,
+        "prompt_eval_count": 356,
+        "prompt_eval_duration": 196788000,
+        "eval_count": 78,
+        "eval_duration": 1704146000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-67ac-7301-88df-d86bb4093a1c-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 356,
+        "output_tokens": 78,
+        "total_tokens": 434
+      }
+    },
+    "token_usage": {
+      "input_tokens": 356,
+      "output_tokens": 78,
+      "total_tokens": 434
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'footway' and the surface as 'pavele' (paving stones). There is no information about barriers. The context description confirms these tags.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "a06ae7d320ef436cea04151b031762845dc33b50a7ef1f92e19d63faf1b883fd",
+    "elapsed_s": 1.9304248999978881,
+    "recorded_at": "2026-10-11T18:28:43.953557+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1554806083"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data contains the following observed facts: road category is 'service', the speed limit is 10 km/h, the surface is asphalt, and a lift_gate barrier is observed. No conflicting or anomalous observations are present.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:46.6852328Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2289228900,
+        "load_duration": 11604800,
+        "prompt_eval_count": 363,
+        "prompt_eval_duration": 214133000,
+        "eval_count": 92,
+        "eval_duration": 2055168999,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-5b4b-7ff3-9f54-8ef4818ace1d-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 363,
+        "output_tokens": 92,
+        "total_tokens": 455
+      }
+    },
+    "token_usage": {
+      "input_tokens": 363,
+      "output_tokens": 92,
+      "total_tokens": 455
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data contains the following observed facts: road category is 'service', the speed limit is 10 km/h, the surface is asphalt, and a lift_gate barrier is observed. No conflicting or anomalous observations are present.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "f22671b5a3e4551edd6cb788ef679a108bf9b70747eae0d6b9a11ff2de2152e0",
+    "elapsed_s": 2.29878149999422,
+    "recorded_at": "2026-10-11T18:29:46.690405+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1240155890"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service', with a numeric maxspeed of 20 km/h and a surface of asphalt. There is a door (poarta) mentioned as a barrier on the road. No conflicting observations or anomalies are detected based on the provided data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:48.9081224Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2207710100,
+        "load_duration": 10688200,
+        "prompt_eval_count": 371,
+        "prompt_eval_duration": 288595000,
+        "eval_count": 86,
+        "eval_duration": 1900220000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-644b-7a22-a531-265d4216875a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 371,
+        "output_tokens": 86,
+        "total_tokens": 457
+      }
+    },
+    "token_usage": {
+      "input_tokens": 371,
+      "output_tokens": 86,
+      "total_tokens": 457
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service', with a numeric maxspeed of 20 km/h and a surface of asphalt. There is a door (poarta) mentioned as a barrier on the road. No conflicting observations or anomalies are detected based on the provided data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "dcdc3e3b4a92ba2a47a2f11209e43fec0a74487ef31a908476dc23c05dfd7fe7",
+    "elapsed_s": 2.215131000004476,
+    "recorded_at": "2026-10-11T18:29:48.911900+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-23892988"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"residential\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data contains the following observed facts: the road is of residential category, the speed limit is 30 km/h, the surface is asphalt, and a lift_gate barrier is present. No conflicting or anomalous observations are provided.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:51.252021Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2330477600,
+        "load_duration": 12130200,
+        "prompt_eval_count": 363,
+        "prompt_eval_duration": 243583000,
+        "eval_count": 94,
+        "eval_duration": 2067120000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-6cf8-7871-b874-39e76648c483-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 363,
+        "output_tokens": 94,
+        "total_tokens": 457
+      }
+    },
+    "token_usage": {
+      "input_tokens": 363,
+      "output_tokens": 94,
+      "total_tokens": 457
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data contains the following observed facts: the road is of residential category, the speed limit is 30 km/h, the surface is asphalt, and a lift_gate barrier is present. No conflicting or anomalous observations are provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "eb36213e405d27227601f8e03173ce3ca4f413483b0acadbf16d63ea3b210c43",
+    "elapsed_s": 2.3384387999831233,
+    "recorded_at": "2026-10-11T18:29:51.255944+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-466389970"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'footway', and the surface as 'asphalt'. The barrier is marked as 'unknown'. No conflicting observations or anomalies are provided in the input data.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:40.0419212Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2098553800,
+        "load_duration": 10203500,
+        "prompt_eval_count": 357,
+        "prompt_eval_duration": 163110000,
+        "eval_count": 87,
+        "eval_duration": 1917274000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-57b6-7bb0-859b-1456aa47b021-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 357,
+        "output_tokens": 87,
+        "total_tokens": 444
+      }
+    },
+    "token_usage": {
+      "input_tokens": 357,
+      "output_tokens": 87,
+      "total_tokens": 444
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'footway', and the surface as 'asphalt'. The barrier is marked as 'unknown'. No conflicting observations or anomalies are provided in the input data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "0be7c49a40e5510b527ccc1dffe72786e17be28a018e23856fb88632639e89e8",
+    "elapsed_s": 2.1064441000053193,
+    "recorded_at": "2026-10-11T18:28:40.046538+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-485017728"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment of type 'footway' and a barrier observed as 'gate'. No other tags or context are provided, so these are the observed facts.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:52.5687281Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2007246000,
+        "load_duration": 8615000,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 161520000,
+        "eval_count": 81,
+        "eval_duration": 1829309000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-8900-7941-a223-b45cfd4b8d57-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 81,
+        "total_tokens": 430
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 81,
+      "total_tokens": 430
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment of type 'footway' and a barrier observed as 'gate'. No other tags or context are provided, so these are the observed facts.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "c8890e0ce16a371de0768733163ffe43a509c9c544643629ba5e393e681ac638",
+    "elapsed_s": 2.0148173000197858,
+    "recorded_at": "2026-10-11T18:28:52.573054+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1081078907"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:16.3822614Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2534829300,
+        "load_duration": 10101100,
+        "prompt_eval_count": 352,
+        "prompt_eval_duration": 156799000,
+        "eval_count": 109,
+        "eval_duration": 2360205000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-e3f6-7d83-b53f-2e5cae27f19a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 352,
+        "output_tokens": 109,
+        "total_tokens": 461
+      }
+    },
+    "token_usage": {
+      "input_tokens": 352,
+      "output_tokens": 109,
+      "total_tokens": 461
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service' and the presence of a barrier as 'bariera cu brat'. There are no observed road facts provided, so the confidence score is set to 1. The road type is directly taken from the input, and the barrier is explicitly stated without any inference.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "059bbc0d31150c5692f0523a60b1995495967d8cb9faec463b5141e2a913ca68",
+    "elapsed_s": 2.5426665999984834,
+    "recorded_at": "2026-10-11T18:29:16.386721+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1237221644"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment of type 'footway' and a barrier observed as 'gate'. No other tags or context are provided, so these are the observed facts.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:52.5687281Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2007246000,
+        "load_duration": 8615000,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 161520000,
+        "eval_count": 81,
+        "eval_duration": 1829309000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-8900-7941-a223-b45cfd4b8d57-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 81,
+        "total_tokens": 430
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 81,
+      "total_tokens": 430
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment of type 'footway' and a barrier observed as 'gate'. No other tags or context are provided, so these are the observed facts.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "c8890e0ce16a371de0768733163ffe43a509c9c544643629ba5e393e681ac638",
+    "elapsed_s": 2.0148173000197858,
+    "recorded_at": "2026-10-11T18:28:52.573054+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1169899001"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service road with asphalt surface and one-way traffic. There is a barrier on the road, specifically a lift gate. No conflicting observations or anomalies are detected.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:33.2333482Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2160175800,
+        "load_duration": 13013000,
+        "prompt_eval_count": 365,
+        "prompt_eval_duration": 205614000,
+        "eval_count": 86,
+        "eval_duration": 1933383000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-2740-7211-8216-32581a27ce71-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 365,
+        "output_tokens": 86,
+        "total_tokens": 451
+      }
+    },
+    "token_usage": {
+      "input_tokens": 365,
+      "output_tokens": 86,
+      "total_tokens": 451
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a service road with asphalt surface and one-way traffic. There is a barrier on the road, specifically a lift gate. No conflicting observations or anomalies are detected.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "d3a2405d8210b800b7e1d3504be93abc29a3ca53c2bb17d7667d7790a8b6fcfc",
+    "elapsed_s": 2.1697751999890897,
+    "recorded_at": "2026-10-11T18:29:33.238408+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-850560704"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1456243546"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service', with a numeric maxspeed of 5 km/h and a surface of 'asphalt'. There is a barrier described as a 'lift_gate' (bariera cu brat in Romanian). No conflicting observations or anomalies are detected based on the provided data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:53.5689775Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2263735000,
+        "load_duration": 10219800,
+        "prompt_eval_count": 373,
+        "prompt_eval_duration": 285320000,
+        "eval_count": 91,
+        "eval_duration": 1960532000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-7649-7ea3-8a27-0520b38af9bc-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 373,
+        "output_tokens": 91,
+        "total_tokens": 464
+      }
+    },
+    "token_usage": {
+      "input_tokens": 373,
+      "output_tokens": 91,
+      "total_tokens": 464
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road type as 'service', with a numeric maxspeed of 5 km/h and a surface of 'asphalt'. There is a barrier described as a 'lift_gate' (bariera cu brat in Romanian). No conflicting observations or anomalies are detected based on the provided data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "27b0dafe7a1a524a2b7b9faebd98782dd4742ceebf13fc407d46528aec91d31b",
+    "elapsed_s": 2.272370300022885,
+    "recorded_at": "2026-10-11T18:29:53.574234+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-466365922"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1087516974"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:24.682031Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1964141900,
+        "load_duration": 8993100,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 160747000,
+        "eval_count": 78,
+        "eval_duration": 1786830000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-069c-7b10-8bac-3b306e826ba3-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 78,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 78,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "fdd0a5a073d207a2abd39efc429cb4efd64fc51ff470b1ae31226e62203dbbd4",
+    "elapsed_s": 1.97269779999624,
+    "recorded_at": "2026-10-11T18:29:24.685998+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1120335374"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data contains the following observed facts: road category is 'service', the speed limit is 30 km/h, the surface is asphalt, and a lift_gate barrier is observed. No conflicting or anomalous observations are present.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:30:03.2414519Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 9652904700,
+        "load_duration": 12118500,
+        "prompt_eval_count": 363,
+        "prompt_eval_duration": 249336000,
+        "eval_count": 92,
+        "eval_duration": 2023995000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-7f33-7530-a55c-a6abcc6f7a99-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 363,
+        "output_tokens": 92,
+        "total_tokens": 455
+      }
+    },
+    "token_usage": {
+      "input_tokens": 363,
+      "output_tokens": 92,
+      "total_tokens": 455
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data contains the following observed facts: road category is 'service', the speed limit is 30 km/h, the surface is asphalt, and a lift_gate barrier is observed. No conflicting or anomalous observations are present.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "31eada4268f9c0e1bca8b747a989aabf359add2b7d0b9d30b08e64b65027fec2",
+    "elapsed_s": 9.662117600004422,
+    "recorded_at": "2026-10-11T18:30:03.245920+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-807316229"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service category, with asphalt surface and a gate as a barrier. No observed speed or oneway information is provided, so the schema remains as is with the given context.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:30:05.4930263Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2235958600,
+        "load_duration": 15341100,
+        "prompt_eval_count": 357,
+        "prompt_eval_duration": 206104000,
+        "eval_count": 89,
+        "eval_duration": 2006768000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-a4f8-7863-9603-1088412e0fbb-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 357,
+        "output_tokens": 89,
+        "total_tokens": 446
+      }
+    },
+    "token_usage": {
+      "input_tokens": 357,
+      "output_tokens": 89,
+      "total_tokens": 446
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a service category, with asphalt surface and a gate as a barrier. No observed speed or oneway information is provided, so the schema remains as is with the given context.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3fbf80ff102d8c43712cf83447aa7f3b546aad565a31e8a64ee9b2ce5fcbb165",
+    "elapsed_s": 2.2437374999863096,
+    "recorded_at": "2026-10-11T18:30:05.496900+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-858090609"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road category as 'service' and a speed limit of 30 km/h. A barrier, specifically a gate, was observed on the road. No conflicting observations or anomalies were detected.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:18.5888876Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2194717100,
+        "load_duration": 9233300,
+        "prompt_eval_count": 358,
+        "prompt_eval_duration": 201262000,
+        "eval_count": 88,
+        "eval_duration": 1977447000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-ede9-7ce2-b5bd-c3cab9a12be0-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 358,
+        "output_tokens": 88,
+        "total_tokens": 446
+      }
+    },
+    "token_usage": {
+      "input_tokens": 358,
+      "output_tokens": 88,
+      "total_tokens": 446
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road category as 'service' and a speed limit of 30 km/h. A barrier, specifically a gate, was observed on the road. No conflicting observations or anomalies were detected.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "7484edcfb4fbc575dcac9916d006cc503018e6358bfe63a6cde0decf3e1c323e",
+    "elapsed_s": 2.2013326000014786,
+    "recorded_at": "2026-10-11T18:29:18.592194+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-378635589"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input does not contain any observed road facts. The provided context only specifies the road category as 'footway' and the bariera (barrier) as 'unknown'. There are no observed facts to extract from the JSON input.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:39.7675128Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2001388800,
+        "load_duration": 11162100,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 162365000,
+        "eval_count": 77,
+        "eval_duration": 1820466000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-4165-7293-ba8c-8e017edb1d4e-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 77,
+        "total_tokens": 426
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 77,
+      "total_tokens": 426
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input does not contain any observed road facts. The provided context only specifies the road category as 'footway' and the bariera (barrier) as 'unknown'. There are no observed facts to extract from the JSON input.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "d22d6164468205eeb9e3b858eb76025dc53fe40ea03c987b1163b8c0e8fe4c0a",
+    "elapsed_s": 2.011106399993878,
+    "recorded_at": "2026-10-11T18:29:39.772398+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-809220317"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service category, a speed limit of 5 km/h, a surface of concrete, and a barrier observed as a lift_gate. The one-way attribute is explicitly stated as yes.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:30:07.7887823Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2263156500,
+        "load_duration": 13919100,
+        "prompt_eval_count": 367,
+        "prompt_eval_duration": 244600000,
+        "eval_count": 89,
+        "eval_duration": 1997152000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-add4-7150-88b5-2bc3c7b4c93a-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 367,
+        "output_tokens": 89,
+        "total_tokens": 456
+      }
+    },
+    "token_usage": {
+      "input_tokens": 367,
+      "output_tokens": 89,
+      "total_tokens": 456
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a service category, a speed limit of 5 km/h, a surface of concrete, and a barrier observed as a lift_gate. The one-way attribute is explicitly stated as yes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "e61f1925162c89da483344ff177e9661e54c81fe24acd46667c109a2ce0ae4cf",
+    "elapsed_s": 2.272051100007957,
+    "recorded_at": "2026-10-11T18:30:07.793381+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-1063554410"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service category, with a numeric maxspeed of 5 km/h, concrete surface, and a lift gate barrier. There are no conflicting observations or anomalies noted in the provided data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:30:09.7531204Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1948866300,
+        "load_duration": 10104800,
+        "prompt_eval_count": 376,
+        "prompt_eval_duration": 286567000,
+        "eval_count": 73,
+        "eval_duration": 1641474000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-b6ba-7a90-ae81-e1f6599e4b05-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 376,
+        "output_tokens": 73,
+        "total_tokens": 449
+      }
+    },
+    "token_usage": {
+      "input_tokens": 376,
+      "output_tokens": 73,
+      "total_tokens": 449
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a service category, with a numeric maxspeed of 5 km/h, concrete surface, and a lift gate barrier. There are no conflicting observations or anomalies noted in the provided data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "53e029b2557654cd25ce526d6983a52ba9508d1b8730548bc273045ba3fc8747",
+    "elapsed_s": 1.9596654000051785,
+    "recorded_at": "2026-10-11T18:30:09.757557+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-540953933"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:28:29.2931616Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1934020000,
+        "load_duration": 9406200,
+        "prompt_eval_count": 348,
+        "prompt_eval_duration": 161045000,
+        "eval_count": 79,
+        "eval_duration": 1757236000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c39-2e5e-7a23-8d44-e8dd05f4b2d9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 348,
+        "output_tokens": 79,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 348,
+      "output_tokens": 79,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies a road segment with the category 'service' and a barrier observed as a gate. No conflicting observations or anomalies are detected based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "3a5dea896ea9d9f8152087d5c4fb7ba9be737dfcef96a05100b65b1057fb16d7",
+    "elapsed_s": 1.9427715000056196,
+    "recorded_at": "2026-10-11T18:28:29.297070+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-188140645"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.\"\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:24.682031Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1964141900,
+        "load_duration": 8993100,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 160747000,
+        "eval_count": 78,
+        "eval_duration": 1786830000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-069c-7b10-8bac-3b306e826ba3-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 349,
+        "output_tokens": 78,
+        "total_tokens": 427
+      }
+    },
+    "token_usage": {
+      "input_tokens": 349,
+      "output_tokens": 78,
+      "total_tokens": 427
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road category as 'service' and mentions a gate (poarta) as the barrier. No conflicting observations or anomalies are provided in the input data. The schema is based on the provided context and the input data.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "fdd0a5a073d207a2abd39efc429cb4efd64fc51ff470b1ae31226e62203dbbd4",
+    "elapsed_s": 1.97269779999624,
+    "recorded_at": "2026-10-11T18:29:24.685998+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-1156059498"
+  },
+  {
+    "raw_response": {
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data contains the following observed facts: road category is 'service', the speed limit is 10 km/h, the surface is asphalt, and a lift_gate barrier is observed. No conflicting or anomalous observations are present.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:29:46.6852328Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2289228900,
+        "load_duration": 11604800,
+        "prompt_eval_count": 363,
+        "prompt_eval_duration": 214133000,
+        "eval_count": 92,
+        "eval_duration": 2055168999,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3a-5b4b-7ff3-9f54-8ef4818ace1d-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 363,
+        "output_tokens": 92,
+        "total_tokens": 455
+      }
+    },
+    "token_usage": {
+      "input_tokens": 363,
+      "output_tokens": 92,
+      "total_tokens": 455
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data contains the following observed facts: road category is 'service', the speed limit is 10 km/h, the surface is asphalt, and a lift_gate barrier is observed. No conflicting or anomalous observations are present.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "f22671b5a3e4551edd6cb788ef679a108bf9b70747eae0d6b9a11ff2de2152e0",
+    "elapsed_s": 2.29878149999422,
+    "recorded_at": "2026-10-11T18:29:46.690405+00:00",
+    "cache_hit": true,
+    "segment_id": "evidence-418901702"
+  }
+]

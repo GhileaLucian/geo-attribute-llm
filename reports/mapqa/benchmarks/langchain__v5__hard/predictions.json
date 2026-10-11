@@ -1,0 +1,842 @@
+[
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"pedestrian\",\"confidence_score\":0.5,\"reasoning_cot\":\"Stalpisori metalice are tipul de bariera.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:31:57.7940599Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1440391000,
+        "load_duration": 10907300,
+        "prompt_eval_count": 723,
+        "prompt_eval_duration": 526392000,
+        "eval_count": 46,
+        "eval_duration": 893898000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-5eae-7820-a0ef-a46ba1c0ebff-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 723,
+        "output_tokens": 46,
+        "total_tokens": 769
+      }
+    },
+    "token_usage": {
+      "input_tokens": 723,
+      "output_tokens": 46,
+      "total_tokens": 769
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Stalpisori metalice are tipul de bariera.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "efc9a0a3c831fa606eb745cf4256dfdd06574c74b90f427c9f804c42d231b036",
+    "elapsed_s": 1.465547100000549,
+    "recorded_at": "2026-10-11T18:31:57.797931+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-01"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"service\",\"confidence_score\":0.5,\"reasoning_cot\":\"barrier_type='lift_gate' is explicitly provided.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:31:58.9186499Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1109677400,
+        "load_duration": 10452500,
+        "prompt_eval_count": 724,
+        "prompt_eval_duration": 229545000,
+        "eval_count": 42,
+        "eval_duration": 860785000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-6470-7322-90b4-0f2be702f98c-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 724,
+        "output_tokens": 42,
+        "total_tokens": 766
+      }
+    },
+    "token_usage": {
+      "input_tokens": 724,
+      "output_tokens": 42,
+      "total_tokens": 766
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "barrier_type='lift_gate' is explicitly provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "ea4525ab46643b23928d3268bffbdb1a6aa586b6aaec68534fb82fce7d834385",
+    "elapsed_s": 1.1177104000234976,
+    "recorded_at": "2026-10-11T18:31:58.922396+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-02"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"track\",\"confidence_score\":0.5,\"reasoning_cot\":\"Track highway type is given, no speed limit or other speed-related tags.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:00.1295642Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1197793400,
+        "load_duration": 9317600,
+        "prompt_eval_count": 719,
+        "prompt_eval_duration": 228630000,
+        "eval_count": 46,
+        "eval_duration": 950902000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-68d2-7db2-a87b-8edc364563d4-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 719,
+        "output_tokens": 46,
+        "total_tokens": 765
+      }
+    },
+    "token_usage": {
+      "input_tokens": 719,
+      "output_tokens": 46,
+      "total_tokens": 765
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Track highway type is given, no speed limit or other speed-related tags.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "4decfad454fe9489801d57c2df49fe1c645c8f4f16b6a5c82fbf5059461d56c9",
+    "elapsed_s": 1.2055093999952078,
+    "recorded_at": "2026-10-11T18:32:00.133421+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-03"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"residential\",\"confidence_score\":0.5,\"reasoning_cot\":\"No numerical speed limit is provided, only a context description.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:01.4297779Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1284113000,
+        "load_duration": 8584700,
+        "prompt_eval_count": 729,
+        "prompt_eval_duration": 264355000,
+        "eval_count": 44,
+        "eval_duration": 1000988000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-6d90-70c0-a1c0-d5f1d0b198d5-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 729,
+        "output_tokens": 44,
+        "total_tokens": 773
+      }
+    },
+    "token_usage": {
+      "input_tokens": 729,
+      "output_tokens": 44,
+      "total_tokens": 773
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No numerical speed limit is provided, only a context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "bc8fd15721f2e20c47ac58f7508a49b81bff2fa99bd6835bc5729945ffc2cd94",
+    "elapsed_s": 1.2930350999813527,
+    "recorded_at": "2026-10-11T18:32:01.433789+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-04"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"residential\",\"confidence_score\":0.5,\"reasoning_cot\":\"Tag highway=residential takes precedence over context_description indicating 30 km/h.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:02.7187599Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1276189600,
+        "load_duration": 11165200,
+        "prompt_eval_count": 725,
+        "prompt_eval_duration": 259839999,
+        "eval_count": 48,
+        "eval_duration": 996418000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-72a1-7c02-b360-ae59d1674422-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 725,
+        "output_tokens": 48,
+        "total_tokens": 773
+      }
+    },
+    "token_usage": {
+      "input_tokens": 725,
+      "output_tokens": 48,
+      "total_tokens": 773
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Tag highway=residential takes precedence over context_description indicating 30 km/h.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "bb112d1b3374a4546bb174a7579394df92656f0516fbb92ae417456c4752f6d9",
+    "elapsed_s": 1.2837991999986116,
+    "recorded_at": "2026-10-11T18:32:02.722698+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-05"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"residential\",\"confidence_score\":0.5,\"reasoning_cot\":\"Tag maxspeed=30 is overridden by the contradictory text.\",\"anomaly_flag\":true,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:04.0572683Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1324563600,
+        "load_duration": 9381000,
+        "prompt_eval_count": 731,
+        "prompt_eval_duration": 340933000,
+        "eval_count": 45,
+        "eval_duration": 964263000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-77ac-7543-b8a2-5136093358e3-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 731,
+        "output_tokens": 45,
+        "total_tokens": 776
+      }
+    },
+    "token_usage": {
+      "input_tokens": 731,
+      "output_tokens": 45,
+      "total_tokens": 776
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Tag maxspeed=30 is overridden by the contradictory text.",
+      "anomaly_flag": true,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "4f5dfb96edc3cf82960d6a9b16cb23b70c39116838714ea191ac7d7ea16c6320",
+    "elapsed_s": 1.3334740999853238,
+    "recorded_at": "2026-10-11T18:32:04.062278+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-06"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"service\",\"confidence_score\":0.5,\"reasoning_cot\":\"oneway=-1 indicates one-way in the specified direction.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:05.2728227Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1201399000,
+        "load_duration": 11619100,
+        "prompt_eval_count": 726,
+        "prompt_eval_duration": 259810000,
+        "eval_count": 43,
+        "eval_duration": 921286000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-7ce6-7310-a39c-141f0b4a6015-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 726,
+        "output_tokens": 43,
+        "total_tokens": 769
+      }
+    },
+    "token_usage": {
+      "input_tokens": 726,
+      "output_tokens": 43,
+      "total_tokens": 769
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "oneway=-1 indicates one-way in the specified direction.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "b3086cba5916f28c36bae03eecad769fbef5439d7a97178067af189ca4b491cb",
+    "elapsed_s": 1.2095546999771614,
+    "recorded_at": "2026-10-11T18:32:05.277492+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-07"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"secondary\",\"confidence_score\":0.5,\"reasoning_cot\":\"Conditional speed limit is provided, no anomaly flagged.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:06.5135871Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1225891600,
+        "load_duration": 10842100,
+        "prompt_eval_count": 735,
+        "prompt_eval_duration": 342647000,
+        "eval_count": 41,
+        "eval_duration": 863732000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-81a6-7c42-ae71-33add3121523-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 735,
+        "output_tokens": 41,
+        "total_tokens": 776
+      }
+    },
+    "token_usage": {
+      "input_tokens": 735,
+      "output_tokens": 41,
+      "total_tokens": 776
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Conditional speed limit is provided, no anomaly flagged.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "f079953f5ec5f129e115816cac60069b9bb6a21ea8691d9fffcbed65bcbd8959",
+    "elapsed_s": 1.234189199982211,
+    "recorded_at": "2026-10-11T18:32:06.516960+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-08"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"residential\",\"confidence_score\":0.5,\"reasoning_cot\":\"maxspeed:RO:urban is interpreted as null.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:07.8029531Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1276533400,
+        "load_duration": 12026700,
+        "prompt_eval_count": 732,
+        "prompt_eval_duration": 336987000,
+        "eval_count": 43,
+        "eval_duration": 917800000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-867d-77f0-9b71-9ad2102d3be1-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 732,
+        "output_tokens": 43,
+        "total_tokens": 775
+      }
+    },
+    "token_usage": {
+      "input_tokens": 732,
+      "output_tokens": 43,
+      "total_tokens": 775
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "maxspeed:RO:urban is interpreted as null.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "e13dd0f3b7258f3a7ab9014c16f7b229f1351f4fbf8fd0427ebdc848f39adf1e",
+    "elapsed_s": 1.2844099999929313,
+    "recorded_at": "2026-10-11T18:32:07.806954+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-09"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\": \"unknown\",\"confidence_score\":0.5,\"reasoning_cot\":\"No OSM tags provided.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:09.0073586Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1188350200,
+        "load_duration": 10489700,
+        "prompt_eval_count": 721,
+        "prompt_eval_duration": 220455000,
+        "eval_count": 38,
+        "eval_duration": 947450000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-8b8a-7693-9865-69f2f826a5f9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 721,
+        "output_tokens": 38,
+        "total_tokens": 759
+      }
+    },
+    "token_usage": {
+      "input_tokens": 721,
+      "output_tokens": 38,
+      "total_tokens": 759
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "4138910ad9030a2d89a12380492cff48e82557f7b5f01147f3bd4cf6f49145e1",
+    "elapsed_s": 1.196703499997966,
+    "recorded_at": "2026-10-11T18:32:09.011324+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-10"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"primary\",\"confidence_score\":0.5,\"reasoning_cot\":\"Barrier is explicitly stated as guard_rail, which is a barrier.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:10.2964071Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1274646600,
+        "load_duration": 13100100,
+        "prompt_eval_count": 729,
+        "prompt_eval_duration": 260099000,
+        "eval_count": 45,
+        "eval_duration": 991916000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-903c-72e2-802a-049edbcf9356-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 729,
+        "output_tokens": 45,
+        "total_tokens": 774
+      }
+    },
+    "token_usage": {
+      "input_tokens": 729,
+      "output_tokens": 45,
+      "total_tokens": 774
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "primary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Barrier is explicitly stated as guard_rail, which is a barrier.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "22208c60ff2f4130442be278fe692bba57ca170b00fdc92f9e4f9ba862a0364a",
+    "elapsed_s": 1.2845733999856748,
+    "recorded_at": "2026-10-11T18:32:10.301526+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-11"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"service\",\"confidence_score\":0.5,\"reasoning_cot\":\"oneway=no is false as indicated by the context.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:11.6320452Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1318620500,
+        "load_duration": 9468500,
+        "prompt_eval_count": 738,
+        "prompt_eval_duration": 344829000,
+        "eval_count": 42,
+        "eval_duration": 955677000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-9548-72b1-98e1-5d81b95e50c9-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 738,
+        "output_tokens": 42,
+        "total_tokens": 780
+      }
+    },
+    "token_usage": {
+      "input_tokens": 738,
+      "output_tokens": 42,
+      "total_tokens": 780
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "oneway=no is false as indicated by the context.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "c3064a717c1b74509a916f113c1b8f777923cc7ca373d3464f98d4310fe5c4d1",
+    "elapsed_s": 1.3275449000066146,
+    "recorded_at": "2026-10-11T18:32:11.636319+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-12"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"track\",\"confidence_score\":0.5,\"reasoning_cot\":\"Surface is specified as gravel.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:12.6486454Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1001964000,
+        "load_duration": 10853300,
+        "prompt_eval_count": 714,
+        "prompt_eval_duration": 185275000,
+        "eval_count": 37,
+        "eval_duration": 796306000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-9a7d-71f1-98f5-afe8027f9dd6-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 714,
+        "output_tokens": 37,
+        "total_tokens": 751
+      }
+    },
+    "token_usage": {
+      "input_tokens": 714,
+      "output_tokens": 37,
+      "total_tokens": 751
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Surface is specified as gravel.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "286355a5505a4a7457aaf7037b9502bd6ceaad3bf1d2672065cfdb6ff904f385",
+    "elapsed_s": 1.0111854000133462,
+    "recorded_at": "2026-10-11T18:32:12.653023+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-13"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"service\",\"confidence_score\":0.5,\"reasoning_cot\":\"Instruction detected, not reporting speed.\",\"anomaly_flag\":false,\"input_instruction_detected\":true}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:13.8187528Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1157133900,
+        "load_duration": 11691600,
+        "prompt_eval_count": 733,
+        "prompt_eval_duration": 344361000,
+        "eval_count": 38,
+        "eval_duration": 792372000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-9e75-78a3-9b20-9fa532b16b91-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 733,
+        "output_tokens": 38,
+        "total_tokens": 771
+      }
+    },
+    "token_usage": {
+      "input_tokens": 733,
+      "output_tokens": 38,
+      "total_tokens": 771
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Instruction detected, not reporting speed.",
+      "anomaly_flag": false,
+      "input_instruction_detected": true
+    },
+    "request_sha256": "7c23a2da2f3164b2c82b1f2ff68e6d5cb47c0d113f7271b1fdea3089661e8f0c",
+    "elapsed_s": 1.1652174000046216,
+    "recorded_at": "2026-10-11T18:32:13.823402+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-14"
+  },
+  {
+    "raw_response": {
+      "content": "{\"road_type\":\"residential\",\"confidence_score\":0.7,\"reasoning_cot\":\"Preserved suspicious explicit numeric speed 140.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-10-11T18:32:15.220093Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1386428700,
+        "load_duration": 12616800,
+        "prompt_eval_count": 736,
+        "prompt_eval_duration": 359973000,
+        "eval_count": 43,
+        "eval_duration": 1003776000,
+        "logprobs": null,
+        "model_name": "qwen2.5:3b",
+        "model_provider": "ollama"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a12c3c-a308-7ef2-9c43-10f1a20466e8-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 736,
+        "output_tokens": 43,
+        "total_tokens": 779
+      }
+    },
+    "token_usage": {
+      "input_tokens": 736,
+      "output_tokens": 43,
+      "total_tokens": 779
+    },
+    "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "status": "success",
+    "error": null,
+    "output": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.7,
+      "reasoning_cot": "Preserved suspicious explicit numeric speed 140.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "request_sha256": "5731d5f574fae7b7ad839e74c24ac8499e851a39b7782b29d951856c7e2bfa14",
+    "elapsed_s": 1.3947594999917783,
+    "recorded_at": "2026-10-11T18:32:15.223287+00:00",
+    "cache_hit": false,
+    "segment_id": "evidence-hard-15"
+  }
+]

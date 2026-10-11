@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"living_street\",\"confidence_score\":0.5,\"reasoning_cot\":\"No OSM tags provided, using context description. Speed limit is 20 km/h, surface is cobblestone, one-way is true, barrier is bollards.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:32:34.8383874Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1638056800,
+      "load_duration": 8596300,
+      "prompt_eval_count": 745,
+      "prompt_eval_duration": 326934000,
+      "eval_count": 68,
+      "eval_duration": 1293704000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3c-eeaf-7f10-aade-ba71086cda1b-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 745,
+      "output_tokens": 68,
+      "total_tokens": 813
+    }
+  },
+  "token_usage": {
+    "input_tokens": 745,
+    "output_tokens": 68,
+    "total_tokens": 813
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "living_street",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "No OSM tags provided, using context description. Speed limit is 20 km/h, surface is cobblestone, one-way is true, barrier is bollards.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "0f65ef42d19d1e20174076d9fbc0b2adf0683e3dccc22568b94802a4d35a8024",
+  "elapsed_s": 1.6457144999876618,
+  "recorded_at": "2026-10-11T18:32:34.842130+00:00"
+}

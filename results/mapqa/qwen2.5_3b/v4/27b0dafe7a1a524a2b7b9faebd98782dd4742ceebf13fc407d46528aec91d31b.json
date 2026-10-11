@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service', with a numeric maxspeed of 5 km/h and a surface of 'asphalt'. There is a barrier described as a 'lift_gate' (bariera cu brat in Romanian). No conflicting observations or anomalies are detected based on the provided data.\"\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:29:53.5689775Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2263735000,
+      "load_duration": 10219800,
+      "prompt_eval_count": 373,
+      "prompt_eval_duration": 285320000,
+      "eval_count": 91,
+      "eval_duration": 1960532000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3a-7649-7ea3-8a27-0520b38af9bc-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 373,
+      "output_tokens": 91,
+      "total_tokens": 464
+    }
+  },
+  "token_usage": {
+    "input_tokens": 373,
+    "output_tokens": 91,
+    "total_tokens": 464
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input data specifies the road type as 'service', with a numeric maxspeed of 5 km/h and a surface of 'asphalt'. There is a barrier described as a 'lift_gate' (bariera cu brat in Romanian). No conflicting observations or anomalies are detected based on the provided data.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "27b0dafe7a1a524a2b7b9faebd98782dd4742ceebf13fc407d46528aec91d31b",
+  "elapsed_s": 2.272370300022885,
+  "recorded_at": "2026-10-11T18:29:53.574234+00:00"
+}

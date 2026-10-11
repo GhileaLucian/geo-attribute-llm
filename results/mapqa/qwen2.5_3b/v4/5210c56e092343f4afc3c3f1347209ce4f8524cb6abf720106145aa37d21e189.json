@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"unknown\",\n  \"confidence_score\": 0,\n  \"reasoning_cot\": \"The input data contains no observed road facts, only metadata. There are no tags for speed, surface, or barriers. The context description indicates the road lacks any observations about these properties.\"\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:30:35.6132105Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1807891300,
+      "load_duration": 9166700,
+      "prompt_eval_count": 354,
+      "prompt_eval_duration": 232168000,
+      "eval_count": 65,
+      "eval_duration": 1559800000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3b-1c4c-73c3-b415-213557967ad7-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 354,
+      "output_tokens": 65,
+      "total_tokens": 419
+    }
+  },
+  "token_usage": {
+    "input_tokens": 354,
+    "output_tokens": 65,
+    "total_tokens": 419
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "unknown",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.0,
+    "reasoning_cot": "The input data contains no observed road facts, only metadata. There are no tags for speed, surface, or barriers. The context description indicates the road lacks any observations about these properties.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "5210c56e092343f4afc3c3f1347209ce4f8524cb6abf720106145aa37d21e189",
+  "elapsed_s": 1.8166731999954209,
+  "recorded_at": "2026-10-11T18:30:35.617527+00:00"
+}

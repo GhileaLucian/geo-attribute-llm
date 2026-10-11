@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data provided a road category of 'service', a speed limit of 30 km/h, and a surface of asphalt. A barrier was explicitly observed as a gate. No conflicting observations or anomalies were detected.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:29:26.8384632Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2142212400,
+      "load_duration": 8785800,
+      "prompt_eval_count": 362,
+      "prompt_eval_duration": 239250000,
+      "eval_count": 89,
+      "eval_duration": 1885810000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3a-0e57-7883-8dcc-39f667730d7f-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 362,
+      "output_tokens": 89,
+      "total_tokens": 451
+    }
+  },
+  "token_usage": {
+    "input_tokens": 362,
+    "output_tokens": 89,
+    "total_tokens": 451
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input data provided a road category of 'service', a speed limit of 30 km/h, and a surface of asphalt. A barrier was explicitly observed as a gate. No conflicting observations or anomalies were detected.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "427b1d4a44d5b74b67a08c9916ef27283f511a41df128e4f4639425dd53b3168",
+  "elapsed_s": 2.1507831000199076,
+  "recorded_at": "2026-10-11T18:29:26.842429+00:00"
+}

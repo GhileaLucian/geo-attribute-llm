@@ -6,5 +6,6 @@
 *.bat text eol=crlf
 # Preserve snapshot bytes so download SHA-256 remains valid across checkouts.
 *.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.geojson -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 *.ipynb -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 *.png binary

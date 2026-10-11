@@ -17,5 +17,6 @@ jobs:
           cache: pip
       - run: python -m pip install -r requirements.txt
       - run: python -m pytest -q
-      - run: python -m compileall -q src app.py run_pipeline.py create_notebook.py
+      - run: python -m compileall -q src app.py run_pipeline.py run_mapqa.py create_notebook.py create_mapqa_notebook.py
       - run: python run_pipeline.py --mode baseline --reports-dir /tmp/geo-reports --results-dir /tmp/geo-results
+      - run: python run_mapqa.py all --mode rules --cached-only

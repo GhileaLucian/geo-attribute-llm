@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input does not contain any observed road facts. The provided context only specifies the road category as 'footway' and the bariera (barrier) as 'unknown'. There are no observed facts to extract from the JSON input.\"\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:29:39.7675128Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2001388800,
+      "load_duration": 11162100,
+      "prompt_eval_count": 349,
+      "prompt_eval_duration": 162365000,
+      "eval_count": 77,
+      "eval_duration": 1820466000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3a-4165-7293-ba8c-8e017edb1d4e-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 349,
+      "output_tokens": 77,
+      "total_tokens": 426
+    }
+  },
+  "token_usage": {
+    "input_tokens": 349,
+    "output_tokens": 77,
+    "total_tokens": 426
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "footway",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input does not contain any observed road facts. The provided context only specifies the road category as 'footway' and the bariera (barrier) as 'unknown'. There are no observed facts to extract from the JSON input.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "d22d6164468205eeb9e3b858eb76025dc53fe40ea03c987b1163b8c0e8fe4c0a",
+  "elapsed_s": 2.011106399993878,
+  "recorded_at": "2026-10-11T18:29:39.772398+00:00"
+}

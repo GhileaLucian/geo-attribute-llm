@@ -1,5 +1,66 @@
 # GeoAttribute-LLM
 
+## Map QA + local LangChain + ML (new)
+
+An offline-first portfolio pipeline with actual Cluj-Napoca road geometry:
+14,591 OSM ways, 849 barrier nodes, metric GIS checks, bilingual evidence
+extraction, a real LangChain/ChatOllama adapter, classification, regression,
+clustering, an executed notebook and a Streamlit map. No paid API call is needed.
+
+```powershell
+python -m pip install -r requirements.txt
+python run_mapqa.py all --mode rules --cached-only
+python -m streamlit run app.py
+```
+
+Open the **Map QA & ML** tab. Saved artifacts work without Ollama.
+To run the local model, start Ollama, install `qwen2.5:3b`, then:
+
+```powershell
+python run_mapqa.py benchmark --mode langchain --prompt v6 --split dev
+python run_mapqa.py benchmark --mode hybrid --prompt v6 --split hard
+python run_mapqa.py schedule-smoke
+```
+
+Measured v6 results (exact match across all eight evaluated fields):
+
+| Dataset | n | Rules | Local LangChain | Hybrid guards |
+|---|---:|---:|---:|---:|
+| Controlled OSM-derived development text | 80 | 82.5% | 81.25% | 81.25% |
+| Fictional hard development cases | 15 | 100% | 80% | 86.7% |
+| Fresh grouped final controlled-text test | 40 | 87.5% | 90% | 90% |
+
+The final difference is **one record**, not evidence of general superiority.
+All final examples have barriers, so barrier false-positive performance is not
+measured there. Texts are generated from OSM tags, not independent field truth.
+The final sample has **zero numeric speed references** and only three known
+one-way references; speed extraction is not measured by that final score.
+Per-class support, failures, raw responses and actual error examples are saved
+in `reports/mapqa/benchmarks`; repetitive inputs share cached responses.
+
+v4/v5 allowed omitted optional fields; the model often described facts only in
+its explanation. v6 requires every output field explicitly. The first evidence
+test was consumed by v5; a fresh disjoint grouped test was reserved before
+freezing v6. Earlier experiments are retained, not overwritten with better scores.
+
+Exploratory grouped-test ML: road-family weighted F1 **0.703** versus majority
+baseline **0.290** (3,549 test ways); speed regression MAE **3.62 km/h** versus
+median **5.96 km/h** (255 numeric-label test ways). Targets are recorded OSM
+attributes, not independently audited map/legal facts. Nearby-road correlations
+remain possible. DBSCAN found 8 descriptive centroid clusters; IsolationForest
+flagged 438 review suggestions, not verified errors.
+
+Source reference integrity is checked automatically; human field review remains
+pending. Generated LLM scenarios are quarantined pending review and excluded
+from benchmarks. Claude/OpenAI benchmark, cloud deployment and professional GIS
+experience are **not claimed**. See [Romanian guide and limitations](docs/MAP_QA_RO.md)
+and the executed `notebooks/map_quality_analysis.ipynb`.
+
+OSM data and derived files: [OpenStreetMap contributors, ODbL](https://www.openstreetmap.org/copyright).
+MIT applies only to code. Do not upload `.env` or model weights.
+
+## Legacy masked-tag experiment (preserved below)
+
 A learning project for road attribute extraction and evaluation. It uses Python,
 LangChain structured outputs, Pydantic, a Prefect flow, a Streamlit inspector and
 a Jupyter notebook. Claude and OpenAI integrations are implemented. Saved OpenAI

@@ -45,3 +45,23 @@ MIT license covers application code, not a relicensing of OSM data.
 
 Manual review of the hold-out on openstreetmap.org has not been completed.
 The downloader is not a substitute for checking the tags or field observations.
+
+## Separate Map QA geometry/evidence snapshot
+
+`mapqa/snapshot.json` contains actual road geometry and barrier nodes, separate
+from the old 100-way masked-tag dataset. Its query, endpoint, date, licence and
+SHA-256 are in `mapqa/manifest.json`. Node membership supports topological joins;
+metric nearest candidates are review suggestions, not labels.
+
+`evidence_dev.json` (80), `evidence_test.json` (40) and `evidence_hard.json` (15)
+describe the first evidence experiment. v5 consumed the initial test.
+`evidence_test_final.json` reserves 40 additional disjoint road groups for v6;
+its manifest records that history explicitly. Do not tune against this final set.
+All real-data evidence texts are controlled bilingual transcriptions of OSM tags
+and topologically connected barriers, not independently collected observations.
+Positive-barrier sampling is nonrepresentative. Repetitive texts share model cache.
+
+`reports/mapqa/reference_review_queue.json` records source tags/node IDs and
+pending human review. Automatic source integrity is not field verification.
+Generated scenario proposals are fictional, pending review and excluded from
+benchmark loading. Full methods and limits: [Map QA guide](../docs/MAP_QA_RO.md).

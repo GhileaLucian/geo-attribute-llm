@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"service\",\"confidence_score\":0.5,\"reasoning_cot\":\"Tag maxspeed=30 takes precedence over context description. Surface is specified as concrete. One-way status is not inferred from road class or lane count. Barrier type is specified as lift_gate.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:30:53.6721891Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 3978537300,
+      "load_duration": 11668400,
+      "prompt_eval_count": 744,
+      "prompt_eval_duration": 2506699000,
+      "eval_count": 70,
+      "eval_duration": 1450546000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3b-5a4c-7562-8166-cb112638c71f-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 744,
+      "output_tokens": 70,
+      "total_tokens": 814
+    }
+  },
+  "token_usage": {
+    "input_tokens": 744,
+    "output_tokens": 70,
+    "total_tokens": 814
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "Tag maxspeed=30 takes precedence over context description. Surface is specified as concrete. One-way status is not inferred from road class or lane count. Barrier type is specified as lift_gate.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "63cd3b034e986a91be691ddec2c78a71075def554277bc47697e1168f8cdffe7",
+  "elapsed_s": 4.003631200001109,
+  "recorded_at": "2026-10-11T18:30:53.676637+00:00"
+}

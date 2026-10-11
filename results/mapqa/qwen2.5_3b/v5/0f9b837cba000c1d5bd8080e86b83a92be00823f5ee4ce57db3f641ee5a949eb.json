@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"service\",\"confidence_score\":0.5,\"reasoning_cot\":\"Tag maxspeed=30 takes precedence over context description.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:31:34.5039504Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1165315700,
+      "load_duration": 10379900,
+      "prompt_eval_count": 737,
+      "prompt_eval_duration": 257773000,
+      "eval_count": 43,
+      "eval_duration": 889061000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3c-04d9-76f0-9638-c7c11d984422-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 737,
+      "output_tokens": 43,
+      "total_tokens": 780
+    }
+  },
+  "token_usage": {
+    "input_tokens": 737,
+    "output_tokens": 43,
+    "total_tokens": 780
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "Tag maxspeed=30 takes precedence over context description.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "0f9b837cba000c1d5bd8080e86b83a92be00823f5ee4ce57db3f641ee5a949eb",
+  "elapsed_s": 1.173563499993179,
+  "recorded_at": "2026-10-11T18:31:34.507968+00:00"
+}

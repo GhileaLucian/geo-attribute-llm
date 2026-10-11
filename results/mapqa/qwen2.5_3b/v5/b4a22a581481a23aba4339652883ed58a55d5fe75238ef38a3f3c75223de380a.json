@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"service\",\"confidence_score\":0.5,\"reasoning_cot\":\"No OSM tags provided, using context description. Speed limit is 5 km/h, surface is pavele, and there is a barrier with brat.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:31:20.9140326Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1606950900,
+      "load_duration": 9238200,
+      "prompt_eval_count": 739,
+      "prompt_eval_duration": 236621000,
+      "eval_count": 63,
+      "eval_duration": 1351797000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3b-ce0a-7520-b8b6-7221a745f7f5-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 739,
+      "output_tokens": 63,
+      "total_tokens": 802
+    }
+  },
+  "token_usage": {
+    "input_tokens": 739,
+    "output_tokens": 63,
+    "total_tokens": 802
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "No OSM tags provided, using context description. Speed limit is 5 km/h, surface is pavele, and there is a barrier with brat.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "b4a22a581481a23aba4339652883ed58a55d5fe75238ef38a3f3c75223de380a",
+  "elapsed_s": 1.6151530999923125,
+  "recorded_at": "2026-10-11T18:31:20.917562+00:00"
+}

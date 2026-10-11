@@ -1,0 +1,185 @@
+[
+  {
+    "segment_id": "evidence-hard-01",
+    "input": {
+      "osm_tags": {
+        "highway": "pedestrian"
+      },
+      "context_description": "La intrare sunt stalpisori metalici."
+    },
+    "expected": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "bollard",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as 'pedestrian' with no conflicting tags. The context description mentions metalic bollards at the entrance, which is consistent with the 'pedestrian' category. No anomaly flag is set as there are no conflicting observations or numeric speed values provided.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-02",
+    "input": {
+      "osm_tags": {
+        "highway": "service"
+      },
+      "context_description": "Accesul este blocat de o bariera cu brat."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road as a 'service' highway with a 'lift_gate' (Romanian: bariera cu brat) as the barrier. There are no conflicting observations or anomalies based on the provided information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-03",
+    "input": {
+      "osm_tags": {
+        "highway": "track"
+      },
+      "context_description": "La intrare este o poarta inchisa."
+    },
+    "expected": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input specifies a highway type of 'track' and provides context that there is a closed gate at the entrance. There are no conflicting tags or numeric maxspeed values provided. The road category is specified as per OSM names, and no one-way or barrier information is inferred from the given tags. The road is considered observed without anomalies.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-05",
+    "input": {
+      "osm_tags": {
+        "highway": "residential"
+      },
+      "context_description": "Indicatorul arata limita de viteza 30 km/h."
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input indicates a maxspeed of 30 km/h, which is a valid and observed fact. The context description explicitly states this information.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh"
+    ]
+  },
+  {
+    "segment_id": "evidence-hard-13",
+    "input": {
+      "osm_tags": {
+        "highway": "track"
+      },
+      "context_description": "The road surface is gravel."
+    },
+    "expected": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "gravel",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Hand-written reference for this fictional scenario.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "The input data specifies the road surface as gravel, which is explicitly provided in the OSM tags. There are no conflicting observations or anomalies related to the surface.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface"
+    ]
+  }
+]

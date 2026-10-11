@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"residential\",\"confidence_score\":0.5,\"reasoning_cot\":\"No OSM tags provided, using context description. Speed limit is 30 km/h. Surface is asphalt. Barrier is a gate.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:31:19.2833617Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1569694200,
+      "load_duration": 9513600,
+      "prompt_eval_count": 738,
+      "prompt_eval_duration": 263458000,
+      "eval_count": 60,
+      "eval_duration": 1287030000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3b-c7d0-7552-8ffa-6e07eadee2be-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 738,
+      "output_tokens": 60,
+      "total_tokens": 798
+    }
+  },
+  "token_usage": {
+    "input_tokens": 738,
+    "output_tokens": 60,
+    "total_tokens": 798
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "residential",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "No OSM tags provided, using context description. Speed limit is 30 km/h. Surface is asphalt. Barrier is a gate.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "1c49f4b118d663111c849ed3a83551ceb64b03280101676f7ad43413d887cbff",
+  "elapsed_s": 1.5773816999862902,
+  "recorded_at": "2026-10-11T18:31:19.286812+00:00"
+}

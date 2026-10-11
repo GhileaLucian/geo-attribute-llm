@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'service', a numeric maxspeed of 30 km/h, asphalt surface, and a barrier of 'bariera cu brat' (lift gate). No anomalies are detected as the data is consistent and does not contain conflicting information.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:29:03.3622767Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2382880600,
+      "load_duration": 8070200,
+      "prompt_eval_count": 374,
+      "prompt_eval_duration": 282086000,
+      "eval_count": 101,
+      "eval_duration": 2085341000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c39-b1b2-7490-9ece-c3b77cccc086-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 374,
+      "output_tokens": 101,
+      "total_tokens": 475
+    }
+  },
+  "token_usage": {
+    "input_tokens": 374,
+    "output_tokens": 101,
+    "total_tokens": 475
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input data specifies the road type as 'service', a numeric maxspeed of 30 km/h, asphalt surface, and a barrier of 'bariera cu brat' (lift gate). No anomalies are detected as the data is consistent and does not contain conflicting information.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "124b28de63c03a89e8fafda98e68dda291f52629a63988437c125695252897f9",
+  "elapsed_s": 2.391088899981696,
+  "recorded_at": "2026-10-11T18:29:03.366413+00:00"
+}

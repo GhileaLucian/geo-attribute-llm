@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"service\",\"confidence_score\":0.5,\"reasoning_cot\":\"oneway=-1 indicates one-way in the specified direction.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:32:05.2728227Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1201399000,
+      "load_duration": 11619100,
+      "prompt_eval_count": 726,
+      "prompt_eval_duration": 259810000,
+      "eval_count": 43,
+      "eval_duration": 921286000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3c-7ce6-7310-a39c-141f0b4a6015-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 726,
+      "output_tokens": 43,
+      "total_tokens": 769
+    }
+  },
+  "token_usage": {
+    "input_tokens": 726,
+    "output_tokens": 43,
+    "total_tokens": 769
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "oneway=-1 indicates one-way in the specified direction.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "b3086cba5916f28c36bae03eecad769fbef5439d7a97178067af189ca4b491cb",
+  "elapsed_s": 1.2095546999771614,
+  "recorded_at": "2026-10-11T18:32:05.277492+00:00"
+}

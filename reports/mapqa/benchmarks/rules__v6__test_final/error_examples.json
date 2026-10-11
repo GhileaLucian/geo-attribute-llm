@@ -1,0 +1,187 @@
+[
+  {
+    "segment_id": "final-897177177",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: footway. Surface: asphalt. Barrier observed on the road: unknown."
+    },
+    "expected": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present"
+    ],
+    "detail_categories": [
+      "barrier_false_negative"
+    ]
+  },
+  {
+    "segment_id": "final-1554806079",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: footway. Surface: paving_stones. Barrier observed on the road: unknown."
+    },
+    "expected": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "unknown",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present"
+    ],
+    "detail_categories": [
+      "barrier_false_negative"
+    ]
+  },
+  {
+    "segment_id": "final-917143884",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: pedestrian. Suprafata: cobblestone. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "cobblestone",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface"
+    ],
+    "detail_categories": [
+      "surface_mismatch"
+    ]
+  },
+  {
+    "segment_id": "final-911239843",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: pedestrian. Suprafata: cobblestone. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "cobblestone",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface"
+    ],
+    "detail_categories": [
+      "surface_mismatch"
+    ]
+  },
+  {
+    "segment_id": "final-1555090321",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: footway. Surface: asphalt. Barrier observed on the road: unknown."
+    },
+    "expected": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Deterministic explicit tags and bilingual regex rules; no LLM.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present"
+    ],
+    "detail_categories": [
+      "barrier_false_negative"
+    ]
+  }
+]

@@ -1,0 +1,1430 @@
+[
+  {
+    "segment_id": "evidence-1554806088",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: footway. Suprafata: pavele. Bariera pe drum: unknown."
+    },
+    "expected": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "unknown",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present"
+    ]
+  },
+  {
+    "segment_id": "evidence-714476776",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Barrier observed on the road: lift_gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description indicates road type and presence of barrier.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-1335708326",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: residential. Suprafata: asfalt. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Assuming residential road type.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-31583259",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Recorded speed limit: 30 km/h. Surface: asphalt. Barrier observed on the road: lift_gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": 30,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, using context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-169236169",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: living_street. Suprafata: pavele. Bariera pe drum: bariera cu brat."
+    },
+    "expected": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, using context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-1153197359",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Barrier observed on the road: gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-714476780",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Limita numerica inregistrata: 30 km/h. Suprafata: asfalt. Bariera pe drum: bariera cu brat."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": 30,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "Tag maxspeed=30 takes precedence over context description. Surface is asphalt. Barrier type is lift_gate.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-1101500286",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Barrier observed on the road: gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-1201351801",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Bariera pe drum: bariera cu brat."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-889604484",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Barrier observed on the road: gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-931294198",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Road type inferred from context. Barrier inferred from 'poarta' (gate).",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-23893754",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: residential. Surface: asphalt. One-way: no. Barrier observed on the road: block."
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "block",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, using context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "oneway",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-1247005596",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Bariera pe drum: bariera cu brat."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-1513750113",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Barrier observed on the road: gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-920685371",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: living_street. Limita numerica inregistrata: 20 km/h. Suprafata: cobblestone. Sens unic: da. Bariera pe drum: stalpisori."
+    },
+    "expected": {
+      "road_type": "living_street",
+      "speed_limit_kmh": 20,
+      "barrier_present": true,
+      "barrier_type": "bollard",
+      "surface": "cobblestone",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, using context description. Speed limit is 20 km/h, surface is cobblestone, one-way is true, barrier is bollards.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh",
+      "surface",
+      "oneway",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-879928284",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Barrier observed on the road: lift_gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description indicates road type and presence of barrier.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-295334628",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Bariera pe drum: unknown."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present"
+    ]
+  },
+  {
+    "segment_id": "evidence-596851982",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: living_street. Surface: asphalt. Barrier observed on the road: lift_gate."
+    },
+    "expected": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, using context description. Surface is asphalt. Barrier is lift_gate.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-1086730857",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Road type inferred from context. Barrier inferred from 'poarta' (gate).",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-713721934",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Recorded speed limit: 5 km/h. Surface: asphalt. Barrier observed on the road: lift_gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": 5,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, using context description. Speed limit is 5 km/h, maxspeed is null. Surface is asphalt. Barrier is lift_gate.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-858187839",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Suprafata: asfalt. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Assuming highway=service, surface=asphalt, and barrier_type=gate.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-893962055",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Recorded speed limit: 30 km/h. Surface: asphalt. One-way: no. Barrier observed on the road: lift_gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": 30,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, using context description. Speed limit is 30 km/h, surface is asphalt, one-way is false, and barrier is lift_gate.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh",
+      "surface",
+      "oneway",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-179900185",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Suprafata: asfalt. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Assuming highway=service, surface=asphalt, and barrier_type=gate.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-1117217700",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Surface: asphalt. Barrier observed on the road: gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-24676375",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Road type inferred from context. Barrier inferred from 'poarta' (gate).",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-880003286",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Barrier observed on the road: gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-568300407",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Suprafata: asfalt. Bariera pe drum: bariera cu brat."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Road type inferred from context. Surface and barrier inferred from context.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-713716031",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Surface: paving_stones. Barrier observed on the road: lift_gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, using context description. Surface is specified as paving_stones. Barrier is explicitly observed as lift_gate.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-987113781",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Suprafata: paved. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "paved",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-1554877172",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: footway. Surface: asphalt. Barrier observed on the road: unknown."
+    },
+    "expected": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Road category is footway, surface is asphalt, barrier is unknown.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present"
+    ]
+  },
+  {
+    "segment_id": "evidence-858080245",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Road type inferred from context. Barrier inferred from 'poarta' (gate).",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-586976407",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Barrier observed on the road: gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-887429950",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Limita numerica inregistrata: 5 km/h. Bariera pe drum: bariera cu brat."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": 5,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, using context description. Speed limit is 5 km/h, maxspeed:conditional is not applicable.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-516286415",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Surface: asphalt. One-way: yes. Barrier observed on the road: lift_gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, using context description. Surface is asphalt, one-way is yes, barrier is lift_gate.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "oneway",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-688086191",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Suprafata: pavele. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Road type inferred from context. Surface and barrier inferred from context.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-188140650",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Barrier observed on the road: gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-677218669",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Bariera pe drum: poarta."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Road type inferred from context. Barrier inferred from 'poarta' (gate).",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-1160393701",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: service. Barrier observed on the road: lift_gate."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description indicates road type and presence of barrier.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-677078045",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Categoria drumului: service. Limita numerica inregistrata: 5 km/h. Suprafata: pavele. Bariera pe drum: bariera cu brat."
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": 5,
+      "barrier_present": true,
+      "barrier_type": "lift_gate",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, using context description. Speed limit is 5 km/h, surface is pavele, and there is a barrier with brat.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type"
+    ]
+  },
+  {
+    "segment_id": "evidence-1554806081",
+    "input": {
+      "osm_tags": {},
+      "context_description": "Road category: footway. Surface: paving_stones. Barrier observed on the road: unknown."
+    },
+    "expected": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "unknown",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference normalized from snapshot tags/topologically attached barrier nodes.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "actual": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.5,
+      "reasoning_cot": "No OSM tags provided, only context description. Road category is footway, surface is paving_stones, barrier is unknown.",
+      "anomaly_flag": false,
+      "input_instruction_detected": false
+    },
+    "errors": [
+      "surface",
+      "barrier_present"
+    ]
+  }
+]

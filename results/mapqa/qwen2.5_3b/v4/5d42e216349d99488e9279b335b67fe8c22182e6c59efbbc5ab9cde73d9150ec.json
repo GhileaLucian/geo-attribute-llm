@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"secondary\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input specifies a conditional speed of 30 km/h for wet conditions. The highway tag is 'secondary', and the context description indicates this is a conditional speed for wet road conditions.\",\n  \"speed_limit_kmh\": 30,\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:30:31.3946146Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2785442100,
+      "load_duration": 11059600,
+      "prompt_eval_count": 368,
+      "prompt_eval_duration": 352928000,
+      "eval_count": 109,
+      "eval_duration": 2414725000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3b-07ff-7d30-b46a-0fedb1a047da-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 368,
+      "output_tokens": 109,
+      "total_tokens": 477
+    }
+  },
+  "token_usage": {
+    "input_tokens": 368,
+    "output_tokens": 109,
+    "total_tokens": 477
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "secondary",
+    "speed_limit_kmh": 30,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input specifies a conditional speed of 30 km/h for wet conditions. The highway tag is 'secondary', and the context description indicates this is a conditional speed for wet road conditions.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "5d42e216349d99488e9279b335b67fe8c22182e6c59efbbc5ab9cde73d9150ec",
+  "elapsed_s": 2.794842499977676,
+  "recorded_at": "2026-10-11T18:30:31.398416+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input does not specify a barrier, and the context description confirms the absence of a barrier. Therefore, barrier is null and barrier_type is unknown.\"\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:30:39.7231787Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1829842500,
+      "load_duration": 14292600,
+      "prompt_eval_count": 371,
+      "prompt_eval_duration": 356753000,
+      "eval_count": 57,
+      "eval_duration": 1447454000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3b-2c44-7ab2-9223-5088c1c28f26-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 371,
+      "output_tokens": 57,
+      "total_tokens": 428
+    }
+  },
+  "token_usage": {
+    "input_tokens": 371,
+    "output_tokens": 57,
+    "total_tokens": 428
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input does not specify a barrier, and the context description confirms the absence of a barrier. Therefore, barrier is null and barrier_type is unknown.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "ada5925718c311918e9af4744b2fdc4c3c7a11be05c8d797ac98a66d5159cb9d",
+  "elapsed_s": 1.839191299979575,
+  "recorded_at": "2026-10-11T18:30:39.727134+00:00"
+}

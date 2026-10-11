@@ -1,0 +1,684 @@
+{
+  "n": 15,
+  "exact_match_rate": 0.8666666666666667,
+  "failure_rate": 0.06666666666666667,
+  "invalid_output_rate": 0.06666666666666667,
+  "error_taxonomy": {
+    "input_instruction_detected": 1,
+    "invalid_output": 1
+  },
+  "error_detail_taxonomy": {
+    "input_instruction_detected_false_positive": 1,
+    "invalid_output": 1
+  },
+  "attributes": {
+    "road_type": {
+      "count": 15,
+      "accuracy": 0.9333333333333333,
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1_score": 0.9619047619047619,
+      "macro_f1": 0.9795918367346939,
+      "unknown_reference_count": 1,
+      "known_reference_accuracy": 0.9285714285714286,
+      "per_class": {
+        "__failed__": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "pedestrian": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "primary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "residential": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 5
+        },
+        "secondary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "service": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1_score": 0.8571428571428571,
+          "support": 4
+        },
+        "track": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 2
+        },
+        "unknown": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "__failed__",
+          "pedestrian",
+          "primary",
+          "residential",
+          "secondary",
+          "service",
+          "track",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    "speed_limit_kmh": {
+      "count": 15,
+      "accuracy": 0.9333333333333333,
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1_score": 0.9652173913043479,
+      "macro_f1": 0.9855072463768116,
+      "unknown_reference_count": 12,
+      "known_reference_accuracy": 1.0,
+      "per_class": {
+        "140": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "30": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 2
+        },
+        "__failed__": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "unknown": {
+          "precision": 1.0,
+          "recall": 0.9166666666666666,
+          "f1_score": 0.9565217391304348,
+          "support": 12
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "140",
+          "30",
+          "__failed__",
+          "unknown"
+        ],
+        "values": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            11
+          ]
+        ]
+      },
+      "known_exact_accuracy": 1.0
+    },
+    "surface": {
+      "count": 15,
+      "accuracy": 0.9333333333333333,
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1_score": 0.965432098765432,
+      "macro_f1": 0.9814814814814814,
+      "unknown_reference_count": 14,
+      "known_reference_accuracy": 1.0,
+      "per_class": {
+        "__failed__": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "gravel": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "unknown": {
+          "precision": 1.0,
+          "recall": 0.9285714285714286,
+          "f1_score": 0.9629629629629629,
+          "support": 14
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "__failed__",
+          "gravel",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            13
+          ]
+        ]
+      }
+    },
+    "oneway": {
+      "count": 15,
+      "accuracy": 0.9333333333333333,
+      "precision": 0.9333333333333333,
+      "recall": 0.9333333333333333,
+      "f1_score": 0.9333333333333333,
+      "macro_f1": 0.6666666666666666,
+      "unknown_reference_count": 13,
+      "known_reference_accuracy": 0.5,
+      "per_class": {
+        "__failed__": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "false": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "true": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "unknown": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 13
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "__failed__",
+          "false",
+          "true",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            13
+          ]
+        ]
+      }
+    },
+    "barrier_present": {
+      "count": 15,
+      "accuracy": 0.9333333333333333,
+      "precision": 0.9333333333333333,
+      "recall": 0.9333333333333333,
+      "f1_score": 0.9333333333333333,
+      "macro_f1": 0.6666666666666666,
+      "unknown_reference_count": 10,
+      "known_reference_accuracy": 0.8,
+      "per_class": {
+        "__failed__": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "false": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "true": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 4
+        },
+        "unknown": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 10
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "__failed__",
+          "false",
+          "true",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            10
+          ]
+        ]
+      }
+    },
+    "barrier_type": {
+      "count": 15,
+      "accuracy": 0.9333333333333333,
+      "precision": 0.9333333333333333,
+      "recall": 0.9333333333333333,
+      "f1_score": 0.9333333333333333,
+      "macro_f1": 0.8333333333333334,
+      "unknown_reference_count": 10,
+      "known_reference_accuracy": 0.8,
+      "per_class": {
+        "__failed__": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "bollard": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "gate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "guard_rail": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "lift_gate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "none": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "unknown": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 10
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "__failed__",
+          "bollard",
+          "gate",
+          "guard_rail",
+          "lift_gate",
+          "none",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10
+          ]
+        ]
+      }
+    },
+    "anomaly_flag": {
+      "count": 15,
+      "accuracy": 0.9333333333333333,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 0.98,
+      "unknown_reference_count": 0,
+      "known_reference_accuracy": 0.9333333333333333,
+      "per_class": {
+        "__failed__": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "false": {
+          "precision": 1.0,
+          "recall": 0.9230769230769231,
+          "f1_score": 0.96,
+          "support": 13
+        },
+        "true": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 2
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "__failed__",
+          "false",
+          "true"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            2
+          ]
+        ]
+      }
+    },
+    "input_instruction_detected": {
+      "count": 15,
+      "accuracy": 0.8666666666666667,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1_score": 0.6666666666666666,
+      "macro_f1": 0.7948717948717949,
+      "unknown_reference_count": 0,
+      "known_reference_accuracy": 0.8666666666666667,
+      "per_class": {
+        "__failed__": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "false": {
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1_score": 0.9230769230769231,
+          "support": 14
+        },
+        "true": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1_score": 0.6666666666666666,
+          "support": 1
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "__failed__",
+          "false",
+          "true"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            12,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "mode": "hybrid",
+  "prompt": "v6",
+  "model": "qwen2.5:3b",
+  "split": "hard",
+  "dataset_sha256": "563b459b1de953595ea1f2c8fce635c22bb004e89328b46bc1345028e0121753",
+  "run_at": "2026-10-11T18:50:27.650632+00:00",
+  "model_digests": [
+    "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b"
+  ],
+  "cached_responses": 15,
+  "task": "OSM-derived controlled text extraction; synthetic hard scenarios; NOT independently verified map truth."
+}

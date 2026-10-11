@@ -17,8 +17,8 @@ st.markdown((PROJECT_ROOT / "assets" / "dashboard.css").read_text(encoding="utf-
 st.title("GeoAttribute QA")
 st.caption("Road attribute extraction and saved evaluation results. Local Ollama needs no API key; cloud APIs require your own key.")
 
-tab_inspector, tab_benchmark, tab_workflow = st.tabs([
-    "Segment Inspector", "Benchmark & Error Taxonomy", "How to run"
+tab_inspector, tab_benchmark, tab_workflow, tab_mapqa = st.tabs([
+    "Segment Inspector", "Benchmark & Error Taxonomy", "How to run", "Map QA & ML"
 ])
 
 with tab_inspector:
@@ -141,3 +141,7 @@ with tab_workflow:
     st.write("Copy .env.example to .env and configure your key locally before using an API.")
     st.write("Use the development set to compare prompt versions. Keep the hold-out test for the final selected version.")
     st.caption("OSM data: OpenStreetMap contributors, ODbL. See data/README.md for sources and limitations.")
+
+with tab_mapqa:
+    from src.mapqa_dashboard import render_mapqa
+    render_mapqa()

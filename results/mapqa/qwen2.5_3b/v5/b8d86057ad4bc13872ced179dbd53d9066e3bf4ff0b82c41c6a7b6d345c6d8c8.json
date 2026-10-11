@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\"road_type\":\"service\",\"confidence_score\":0.5,\"reasoning_cot\":\"No OSM tags provided, using context description. Speed limit is 5 km/h, maxspeed is null. Surface is asphalt. Barrier is lift_gate.\",\"anomaly_flag\":false,\"input_instruction_detected\":false}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:32:38.4352183Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1431426800,
+      "load_duration": 11603300,
+      "prompt_eval_count": 729,
+      "prompt_eval_duration": 178237000,
+      "eval_count": 63,
+      "eval_duration": 1233545000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3c-fd8a-7a70-a26b-f2c9ab476f39-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 729,
+      "output_tokens": 63,
+      "total_tokens": 792
+    }
+  },
+  "token_usage": {
+    "input_tokens": 729,
+    "output_tokens": 63,
+    "total_tokens": 792
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "No OSM tags provided, using context description. Speed limit is 5 km/h, maxspeed is null. Surface is asphalt. Barrier is lift_gate.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "b8d86057ad4bc13872ced179dbd53d9066e3bf4ff0b82c41c6a7b6d345c6d8c8",
+  "elapsed_s": 1.4389717000012752,
+  "recorded_at": "2026-10-11T18:32:38.439177+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road as a service category, with asphalt surface and a gate as a barrier. No observed speed or oneway information is provided, so the schema remains as is with the given context.\",\n  \"anomaly_flag\": false,\n  \"input_instruction_detected\": false\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:30:05.4930263Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2235958600,
+      "load_duration": 15341100,
+      "prompt_eval_count": 357,
+      "prompt_eval_duration": 206104000,
+      "eval_count": 89,
+      "eval_duration": 2006768000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c3a-a4f8-7863-9603-1088412e0fbb-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 357,
+      "output_tokens": 89,
+      "total_tokens": 446
+    }
+  },
+  "token_usage": {
+    "input_tokens": 357,
+    "output_tokens": 89,
+    "total_tokens": 446
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input data specifies the road as a service category, with asphalt surface and a gate as a barrier. No observed speed or oneway information is provided, so the schema remains as is with the given context.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "3fbf80ff102d8c43712cf83447aa7f3b546aad565a31e8a64ee9b2ce5fcbb165",
+  "elapsed_s": 2.2437374999863096,
+  "recorded_at": "2026-10-11T18:30:05.496900+00:00"
+}

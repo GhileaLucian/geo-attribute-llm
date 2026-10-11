@@ -1,0 +1,54 @@
+{
+  "raw_response": {
+    "content": "{\n  \"road_type\": \"footway\",\n  \"confidence_score\": 1,\n  \"reasoning_cot\": \"The input data specifies the road type as 'footway' and the surface as 'pavele' (paving stones). There is no information about barriers. The context description confirms these tags.\",\n  \"input_instruction_detected\": false\n}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T18:28:43.9498033Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1920783200,
+      "load_duration": 12015800,
+      "prompt_eval_count": 356,
+      "prompt_eval_duration": 196788000,
+      "eval_count": 78,
+      "eval_duration": 1704146000,
+      "logprobs": null,
+      "model_name": "qwen2.5:3b",
+      "model_provider": "ollama"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a12c39-67ac-7301-88df-d86bb4093a1c-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 356,
+      "output_tokens": 78,
+      "total_tokens": 434
+    }
+  },
+  "token_usage": {
+    "input_tokens": 356,
+    "output_tokens": 78,
+    "total_tokens": 434
+  },
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "status": "success",
+  "error": null,
+  "output": {
+    "road_type": "footway",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "The input data specifies the road type as 'footway' and the surface as 'pavele' (paving stones). There is no information about barriers. The context description confirms these tags.",
+    "anomaly_flag": false,
+    "input_instruction_detected": false
+  },
+  "request_sha256": "a06ae7d320ef436cea04151b031762845dc33b50a7ef1f92e19d63faf1b883fd",
+  "elapsed_s": 1.9304248999978881,
+  "recorded_at": "2026-10-11T18:28:43.953557+00:00"
+}
