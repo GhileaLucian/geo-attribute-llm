@@ -1,366 +1,143 @@
-"""
-Streamlit Web Application: GeoAttribute QA Platform
-Minimalist, high-end SaaS interface inspired by Linear and Mapbox Studio.
-Strictly light-themed, zero emojis, clean typography and subtle components.
-"""
+"""Streamlit inspector and viewer for saved benchmark runs."""
 
-import os
+import hashlib
 import json
-from pathlib import Path
-import streamlit as st
+import os
 import pandas as pd
+import streamlit as st
 
-from src.models import RoadSegmentInput, RoadAttributes
-from src.extractor import get_extractor, RuleBasedBaselineExtractor
+from src.config import PROJECT_ROOT, load_configuration
 from src.dataset_generator import load_ground_truth_dataset
+from src.evaluator import percentage
+from src.recording import extract_batch, input_payload
 
-# Configuration
-st.set_page_config(
-    page_title="GeoAttribute QA",
-    layout="wide",
-    initial_sidebar_state="collapsed"
-)
+load_configuration()
+st.set_page_config(page_title="GeoAttribute QA", layout="wide", initial_sidebar_state="collapsed")
+st.markdown((PROJECT_ROOT / "assets" / "dashboard.css").read_text(encoding="utf-8"), unsafe_allow_html=True)
+st.title("GeoAttribute QA")
+st.caption("Road attribute extraction and saved evaluation results. API benchmarks require your own key.")
 
-# Modern Minimalist CSS
-st.markdown("""
-<style>
-    /* Global Resets & Typography */
-    html, body, [class*="css"] {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        color: #0f172a;
-    }
-    .stApp {
-        background-color: #f8fafc;
-    }
-    
-    /* Header Container */
-    .header-box {
-        background: #ffffff;
-        border-bottom: 1px solid #e2e8f0;
-        padding: 24px 32px 20px;
-        margin: -4rem -4rem 24px -4rem;
-    }
-    .header-title {
-        font-size: 21px;
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        color: #0f172a;
-        margin: 0;
-    }
-    .header-subtitle {
-        font-size: 13.5px;
-        color: #64748b;
-        margin-top: 4px;
-    }
-    
-    /* Cards */
-    .card {
-        background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 8px;
-        padding: 20px;
-        margin-bottom: 16px;
-    }
-    .card-title {
-        font-size: 12px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #64748b;
-        margin-bottom: 14px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    /* Metric Pills & Badges */
-    .attr-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        margin-top: 8px;
-    }
-    .attr-item {
-        background: #f8fafc;
-        border: 1px solid #e2e8f0;
-        border-radius: 6px;
-        padding: 12px 14px;
-    }
-    .attr-label {
-        font-size: 11px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-        color: #64748b;
-        margin-bottom: 4px;
-    }
-    .attr-val {
-        font-size: 15px;
-        font-weight: 600;
-        color: #0f172a;
-    }
-    
-    /* Reasoning Box */
-    .reasoning-box {
-        background: #f8fafc;
-        border-left: 3px solid #0284c7;
-        padding: 12px 14px;
-        border-radius: 0 6px 6px 0;
-        font-size: 12.5px;
-        line-height: 1.5;
-        color: #334155;
-        margin-top: 8px;
-    }
-    
-    /* Status Labels */
-    .status-verified {
-        color: #059669;
-        font-size: 12px;
-        font-weight: 600;
-    }
-    .status-anomaly {
-        color: #d97706;
-        font-size: 12px;
-        font-weight: 600;
-    }
-
-    /* Tabs styling override */
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 24px;
-        border-bottom: 1px solid #e2e8f0;
-        margin-bottom: 20px;
-    }
-    .stTabs [data-baseweb="tab"] {
-        padding: 8px 4px 12px;
-        font-size: 13.5px;
-        font-weight: 500;
-        color: #64748b;
-        background-color: transparent !important;
-    }
-    .stTabs [aria-selected="true"] {
-        color: #0f172a !important;
-        font-weight: 600 !important;
-        border-bottom: 2px solid #0284c7 !important;
-    }
-    
-    /* Remove streamlit padding gaps */
-    div.block-container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-</style>
-""", unsafe_allow_html=True)
-
-# Application Header
-st.markdown("""
-<div class="header-box">
-    <div class="header-title">GeoAttribute Quality Assurance Platform</div>
-    <div class="header-subtitle">Comparative benchmark: Rule-based Baseline vs Claude Sonnet / GPT-4o on OpenStreetMap data</div>
-</div>
-""", unsafe_allow_html=True)
-
-# Load ground-truth dataset strictly from JSON
-data_file = Path("data/osm_ground_truth_cluj.json")
-dataset = load_ground_truth_dataset(data_file)
-segment_map = {f"{s.segment_id} — {s.name}": s for s in dataset}
-
-# Top Navigation Tabs
 tab_inspector, tab_benchmark, tab_workflow = st.tabs([
-    "Segment Inspector",
-    "Benchmark & Error Taxonomy",
-    "Pipeline Architecture"
+    "Segment Inspector", "Benchmark & Error Taxonomy", "How to run"
 ])
 
-# ---------------------------------------------------------
-# TAB 1: SEGMENT INSPECTOR
-# ---------------------------------------------------------
 with tab_inspector:
-    opt_col, ctrl_col, btn_col = st.columns([1.5, 3, 1])
-    with opt_col:
-        engine_choice = st.selectbox(
-            "Extractor Engine:",
-            ["Rule-Based Baseline", "Claude Sonnet (Live API)", "OpenAI GPT-4o (Live API)"],
-            index=0
-        )
-    with ctrl_col:
-        selected_key = st.selectbox(
-            "Select road segment from benchmark dataset:",
-            list(segment_map.keys())
-        )
-    with btn_col:
-        st.write("")
-        st.write("")
-        run_extraction = st.button("Extract", type="primary", use_container_width=True)
-
-    segment: RoadSegmentInput = segment_map[selected_key]
-    
-    # Initialize appropriate extractor
-    extractor_error = None
+    split_name = st.selectbox("Dataset", ["OSM development", "Hand-written hard cases", "Legacy curated examples"])
+    filenames = {
+        "OSM development": "osm_dev.json", "Hand-written hard cases": "hard_cases.json",
+        "Legacy curated examples": "osm_ground_truth_cluj.json"
+    }
     try:
-        if "Claude" in engine_choice:
-            extractor = get_extractor("claude")
-        elif "OpenAI" in engine_choice:
-            extractor = get_extractor("openai")
-        else:
-            extractor = get_extractor("baseline")
-        extracted = extractor.extract_attributes(segment)
-    except Exception as e:
-        extractor_error = str(e)
-        # Fallback to baseline
-        extractor = RuleBasedBaselineExtractor()
-        extracted = extractor.extract_attributes(segment)
-
-    if extractor_error:
-        st.warning(f"Live API unavailable ({extractor_error}). Displaying Rule-based Baseline output instead.")
-
-    col_left, col_right = st.columns([1, 1], gap="medium")
-
-    with col_left:
-        st.markdown("""
-        <div class="card">
-            <div class="card-title">
-                <span>Input Metadata</span>
-                <span style="font-weight: 500; color: #94a3b8;">Source: OpenStreetMap (Cluj-Napoca)</span>
-            </div>
-        """, unsafe_allow_html=True)
-        
-        st.write(f"**Segment Identifier:** `{segment.segment_id}`")
-        st.write(f"**Road Name:** {segment.name}")
-        st.write(f"**Context:** {segment.context_description}")
-        
-        st.markdown("<p style='font-size: 11px; font-weight: 600; text-transform: uppercase; color: #64748b; margin-top: 14px; margin-bottom: 6px;'>OSM Tags</p>", unsafe_allow_html=True)
-        
-        # Clean Table for Tags
-        tags_df = pd.DataFrame(list(segment.osm_tags.items()), columns=["Key", "Value"])
-        st.dataframe(tags_df, hide_index=True, use_container_width=True, height=180)
-        
-        st.markdown("</div>", unsafe_allow_html=True)
-
-    with col_right:
-        # Check against ground truth
-        is_exact = False
-        if segment.expected_attributes:
-            exp = segment.expected_attributes
-            is_exact = (
-                exp.road_type == extracted.road_type and
-                exp.barrier_present == extracted.barrier_present and
-                exp.surface == extracted.surface and
-                (exp.speed_limit_kmh == extracted.speed_limit_kmh if exp.speed_limit_kmh else True)
-            )
-
-        status_html = '<span class="status-verified">Verified Match</span>' if is_exact else '<span class="status-anomaly">Discrepancy Cataloged</span>'
-
-        st.markdown(f"""
-        <div class="card">
-            <div class="card-title">
-                <span>Extraction Output [{extractor.name}]</span>
-                {status_html}
-            </div>
-            <div class="attr-grid">
-                <div class="attr-item">
-                    <div class="attr-label">Road Classification</div>
-                    <div class="attr-val">{extracted.road_type.value}</div>
-                </div>
-                <div class="attr-item">
-                    <div class="attr-label">Speed Limit</div>
-                    <div class="attr-val">{f"{extracted.speed_limit_kmh} km/h" if extracted.speed_limit_kmh else "Not specified"}</div>
-                </div>
-                <div class="attr-item">
-                    <div class="attr-label">Physical Barrier</div>
-                    <div class="attr-val">{"Present (" + extracted.barrier_type.value + ")" if extracted.barrier_present else "None"}</div>
-                </div>
-                <div class="attr-item">
-                    <div class="attr-label">Surface Material</div>
-                    <div class="attr-val">{extracted.surface.value}</div>
-                </div>
-            </div>
-            <div style="margin-top: 16px;">
-                <div class="attr-label">Reasoning Trace</div>
-                <div class="reasoning-box">{extracted.reasoning_cot}</div>
-            </div>
-            <div style="display: flex; justify-content: space-between; margin-top: 14px; font-size: 11.5px; color: #64748b;">
-                <span>One-Way: <strong>{"Yes" if extracted.oneway else "No"}</strong></span>
-                <span>Confidence: <strong>{extracted.confidence_score*100:.0f}%</strong></span>
-                <span>Anomaly Flag: <strong>{"Yes" if extracted.anomaly_flag else "None"}</strong></span>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-
-# ---------------------------------------------------------
-# TAB 2: BENCHMARK & ERROR TAXONOMY
-# ---------------------------------------------------------
-with tab_benchmark:
-    metrics_path = Path("reports/metrics_summary.json")
-    chart_path = Path("reports/evaluation_metrics_chart.png")
-
-    if metrics_path.exists():
-        with open(metrics_path, "r", encoding="utf-8") as f:
-            metrics = json.load(f)
-
-        mode_ran = metrics.get("extractor_mode", "baseline").upper()
-        st.caption(f"Currently viewing evaluation artifacts generated for: **{mode_ran}**")
-
-        m_cols = st.columns(5)
-        m_cols[0].metric("Evaluated Segments", f"{metrics['total_segments_evaluated']}")
-        m_cols[1].metric("Exact Match Rate", f"{metrics['exact_segment_match_rate']*100:.1f}%")
-        m_cols[2].metric("Road Classification F1", f"{metrics['attributes']['road_type']['f1_score']*100:.1f}%")
-        m_cols[3].metric("Barrier Detection F1", f"{metrics['attributes']['barrier_present']['f1_score']*100:.1f}%")
-        m_cols[4].metric("Surface Material F1", f"{metrics['attributes']['surface_type']['f1_score']*100:.1f}%")
-
-        st.markdown("<div style='height: 12px;'></div>", unsafe_allow_html=True)
-
-        chart_col, err_col = st.columns([1.1, 1], gap="medium")
-        with chart_col:
-            st.markdown("""
-            <div class="card">
-                <div class="card-title">Precision &amp; Recall Performance</div>
-            """, unsafe_allow_html=True)
-            if chart_path.exists():
-                st.image(str(chart_path), use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
-
-        with err_col:
-            st.markdown("""
-            <div class="card">
-                <div class="card-title">Spatial Error Taxonomy</div>
-            """, unsafe_allow_html=True)
-            err_dict = metrics.get("error_taxonomy_breakdown", {})
-            if err_dict:
-                err_df = pd.DataFrame([
-                    {"Error Category": k, "Count": v, "Percentage": f"{v/metrics['total_segments_evaluated']*100:.1f}%"}
-                    for k, v in err_dict.items()
-                ])
-                st.dataframe(err_df, hide_index=True, use_container_width=True)
-                st.caption("Discrepancies are categorized into domain-specific error types to prioritize prompt refinements.")
+        dataset = load_ground_truth_dataset(PROJECT_ROOT / "data" / filenames[split_name])
+    except (FileNotFoundError, ValueError) as exc:
+        st.error(str(exc))
+        st.stop()
+    segment = st.selectbox("Segment", dataset, format_func=lambda value: f"{value.segment_id} — {value.name}")
+    col_engine, col_prompt = st.columns(2)
+    mode = col_engine.selectbox("Extractor", ["baseline", "claude", "openai"])
+    version = col_prompt.selectbox("Prompt version", ["v1", "v2", "v3"], disabled=mode == "baseline")
+    if mode == "baseline":
+        version = "v1"
+    cached_only = st.checkbox("Use saved response only (no API calls)", value=False)
+    model = "rule_based_baseline" if mode == "baseline" else (
+        os.getenv("ANTHROPIC_MODEL" if mode == "claude" else "OPENAI_MODEL") or
+        ("claude-sonnet-5-5" if mode == "claude" else "gpt-4o")
+    )
+    key_name = "ANTHROPIC_API_KEY" if mode == "claude" else "OPENAI_API_KEY"
+    key_available = bool(os.getenv(key_name)) if mode != "baseline" else True
+    if not key_available and not cached_only:
+        st.info(f"{key_name} is missing. Configure .env locally, or select saved responses.")
+    if segment.source == "hand-written":
+        st.caption("Fictional development scenario; not a downloaded OSM way.")
+    elif segment.source == "hand-curated-unverified":
+        st.warning("Legacy examples expose target tags and are not independently verified OSM records.")
+    else:
+        st.caption(f"Source: {segment.source}; collected: {segment.collected_at}.")
+        st.link_button("Open OSM way", f"https://www.openstreetmap.org/way/{segment.osm_way_id}")
+        st.caption("Hidden tags: " + ", ".join(segment.hidden_attributes))
+    payload_key = hashlib.sha256(json.dumps(input_payload(segment), sort_keys=True).encode()).hexdigest()
+    selection = (segment.segment_id, mode, model, version, payload_key)
+    if st.button("Extract", type="primary", disabled=not (key_available or cached_only)):
+        try:
+            with st.spinner("Extracting attributes..."):
+                result = extract_batch(
+                    [segment], mode, model, version, PROJECT_ROOT / "results", cached_only=cached_only
+                )[0]
+            st.session_state["inspector_output"] = {"selection": selection, "result": result}
+        except (ValueError, FileNotFoundError) as exc:
+            st.error(str(exc))
+            st.session_state.pop("inspector_output", None)
+    left, right = st.columns(2)
+    with left:
+        st.subheader("Model input")
+        st.json(input_payload(segment))
+    with right:
+        st.subheader("Extraction output")
+        saved = st.session_state.get("inspector_output")
+        if saved and saved["selection"] == selection:
+            result = saved["result"]
+            if result.status != "success" or result.extracted is None:
+                st.error(f"{result.status}: {result.error_message}")
             else:
-                st.write("Zero errors detected across the current evaluation suite.")
-            st.markdown("</div>", unsafe_allow_html=True)
+                st.caption(f"{mode} / {model} / {version}; cache hit: {result.cache_hit}")
+                st.json(result.extracted.model_dump(mode="json"))
+                exact = all(
+                    getattr(segment.expected_attributes, field) == getattr(result.extracted, field)
+                    for field in segment.evaluation_fields
+                )
+                st.write("Match on evaluated fields" if exact else "Difference on evaluated fields")
+                st.caption("Confidence is an uncalibrated self-assessment, not a correctness probability.")
+        else:
+            st.info("Press Extract to run the selected engine. Changing a selection does not call the API.")
+        with st.expander("Reference labels (not sent to the model)"):
+            st.json(segment.expected_attributes.model_dump(mode="json"))
+            st.write("Evaluated fields:", segment.evaluation_fields)
 
-# ---------------------------------------------------------
-# TAB 3: PIPELINE ARCHITECTURE
-# ---------------------------------------------------------
+with tab_benchmark:
+    files = sorted((PROJECT_ROOT / "reports").glob("*/metrics_summary.json"))
+    if not files:
+        st.info("No saved benchmark runs. Run python run_pipeline.py --mode baseline.")
+    else:
+        summaries = [json.loads(path.read_text(encoding="utf-8")) for path in files]
+        table = [{
+            "Dataset": m["dataset_file"], "Mode": m["extractor_mode"], "Model": m["model_name"],
+            "Prompt": m["prompt_version"], "n": m["total_segments_evaluated"],
+            "Exact": percentage(m["exact_segment_match_rate"]),
+            "Failed": percentage(m["failure_rate"])
+        } for m in summaries]
+        st.dataframe(pd.DataFrame(table), hide_index=True, use_container_width=True)
+        st.caption("Compare identical datasets only. High unknown-label support can inflate scores.")
+        selected = st.selectbox("Saved run", files, format_func=lambda path: path.parent.name)
+        metrics = json.loads(selected.read_text(encoding="utf-8"))
+        st.caption(f"Recorded run: {metrics['run_at']}; dataset SHA-256: {metrics['dataset_sha256']}")
+        if not any(m["extractor_mode"] == "claude" for m in summaries):
+            st.info("No Claude benchmark has been run. The table contains no Claude measurements.")
+        a, b, c, d = st.columns(4)
+        a.metric("Labeled attempts", metrics["total_segments_evaluated"])
+        b.metric("Exact match", percentage(metrics["exact_segment_match_rate"]))
+        c.metric("Invalid outputs", percentage(metrics["invalid_output_rate"]))
+        d.metric("API errors", metrics["api_errors"])
+        chart = selected.parent / "evaluation_metrics_chart.png"
+        if chart.exists():
+            st.image(str(chart), use_container_width=True)
+        st.subheader("Confusion matrix")
+        choices = [key for key, value in metrics["attributes"].items() if value.get("count") and "confusion_matrix" in value]
+        if choices:
+            attribute = st.selectbox("Attribute", choices)
+            values = metrics["attributes"][attribute]
+            matrix = values["confusion_matrix"]
+            st.caption("Rows: reference; columns: prediction.")
+            st.dataframe(pd.DataFrame(matrix["values"], index=matrix["labels"], columns=matrix["labels"]))
+            st.dataframe(pd.DataFrame(values["per_class"]).T)
+        st.subheader("Error counts")
+        st.json(metrics["error_taxonomy_breakdown"])
+        with st.expander("Real examples from this saved run"):
+            st.markdown((selected.parent / "error_examples.md").read_text(encoding="utf-8"))
+
 with tab_workflow:
-    st.markdown("""
-    <div class="card">
-        <div class="card-title">Prefect Workflow Orchestration</div>
-        <p style="font-size: 13px; color: #475569; line-height: 1.6;">
-            The QA pipeline runs as a resilient Prefect flow coordinating 5 distinct tasks:
-        </p>
-        <ol style="font-size: 13px; color: #334155; line-height: 1.8; margin-left: 18px;">
-            <li><strong>Data Ingestion:</strong> Loads hand-curated OpenStreetMap-style road segments from <code>data/osm_ground_truth_cluj.json</code>.</li>
-            <li><strong>Batch Extraction:</strong> Runs the selected extractor (Rule-Based Baseline, Claude Sonnet, or GPT-4o) using LangChain and strict Pydantic schemas.</li>
-            <li><strong>Benchmarking:</strong> Computes precision, recall, and F1 scores using scikit-learn.</li>
-            <li><strong>Error Taxonomy:</strong> Maps discrepancies into structured categories (speed hallucinations, road class mismatches).</li>
-            <li><strong>Artifact Export:</strong> Generates evaluation reports and Matplotlib summary charts.</li>
-        </ol>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    st.markdown("<p style='font-size: 12px; font-weight: 600; text-transform: uppercase; color: #64748b;'>Command Line Execution</p>", unsafe_allow_html=True)
-    st.code("""
-# Run the rule-based baseline (no API key required):
-python run_pipeline.py --mode baseline
-
-# Run with Anthropic Claude Sonnet (requires ANTHROPIC_API_KEY):
-python run_pipeline.py --mode claude
-    """, language="bash")
+    st.write("The Prefect flow loads a saved dataset, extracts or reuses responses, evaluates predictions, and exports reports.")
+    st.write("Responses are cached by model, prompt, schema, code and input. Failed outputs remain visible in evaluation.")
+    st.code("python run_pipeline.py --mode baseline\npython run_pipeline.py --mode baseline --split hard\npython run_pipeline.py --mode claude --split dev --prompt-version v1", language="powershell")
+    st.write("Copy .env.example to .env and configure your key locally before using an API.")
+    st.write("Use the development set to compare prompt versions. Keep the hold-out test for the final selected version.")
+    st.caption("OSM data: OpenStreetMap contributors, ODbL. See data/README.md for sources and limitations.")

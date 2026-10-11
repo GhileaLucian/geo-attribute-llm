@@ -1,0 +1,35 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "secondary_link",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+    "anomaly_flag": false
+  },
+  "raw_response": null,
+  "token_usage": {},
+  "error_message": null,
+  "segment_id": "26634240",
+  "model": "rule_based_baseline",
+  "mode": "baseline",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Drumul Sfântul Ioan",
+    "osm_tags": {
+      "highway": "secondary_link",
+      "lanes": "2",
+      "lit": "yes",
+      "name": "Drumul Sfântul Ioan",
+      "ref": "DJ107R",
+      "sidewalk": "right"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"2\", \"lit\": \"yes\", \"name\": \"Drumul Sfântul Ioan\", \"ref\": \"DJ107R\", \"sidewalk\": \"right\"}"
+  },
+  "execution_time_ms": 0.05,
+  "recorded_at": "2026-10-11T15:15:17.887797+00:00"
+}

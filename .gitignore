@@ -1,6 +1,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.env
+.env.*
+!.env.example
 *.env
 .venv/
 env/
@@ -9,3 +12,6 @@ env/
 *.egg-info/
 dist/
 build/
+.pytest_cache/
+.coverage
+htmlcov/

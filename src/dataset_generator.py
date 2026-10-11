@@ -1,48 +1,27 @@
-"""
-Dataset loader for OpenStreetMap ground truth.
-Loads hand-curated road segments strictly from disk (data/osm_ground_truth_cluj.json).
-"""
+"""Load labeled data from disk; never generate labels during evaluation."""
 
 import json
 from pathlib import Path
-from typing import List
-from src.models import RoadSegmentInput, RoadAttributes, RoadType, BarrierType, SurfaceType
+from src.config import PROJECT_ROOT
+from src.models import RoadSegmentInput, EVALUATION_FIELDS
 
 
-def load_ground_truth_dataset(filepath: Path = None) -> List[RoadSegmentInput]:
-    """Loads ground-truth segments strictly from the JSON dataset file."""
-    if filepath is None:
-        filepath = Path(__file__).resolve().parent.parent / "data" / "osm_ground_truth_cluj.json"
-
-    if not filepath.exists():
-        raise FileNotFoundError(f"Ground truth dataset not found at: {filepath}")
-
-    with open(filepath, "r", encoding="utf-8") as f:
-        raw_list = json.load(f)
-
-    dataset: List[RoadSegmentInput] = []
-    for item in raw_list:
-        gt = item.get("expected_attributes")
-        expected_attr = None
-        if gt:
-            expected_attr = RoadAttributes(
-                road_type=RoadType(gt["road_type"]),
-                speed_limit_kmh=gt.get("speed_limit_kmh"),
-                barrier_present=gt["barrier_present"],
-                barrier_type=BarrierType(gt["barrier_type"]),
-                surface=SurfaceType(gt["surface"]),
-                oneway=gt["oneway"],
-                confidence_score=gt["confidence_score"],
-                reasoning_cot=gt["reasoning_cot"],
-                anomaly_flag=gt["anomaly_flag"]
-            )
-
-        dataset.append(RoadSegmentInput(
-            segment_id=item["segment_id"],
-            name=item["name"],
-            osm_tags=item["osm_tags"],
-            context_description=item["context_description"],
-            expected_attributes=expected_attr
-        ))
-
+def load_ground_truth_dataset(filepath=None):
+    filepath = Path(filepath) if filepath else PROJECT_ROOT / "data" / "osm_ground_truth_cluj.json"
+    with filepath.open(encoding="utf-8") as handle:
+        raw = json.load(handle)
+    if not isinstance(raw, list) or not raw:
+        raise ValueError("Dataset must be a non-empty JSON list")
+    dataset = [RoadSegmentInput.model_validate(item) for item in raw]
+    ids = [item.segment_id for item in dataset]
+    if len(ids) != len(set(ids)):
+        raise ValueError("Dataset contains duplicate segment IDs")
+    for item in dataset:
+        if item.expected_attributes is None:
+            raise ValueError(f"Missing reference labels for {item.segment_id}")
+        unknown = set(item.evaluation_fields) - set(EVALUATION_FIELDS)
+        if unknown or not item.evaluation_fields:
+            raise ValueError(f"Invalid evaluation_fields for {item.segment_id}: {unknown}")
+        if set(item.hidden_attributes).intersection(item.osm_tags):
+            raise ValueError(f"Hidden attributes leaked into tags for {item.segment_id}")
     return dataset

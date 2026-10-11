@@ -1,0 +1,304 @@
+{
+  "total_segments_attempted": 40,
+  "total_segments_evaluated": 40,
+  "unlabeled_segments_excluded": 0,
+  "successful_outputs": 40,
+  "failed_outputs": 0,
+  "failure_rate": 0.0,
+  "invalid_outputs": 0,
+  "invalid_output_rate": 0.0,
+  "api_errors": 0,
+  "api_error_rate": 0.0,
+  "exact_segment_match_rate": 0.25,
+  "attributes": {
+    "road_type": {
+      "count": 0,
+      "accuracy": null,
+      "precision": null,
+      "recall": null,
+      "f1_score": null,
+      "macro_f1": null,
+      "per_class": {},
+      "confusion_matrix": {
+        "labels": [],
+        "values": []
+      }
+    },
+    "surface_type": {
+      "count": 40,
+      "accuracy": 0.325,
+      "precision": 0.10562500000000001,
+      "recall": 0.325,
+      "f1_score": 0.15943396226415094,
+      "macro_f1": 0.08176100628930817,
+      "unknown_reference_count": 13,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "asphalt": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 22
+        },
+        "concrete": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "dirt": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 2
+        },
+        "ground": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "paving_stones": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "unknown": {
+          "precision": 0.325,
+          "recall": 1.0,
+          "f1_score": 0.49056603773584906,
+          "support": 13
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "asphalt",
+          "concrete",
+          "dirt",
+          "ground",
+          "paving_stones",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            22
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            13
+          ]
+        ]
+      }
+    },
+    "barrier_present": {
+      "count": 40,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "unknown_reference_count": 40,
+      "known_reference_accuracy": null,
+      "per_class": {
+        "unknown": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 40
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "unknown"
+        ],
+        "values": [
+          [
+            40
+          ]
+        ]
+      }
+    },
+    "barrier_type": {
+      "count": 40,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "unknown_reference_count": 40,
+      "known_reference_accuracy": null,
+      "per_class": {
+        "unknown": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 40
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "unknown"
+        ],
+        "values": [
+          [
+            40
+          ]
+        ]
+      }
+    },
+    "oneway": {
+      "count": 40,
+      "accuracy": 0.525,
+      "precision": 0.275625,
+      "recall": 0.525,
+      "f1_score": 0.3614754098360656,
+      "macro_f1": 0.22950819672131148,
+      "unknown_reference_count": 21,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "false": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 2
+        },
+        "true": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 17
+        },
+        "unknown": {
+          "precision": 0.525,
+          "recall": 1.0,
+          "f1_score": 0.6885245901639344,
+          "support": 21
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "false",
+          "true",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            17
+          ],
+          [
+            0,
+            0,
+            21
+          ]
+        ]
+      }
+    },
+    "anomaly_detection": {
+      "count": 0,
+      "accuracy": null,
+      "precision": null,
+      "recall": null,
+      "f1_score": null,
+      "macro_f1": null,
+      "per_class": {},
+      "confusion_matrix": {
+        "labels": [],
+        "values": []
+      }
+    },
+    "speed_limit": {
+      "count": 40,
+      "exact_accuracy": 0.85,
+      "known_reference_count": 6,
+      "known_exact_accuracy": 0.0,
+      "within_10kmh_accuracy": 0.0,
+      "missing_reference_count": 34,
+      "predicted_when_reference_missing_count": 0,
+      "predicted_when_reference_missing_rate": 0.0
+    }
+  },
+  "error_taxonomy_breakdown": {
+    "speed_limit_missing": 6,
+    "surface_ambiguity": 27,
+    "oneway_mismatch": 19
+  },
+  "cache_hits": 40,
+  "original_mean_latency_ms": 0.05525,
+  "token_usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0
+  },
+  "token_usage_unavailable_count": 40,
+  "estimated_original_api_cost_usd": 0.0,
+  "estimated_new_api_cost_usd": 0,
+  "cost_note": "Configured plain token-price estimate, not an invoice. Unknown cost is null.",
+  "extractor_mode": "baseline",
+  "model_name": "rule_based_baseline",
+  "prompt_version": "v1",
+  "dataset_file": "osm_dev.json",
+  "dataset_sha256": "b4caa3fc4ffb44f393daa0ae8ce4b84eee014749ac41fc9ef43c259ca31c225d",
+  "source_counts": {
+    "OpenStreetMap/Overpass": 40
+  },
+  "evaluation_field_sets": [
+    [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  ],
+  "run_at": "2026-10-11T15:25:44.135607+00:00",
+  "report_directory": "C:\\Users\\Lucian Dan\\Desktop\\CV_Master_Hub_AI\\02_CV_URI_PE_DOMENII\\01_AI_si_Data_Science\\geo-attribute-llm\\reports\\baseline__rule_based_baseline__v1__osm_dev__32a951056681"
+}

@@ -1,0 +1,2200 @@
+[
+  {
+    "segment_id": "55954431",
+    "name": "Strada Crișan",
+    "osm_tags": {
+      "highway": "residential",
+      "lanes": "2",
+      "name": "Strada Crișan"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"residential\", \"lanes\": \"2\", \"name\": \"Strada Crișan\"}",
+    "expected_attributes": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 55954431,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "639623159",
+    "name": "Strada Observatorului",
+    "osm_tags": {
+      "highway": "secondary",
+      "lanes": "2",
+      "lit": "yes",
+      "name": "Strada Observatorului",
+      "sidewalk": "right"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary\", \"lanes\": \"2\", \"lit\": \"yes\", \"name\": \"Strada Observatorului\", \"sidewalk\": \"right\"}",
+    "expected_attributes": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 639623159,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1036558782",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "construction"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"construction\"}",
+    "expected_attributes": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1036558782,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "891382158",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "pedestrian"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"pedestrian\"}",
+    "expected_attributes": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 891382158,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "304286816",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "trunk_link",
+      "lanes": "1",
+      "ref": "DJ105S"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"trunk_link\", \"lanes\": \"1\", \"ref\": \"DJ105S\"}",
+    "expected_attributes": {
+      "road_type": "trunk_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 304286816,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1056419951",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "cycleway"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"cycleway\"}",
+    "expected_attributes": {
+      "road_type": "cycleway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1056419951,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "411079074",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "steps",
+      "lit": "yes"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"steps\", \"lit\": \"yes\"}",
+    "expected_attributes": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "concrete",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 411079074,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "408556046",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "access": "private",
+      "highway": "living_street"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"access\": \"private\", \"highway\": \"living_street\"}",
+    "expected_attributes": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 408556046,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1151047171",
+    "name": "Centura Metropolitană Cluj-Napoca - Lot 6",
+    "osm_tags": {
+      "bridge": "yes",
+      "highway": "proposed",
+      "lanes": "2",
+      "name": "Centura Metropolitană Cluj-Napoca - Lot 6",
+      "ref": "TR35"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"bridge\": \"yes\", \"highway\": \"proposed\", \"lanes\": \"2\", \"name\": \"Centura Metropolitană Cluj-Napoca - Lot 6\", \"ref\": \"TR35\"}",
+    "expected_attributes": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1151047171,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "518519305",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "footway"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"footway\"}",
+    "expected_attributes": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 518519305,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "419897629",
+    "name": "Centura Apahida-Vâlcele",
+    "osm_tags": {
+      "highway": "trunk",
+      "lanes": "3",
+      "name": "Centura Apahida-Vâlcele",
+      "ref": "DN1N"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"trunk\", \"lanes\": \"3\", \"name\": \"Centura Apahida-Vâlcele\", \"ref\": \"DN1N\"}",
+    "expected_attributes": {
+      "road_type": "trunk",
+      "speed_limit_kmh": 90,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 419897629,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "810745374",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "path"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"path\"}",
+    "expected_attributes": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 810745374,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1239044270",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "steps"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"steps\"}",
+    "expected_attributes": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1239044270,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "466403921",
+    "name": "Aleea Padin",
+    "osm_tags": {
+      "highway": "living_street",
+      "lanes": "1",
+      "name": "Aleea Padin",
+      "sidewalk": "left"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"living_street\", \"lanes\": \"1\", \"name\": \"Aleea Padin\", \"sidewalk\": \"left\"}",
+    "expected_attributes": {
+      "road_type": "living_street",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 466403921,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "525510126",
+    "name": "Calea Turzii",
+    "osm_tags": {
+      "highway": "primary",
+      "junction": "roundabout",
+      "lanes": "2",
+      "name": "Calea Turzii",
+      "ref": "DN1"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary\", \"junction\": \"roundabout\", \"lanes\": \"2\", \"name\": \"Calea Turzii\", \"ref\": \"DN1\"}",
+    "expected_attributes": {
+      "road_type": "primary",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 525510126,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1151045555",
+    "name": "Drum de legatura 27",
+    "osm_tags": {
+      "highway": "proposed",
+      "lanes": "1",
+      "name": "Drum de legatura 27"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"proposed\", \"lanes\": \"1\", \"name\": \"Drum de legatura 27\"}",
+    "expected_attributes": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1151045555,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "169114663",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "track"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"track\"}",
+    "expected_attributes": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 169114663,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "48171790",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "trunk_link",
+      "lanes": "1",
+      "ref": "DJ103G"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"trunk_link\", \"lanes\": \"1\", \"ref\": \"DJ103G\"}",
+    "expected_attributes": {
+      "road_type": "trunk_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 48171790,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "28323864",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "track"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"track\"}",
+    "expected_attributes": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 28323864,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "26617141",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "living_street",
+      "lit": "yes"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"living_street\", \"lit\": \"yes\"}",
+    "expected_attributes": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 26617141,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1146015537",
+    "name": "Strada Avram Iancu",
+    "osm_tags": {
+      "highway": "primary",
+      "lanes": "4",
+      "lit": "yes",
+      "name": "Strada Avram Iancu",
+      "ref": "DN1",
+      "sidewalk": "both"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary\", \"lanes\": \"4\", \"lit\": \"yes\", \"name\": \"Strada Avram Iancu\", \"ref\": \"DN1\", \"sidewalk\": \"both\"}",
+    "expected_attributes": {
+      "road_type": "primary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1146015537,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "54611364",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "footway"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"footway\"}",
+    "expected_attributes": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paved",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 54611364,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1137007238",
+    "name": "Lărgire DN",
+    "osm_tags": {
+      "highway": "construction",
+      "lanes": "2",
+      "name": "Lărgire DN"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"construction\", \"lanes\": \"2\", \"name\": \"Lărgire DN\"}",
+    "expected_attributes": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1137007238,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "305467465",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "trunk_link",
+      "lanes": "2",
+      "ref": "DN1N"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"trunk_link\", \"lanes\": \"2\", \"ref\": \"DN1N\"}",
+    "expected_attributes": {
+      "road_type": "trunk_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 305467465,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "26616322",
+    "name": "Strada Fortăreței",
+    "osm_tags": {
+      "highway": "pedestrian",
+      "name": "Strada Fortăreței"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"pedestrian\", \"name\": \"Strada Fortăreței\"}",
+    "expected_attributes": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "cobblestone",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 26616322,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "304286815",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "trunk_link",
+      "lanes": "1",
+      "ref": "DJ105S"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"trunk_link\", \"lanes\": \"1\", \"ref\": \"DJ105S\"}",
+    "expected_attributes": {
+      "road_type": "trunk_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 304286815,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "277948465",
+    "name": "Strada Ialomiței",
+    "osm_tags": {
+      "highway": "primary_link",
+      "lanes": "4",
+      "name": "Strada Ialomiței",
+      "sidewalk": "right"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary_link\", \"lanes\": \"4\", \"name\": \"Strada Ialomiței\", \"sidewalk\": \"right\"}",
+    "expected_attributes": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 277948465,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1181327234",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "corridor"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"corridor\"}",
+    "expected_attributes": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1181327234,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "31649231",
+    "name": "Strada Mikó Imre",
+    "osm_tags": {
+      "highway": "living_street",
+      "lanes": "2",
+      "name": "Strada Mikó Imre",
+      "sidewalk": "no"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"living_street\", \"lanes\": \"2\", \"name\": \"Strada Mikó Imre\", \"sidewalk\": \"no\"}",
+    "expected_attributes": {
+      "road_type": "living_street",
+      "speed_limit_kmh": 20,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 31649231,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "556084241",
+    "name": "Piața Muzeului",
+    "osm_tags": {
+      "highway": "pedestrian",
+      "lit": "yes",
+      "name": "Piața Muzeului"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"pedestrian\", \"lit\": \"yes\", \"name\": \"Piața Muzeului\"}",
+    "expected_attributes": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "cobblestone",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 556084241,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "670283149",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "service"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"service\"}",
+    "expected_attributes": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unpaved",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 670283149,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "464707166",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "unclassified",
+      "lanes": "1",
+      "sidewalk": "no"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"unclassified\", \"lanes\": \"1\", \"sidewalk\": \"no\"}",
+    "expected_attributes": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "concrete",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 464707166,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "375790743",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "steps"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"steps\"}",
+    "expected_attributes": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 375790743,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "41931794",
+    "name": "Strada Tăuțiului",
+    "osm_tags": {
+      "highway": "tertiary",
+      "lanes": "2",
+      "name": "Strada Tăuțiului",
+      "ref": "DC96"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary\", \"lanes\": \"2\", \"name\": \"Strada Tăuțiului\", \"ref\": \"DC96\"}",
+    "expected_attributes": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 41931794,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1166597450",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "footway"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"footway\"}",
+    "expected_attributes": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1166597450,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1319130129",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "pedestrian"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"pedestrian\"}",
+    "expected_attributes": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1319130129,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1232131963",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "cycleway"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"cycleway\"}",
+    "expected_attributes": {
+      "road_type": "cycleway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1232131963,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "26615558",
+    "name": "Strada Lunii",
+    "osm_tags": {
+      "highway": "tertiary",
+      "lanes": "2",
+      "lit": "yes",
+      "name": "Strada Lunii",
+      "sidewalk": "both"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary\", \"lanes\": \"2\", \"lit\": \"yes\", \"name\": \"Strada Lunii\", \"sidewalk\": \"both\"}",
+    "expected_attributes": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 26615558,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1005272060",
+    "name": "Strada Someș",
+    "osm_tags": {
+      "highway": "unclassified",
+      "name": "Strada Someș"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"unclassified\", \"name\": \"Strada Someș\"}",
+    "expected_attributes": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1005272060,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1185701397",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "cycleway"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"cycleway\"}",
+    "expected_attributes": {
+      "road_type": "cycleway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1185701397,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1124689632",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "tertiary_link"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary_link\"}",
+    "expected_attributes": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1124689632,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "25717208",
+    "name": "Strada Paris",
+    "osm_tags": {
+      "highway": "tertiary",
+      "lanes": "2",
+      "lit": "yes",
+      "name": "Strada Paris",
+      "sidewalk": "both"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary\", \"lanes\": \"2\", \"lit\": \"yes\", \"name\": \"Strada Paris\", \"sidewalk\": \"both\"}",
+    "expected_attributes": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 25717208,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1137007245",
+    "name": "Lărgire DN",
+    "osm_tags": {
+      "highway": "construction",
+      "lanes": "1",
+      "name": "Lărgire DN"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"construction\", \"lanes\": \"1\", \"name\": \"Lărgire DN\"}",
+    "expected_attributes": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1137007245,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1150196149",
+    "name": "Boulevard 1 Decembrie 1918",
+    "osm_tags": {
+      "highway": "proposed",
+      "lanes": "1",
+      "name": "Boulevard 1 Decembrie 1918"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"proposed\", \"lanes\": \"1\", \"name\": \"Boulevard 1 Decembrie 1918\"}",
+    "expected_attributes": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1150196149,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "846440739",
+    "name": "Strada Fagului",
+    "osm_tags": {
+      "highway": "tertiary",
+      "lanes": "2",
+      "name": "Strada Fagului",
+      "sidewalk": "both"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary\", \"lanes\": \"2\", \"name\": \"Strada Fagului\", \"sidewalk\": \"both\"}",
+    "expected_attributes": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 846440739,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "561745032",
+    "name": "Strada Primăverii",
+    "osm_tags": {
+      "highway": "secondary_link",
+      "lanes": "1",
+      "lit": "yes",
+      "name": "Strada Primăverii",
+      "sidewalk": "right"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"1\", \"lit\": \"yes\", \"name\": \"Strada Primăverii\", \"sidewalk\": \"right\"}",
+    "expected_attributes": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 561745032,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "961962566",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "path"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"path\"}",
+    "expected_attributes": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "ground",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 961962566,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1227165081",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "footway"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"footway\"}",
+    "expected_attributes": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1227165081,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1007399893",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "track",
+      "lit": "no",
+      "motor_vehicle": "no",
+      "tracktype": "grade4"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"track\", \"lit\": \"no\", \"motor_vehicle\": \"no\", \"tracktype\": \"grade4\"}",
+    "expected_attributes": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "dirt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1007399893,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "966572402",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "pedestrian"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"pedestrian\"}",
+    "expected_attributes": {
+      "road_type": "pedestrian",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "cobblestone",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 966572402,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "922835531",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "cycleway"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"cycleway\"}",
+    "expected_attributes": {
+      "road_type": "cycleway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 922835531,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1154982495",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "footway"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"footway\"}",
+    "expected_attributes": {
+      "road_type": "footway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1154982495,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "377826987",
+    "name": "Calea Turzii",
+    "osm_tags": {
+      "highway": "primary",
+      "lanes": "2",
+      "name": "Calea Turzii",
+      "ref": "DN1"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary\", \"lanes\": \"2\", \"name\": \"Calea Turzii\", \"ref\": \"DN1\"}",
+    "expected_attributes": {
+      "road_type": "primary",
+      "speed_limit_kmh": 50,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 377826987,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "856494991",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "service"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"service\"}",
+    "expected_attributes": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 856494991,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "465378555",
+    "name": "Calea Mănăștur",
+    "osm_tags": {
+      "highway": "primary_link",
+      "lanes": "1",
+      "lit": "yes",
+      "name": "Calea Mănăștur",
+      "sidewalk": "right"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary_link\", \"lanes\": \"1\", \"lit\": \"yes\", \"name\": \"Calea Mănăștur\", \"sidewalk\": \"right\"}",
+    "expected_attributes": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 465378555,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "359110891",
+    "name": "Bulevardul Muncii",
+    "osm_tags": {
+      "highway": "primary",
+      "lanes": "2",
+      "name": "Bulevardul Muncii",
+      "sidewalk": "both"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary\", \"lanes\": \"2\", \"name\": \"Bulevardul Muncii\", \"sidewalk\": \"both\"}",
+    "expected_attributes": {
+      "road_type": "primary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 359110891,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1151900484",
+    "name": "Strada Câmpului",
+    "osm_tags": {
+      "highway": "secondary",
+      "lanes": "4",
+      "lit": "yes",
+      "name": "Strada Câmpului",
+      "sidewalk": "both"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary\", \"lanes\": \"4\", \"lit\": \"yes\", \"name\": \"Strada Câmpului\", \"sidewalk\": \"both\"}",
+    "expected_attributes": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1151900484,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "48171242",
+    "name": "Centura Apahida-Vâlcele",
+    "osm_tags": {
+      "highway": "trunk",
+      "lanes": "2",
+      "name": "Centura Apahida-Vâlcele",
+      "ref": "DN1N",
+      "sidewalk": "no"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"trunk\", \"lanes\": \"2\", \"name\": \"Centura Apahida-Vâlcele\", \"ref\": \"DN1N\", \"sidewalk\": \"no\"}",
+    "expected_attributes": {
+      "road_type": "trunk",
+      "speed_limit_kmh": 90,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 48171242,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "363472320",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "secondary_link",
+      "lanes": "1",
+      "ref": "DJ103G",
+      "sidewalk": "separate"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"1\", \"ref\": \"DJ103G\", \"sidewalk\": \"separate\"}",
+    "expected_attributes": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 363472320,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  },
+  {
+    "segment_id": "1144053818",
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "corridor"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"corridor\"}",
+    "expected_attributes": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "source": "OpenStreetMap/Overpass",
+    "osm_way_id": 1144053818,
+    "collected_at": "2026-10-11T15:10:11.735268+00:00",
+    "hidden_attributes": [
+      "maxspeed",
+      "surface",
+      "barrier",
+      "oneway"
+    ],
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  }
+]

@@ -1,0 +1,490 @@
+{
+  "total_segments_attempted": 15,
+  "total_segments_evaluated": 15,
+  "unlabeled_segments_excluded": 0,
+  "successful_outputs": 15,
+  "failed_outputs": 0,
+  "failure_rate": 0.0,
+  "invalid_outputs": 0,
+  "invalid_output_rate": 0.0,
+  "api_errors": 0,
+  "api_error_rate": 0.0,
+  "exact_segment_match_rate": 0.6,
+  "attributes": {
+    "road_type": {
+      "count": 15,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "unknown_reference_count": 1,
+      "known_reference_accuracy": 1.0,
+      "per_class": {
+        "pedestrian": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "primary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "residential": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 5
+        },
+        "secondary": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "service": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 4
+        },
+        "track": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 2
+        },
+        "unknown": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "pedestrian",
+          "primary",
+          "residential",
+          "secondary",
+          "service",
+          "track",
+          "unknown"
+        ],
+        "values": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    "surface_type": {
+      "count": 15,
+      "accuracy": 0.9333333333333333,
+      "precision": 0.8711111111111111,
+      "recall": 0.9333333333333333,
+      "f1_score": 0.9011494252873563,
+      "macro_f1": 0.4827586206896552,
+      "unknown_reference_count": 14,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "gravel": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "unknown": {
+          "precision": 0.9333333333333333,
+          "recall": 1.0,
+          "f1_score": 0.9655172413793104,
+          "support": 14
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "gravel",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            14
+          ]
+        ]
+      }
+    },
+    "barrier_present": {
+      "count": 15,
+      "accuracy": 0.8,
+      "precision": 0.8461538461538463,
+      "recall": 0.8,
+      "f1_score": 0.7530434782608695,
+      "macro_f1": 0.7565217391304347,
+      "unknown_reference_count": 10,
+      "known_reference_accuracy": 0.4,
+      "per_class": {
+        "false": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "true": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1_score": 0.4,
+          "support": 4
+        },
+        "unknown": {
+          "precision": 0.7692307692307693,
+          "recall": 1.0,
+          "f1_score": 0.8695652173913043,
+          "support": 10
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "false",
+          "true",
+          "unknown"
+        ],
+        "values": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            0,
+            10
+          ]
+        ]
+      }
+    },
+    "barrier_type": {
+      "count": 15,
+      "accuracy": 0.8,
+      "precision": 0.6461538461538462,
+      "recall": 0.8,
+      "f1_score": 0.7130434782608696,
+      "macro_f1": 0.4782608695652174,
+      "unknown_reference_count": 10,
+      "known_reference_accuracy": 0.4,
+      "per_class": {
+        "bollard": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "gate": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "guard_rail": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "lift_gate": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "none": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "unknown": {
+          "precision": 0.7692307692307693,
+          "recall": 1.0,
+          "f1_score": 0.8695652173913043,
+          "support": 10
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "bollard",
+          "gate",
+          "guard_rail",
+          "lift_gate",
+          "none",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10
+          ]
+        ]
+      }
+    },
+    "oneway": {
+      "count": 15,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "macro_f1": 1.0,
+      "unknown_reference_count": 13,
+      "known_reference_accuracy": 1.0,
+      "per_class": {
+        "false": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "true": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 1
+        },
+        "unknown": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 13
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "false",
+          "true",
+          "unknown"
+        ],
+        "values": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            13
+          ]
+        ]
+      }
+    },
+    "anomaly_detection": {
+      "count": 15,
+      "accuracy": 0.9333333333333333,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1_score": 0.6666666666666666,
+      "macro_f1": 0.8148148148148148,
+      "unknown_reference_count": 0,
+      "known_reference_accuracy": 0.9333333333333333,
+      "per_class": {
+        "false": {
+          "precision": 0.9285714285714286,
+          "recall": 1.0,
+          "f1_score": 0.9629629629629629,
+          "support": 13
+        },
+        "true": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1_score": 0.6666666666666666,
+          "support": 2
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "false",
+          "true"
+        ],
+        "values": [
+          [
+            13,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "speed_limit": {
+      "count": 15,
+      "exact_accuracy": 0.9333333333333333,
+      "known_reference_count": 3,
+      "known_exact_accuracy": 0.6666666666666666,
+      "within_10kmh_accuracy": 0.6666666666666666,
+      "missing_reference_count": 12,
+      "predicted_when_reference_missing_count": 0,
+      "predicted_when_reference_missing_rate": 0.0
+    }
+  },
+  "error_taxonomy_breakdown": {
+    "barrier_false_negative": 3,
+    "barrier_type_mismatch": 3,
+    "speed_limit_missing": 1,
+    "anomaly_mismatch": 1,
+    "surface_ambiguity": 1
+  },
+  "cache_hits": 15,
+  "original_mean_latency_ms": 0.066,
+  "token_usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0
+  },
+  "token_usage_unavailable_count": 15,
+  "estimated_original_api_cost_usd": 0.0,
+  "estimated_new_api_cost_usd": 0,
+  "cost_note": "Configured plain token-price estimate, not an invoice. Unknown cost is null.",
+  "extractor_mode": "baseline",
+  "model_name": "rule_based_baseline",
+  "prompt_version": "v1",
+  "dataset_file": "hard_cases.json",
+  "dataset_sha256": "92869b8ba2e13c0402cf7bf84c4eee6e83f73aea05b4746a7b213cc8ef5d826f",
+  "source_counts": {
+    "hand-written": 15
+  },
+  "evaluation_field_sets": [
+    [
+      "road_type",
+      "speed_limit_kmh",
+      "barrier_present",
+      "barrier_type",
+      "surface",
+      "oneway",
+      "anomaly_flag"
+    ]
+  ],
+  "run_at": "2026-10-11T15:25:21.095911+00:00",
+  "report_directory": "C:\\Users\\Lucian Dan\\Desktop\\CV_Master_Hub_AI\\02_CV_URI_PE_DOMENII\\01_AI_si_Data_Science\\geo-attribute-llm\\reports\\baseline__rule_based_baseline__v1__hard_cases__cc22ef02afe1"
+}

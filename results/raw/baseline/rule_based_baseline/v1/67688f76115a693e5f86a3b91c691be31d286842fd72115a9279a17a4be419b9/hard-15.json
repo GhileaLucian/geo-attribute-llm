@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "residential",
+    "speed_limit_kmh": 140,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.5,
+    "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+    "anomaly_flag": true
+  },
+  "raw_response": null,
+  "token_usage": {},
+  "error_message": null,
+  "segment_id": "hard-15",
+  "model": "rule_based_baseline",
+  "mode": "baseline",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Unusual speed preserved",
+    "osm_tags": {
+      "highway": "residential",
+      "maxspeed": "140"
+    },
+    "context_description": "Valoare suspecta in tag; trebuie pastrata pentru inspectie."
+  },
+  "execution_time_ms": 0.06,
+  "recorded_at": "2026-10-11T15:15:36.736492+00:00"
+}

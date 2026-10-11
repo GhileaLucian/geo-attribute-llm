@@ -1,0 +1,21 @@
+name: Offline checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      PREFECT_SERVER_ANALYTICS_ENABLED: "false"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - run: python -m compileall -q src app.py run_pipeline.py create_notebook.py
+      - run: python run_pipeline.py --mode baseline --reports-dir /tmp/geo-reports --results-dir /tmp/geo-results

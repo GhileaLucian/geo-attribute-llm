@@ -1,0 +1,1257 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-11T15:08:50Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "collected_at": "2026-10-11T15:10:11.735268+00:00",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "query": "[out:json][timeout:40];way[\"highway\"](46.70,23.48,46.82,23.70);out tags;",
+  "attribution": "OpenStreetMap contributors, ODbL 1.0",
+  "license_url": "https://www.openstreetmap.org/copyright",
+  "downloaded_way_count": 19048,
+  "elements": [
+    {
+      "type": "way",
+      "id": 389714616,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "maxspeed": "30",
+        "name": "Aleea Bizușa",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 679251376,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "oneway": "yes",
+        "service": "alley",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1181327233,
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 134752130,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "70",
+        "name": "Centura Apahida-Vâlcele",
+        "oneway": "no",
+        "ref": "DN1N",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2018JUL_RobertH@peundemerg.ro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1169809158,
+      "tags": {
+        "check_date": "2025-10-19",
+        "check_date:lit": "2025-10-19",
+        "cycleway:both": "lane",
+        "highway": "secondary",
+        "lanes": "4",
+        "lit": "yes",
+        "name": "Strada Uzinei Electrice",
+        "name:hu": "Villamosmű utca",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "status": "AC,builder:ARL Cluj,progress_estimate:80%/13.07.2023",
+        "surface": "asphalt",
+        "surface_survey": "2023NOV_RoberH@peundemerg.ro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26634240,
+      "tags": {
+        "foot": "no",
+        "highway": "secondary_link",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Drumul Sfântul Ioan",
+        "name:hu": "Szent János út",
+        "name:ro": "Drumul Sfântul Ioan",
+        "oneway": "yes",
+        "ref": "DJ107R",
+        "sidewalk": "right",
+        "smoothness": "good",
+        "surface": "asphalt",
+        "surface_survey": "2017SEP_"
+      }
+    },
+    {
+      "type": "way",
+      "id": 694699317,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Strada Câmpului",
+        "name:hu": "Mező utca",
+        "name:ro": "Strada Câmpului",
+        "oneway": "yes",
+        "overtaking": "no",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "asphalt",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "trolley_wire": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 275775563,
+      "tags": {
+        "highway": "tertiary_link",
+        "lanes": "1",
+        "maxspeed": "RO:urban",
+        "oneway": "yes",
+        "sidewalk": "both"
+      }
+    },
+    {
+      "type": "way",
+      "id": 981625655,
+      "tags": {
+        "highway": "track",
+        "lit": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341277055,
+      "tags": {
+        "highway": "secondary_link",
+        "lanes": "1",
+        "maxspeed": "50",
+        "oneway": "yes",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1312601710,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "path",
+        "surface": "dirt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1154747807,
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1274220198,
+      "tags": {
+        "access": "private",
+        "bicycle": "no",
+        "highway": "unclassified",
+        "lanes": "1",
+        "maxspeed": "10",
+        "motor_vehicle": "private",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 37146434,
+      "tags": {
+        "bus:lanes:forward": "yes|yes|designated",
+        "cycleway:right": "share_busway",
+        "highway": "secondary",
+        "lanes": "3",
+        "maxspeed": "RO:urban",
+        "maxweight": "3.5",
+        "name": "Piața Timotei Cipariu",
+        "name:hu": "Timotei Cipariu tér",
+        "name:ro": "Piața Timotei Cipariu",
+        "old_name:hu": "Heltai utca",
+        "oneway": "yes",
+        "ref": "DJ103G",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2019MAY_RobertH@peundemerg.ro",
+        "trolley_wire": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1187549465,
+      "tags": {
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "up"
+      }
+    },
+    {
+      "type": "way",
+      "id": 31647270,
+      "tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "maxspeed": "RO:urban",
+        "name": "Aleea Văleni",
+        "sidewalk": "no",
+        "source": "www.norc.ro",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1137007236,
+      "tags": {
+        "bridge": "yes",
+        "construction": "primary",
+        "highway": "construction",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Lărgire DN",
+        "oneway": "yes",
+        "status": "AC,AM,builder:Viarom"
+      }
+    },
+    {
+      "type": "way",
+      "id": 857998560,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1047121022,
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 411914874,
+      "tags": {
+        "busway": "opposite_lane",
+        "cycleway:left": "share_busway",
+        "cycleway:left:oneway": "-1",
+        "cycleway:left:smoothness": "excellent",
+        "cycleway:left:surface": "asphalt",
+        "cycleway:right": "share_busway",
+        "cycleway:right:oneway": "yes",
+        "cycleway:right:smoothness": "excellent",
+        "cycleway:right:surface": "asphalt",
+        "highway": "primary",
+        "lanes": "3",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "maxweight": "3.5",
+        "name": "Strada Memorandumului",
+        "name:hu": "Memorandum utca",
+        "name:ro": "Strada Memorandumului",
+        "nat_ref": "DN1",
+        "old_name": "Strada 30 Decembrie",
+        "old_name:hu": "Unió utca",
+        "oneway": "yes",
+        "oneway:bus": "no",
+        "ref": "DN1",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "trolley_wire": "yes",
+        "turn:lanes": "through;left|through|through"
+      }
+    },
+    {
+      "type": "way",
+      "id": 31584884,
+      "tags": {
+        "destination": "București;Oradea;Zalău;Centru",
+        "highway": "primary_link",
+        "lanes": "1",
+        "maxspeed": "RO:urban",
+        "maxweight": "7.5",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 239189345,
+      "tags": {
+        "highway": "living_street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464707803,
+      "tags": {
+        "destination": "București;Oradea;Zalău;Centru;Baia Mare;Bistrița;Aeroport",
+        "highway": "primary_link",
+        "lanes": "2",
+        "maxspeed": "RO:urban",
+        "maxweight": "7.5",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "turn:lanes": "left|through"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1149985564,
+      "tags": {
+        "bridge": "yes",
+        "highway": "proposed",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Drum de legatura Baciu- TransRegio Feleac",
+        "proposed": "trunk",
+        "status": "AM,severance:Dimex"
+      }
+    },
+    {
+      "type": "way",
+      "id": 227215083,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "maxspeed": "RO:urban",
+        "name": "Strada Spicului",
+        "name:hu": "Papfalvi út",
+        "name:ro": "Strada Spicului",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237991817,
+      "tags": {
+        "highway": "cycleway",
+        "surface": "paving_stones",
+        "width": "1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 807979520,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "90",
+        "name": "Centura Apahida-Vâlcele",
+        "oneway": "no",
+        "ref": "DN1N",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2018JUL_RobertH@peundemerg.ro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 37196673,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "RO:urban",
+        "maxweight": "3.5",
+        "name": "Strada General Dragalina",
+        "name:hu": "Dragalina tábornok utca",
+        "name:ro": "Strada General Dragalina",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "smoothness": "excellent",
+        "status": "AC,builder:ACI Cluj,progress_estimate:1%/01.09.2022",
+        "surface": "asphalt",
+        "turn:lanes": "left;right|right"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1446879688,
+      "tags": {
+        "highway": "proposed",
+        "lanes": "1",
+        "name": "Pasaj Oasului",
+        "oneway": "yes",
+        "proposed": "primary",
+        "status": "AM,PTE,tender:CN1092724 / 20.05.2026"
+      }
+    },
+    {
+      "type": "way",
+      "id": 386550590,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "unclassified",
+        "horse": "yes",
+        "lanes": "2",
+        "motor_vehicle": "yes",
+        "name": "Strada Valea Gârbăului",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 260063850,
+      "tags": {
+        "destination:street": "Strada Bărnuțiu",
+        "highway": "tertiary_link",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 377646342,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "maxspeed": "RO:urban",
+        "name": "Strada Tractoriștilor",
+        "sidewalk": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 377826990,
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 315218180,
+      "tags": {
+        "highway": "tertiary_link",
+        "lanes": "1",
+        "maxspeed": "RO:urban",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 888449226,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "path",
+        "motor_vehicle": "no",
+        "surface": "dirt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 8028419,
+      "tags": {
+        "destination": "Oradea;Cartierul Zorilor",
+        "highway": "secondary_link",
+        "lanes": "1",
+        "maxspeed": "30",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2019MAR_RobertH@peundemerg.ro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 894567910,
+      "tags": {
+        "highway": "primary_link",
+        "lanes": "1",
+        "oneway": "yes",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2019DEC_"
+      }
+    },
+    {
+      "type": "way",
+      "id": 689069610,
+      "tags": {
+        "construction": "unclassified",
+        "highway": "construction",
+        "lanes": "1",
+        "name": "Strada Tudor Vladimirescu",
+        "oneway": "yes",
+        "status": "AM,builder:RAILWORKS / ALSTOM,financing:PNRR",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 481607227,
+      "tags": {
+        "highway": "steps"
+      }
+    },
+    {
+      "type": "way",
+      "id": 954036002,
+      "tags": {
+        "highway": "path",
+        "surface": "ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 55954431,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "maxspeed": "RO:urban",
+        "name": "Strada Crișan"
+      }
+    },
+    {
+      "type": "way",
+      "id": 639623159,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Strada Observatorului",
+        "name:hu": "Csillagvizsgáló utca",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "asphalt",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2019MAR_RobertH@peundemerg.ro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1036558782,
+      "tags": {
+        "check_date": "2022-08-29",
+        "construction": "service",
+        "highway": "construction"
+      }
+    },
+    {
+      "type": "way",
+      "id": 891382158,
+      "tags": {
+        "area": "yes",
+        "highway": "pedestrian",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 304286816,
+      "tags": {
+        "highway": "trunk_link",
+        "lanes": "1",
+        "oneway": "yes",
+        "ref": "DJ105S",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2018JUL_RobertH@peundemerg.ro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056419951,
+      "tags": {
+        "highway": "cycleway",
+        "smoothness": "excellent",
+        "source:width": "ARCore",
+        "status": "AC,builder:ACI Cluj,progress_estimate:75%/13.04.2023",
+        "surface": "asphalt",
+        "width": "2.5"
+      }
+    },
+    {
+      "type": "way",
+      "id": 411079074,
+      "tags": {
+        "handrail": "no",
+        "highway": "steps",
+        "incline": "up",
+        "lit": "yes",
+        "ramp": "no",
+        "step_count": "9",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 408556046,
+      "tags": {
+        "access": "private",
+        "highway": "living_street",
+        "maxweight": "3.5",
+        "smoothness": "excellent"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1151047171,
+      "tags": {
+        "bridge": "yes",
+        "highway": "proposed",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Centura Metropolitană Cluj-Napoca - Lot 6",
+        "oneway": "yes",
+        "proposed": "trunk",
+        "ref": "TR35",
+        "status": "AM,severance:Dimex,tender:CN1092052/28.04.2026"
+      }
+    },
+    {
+      "type": "way",
+      "id": 518519305,
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 419897629,
+      "tags": {
+        "foot": "no",
+        "highway": "trunk",
+        "lanes": "3",
+        "lanes:backward": "2",
+        "lanes:forward": "1",
+        "layer": "1",
+        "maxspeed": "90",
+        "name": "Centura Apahida-Vâlcele",
+        "ref": "DN1N",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2018JUL_RobertH@peundemerg.ro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 810745374,
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1239044270,
+      "tags": {
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "down",
+        "ramp": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 466403921,
+      "tags": {
+        "highway": "living_street",
+        "lanes": "1",
+        "maxspeed": "30",
+        "name": "Aleea Padin",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 525510126,
+      "tags": {
+        "highway": "primary",
+        "junction": "roundabout",
+        "lanes": "2",
+        "maxspeed": "30",
+        "name": "Calea Turzii",
+        "name:hu": "Tordai út",
+        "name:ro": "Calea Turzii",
+        "nat_ref": "DN1",
+        "ref": "DN1",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1151045555,
+      "tags": {
+        "highway": "proposed",
+        "lanes": "1",
+        "name": "Drum de legatura 27",
+        "oneway": "yes",
+        "proposed": "service",
+        "status": "AM,severance:Dimex,tender:CN1092053/28.04.2026"
+      }
+    },
+    {
+      "type": "way",
+      "id": 169114663,
+      "tags": {
+        "highway": "track"
+      }
+    },
+    {
+      "type": "way",
+      "id": 48171790,
+      "tags": {
+        "highway": "trunk_link",
+        "lanes": "1",
+        "oneway": "yes",
+        "ref": "DJ103G",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 28323864,
+      "tags": {
+        "highway": "track"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26617141,
+      "tags": {
+        "highway": "living_street",
+        "lit": "yes",
+        "noname": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1146015537,
+      "tags": {
+        "highway": "primary",
+        "lanes": "4",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Strada Avram Iancu",
+        "nat_ref": "DN1",
+        "ref": "DN1",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "asphalt",
+        "smoothness": "good",
+        "surface": "asphalt",
+        "surface_survey": "2016OCT_spreadsheet"
+      }
+    },
+    {
+      "type": "way",
+      "id": 54611364,
+      "tags": {
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1137007238,
+      "tags": {
+        "construction": "primary",
+        "highway": "construction",
+        "lanes": "2",
+        "name": "Lărgire DN",
+        "oneway": "yes",
+        "status": "AC,AM,builder:Viarom"
+      }
+    },
+    {
+      "type": "way",
+      "id": 305467465,
+      "tags": {
+        "destination:forward": "Cluj-Napoca;Gheorgheni",
+        "destination:ref:forward": "DJ1036",
+        "highway": "trunk_link",
+        "lanes": "2",
+        "layer": "1",
+        "oneway": "no",
+        "ref": "DN1N",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2018JUL_RobertH@peundemerg.ro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26616322,
+      "tags": {
+        "highway": "pedestrian",
+        "name": "Strada Fortăreței",
+        "name:hu": "Vár utca",
+        "name:ro": "Strada Fortăreței",
+        "old_name:hu": "Kis-Búza utca",
+        "smoothness": "excellent",
+        "surface": "sett"
+      }
+    },
+    {
+      "type": "way",
+      "id": 304286815,
+      "tags": {
+        "highway": "trunk_link",
+        "lanes": "1",
+        "oneway": "yes",
+        "ref": "DJ105S",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2018JUL_RobertH@peundemerg.ro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 277948465,
+      "tags": {
+        "highway": "primary_link",
+        "lanes": "4",
+        "maxspeed": "RO:urban",
+        "name": "Strada Ialomiței",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1181327234,
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 31649231,
+      "tags": {
+        "highway": "living_street",
+        "lanes": "2",
+        "maxspeed": "20",
+        "name": "Strada Mikó Imre",
+        "name:hu": "Mikó Imre utca",
+        "sidewalk": "no",
+        "source": "www.norc.ro",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 556084241,
+      "tags": {
+        "area": "yes",
+        "bicycle": "yes",
+        "highway": "pedestrian",
+        "lit": "yes",
+        "name": "Piața Muzeului",
+        "surface": "sett"
+      }
+    },
+    {
+      "type": "way",
+      "id": 670283149,
+      "tags": {
+        "highway": "service",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464707166,
+      "tags": {
+        "highway": "unclassified",
+        "lanes": "1",
+        "maxspeed": "RO:urban",
+        "sidewalk": "no",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 375790743,
+      "tags": {
+        "highway": "steps",
+        "level": "-1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 41931794,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Strada Tăuțiului",
+        "ref": "DC96",
+        "smoothness": "good",
+        "surface": "asphalt",
+        "surface_survey": "2016OCT_spreadsheet"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1166597450,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1319130129,
+      "tags": {
+        "area": "yes",
+        "highway": "pedestrian",
+        "layer": "1",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1232131963,
+      "tags": {
+        "bicycle": "designated",
+        "foot": "designated",
+        "highway": "cycleway",
+        "segregated": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26615558,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Strada Lunii",
+        "sidewalk": "both",
+        "smoothness": "good",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1005272060,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Strada Someș",
+        "source": "Bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1185701397,
+      "tags": {
+        "bicycle": "designated",
+        "foot": "designated",
+        "highway": "cycleway",
+        "segregated": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1124689632,
+      "tags": {
+        "highway": "tertiary_link",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 25717208,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxheight": "4",
+        "maxspeed": "RO:urban",
+        "name": "Strada Paris",
+        "name:hu": "Párizs utca",
+        "name:ro": "Strada Paris",
+        "old_name:hu": "Pap utca",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "trolley_wire": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1137007245,
+      "tags": {
+        "construction": "primary",
+        "highway": "construction",
+        "lanes": "1",
+        "name": "Lărgire DN",
+        "oneway": "yes",
+        "status": "AC,AM,builder:Viarom"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1150196149,
+      "tags": {
+        "highway": "proposed",
+        "lanes": "1",
+        "name": "Boulevard 1 Decembrie 1918",
+        "oneway": "yes",
+        "proposed": "secondary",
+        "status": "AM,severance:Dimex,tender:CN1091748/17.04.2026",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 846440739,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "RO:urban",
+        "name": "Strada Fagului",
+        "name:hu": "Bükkfa utca",
+        "old_ref": "DNVTCJ",
+        "sidewalk": "both",
+        "smoothness": "good",
+        "surface": "asphalt",
+        "surface_survey": "2020JUL_"
+      }
+    },
+    {
+      "type": "way",
+      "id": 561745032,
+      "tags": {
+        "highway": "secondary_link",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Strada Primăverii",
+        "name:hu": "Tavasz utca",
+        "name:ro": "Strada Primăverii",
+        "old_name": "Strada Mareșal Ion Antonescu",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 961962566,
+      "tags": {
+        "highway": "path",
+        "surface": "ground"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1227165081,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1007399893,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "track",
+        "horse": "yes",
+        "lit": "no",
+        "motor_vehicle": "no",
+        "sac_scale": "hiking",
+        "smoothness": "very_horrible",
+        "surface": "dirt",
+        "tracktype": "grade4",
+        "trail_visibility": "excellent",
+        "trailblazed": "symbols",
+        "trailblazed:visibility": "excellent"
+      }
+    },
+    {
+      "type": "way",
+      "id": 966572402,
+      "tags": {
+        "area": "yes",
+        "highway": "pedestrian",
+        "surface": "sett"
+      }
+    },
+    {
+      "type": "way",
+      "id": 922835531,
+      "tags": {
+        "highway": "cycleway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1154982495,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 377826987,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Calea Turzii",
+        "name:hu": "Tordai út",
+        "nat_ref": "DN1",
+        "oneway": "yes",
+        "ref": "DN1",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2018JUL_Ionut@peundemerg.ro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 856494991,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "type": "way",
+      "id": 465378555,
+      "tags": {
+        "highway": "primary_link",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Calea Mănăștur",
+        "name:hu": "Monostori út",
+        "name:ro": "Calea Mănăștur",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt",
+        "trolley_wire": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 359110891,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "RO:urban",
+        "name": "Bulevardul Muncii",
+        "name:hu": "Szentgyörgyhegyi út",
+        "name:ro": "Bulevardul Muncii",
+        "oneway": "no",
+        "sidewalk": "both",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2019MAR_"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1151900484,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "lit": "yes",
+        "maxspeed": "RO:urban",
+        "name": "Strada Câmpului",
+        "name:hu": "Mező utca",
+        "name:ro": "Strada Câmpului",
+        "overtaking": "no",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "asphalt",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "trolley_wire": "yes",
+        "turn:lanes:backward": "left|through;right"
+      }
+    },
+    {
+      "type": "way",
+      "id": 48171242,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "90",
+        "name": "Centura Apahida-Vâlcele",
+        "ref": "DN1N",
+        "sidewalk": "no",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "surface_survey": "2018JUL_RobertH@peundemerg.ro"
+      }
+    },
+    {
+      "type": "way",
+      "id": 363472320,
+      "tags": {
+        "highway": "secondary_link",
+        "lanes": "1",
+        "maxspeed": "RO:urban",
+        "oneway": "yes",
+        "ref": "DJ103G",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "turn:lanes": "through"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1144053818,
+      "tags": {
+        "covered": "yes",
+        "highway": "corridor",
+        "indoor": "yes"
+      }
+    }
+  ]
+}

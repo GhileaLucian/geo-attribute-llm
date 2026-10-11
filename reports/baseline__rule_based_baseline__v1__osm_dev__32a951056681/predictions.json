@@ -1,0 +1,2080 @@
+[
+  {
+    "segment_id": "389714616",
+    "extracted": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [
+      "speed_limit_missing",
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Aleea Bizușa",
+      "osm_tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Aleea Bizușa",
+        "sidewalk": "left"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"residential\", \"lanes\": \"2\", \"name\": \"Aleea Bizușa\", \"sidewalk\": \"left\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "679251376",
+    "extracted": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "access": "private",
+        "highway": "service"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"access\": \"private\", \"highway\": \"service\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1181327233",
+    "extracted": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "corridor"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"corridor\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "134752130",
+    "extracted": {
+      "road_type": "trunk",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "trunk",
+      "speed_limit_kmh": 70,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [
+      "speed_limit_missing",
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Centura Apahida-Vâlcele",
+      "osm_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Centura Apahida-Vâlcele",
+        "ref": "DN1N"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"trunk\", \"lanes\": \"2\", \"name\": \"Centura Apahida-Vâlcele\", \"ref\": \"DN1N\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1169809158",
+    "extracted": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.04,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Uzinei Electrice",
+      "osm_tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "lit": "yes",
+        "name": "Strada Uzinei Electrice",
+        "sidewalk": "separate"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary\", \"lanes\": \"4\", \"lit\": \"yes\", \"name\": \"Strada Uzinei Electrice\", \"sidewalk\": \"separate\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "26634240",
+    "extracted": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Drumul Sfântul Ioan",
+      "osm_tags": {
+        "highway": "secondary_link",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Drumul Sfântul Ioan",
+        "ref": "DJ107R",
+        "sidewalk": "right"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"2\", \"lit\": \"yes\", \"name\": \"Drumul Sfântul Ioan\", \"ref\": \"DJ107R\", \"sidewalk\": \"right\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "694699317",
+    "extracted": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Câmpului",
+      "osm_tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Strada Câmpului",
+        "sidewalk": "right"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary\", \"lanes\": \"2\", \"lit\": \"yes\", \"name\": \"Strada Câmpului\", \"sidewalk\": \"right\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "275775563",
+    "extracted": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "tertiary_link",
+        "lanes": "1",
+        "sidewalk": "both"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary_link\", \"lanes\": \"1\", \"sidewalk\": \"both\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "981625655",
+    "extracted": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "track",
+        "lit": "no"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"track\", \"lit\": \"no\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1341277055",
+    "extracted": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": 50,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [
+      "speed_limit_missing",
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "secondary_link",
+        "lanes": "1"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"1\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1312601710",
+    "extracted": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "dirt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "path"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"path\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1154747807",
+    "extracted": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "corridor"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"corridor\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1274220198",
+    "extracted": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": 10,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "speed_limit_missing",
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "access": "private",
+        "highway": "unclassified",
+        "lanes": "1",
+        "motor_vehicle": "private"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"access\": \"private\", \"highway\": \"unclassified\", \"lanes\": \"1\", \"motor_vehicle\": \"private\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "37146434",
+    "extracted": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Piața Timotei Cipariu",
+      "osm_tags": {
+        "highway": "secondary",
+        "lanes": "3",
+        "name": "Piața Timotei Cipariu",
+        "ref": "DJ103G",
+        "sidewalk": "separate"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary\", \"lanes\": \"3\", \"name\": \"Piața Timotei Cipariu\", \"ref\": \"DJ103G\", \"sidewalk\": \"separate\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1187549465",
+    "extracted": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "steps"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"steps\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "31647270",
+    "extracted": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "concrete",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Aleea Văleni",
+      "osm_tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "name": "Aleea Văleni",
+        "sidewalk": "no"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"residential\", \"lanes\": \"1\", \"name\": \"Aleea Văleni\", \"sidewalk\": \"no\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1137007236",
+    "extracted": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.07,
+    "error_categories": [
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Lărgire DN",
+      "osm_tags": {
+        "bridge": "yes",
+        "highway": "construction",
+        "lanes": "2",
+        "name": "Lărgire DN"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"bridge\": \"yes\", \"highway\": \"construction\", \"lanes\": \"2\", \"name\": \"Lărgire DN\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "857998560",
+    "extracted": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "service"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"service\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1047121022",
+    "extracted": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "corridor"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"corridor\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "411914874",
+    "extracted": {
+      "road_type": "primary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "primary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Memorandumului",
+      "osm_tags": {
+        "highway": "primary",
+        "lanes": "3",
+        "lit": "yes",
+        "name": "Strada Memorandumului",
+        "ref": "DN1",
+        "sidewalk": "separate"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary\", \"lanes\": \"3\", \"lit\": \"yes\", \"name\": \"Strada Memorandumului\", \"ref\": \"DN1\", \"sidewalk\": \"separate\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "31584884",
+    "extracted": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "primary_link",
+        "lanes": "1",
+        "sidewalk": "both"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary_link\", \"lanes\": \"1\", \"sidewalk\": \"both\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "239189345",
+    "extracted": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "living_street"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"living_street\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "464707803",
+    "extracted": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "primary_link",
+        "lanes": "2",
+        "sidewalk": "both"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary_link\", \"lanes\": \"2\", \"sidewalk\": \"both\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1149985564",
+    "extracted": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Drum de legatura Baciu- TransRegio Feleac",
+      "osm_tags": {
+        "bridge": "yes",
+        "highway": "proposed",
+        "lanes": "2",
+        "name": "Drum de legatura Baciu- TransRegio Feleac"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"bridge\": \"yes\", \"highway\": \"proposed\", \"lanes\": \"2\", \"name\": \"Drum de legatura Baciu- TransRegio Feleac\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "227215083",
+    "extracted": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Spicului",
+      "osm_tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Strada Spicului",
+        "sidewalk": "both"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"residential\", \"lanes\": \"2\", \"name\": \"Strada Spicului\", \"sidewalk\": \"both\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1237991817",
+    "extracted": {
+      "road_type": "cycleway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "cycleway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "cycleway"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"cycleway\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "807979520",
+    "extracted": {
+      "road_type": "trunk",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "trunk",
+      "speed_limit_kmh": 90,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "speed_limit_missing",
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Centura Apahida-Vâlcele",
+      "osm_tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Centura Apahida-Vâlcele",
+        "ref": "DN1N"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"bridge\": \"yes\", \"highway\": \"trunk\", \"lanes\": \"2\", \"name\": \"Centura Apahida-Vâlcele\", \"ref\": \"DN1N\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "37196673",
+    "extracted": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada General Dragalina",
+      "osm_tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Strada General Dragalina",
+        "sidewalk": "right"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary\", \"lanes\": \"2\", \"name\": \"Strada General Dragalina\", \"sidewalk\": \"right\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1446879688",
+    "extracted": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Pasaj Oasului",
+      "osm_tags": {
+        "highway": "proposed",
+        "lanes": "1",
+        "name": "Pasaj Oasului"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"proposed\", \"lanes\": \"1\", \"name\": \"Pasaj Oasului\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "386550590",
+    "extracted": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Valea Gârbăului",
+      "osm_tags": {
+        "highway": "unclassified",
+        "lanes": "2",
+        "motor_vehicle": "yes",
+        "name": "Strada Valea Gârbăului"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"unclassified\", \"lanes\": \"2\", \"motor_vehicle\": \"yes\", \"name\": \"Strada Valea Gârbăului\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "260063850",
+    "extracted": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "tertiary_link",
+        "sidewalk": "right"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary_link\", \"sidewalk\": \"right\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "377646342",
+    "extracted": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.07,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Tractoriștilor",
+      "osm_tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Strada Tractoriștilor",
+        "sidewalk": "no"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"residential\", \"lanes\": \"2\", \"name\": \"Strada Tractoriștilor\", \"sidewalk\": \"no\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "377826990",
+    "extracted": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "service"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"service\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "315218180",
+    "extracted": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "tertiary_link",
+        "lanes": "1",
+        "sidewalk": "left"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary_link\", \"lanes\": \"1\", \"sidewalk\": \"left\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "888449226",
+    "extracted": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "dirt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "path",
+        "motor_vehicle": "no"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"path\", \"motor_vehicle\": \"no\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "8028419",
+    "extracted": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "speed_limit_missing",
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "secondary_link",
+        "lanes": "1",
+        "sidewalk": "right"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"1\", \"sidewalk\": \"right\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "894567910",
+    "extracted": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "primary_link",
+        "lanes": "1"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary_link\", \"lanes\": \"1\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "689069610",
+    "extracted": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.06,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Tudor Vladimirescu",
+      "osm_tags": {
+        "highway": "construction",
+        "lanes": "1",
+        "name": "Strada Tudor Vladimirescu"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"construction\", \"lanes\": \"1\", \"name\": \"Strada Tudor Vladimirescu\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "481607227",
+    "extracted": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "steps"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"steps\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "954036002",
+    "extracted": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "ground",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 0.05,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "path"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"path\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": null,
+    "token_usage": {},
+    "cache_hit": true,
+    "estimated_cost_usd": 0.0
+  }
+]

@@ -1,145 +1,170 @@
-# GeoAttribute-LLM: Geospatial Attribute Extraction & Automated QA Pipeline
+# GeoAttribute-LLM
 
-[![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB.svg?logo=python)](https://python.org)
-[![Pydantic v2](https://img.shields.io/badge/Pydantic-v2-E92063.svg?logo=pydantic)](https://pydantic.dev)
-[![LangChain](https://img.shields.io/badge/LangChain-Orchestration-1C3C3C.svg)](https://langchain.com)
-[![Prefect](https://img.shields.io/badge/Prefect-Workflow_3.8-024DFD.svg?logo=prefect)](https://prefect.io)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+A learning project for road attribute extraction and evaluation. It uses Python,
+LangChain structured outputs, Pydantic, a Prefect flow, a Streamlit inspector and
+a Jupyter notebook. Claude and OpenAI integrations are implemented; neither API
+has been evaluated in the saved runs.
 
-> **Applied learning project for geospatial attribute extraction, automated map-quality control, and ground-truth benchmarking.**  
-> Explores LLM orchestration (**LangChain**, **Prefect**), structured schema enforcement (**Pydantic**), and comparative benchmarking between a rule-based baseline and **Anthropic Claude Sonnet** on OpenStreetMap (OSM) roadway data.
+## Data
 
----
+On 11 October 2026, the downloader queried OpenStreetMap through Overpass for
+the Cluj-Napoca bounding box. It selected 100 real way records from 19,048 returned
+ways, balancing highway types with seed 42. The saved split has 40 development
+records and 60 hold-out records. The snapshot retains original tags, numeric way
+IDs, the query, endpoint and download timestamp.
 
-## Project Context & Objectives
+This is a tag-completion task: maxspeed, surface, barrier and oneway are hidden.
+A whitelist removes their aliases and free-text notes. Generated descriptions
+use only visible tags. Reference values come from original downloaded tags,
+not from the extractor. Missing values remain unknown. Only hidden fields are
+scored on this dataset; visible road classification is not a completion result.
 
-In map data operations, validating road network attributes (functional classifications, legal speed limits, physical barriers, surfaces) is labor-intensive. Inconsistent community tagging and missing metadata frequently require manual inspection.
+There are also 15 fictional hand-written development cases, reported separately.
+The original 30 curated examples remain under --split legacy. They expose target
+tags and are not an independent real-data benchmark.
 
-This repository implements an **end-to-end automated QA pipeline** designed to:
-1. **Parse OpenStreetMap (OSM) roadway data** across Cluj-Napoca, Romania (from arterial boulevards and motorways to pedestrian zones and mountain tracks).
-2. **Implement a two-stage extraction architecture**:
-   - **Rule-Based Baseline**: Fast deterministic heuristics parsing explicit tags and statutory speed limits.
-   - **Claude Sonnet (LLM)**: LangChain `ChatAnthropic` chain with few-shot demonstration pairs and strict Pydantic JSON schema output.
-3. **Orchestrate execution flows via Prefect 3.8**, with task retries and artifact logging.
-4. **Benchmark performance** against a small hand-curated test set of 30 road segments around Cluj-Napoca. The baseline scores 100% on it, so the set is too easy to separate the two methods; harder, real OSM cases are the next step.
-5. **Classify discrepancies into a Spatial Error Taxonomy** (speed limit hallucinations, road class mismatches, barrier false negatives).
+See [data provenance and limitations](data/README.md).
+OSM data: [OpenStreetMap contributors, ODbL 1.0](https://www.openstreetmap.org/copyright).
+The MIT license applies to project code.
 
----
+## Method
 
-## Pipeline Architecture
+The baseline parses explicit tags and one English barrier keyword. It keeps
+unknown values unknown and preserves suspicious speed tags for inspection.
+LLM extractors use the same input and output schema, with candidate prompts v1,
+v2 and v3. The evidence field has the legacy name reasoning_cot but requests a
+brief summary, not a private reasoning trace.
 
-```mermaid
-flowchart TD
-    A["Raw OSM Data (osm_ground_truth_cluj.json)"] --> B["Data Ingestion (Prefect Task)"]
-    B --> C["Prompt Architecture (System + Few-Shot Pairs)"]
-    C --> D{"Extractor Engine"}
-    D -->|"Baseline"| E1["Rule-Based Heuristic Parser"]
-    D -->|"LLM"| E2["LangChain ChatAnthropic / Claude Sonnet"]
-    E1 --> F["Pydantic Schema Validation (RoadAttributes)"]
-    E2 --> F
-    F --> G["Geospatial Evaluator (Scikit-Learn)"]
-    G --> H["Spatial Error Taxonomy Classifier"]
-    H --> I["Visual Metrics Chart (chart.png)"]
-    H --> J["Markdown QA Report (report.md)"]
-```
+Each attempt records the input, parsed output, raw provider message when
+available, latency, token usage and failure status. Disk caching fingerprints
+the model, prompt text, schema, extractor code and input. A changed request
+does not reuse an old response. Invalid outputs and API errors are reported;
+they are not replaced with baseline predictions.
 
----
+Evaluation includes per-class precision, recall, F1, support, confusion matrices,
+exact field matching and an error taxonomy. Failed predictions stay in metric
+denominators. Speed tolerance uses only recorded numeric reference speeds.
+Numerical predictions when the reference speed is missing are counted separately:
+they are unsupported by that reference, not proof of an incorrect real legal limit.
 
-## Comparative Benchmark: Baseline vs. LLM
+## Results
 
-The framework is structured to compare the deterministic baseline against LLM inference on the test set:
+Measured locally on the saved datasets:
 
-| Dimension | Rule-Based Baseline | Claude Sonnet (LLM), expected, not yet measured |
-| :--- | :--- | :--- |
-| **Execution Cost** | Zero (Local CPU) | API token cost |
-| **Handling of Unstructured Text** | Brittle keyword matching | High comprehension of colloquial descriptions |
-| **Missing Maxspeed Tags** | Strict static defaults (e.g. 50 km/h) | Context-aware inference from road name & surroundings |
-| **Schema Compliance** | 100% deterministic | 100% via Pydantic structured output binding |
-| **Anomaly Detection** | Simple threshold checks (speed > 80) | Semantic contradiction flagging |
+| Dataset | Model | n | Exact match | Surface accuracy | Speed exact on known labels | Failed outputs |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| OSM development, masked tags | Rule baseline | 40 | 25.0% | 32.5% | 0/6 | 0/40 |
+| Hand-written development cases | Rule baseline | 15 | 60.0% | 93.3% | 2/3 | 0/15 |
 
-### Spatial Error Taxonomy
-Discrepancies are categorized into domain-specific error classes:
-- `speed_limit_hallucination`: Model infers ungrounded speed limits without adequate context.
-- `road_class_mismatch`: Confuses secondary collectors with tertiary or residential streets.
-- `barrier_false_negative`: Misses physical obstacles described colloquially in freeform text.
-- `surface_ambiguity`: Confuses gravel, unpaved, and compacted surfaces on forestry tracks.
+These numbers come from actual baseline runs. API cost for these runs is USD 0
+because no model API was used. Invalid outputs: 0/55. There is no measured Claude
+or OpenAI comparison and no hold-out score yet.
 
----
+Surface accuracy on known OSM surface labels is 0/27; oneway accuracy on known
+OSM labels is 0/19. Many reference labels are missing, so matching unknown values
+raises aggregate scores. This completion task is often underdetermined: visible
+tags alone may not reveal the hidden answer. These results measure completion
+against recorded tags, not verified knowledge of a road.
 
-## Quickstart
+[Saved run comparison](reports/comparison.md) links to reports with class support,
+confusion matrices and saved predictions. [Prompt iteration status](reports/prompt_iterations.md)
+records what has and has not been executed.
 
-### 1. Installation
-```bash
-git clone https://github.com/GhileaLucian/geo-attribute-llm.git
-cd geo-attribute-llm
+## Error analysis
+
+On OSM development data, the baseline omitted 27 recorded surface values, 19
+recorded oneway values and 6 recorded speeds. It cannot recover these hidden
+tags from the remaining input. On fictional hard cases, it missed 3 Romanian
+barrier descriptions and their barrier types. Error reports contain up to three
+examples for each recorded category, with input, prediction and reference.
+
+These patterns identify missing capabilities. They do not establish that an LLM
+will recover the tags or that any prompt change has improved a score.
+
+## Limitations
+
+- One bounding box, a small sample and deliberate balancing across highway types.
+- OSM tags can be missing, outdated or wrong; manual field verification is absent.
+- Missing barrier tags do not mean no barrier. Node barriers are not joined to ways.
+- All downloaded sample ways have unknown way-level barrier labels; barrier detection
+  quality cannot be measured on that sample.
+- Development/test IDs are disjoint, but related ways may occur in both sets.
+- Descriptions are generated from visible tags, not independent observations.
+- Some speed tags are non-numeric or conditional and are kept unknown.
+- Pydantic validates types and structure, not facts. Self-confidence is not calibrated.
+- API cost is unknown without provider token usage and configured model prices.
+- Results have not been shown to transfer to other cities or production operations.
+
+## How to reproduce
+
+Python 3.12 is used for the local checks.
+
+```powershell
 pip install -r requirements.txt
-```
-
-### 2. Run the Rule-Based Baseline
-```bash
 python run_pipeline.py --mode baseline
-```
-
-### 3. Run with Anthropic Claude Sonnet
-```bash
-export ANTHROPIC_API_KEY="your-api-key"
-python run_pipeline.py --mode claude
-```
-
-### 4. Launch the Web Dashboard
-```bash
+python run_pipeline.py --mode baseline --split hard
+python -m pytest -q
 python -m streamlit run app.py
-```
-
-### 5. Interactive Jupyter Notebook
-```bash
 jupyter notebook notebooks/evaluation_analysis.ipynb
 ```
 
----
+The baseline and notebook need no API key. The notebook only reads saved results.
+The inspector calls the selected extractor only when Extract is pressed; changing
+a widget does not call an API. It never substitutes a failed Claude output with a
+baseline output.
 
-## Repository Structure
+To configure Claude locally:
 
-```
-geo-attribute-llm/
-├── app.py                               # Minimalist Streamlit web dashboard
-├── data/
-│   └── osm_ground_truth_cluj.json       # Verified Cluj-Napoca OSM road segments
-├── notebooks/
-│   └── evaluation_analysis.ipynb        # Exploratory analysis & metrics notebook
-├── reports/
-│   ├── evaluation_metrics_chart.png     # Precision/Recall performance chart
-│   ├── evaluation_report.md             # Markdown QA evaluation report
-│   └── metrics_summary.json             # Structured benchmark outputs
-├── src/
-│   ├── __init__.py
-│   ├── models.py                        # Pydantic schemas (RoadAttributes, enums)
-│   ├── prompts.py                       # System prompt & Few-Shot message pairs
-│   ├── dataset_generator.py             # Dataset loader (reads data/ directly)
-│   ├── extractor.py                     # Baseline, Claude & OpenAI extractors
-│   ├── evaluator.py                     # Scikit-learn metrics & error taxonomy
-│   └── pipeline_flow.py                 # Prefect task & flow orchestration
-├── run_pipeline.py                      # Pipeline CLI entrypoint
-├── push_to_github.bat                   # 1-click push script
-├── requirements.txt                     # Python dependencies
-├── LICENSE                              # MIT License
-├── .gitignore
-└── README.md
+```powershell
+Copy-Item .env.example .env
+# Edit .env locally: ANTHROPIC_API_KEY and optionally ANTHROPIC_MODEL
+python run_pipeline.py --mode claude --split dev --prompt-version v1
 ```
 
----
+The default is claude-sonnet-5-5, based on the
+[Claude model documentation](https://platform.claude.com/docs/en/models/overview)
+consulted on 11 October 2026. Use ANTHROPIC_MODEL or --model to override it.
+Your account's model access has not been tested.
+[Romanian key setup guide](docs/CLAUDE_SETUP_RO.md) explains Console and billing.
 
-## Engineering Takeaways
+OpenAI is optional: set OPENAI_API_KEY and OPENAI_MODEL, then use --mode openai.
+Keys are read from process environment or the local ignored .env file, following
+[the API authentication guidance](https://developers.openai.com/api/reference/overview).
+No paid API run was made while preparing this repository.
 
-1. **Rule-Based Baselines are Essential:** Before deploying an LLM in a data pipeline, establishing a transparent rule-based baseline determines whether the LLM actually adds value on edge cases or merely replicates existing tag parsers at higher cost.
-2. **Schema Enforcement via Pydantic:** Binding Pydantic schemas directly to `ChatAnthropic` (`with_structured_output`) eliminates parsing errors and guarantees valid JSON downstream.
-3. **Task Orchestration with Prefect:** Wrapping ingestion, inference, and evaluation in independent Prefect tasks provides automatic retry handling for transient API rate limits.
+Use --cached-only to replay identical saved responses without API access.
+Failures are also cached. Use --retry-failed explicitly when you want another
+attempt at a previously failed call. Unknown API cost is stored as null, not zero.
+Price variables in .env.example are optional plain token-price estimates.
 
----
+Download a new snapshot into a different directory:
+
+```powershell
+python -m src.fetch_osm --output-dir data/new_snapshot
+python run_pipeline.py --mode baseline --data-dir data/new_snapshot
+```
+
+Downloading newer data changes the benchmark. Keep the saved snapshot to reproduce
+the reports in this repository. Existing snapshots require --force to replace them.
+
+Reports are saved in separate directories by dataset, model and prompt. Predictions
+are saved beside each report; per-response records are under results/raw/.
+[Example Prefect schedule](docs/prefect_schedule.md) is documentation only, not an
+active production deployment. GitHub Actions runs offline checks after pushes
+and pull requests. Check the repository's Actions tab for each run's status.
+
+## What I would do next
+
+Run Claude candidates on development data, inspect actual errors and select a
+version using evidence. Check hold-out tags manually, then run the baseline and
+the selected version on the same hold-out once. Add independent textual or image
+evidence for tasks where hidden tags cannot be inferred from visible metadata.
+Join barrier nodes and use a geographic or road-level split to reduce leakage.
+
+[GitHub upload instructions in Romanian](docs/GITHUB_UPLOAD_RO.md).
 
 ## Author
 
-**Dan Lucian Ghilea**  
-MSc Student in Applied Informatics (Complex Systems Engineering) – Technical University of Cluj-Napoca (UTCN)  
-- LinkedIn: [linkedin.com/in/lucian-ghilea](https://linkedin.com/in/lucian-ghilea)  
-- GitHub: [github.com/GhileaLucian](https://github.com/GhileaLucian)
+Dan Lucian Ghilea — Technical University of Cluj-Napoca.
+[GitHub](https://github.com/GhileaLucian) ·
+[LinkedIn](https://linkedin.com/in/lucian-ghilea)
