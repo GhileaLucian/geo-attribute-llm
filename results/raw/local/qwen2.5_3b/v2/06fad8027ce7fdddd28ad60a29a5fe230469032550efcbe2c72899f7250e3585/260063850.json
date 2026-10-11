@@ -1,0 +1,58 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "tertiary_link",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway tag explicitly states the road type as tertiary_link and sidewalk tag indicates the presence of a sidewalk on the right side.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:49:45.0356583Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"tertiary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag explicitly states the road type as tertiary_link and sidewalk tag indicates the presence of a sidewalk on the right side.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2069368900,
+    "load_duration": 9784900,
+    "prompt_eval_count": 1097,
+    "prompt_eval_cached_count": 1048,
+    "prompt_eval_duration": 337200000,
+    "eval_count": 94,
+    "eval_duration": 1709004000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1097,
+    "output_tokens": 94,
+    "total_tokens": 1191
+  },
+  "error_message": null,
+  "segment_id": "260063850",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v2",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "tertiary_link",
+      "sidewalk": "right"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary_link\", \"sidewalk\": \"right\"}"
+  },
+  "execution_time_ms": 2107.93,
+  "recorded_at": "2026-10-11T17:49:45.037024+00:00"
+}

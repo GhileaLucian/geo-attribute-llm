@@ -1,0 +1,32 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "secondary_link",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+    "anomaly_flag": false
+  },
+  "raw_response": null,
+  "token_usage": {},
+  "error_message": null,
+  "segment_id": "8028419",
+  "model": "rule_based_baseline",
+  "mode": "baseline",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "secondary_link",
+      "lanes": "1",
+      "sidewalk": "right"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"1\", \"sidewalk\": \"right\"}"
+  },
+  "execution_time_ms": 0.06,
+  "recorded_at": "2026-10-11T17:39:27.566024+00:00"
+}

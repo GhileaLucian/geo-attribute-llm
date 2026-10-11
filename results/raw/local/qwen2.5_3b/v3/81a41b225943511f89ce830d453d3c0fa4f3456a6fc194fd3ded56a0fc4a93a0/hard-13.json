@@ -1,0 +1,57 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "track",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "gravel",
+    "oneway": null,
+    "confidence_score": 0.75,
+    "reasoning_cot": "Highway=track and surface=gravel provided in OSM tags.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:53:46.1776139Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"track\",\n  \"confidence_score\": 0.75,\n  \"reasoning_cot\": \"Highway=track and surface=gravel provided in OSM tags.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"gravel\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1944927900,
+    "load_duration": 8955700,
+    "prompt_eval_count": 1064,
+    "prompt_eval_cached_count": 1034,
+    "prompt_eval_duration": 187307000,
+    "eval_count": 94,
+    "eval_duration": 1735342000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1064,
+    "output_tokens": 94,
+    "total_tokens": 1158
+  },
+  "error_message": null,
+  "segment_id": "hard-13",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "English surface",
+    "osm_tags": {
+      "highway": "track"
+    },
+    "context_description": "The road surface is gravel."
+  },
+  "execution_time_ms": 1997.38,
+  "recorded_at": "2026-10-11T17:53:46.178122+00:00"
+}

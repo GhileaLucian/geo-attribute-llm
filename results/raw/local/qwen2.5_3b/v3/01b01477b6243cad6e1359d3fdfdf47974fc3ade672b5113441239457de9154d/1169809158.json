@@ -1,0 +1,61 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "secondary",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "paved",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Tags highway=secondary, lanes=4, lit=yes, name=Strada Uzinei Electrice, and sidewalk=separate provide sufficient information to determine the road type and additional attributes.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:51:32.4281998Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"secondary\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Tags highway=secondary, lanes=4, lit=yes, name=Strada Uzinei Electrice, and sidewalk=separate provide sufficient information to determine the road type and additional attributes.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"paved\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2760104500,
+    "load_duration": 9106600,
+    "prompt_eval_count": 1151,
+    "prompt_eval_cached_count": 1048,
+    "prompt_eval_duration": 585252000,
+    "eval_count": 118,
+    "eval_duration": 2151751000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1151,
+    "output_tokens": 118,
+    "total_tokens": 1269
+  },
+  "error_message": null,
+  "segment_id": "1169809158",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "Strada Uzinei Electrice",
+    "osm_tags": {
+      "highway": "secondary",
+      "lanes": "4",
+      "lit": "yes",
+      "name": "Strada Uzinei Electrice",
+      "sidewalk": "separate"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary\", \"lanes\": \"4\", \"lit\": \"yes\", \"name\": \"Strada Uzinei Electrice\", \"sidewalk\": \"separate\"}"
+  },
+  "execution_time_ms": 2805.5,
+  "recorded_at": "2026-10-11T17:51:32.429285+00:00"
+}

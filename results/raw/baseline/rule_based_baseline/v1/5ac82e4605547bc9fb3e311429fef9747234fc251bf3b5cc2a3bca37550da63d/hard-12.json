@@ -1,0 +1,32 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": false,
+    "barrier_type": "none",
+    "surface": "unknown",
+    "oneway": false,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+    "anomaly_flag": false
+  },
+  "raw_response": null,
+  "token_usage": {},
+  "error_message": null,
+  "segment_id": "hard-12",
+  "model": "rule_based_baseline",
+  "mode": "baseline",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Explicit absence",
+    "osm_tags": {
+      "highway": "service",
+      "barrier": "no",
+      "oneway": "no"
+    },
+    "context_description": "Nu exista bariera; circulatie in ambele sensuri."
+  },
+  "execution_time_ms": 0.06,
+  "recorded_at": "2026-10-11T17:39:51.417610+00:00"
+}

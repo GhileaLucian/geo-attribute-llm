@@ -110,7 +110,7 @@ def update_comparison(reports_dir):
         summaries.append((path.parent.name, metrics))
     lines = [
         "# Saved runs", "",
-        "Only completed local runs appear below. Compare rows only when dataset SHA-256 and evaluation fields match.",
+        "Recorded runs appear below, including failed API attempts. Compare rows only when dataset SHA-256 and evaluation fields match.",
         "An all-unknown prediction can score well if reference tags are often missing; inspect known-label metrics.", "",
         "| Run | Data | Mode / model / prompt | n | Exact | Speed known exact | Surface accuracy | Failure rate |",
         "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: |"
@@ -148,6 +148,8 @@ def run_geospatial_pipeline(
         evaluation_field_sets=[list(fields) for fields in sorted({tuple(s.evaluation_fields) for s in dataset})],
         run_at=datetime.now(timezone.utc).isoformat(), report_directory=str(output_dir)
     )
+    if mode == "local":
+        metrics["cost_note"] = "Local inference: provider API cost is zero. Hardware, electricity and download costs are not included."
     export_artifacts_task(metrics, results, output_dir)
     update_comparison(reports_dir)
     return metrics

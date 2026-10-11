@@ -98,4 +98,7 @@ def get_extractor(mode="baseline", model_name=None, prompt_version="v1"):
         return ClaudeExtractor(model_name, prompt_version)
     if mode == "openai":
         return OpenAIExtractor(model_name, prompt_version)
+    if mode == "local":
+        from src.local_ollama import LocalOllamaExtractor
+        return LocalOllamaExtractor(model_name, prompt_version)
     raise ValueError(f"Unknown extractor mode: {mode}")

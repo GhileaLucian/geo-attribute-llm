@@ -1,0 +1,62 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "secondary_link",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway=secondary_link, lanes=2, lit=yes, name=Drumul Sfântul Ioan, ref=DJ107R, sidewalk=right provide sufficient information.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:39:07.5022704Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"secondary_link\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Highway=secondary_link, lanes=2, lit=yes, name=Drumul Sfântul Ioan, ref=DJ107R, sidewalk=right provide sufficient information.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2854049400,
+    "load_duration": 8973400,
+    "prompt_eval_count": 1112,
+    "prompt_eval_cached_count": 984,
+    "prompt_eval_duration": 681236000,
+    "eval_count": 119,
+    "eval_duration": 2149998000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1112,
+    "output_tokens": 119,
+    "total_tokens": 1231
+  },
+  "error_message": null,
+  "segment_id": "26634240",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Drumul Sfântul Ioan",
+    "osm_tags": {
+      "highway": "secondary_link",
+      "lanes": "2",
+      "lit": "yes",
+      "name": "Drumul Sfântul Ioan",
+      "ref": "DJ107R",
+      "sidewalk": "right"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"2\", \"lit\": \"yes\", \"name\": \"Drumul Sfântul Ioan\", \"ref\": \"DJ107R\", \"sidewalk\": \"right\"}"
+  },
+  "execution_time_ms": 2907.9,
+  "recorded_at": "2026-10-11T17:39:07.502853+00:00"
+}

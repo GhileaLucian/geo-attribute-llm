@@ -1,0 +1,23 @@
+{
+  "status": "api_error",
+  "extracted": null,
+  "raw_response": null,
+  "token_usage": {},
+  "error_message": "OpenAIRateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+  "segment_id": "134752130",
+  "model": "gpt-4o",
+  "mode": "openai",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Centura Apahida-Vâlcele",
+    "osm_tags": {
+      "highway": "trunk",
+      "lanes": "2",
+      "name": "Centura Apahida-Vâlcele",
+      "ref": "DN1N"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"trunk\", \"lanes\": \"2\", \"name\": \"Centura Apahida-Vâlcele\", \"ref\": \"DN1N\"}"
+  },
+  "execution_time_ms": 1896.46,
+  "recorded_at": "2026-10-11T17:24:05.163893+00:00"
+}

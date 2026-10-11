@@ -1,0 +1,367 @@
+{
+  "total_segments_attempted": 40,
+  "total_segments_evaluated": 40,
+  "unlabeled_segments_excluded": 0,
+  "successful_outputs": 40,
+  "failed_outputs": 0,
+  "failure_rate": 0.0,
+  "invalid_outputs": 0,
+  "invalid_output_rate": 0.0,
+  "api_errors": 0,
+  "api_error_rate": 0.0,
+  "exact_segment_match_rate": 0.225,
+  "attributes": {
+    "road_type": {
+      "count": 0,
+      "accuracy": null,
+      "precision": null,
+      "recall": null,
+      "f1_score": null,
+      "macro_f1": null,
+      "per_class": {},
+      "confusion_matrix": {
+        "labels": [],
+        "values": []
+      }
+    },
+    "surface_type": {
+      "count": 40,
+      "accuracy": 0.3,
+      "precision": 0.1181818181818182,
+      "recall": 0.3,
+      "f1_score": 0.16956521739130434,
+      "macro_f1": 0.08695652173913043,
+      "unknown_reference_count": 13,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "asphalt": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 22
+        },
+        "concrete": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "dirt": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 2
+        },
+        "ground": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "paved": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "paving_stones": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 1
+        },
+        "unknown": {
+          "precision": 0.36363636363636365,
+          "recall": 0.9230769230769231,
+          "f1_score": 0.5217391304347826,
+          "support": 13
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "asphalt",
+          "concrete",
+          "dirt",
+          "ground",
+          "paved",
+          "paving_stones",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0,
+            0,
+            6,
+            0,
+            16
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            12
+          ]
+        ]
+      }
+    },
+    "barrier_present": {
+      "count": 40,
+      "accuracy": 0.925,
+      "precision": 1.0,
+      "recall": 0.925,
+      "f1_score": 0.961038961038961,
+      "macro_f1": 0.961038961038961,
+      "unknown_reference_count": 40,
+      "known_reference_accuracy": null,
+      "per_class": {
+        "true": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "unknown": {
+          "precision": 1.0,
+          "recall": 0.925,
+          "f1_score": 0.961038961038961,
+          "support": 40
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "true",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            37
+          ]
+        ]
+      }
+    },
+    "barrier_type": {
+      "count": 40,
+      "accuracy": 0.95,
+      "precision": 1.0,
+      "recall": 0.95,
+      "f1_score": 0.9743589743589742,
+      "macro_f1": 0.9743589743589743,
+      "unknown_reference_count": 40,
+      "known_reference_accuracy": null,
+      "per_class": {
+        "bollard": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "guard_rail": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 0
+        },
+        "unknown": {
+          "precision": 1.0,
+          "recall": 0.95,
+          "f1_score": 0.9743589743589743,
+          "support": 40
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "bollard",
+          "guard_rail",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            38
+          ]
+        ]
+      }
+    },
+    "oneway": {
+      "count": 40,
+      "accuracy": 0.5,
+      "precision": 0.2692307692307692,
+      "recall": 0.5,
+      "f1_score": 0.35,
+      "macro_f1": 0.2222222222222222,
+      "unknown_reference_count": 21,
+      "known_reference_accuracy": 0.0,
+      "per_class": {
+        "false": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 2
+        },
+        "true": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "support": 17
+        },
+        "unknown": {
+          "precision": 0.5128205128205128,
+          "recall": 0.9523809523809523,
+          "f1_score": 0.6666666666666666,
+          "support": 21
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "false",
+          "true",
+          "unknown"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            17
+          ],
+          [
+            0,
+            1,
+            20
+          ]
+        ]
+      }
+    },
+    "anomaly_detection": {
+      "count": 0,
+      "accuracy": null,
+      "precision": null,
+      "recall": null,
+      "f1_score": null,
+      "macro_f1": null,
+      "per_class": {},
+      "confusion_matrix": {
+        "labels": [],
+        "values": []
+      }
+    },
+    "speed_limit": {
+      "count": 40,
+      "exact_accuracy": 0.825,
+      "known_reference_count": 6,
+      "known_exact_accuracy": 0.0,
+      "within_10kmh_accuracy": 0.0,
+      "missing_reference_count": 34,
+      "predicted_when_reference_missing_count": 1,
+      "predicted_when_reference_missing_rate": 0.029411764705882353
+    }
+  },
+  "error_taxonomy_breakdown": {
+    "speed_limit_missing": 6,
+    "surface_ambiguity": 28,
+    "oneway_mismatch": 20,
+    "barrier_presence_mismatch": 3,
+    "barrier_type_mismatch": 2,
+    "speed_limit_hallucination": 1
+  },
+  "cache_hits": 40,
+  "original_mean_latency_ms": 2452.99075,
+  "token_usage": {
+    "input_tokens": 41856,
+    "output_tokens": 3564,
+    "total_tokens": 45420
+  },
+  "token_usage_unavailable_count": 0,
+  "estimated_original_api_cost_usd": 0.0,
+  "estimated_new_api_cost_usd": 0,
+  "cost_note": "Local inference: provider API cost is zero. Hardware, electricity and download costs are not included.",
+  "extractor_mode": "local",
+  "model_name": "qwen2.5:3b",
+  "prompt_version": "v1",
+  "dataset_file": "osm_dev.json",
+  "dataset_sha256": "b4caa3fc4ffb44f393daa0ae8ce4b84eee014749ac41fc9ef43c259ca31c225d",
+  "source_counts": {
+    "OpenStreetMap/Overpass": 40
+  },
+  "evaluation_field_sets": [
+    [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ]
+  ],
+  "run_at": "2026-10-11T17:46:38.927458+00:00",
+  "report_directory": "C:\\Users\\Lucian Dan\\Desktop\\CV_Master_Hub_AI\\02_CV_URI_PE_DOMENII\\01_AI_si_Data_Science\\geo-attribute-llm\\reports\\local__qwen2.5_3b__v1__osm_dev__52a3829896fd"
+}

@@ -1,0 +1,57 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "path",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway tag is explicitly set to 'path' in the OSM data.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:50:01.5954259Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"path\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is explicitly set to 'path' in the OSM data.\", \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1095461400,
+    "load_duration": 9965300,
+    "prompt_eval_count": 1075,
+    "prompt_eval_cached_count": 1048,
+    "prompt_eval_duration": 180073000,
+    "eval_count": 47,
+    "eval_duration": 889918000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1075,
+    "output_tokens": 47,
+    "total_tokens": 1122
+  },
+  "error_message": null,
+  "segment_id": "954036002",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v2",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "path"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"path\"}"
+  },
+  "execution_time_ms": 1136.5,
+  "recorded_at": "2026-10-11T17:50:01.595937+00:00"
+}

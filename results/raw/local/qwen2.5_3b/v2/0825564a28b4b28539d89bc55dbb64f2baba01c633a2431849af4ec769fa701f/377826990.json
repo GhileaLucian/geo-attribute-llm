@@ -1,0 +1,57 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "The highway tag is explicitly set to 'service', indicating a service road.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:49:49.3767147Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"The highway tag is explicitly set to 'service', indicating a service road.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1883396900,
+    "load_duration": 10032700,
+    "prompt_eval_count": 1075,
+    "prompt_eval_cached_count": 1048,
+    "prompt_eval_duration": 181302000,
+    "eval_count": 92,
+    "eval_duration": 1677554000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1075,
+    "output_tokens": 92,
+    "total_tokens": 1167
+  },
+  "error_message": null,
+  "segment_id": "377826990",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v2",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "service"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"service\"}"
+  },
+  "execution_time_ms": 1925.9,
+  "recorded_at": "2026-10-11T17:49:49.377807+00:00"
+}

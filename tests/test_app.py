@@ -38,3 +38,19 @@ def test_extract_click_runs_once_and_rerun_reuses_session(monkeypatch):
     app.run(timeout=20)
     assert not app.exception
     assert mocked.call_count == 1
+
+
+def test_local_selection_needs_no_cloud_key_and_does_not_call_model(monkeypatch):
+    import src.recording
+    monkeypatch.setenv("OPENAI_API_KEY", "")
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "")
+    mocked = Mock(side_effect=AssertionError("No extraction expected before click"))
+    monkeypatch.setattr(src.recording, "extract_batch", mocked)
+    app = AppTest.from_file(str(PROJECT_ROOT / "app.py")).run(timeout=20)
+    app.selectbox[2].select("local").run(timeout=20)
+    assert not app.exception
+    assert not app.button[0].disabled
+    assert not mocked.called
+    app.run(timeout=20)
+    assert not app.exception
+    assert not mocked.called

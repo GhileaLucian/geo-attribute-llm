@@ -1,0 +1,57 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "pedestrian",
+    "speed_limit_kmh": null,
+    "barrier_present": true,
+    "barrier_type": "bollard",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Bollards are explicitly mentioned in the context description, indicating the presence of a barrier.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:53:22.0096895Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"pedestrian\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Bollards are explicitly mentioned in the context description, indicating the presence of a barrier.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": true,\n  \"barrier_type\": \"bollard\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2271403900,
+    "load_duration": 10342400,
+    "prompt_eval_count": 1073,
+    "prompt_eval_cached_count": 1034,
+    "prompt_eval_duration": 437134000,
+    "eval_count": 99,
+    "eval_duration": 1809900000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1073,
+    "output_tokens": 99,
+    "total_tokens": 1172
+  },
+  "error_message": null,
+  "segment_id": "hard-01",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "Romanian bollards",
+    "osm_tags": {
+      "highway": "pedestrian"
+    },
+    "context_description": "La intrare sunt stalpisori metalici."
+  },
+  "execution_time_ms": 2312.96,
+  "recorded_at": "2026-10-11T17:53:22.010737+00:00"
+}

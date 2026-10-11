@@ -1,0 +1,58 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "residential",
+    "speed_limit_kmh": 30,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Text explicitly states maxspeed=30, which contradicts maxspeed=50 in tags.",
+    "anomaly_flag": true
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:41:23.306232Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"residential\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Text explicitly states maxspeed=30, which contradicts maxspeed=50 in tags.\", \"speed_limit_kmh\": 30, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": true}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1957224100,
+    "load_duration": 9478000,
+    "prompt_eval_count": 1016,
+    "prompt_eval_cached_count": 969,
+    "prompt_eval_duration": 262607000,
+    "eval_count": 89,
+    "eval_duration": 1675150000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1016,
+    "output_tokens": 89,
+    "total_tokens": 1105
+  },
+  "error_message": null,
+  "segment_id": "hard-06",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Contradictory speed",
+    "osm_tags": {
+      "highway": "residential",
+      "maxspeed": "30"
+    },
+    "context_description": "Textul spune limita 50 km/h."
+  },
+  "execution_time_ms": 2011.15,
+  "recorded_at": "2026-10-11T17:41:23.307291+00:00"
+}

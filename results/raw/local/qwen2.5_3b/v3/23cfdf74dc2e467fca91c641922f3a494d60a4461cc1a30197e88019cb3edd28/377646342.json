@@ -1,0 +1,60 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "residential",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway=residential and name=Strada Tractoriștilor indicate a residential road. Lanes=2 provides additional context.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:52:36.7767097Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"residential\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Highway=residential and name=Strada Tractoriștilor indicate a residential road. Lanes=2 provides additional context.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2500723200,
+    "load_duration": 8846500,
+    "prompt_eval_count": 1139,
+    "prompt_eval_cached_count": 1048,
+    "prompt_eval_duration": 516823000,
+    "eval_count": 106,
+    "eval_duration": 1961081000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1139,
+    "output_tokens": 106,
+    "total_tokens": 1245
+  },
+  "error_message": null,
+  "segment_id": "377646342",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "Strada Tractoriștilor",
+    "osm_tags": {
+      "highway": "residential",
+      "lanes": "2",
+      "name": "Strada Tractoriștilor",
+      "sidewalk": "no"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"residential\", \"lanes\": \"2\", \"name\": \"Strada Tractoriștilor\", \"sidewalk\": \"no\"}"
+  },
+  "execution_time_ms": 2547.65,
+  "recorded_at": "2026-10-11T17:52:36.777218+00:00"
+}

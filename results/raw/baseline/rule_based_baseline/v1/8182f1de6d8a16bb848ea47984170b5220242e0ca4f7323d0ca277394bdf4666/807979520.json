@@ -1,0 +1,34 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "trunk",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+    "anomaly_flag": false
+  },
+  "raw_response": null,
+  "token_usage": {},
+  "error_message": null,
+  "segment_id": "807979520",
+  "model": "rule_based_baseline",
+  "mode": "baseline",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Centura Apahida-Vâlcele",
+    "osm_tags": {
+      "bridge": "yes",
+      "highway": "trunk",
+      "lanes": "2",
+      "name": "Centura Apahida-Vâlcele",
+      "ref": "DN1N"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"bridge\": \"yes\", \"highway\": \"trunk\", \"lanes\": \"2\", \"name\": \"Centura Apahida-Vâlcele\", \"ref\": \"DN1N\"}"
+  },
+  "execution_time_ms": 0.12,
+  "recorded_at": "2026-10-11T17:39:27.523358+00:00"
+}

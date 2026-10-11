@@ -1,0 +1,59 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "unclassified",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway=construction and name=Strada Tudor Vladimirescu indicate this is a construction road with a single lane.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:49:58.8139053Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"unclassified\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=construction and name=Strada Tudor Vladimirescu indicate this is a construction road with a single lane.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2229088100,
+    "load_duration": 9599700,
+    "prompt_eval_count": 1121,
+    "prompt_eval_cached_count": 1048,
+    "prompt_eval_duration": 426854000,
+    "eval_count": 93,
+    "eval_duration": 1776559000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1121,
+    "output_tokens": 93,
+    "total_tokens": 1214
+  },
+  "error_message": null,
+  "segment_id": "689069610",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v2",
+  "input_payload": {
+    "name": "Strada Tudor Vladimirescu",
+    "osm_tags": {
+      "highway": "construction",
+      "lanes": "1",
+      "name": "Strada Tudor Vladimirescu"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"construction\", \"lanes\": \"1\", \"name\": \"Strada Tudor Vladimirescu\"}"
+  },
+  "execution_time_ms": 2271.96,
+  "recorded_at": "2026-10-11T17:49:58.814978+00:00"
+}

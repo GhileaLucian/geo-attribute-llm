@@ -1,0 +1,60 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "unclassified",
+    "speed_limit_kmh": 50,
+    "barrier_present": true,
+    "barrier_type": "guard_rail",
+    "surface": "paved",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway tag is unclassified and motor_vehicle is yes, indicating a road with vehicles but not a motorway. Lanes are 2, suggesting a two-lane road. Name is provided, but does not affect speed or surface determination.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:40:06.1978215Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"unclassified\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is unclassified and motor_vehicle is yes, indicating a road with vehicles but not a motorway. Lanes are 2, suggesting a two-lane road. Name is provided, but does not affect speed or surface determination.\", \"speed_limit_kmh\": 50, \"barrier_present\": true, \"barrier_type\": \"guard_rail\", \"surface\": \"paved\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2776729800,
+    "load_duration": 8676900,
+    "prompt_eval_count": 1075,
+    "prompt_eval_cached_count": 983,
+    "prompt_eval_duration": 521517000,
+    "eval_count": 121,
+    "eval_duration": 2236979000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1075,
+    "output_tokens": 121,
+    "total_tokens": 1196
+  },
+  "error_message": null,
+  "segment_id": "386550590",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Strada Valea Gârbăului",
+    "osm_tags": {
+      "highway": "unclassified",
+      "lanes": "2",
+      "motor_vehicle": "yes",
+      "name": "Strada Valea Gârbăului"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"unclassified\", \"lanes\": \"2\", \"motor_vehicle\": \"yes\", \"name\": \"Strada Valea Gârbăului\"}"
+  },
+  "execution_time_ms": 2826.67,
+  "recorded_at": "2026-10-11T17:40:06.198850+00:00"
+}

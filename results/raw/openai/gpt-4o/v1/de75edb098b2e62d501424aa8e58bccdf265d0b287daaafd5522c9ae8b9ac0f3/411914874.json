@@ -1,0 +1,25 @@
+{
+  "status": "api_error",
+  "extracted": null,
+  "raw_response": null,
+  "token_usage": {},
+  "error_message": "OpenAIRateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+  "segment_id": "411914874",
+  "model": "gpt-4o",
+  "mode": "openai",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Strada Memorandumului",
+    "osm_tags": {
+      "highway": "primary",
+      "lanes": "3",
+      "lit": "yes",
+      "name": "Strada Memorandumului",
+      "ref": "DN1",
+      "sidewalk": "separate"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary\", \"lanes\": \"3\", \"lit\": \"yes\", \"name\": \"Strada Memorandumului\", \"ref\": \"DN1\", \"sidewalk\": \"separate\"}"
+  },
+  "execution_time_ms": 1935.8,
+  "recorded_at": "2026-10-11T17:24:34.935381+00:00"
+}

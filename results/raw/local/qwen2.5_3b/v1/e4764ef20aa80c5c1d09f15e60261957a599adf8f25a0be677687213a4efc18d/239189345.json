@@ -1,0 +1,57 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "living_street",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Only highway=living_street is available.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:39:46.5520255Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"living_street\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Only highway=living_street is available.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1573290900,
+    "load_duration": 8581600,
+    "prompt_eval_count": 1012,
+    "prompt_eval_cached_count": 983,
+    "prompt_eval_duration": 181950000,
+    "eval_count": 75,
+    "eval_duration": 1373464000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1012,
+    "output_tokens": 75,
+    "total_tokens": 1087
+  },
+  "error_message": null,
+  "segment_id": "239189345",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "living_street"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"living_street\"}"
+  },
+  "execution_time_ms": 1614.08,
+  "recorded_at": "2026-10-11T17:39:46.553101+00:00"
+}

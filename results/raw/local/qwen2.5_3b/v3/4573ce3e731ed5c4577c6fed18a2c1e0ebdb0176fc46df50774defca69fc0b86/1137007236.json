@@ -1,0 +1,60 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "unknown",
+    "speed_limit_kmh": null,
+    "barrier_present": true,
+    "barrier_type": "bollard",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.8,
+    "reasoning_cot": "The highway tag is 'construction', which is not a valid OSM highway class. The name 'Lărgire DN' suggests a national road, but no other valid highway class is provided.",
+    "anomaly_flag": true
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:52:00.515297Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"unknown\",\n  \"confidence_score\": 0.8,\n  \"reasoning_cot\": \"The highway tag is 'construction', which is not a valid OSM highway class. The name 'Lărgire DN' suggests a national road, but no other valid highway class is provided.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": true,\n  \"barrier_type\": \"bollard\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": true\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2751125100,
+    "load_duration": 10105000,
+    "prompt_eval_count": 1124,
+    "prompt_eval_cached_count": 1044,
+    "prompt_eval_duration": 426626000,
+    "eval_count": 119,
+    "eval_duration": 2300974000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1124,
+    "output_tokens": 119,
+    "total_tokens": 1243
+  },
+  "error_message": null,
+  "segment_id": "1137007236",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "Lărgire DN",
+    "osm_tags": {
+      "bridge": "yes",
+      "highway": "construction",
+      "lanes": "2",
+      "name": "Lărgire DN"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"bridge\": \"yes\", \"highway\": \"construction\", \"lanes\": \"2\", \"name\": \"Lărgire DN\"}"
+  },
+  "execution_time_ms": 2799.35,
+  "recorded_at": "2026-10-11T17:52:00.515807+00:00"
+}

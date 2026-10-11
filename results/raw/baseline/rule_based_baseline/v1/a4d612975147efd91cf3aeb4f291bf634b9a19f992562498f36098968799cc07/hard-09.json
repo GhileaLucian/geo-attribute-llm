@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "residential",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+    "anomaly_flag": false
+  },
+  "raw_response": null,
+  "token_usage": {},
+  "error_message": null,
+  "segment_id": "hard-09",
+  "model": "rule_based_baseline",
+  "mode": "baseline",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Non-numeric speed",
+    "osm_tags": {
+      "highway": "residential",
+      "maxspeed": "RO:urban"
+    },
+    "context_description": "Nu apare o valoare numerica in observatie."
+  },
+  "execution_time_ms": 0.06,
+  "recorded_at": "2026-10-11T17:39:51.405335+00:00"
+}

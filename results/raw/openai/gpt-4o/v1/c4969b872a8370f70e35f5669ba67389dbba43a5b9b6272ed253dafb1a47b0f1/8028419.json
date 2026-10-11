@@ -1,0 +1,22 @@
+{
+  "status": "api_error",
+  "extracted": null,
+  "raw_response": null,
+  "token_usage": {},
+  "error_message": "OpenAIRateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+  "segment_id": "8028419",
+  "model": "gpt-4o",
+  "mode": "openai",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "secondary_link",
+      "lanes": "1",
+      "sidewalk": "right"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"1\", \"sidewalk\": \"right\"}"
+  },
+  "execution_time_ms": 1818.8,
+  "recorded_at": "2026-10-11T17:25:03.897318+00:00"
+}

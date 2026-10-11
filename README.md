@@ -2,8 +2,56 @@
 
 A learning project for road attribute extraction and evaluation. It uses Python,
 LangChain structured outputs, Pydantic, a Prefect flow, a Streamlit inspector and
-a Jupyter notebook. Claude and OpenAI integrations are implemented; neither API
-has been evaluated in the saved runs.
+a Jupyter notebook. Claude and OpenAI integrations are implemented. Saved OpenAI
+attempts failed because the account had no API credits; these are infrastructure
+failures, not model-quality measurements. Local inference is available through
+Ollama, without a provider API key.
+
+## Local model without API credit
+
+Install [Ollama for Windows](https://ollama.com/download/windows), then open a new
+terminal and download the small model:
+
+```powershell
+ollama pull qwen2.5:3b
+python run_pipeline.py --mode local --split dev --prompt-version v1
+python run_pipeline.py --mode local --split hard --prompt-version v1
+python -m streamlit run app.py
+```
+
+Select `local` in the inspector. Ollama must be running. The CLI checks that the
+model is installed before starting Prefect. Local mode only allows a loopback
+HTTP server and rejects `:cloud` models. No OpenAI or Claude key is sent to it.
+The JSON schema is provided to Ollama and the response is validated with Pydantic;
+this validates structure and consistency, not map facts. Truncated responses,
+schema failures and transport errors remain visible instead of using a baseline.
+
+Optional `.env` settings (defaults work without editing the file):
+
+```dotenv
+LOCAL_MODEL=qwen2.5:3b
+OLLAMA_BASE_URL=http://127.0.0.1:11434
+LOCAL_CONTEXT_SIZE=4096
+```
+
+The model download is about 1.9 GB; actual runtime memory also includes context
+and inference overhead. Local provider API cost is zero, but hardware, power and
+download bandwidth are not free. Model tokens, latency, raw responses and model
+digest are recorded. The model digest is recorded for provenance, not included
+in cache identity: if you replace weights under the same model tag, use a new tag
+or `--results-dir` to avoid reusing old successful responses. Context settings,
+endpoint, local extractor code, schema, prompt and input are in cache identity.
+The Qwen2.5 3B weights use the Qwen research license, not this repo's MIT license;
+see the [model page](https://ollama.com/library/qwen2.5:3b). Do not upload weights
+or your `.env` to this repository.
+
+Progress is printed for every record. Repeated identical runs reuse disk cache;
+use `--cached-only` for replay without a running model and `--retry-failed` only
+to rerun saved failures after fixing their cause. Keep the hold-out untouched
+while comparing prompts on development data.
+
+[Romanian local setup guide](docs/LOCAL_SETUP_RO.md) includes the Windows folder,
+dashboard steps and cache replay commands. Ollama's Apps page needs no setup.
 
 ## Data
 
@@ -54,17 +102,45 @@ Measured locally on the saved datasets:
 | Dataset | Model | n | Exact match | Surface accuracy | Speed exact on known labels | Failed outputs |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
 | OSM development, masked tags | Rule baseline | 40 | 25.0% | 32.5% | 0/6 | 0/40 |
+| OSM development, masked tags | Qwen2.5 3B, local, v1 | 40 | 22.5% | 30.0% | 0/6 | 0/40 |
+| OSM development, masked tags | Qwen2.5 3B, local, v2 | 40 | 22.5% | 30.0% | 0/6 | 0/40 |
+| OSM development, masked tags | Qwen2.5 3B, local, v3 | 40 | 25.0% | 30.0% | 0/6 | 0/40 |
 | Hand-written development cases | Rule baseline | 15 | 60.0% | 93.3% | 2/3 | 0/15 |
+| Hand-written development cases | Qwen2.5 3B, local, v1 | 15 | 66.7% | 100.0% | 3/3 | 0/15 |
+| Hand-written development cases | Qwen2.5 3B, local, v2 | 15 | 60.0% | 100.0% | 2/3 | 0/15 |
+| Hand-written development cases | Qwen2.5 3B, local, v3 | 15 | 60.0% | 100.0% | 2/3 | 0/15 |
 
-These numbers come from actual baseline runs. API cost for these runs is USD 0
-because no model API was used. Invalid outputs: 0/55. There is no measured Claude
-or OpenAI comparison and no hold-out score yet.
+These numbers come from actual baseline and local model runs on 11 October 2026.
+Qwen2.5 3B ran through Ollama on this Windows machine (Q4_K_M, context 4096,
+temperature 0, seed 42). Provider API cost was USD 0; this excludes electricity
+and hardware. All 165 local responses across v1/v2/v3 passed validation with no
+transport errors; the 110 v2/v3 attempts were fresh generations. Average recorded
+v1 extraction latency was 2.45 seconds on OSM development
+and 1.97 seconds on hand-written cases, excluding flow/server setup. A replay of
+all 40 OSM responses with `--cached-only` reproduced the same scores.
+There is no measured Claude or OpenAI quality comparison and no hold-out score.
 
-Surface accuracy on known OSM surface labels is 0/27; oneway accuracy on known
-OSM labels is 0/19. Many reference labels are missing, so matching unknown values
+For the baseline and all local prompts, accuracy on known OSM surface labels is
+0/27. Known oneway accuracy is 0/19 for baseline/v1/v2 and 1/19 for v3. That single
+v3 match was inferred from a one-lane link, not explicit oneway evidence.
+Many reference labels are missing, so matching unknown values
 raises aggregate scores. This completion task is often underdetermined: visible
 tags alone may not reveal the hidden answer. These results measure completion
 against recorded tags, not verified knowledge of a road.
+
+Qwen v1 did not outperform baseline on masked OSM exact match (9/40 vs 10/40).
+On fictional cases v1 matched 10/15 vs 9/15 and recovered the three Romanian
+barrier cases missed by the baseline. Barrier-presence weighted F1 on those
+15 cases was 1.000 vs 0.753; this is a small development check, not a production
+claim. Numeric speed was incorrectly inferred in two cases with conditional or
+non-numeric tags. JSON validity does not imply factual accuracy.
+
+v3 improved OSM exact match by one record over v1, tying the baseline, but both
+v2/v3 regressed to 9/15 on fictional cases. They returned 99 km/h from an injected
+instruction requesting 9999, despite producing valid JSON. No overall winner or
+final hold-out candidate was selected. The
+[measured prompt comparison](reports/prompt_iterations.md) documents paired
+gains, regressions, reproducibility and limitations.
 
 [Saved run comparison](reports/comparison.md) links to reports with class support,
 confusion matrices and saved predictions. [Prompt iteration status](reports/prompt_iterations.md)
@@ -78,8 +154,14 @@ tags from the remaining input. On fictional hard cases, it missed 3 Romanian
 barrier descriptions and their barrier types. Error reports contain up to three
 examples for each recorded category, with input, prediction and reference.
 
-These patterns identify missing capabilities. They do not establish that an LLM
-will recover the tags or that any prompt change has improved a score.
+Local Qwen v1 additionally produced unsupported barrier claims on three OSM
+records and a numeric speed where the reference was unknown. On fictional data,
+remaining errors were `oneway=-1`, two unsupported speeds and two anomaly flags.
+For example, `hard-08` turned a conditional limit into an unconditional value;
+`hard-14` rejected an injected speed but disagreed with the anomaly reference.
+See the saved inputs and predictions before attributing errors to the model or
+the task definition. The v2/v3 comparison found both gains and regressions;
+a longer prompt did not consistently improve accuracy or input-instruction safety.
 
 ## Limitations
 
@@ -155,8 +237,11 @@ and pull requests. Check the repository's Actions tab for each run's status.
 
 ## What I would do next
 
-Run Claude candidates on development data, inspect actual errors and select a
-version using evidence. Check hold-out tags manually, then run the baseline and
+Address the observed conditional-speed, oneway and injected-instruction failures
+on development data, clarify anomaly labels, then select a candidate using a
+declared policy. If deterministic rules are added, report a hybrid extractor and
+benchmark it separately. Claude remains optional when API credit is available.
+Check hold-out tags manually, then run the baseline and
 the selected version on the same hold-out once. Add independent textual or image
 evidence for tasks where hidden tags cannot be inferred from visible metadata.
 Join barrier nodes and use a geographic or road-level split to reduce leakage.

@@ -1,0 +1,59 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "primary_link",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "paved",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Tags highway=primary_link, lanes=1, and sidewalk:both provide sufficient information to determine the road type and attributes.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:52:09.6717361Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"primary_link\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Tags highway=primary_link, lanes=1, and sidewalk:both provide sufficient information to determine the road type and attributes.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"paved\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2265471000,
+    "load_duration": 8783700,
+    "prompt_eval_count": 1107,
+    "prompt_eval_cached_count": 1049,
+    "prompt_eval_duration": 342533000,
+    "eval_count": 103,
+    "eval_duration": 1900292000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1107,
+    "output_tokens": 103,
+    "total_tokens": 1210
+  },
+  "error_message": null,
+  "segment_id": "31584884",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "primary_link",
+      "lanes": "1",
+      "sidewalk": "both"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary_link\", \"lanes\": \"1\", \"sidewalk\": \"both\"}"
+  },
+  "execution_time_ms": 2320.43,
+  "recorded_at": "2026-10-11T17:52:09.672240+00:00"
+}

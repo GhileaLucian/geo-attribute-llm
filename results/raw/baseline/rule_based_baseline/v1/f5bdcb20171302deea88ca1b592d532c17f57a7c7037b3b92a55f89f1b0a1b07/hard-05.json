@@ -1,0 +1,30 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "residential",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Parsed explicit OSM tags; unknown values kept unknown. English bollard keyword checked.",
+    "anomaly_flag": false
+  },
+  "raw_response": null,
+  "token_usage": {},
+  "error_message": null,
+  "segment_id": "hard-05",
+  "model": "rule_based_baseline",
+  "mode": "baseline",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Romanian speed",
+    "osm_tags": {
+      "highway": "residential"
+    },
+    "context_description": "Indicatorul arata limita de viteza 30 km/h."
+  },
+  "execution_time_ms": 0.07,
+  "recorded_at": "2026-10-11T17:39:51.387003+00:00"
+}

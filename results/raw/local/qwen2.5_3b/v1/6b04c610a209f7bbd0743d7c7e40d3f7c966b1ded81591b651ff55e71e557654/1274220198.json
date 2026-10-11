@@ -1,0 +1,60 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "unclassified",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Tags highway=unclassified and motor_vehicle=private indicate this is a private unclassified road with no public access.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:39:28.3384588Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"unclassified\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags highway=unclassified and motor_vehicle=private indicate this is a private unclassified road with no public access.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2116885500,
+    "load_duration": 9291000,
+    "prompt_eval_count": 1052,
+    "prompt_eval_cached_count": 979,
+    "prompt_eval_duration": 427302000,
+    "eval_count": 90,
+    "eval_duration": 1671373000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1052,
+    "output_tokens": 90,
+    "total_tokens": 1142
+  },
+  "error_message": null,
+  "segment_id": "1274220198",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "access": "private",
+      "highway": "unclassified",
+      "lanes": "1",
+      "motor_vehicle": "private"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"access\": \"private\", \"highway\": \"unclassified\", \"lanes\": \"1\", \"motor_vehicle\": \"private\"}"
+  },
+  "execution_time_ms": 2176.22,
+  "recorded_at": "2026-10-11T17:39:28.339496+00:00"
+}

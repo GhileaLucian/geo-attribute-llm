@@ -1,0 +1,58 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "service",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "osm_tags contain highway='service' and oneway='-1'",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:41:25.1704004Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"service\", \"confidence_score\": 0.9, \"reasoning_cot\": \"osm_tags contain highway='service' and oneway='-1'\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1832118900,
+    "load_duration": 9699800,
+    "prompt_eval_count": 1011,
+    "prompt_eval_cached_count": 969,
+    "prompt_eval_duration": 262666000,
+    "eval_count": 80,
+    "eval_duration": 1550332000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1011,
+    "output_tokens": 80,
+    "total_tokens": 1091
+  },
+  "error_message": null,
+  "segment_id": "hard-07",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Reverse direction",
+    "osm_tags": {
+      "highway": "service",
+      "oneway": "-1"
+    },
+    "context_description": "Sens unic opus ordinii nodurilor."
+  },
+  "execution_time_ms": 1860.38,
+  "recorded_at": "2026-10-11T17:41:25.171516+00:00"
+}

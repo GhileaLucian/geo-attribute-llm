@@ -1,0 +1,60 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "tertiary",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "paved",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway=residential and lanes=2 provide evidence of a tertiary road. Sidewalk:right indicates a road with sidewalks on the right side.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:49:38.0308403Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"tertiary\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=residential and lanes=2 provide evidence of a tertiary road. Sidewalk:right indicates a road with sidewalks on the right side.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"paved\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2317951800,
+    "load_duration": 8598000,
+    "prompt_eval_count": 1135,
+    "prompt_eval_cached_count": 1044,
+    "prompt_eval_duration": 516181000,
+    "eval_count": 98,
+    "eval_duration": 1778904000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1135,
+    "output_tokens": 98,
+    "total_tokens": 1233
+  },
+  "error_message": null,
+  "segment_id": "37196673",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v2",
+  "input_payload": {
+    "name": "Strada General Dragalina",
+    "osm_tags": {
+      "highway": "tertiary",
+      "lanes": "2",
+      "name": "Strada General Dragalina",
+      "sidewalk": "right"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary\", \"lanes\": \"2\", \"name\": \"Strada General Dragalina\", \"sidewalk\": \"right\"}"
+  },
+  "execution_time_ms": 2356.42,
+  "recorded_at": "2026-10-11T17:49:38.032096+00:00"
+}

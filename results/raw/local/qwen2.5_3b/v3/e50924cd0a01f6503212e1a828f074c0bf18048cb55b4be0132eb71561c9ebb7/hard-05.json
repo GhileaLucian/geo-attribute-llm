@@ -1,0 +1,57 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "residential",
+    "speed_limit_kmh": 30,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Speed limit of 30 km/h is explicitly stated in the name.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:53:30.2733386Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"residential\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Speed limit of 30 km/h is explicitly stated in the name.\",\n  \"speed_limit_kmh\": 30,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2037457500,
+    "load_duration": 10312800,
+    "prompt_eval_count": 1075,
+    "prompt_eval_cached_count": 1034,
+    "prompt_eval_duration": 268386000,
+    "eval_count": 95,
+    "eval_duration": 1744581000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1075,
+    "output_tokens": 95,
+    "total_tokens": 1170
+  },
+  "error_message": null,
+  "segment_id": "hard-05",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "Romanian speed",
+    "osm_tags": {
+      "highway": "residential"
+    },
+    "context_description": "Indicatorul arata limita de viteza 30 km/h."
+  },
+  "execution_time_ms": 2090.36,
+  "recorded_at": "2026-10-11T17:53:30.274489+00:00"
+}

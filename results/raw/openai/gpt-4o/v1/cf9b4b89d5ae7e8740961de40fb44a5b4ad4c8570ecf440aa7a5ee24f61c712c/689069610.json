@@ -1,0 +1,22 @@
+{
+  "status": "api_error",
+  "extracted": null,
+  "raw_response": null,
+  "token_usage": {},
+  "error_message": "OpenAIRateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+  "segment_id": "689069610",
+  "model": "gpt-4o",
+  "mode": "openai",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Strada Tudor Vladimirescu",
+    "osm_tags": {
+      "highway": "construction",
+      "lanes": "1",
+      "name": "Strada Tudor Vladimirescu"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"construction\", \"lanes\": \"1\", \"name\": \"Strada Tudor Vladimirescu\"}"
+  },
+  "execution_time_ms": 1678.22,
+  "recorded_at": "2026-10-11T17:25:07.323752+00:00"
+}

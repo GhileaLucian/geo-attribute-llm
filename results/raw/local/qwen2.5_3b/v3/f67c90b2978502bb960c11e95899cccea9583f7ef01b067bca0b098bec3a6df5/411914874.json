@@ -1,0 +1,62 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "primary",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "paved",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Tags highway=primary, lanes=3, lit=yes, name=Strada Memorandumului, ref=DN1, and sidewalk=separate provide sufficient information to determine the road type and attributes.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:52:07.3452237Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"primary\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Tags highway=primary, lanes=3, lit=yes, name=Strada Memorandumului, ref=DN1, and sidewalk=separate provide sufficient information to determine the road type and attributes.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"paved\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2799083300,
+    "load_duration": 9936200,
+    "prompt_eval_count": 1156,
+    "prompt_eval_cached_count": 1048,
+    "prompt_eval_duration": 586166000,
+    "eval_count": 119,
+    "eval_duration": 2189353000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1156,
+    "output_tokens": 119,
+    "total_tokens": 1275
+  },
+  "error_message": null,
+  "segment_id": "411914874",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "Strada Memorandumului",
+    "osm_tags": {
+      "highway": "primary",
+      "lanes": "3",
+      "lit": "yes",
+      "name": "Strada Memorandumului",
+      "ref": "DN1",
+      "sidewalk": "separate"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary\", \"lanes\": \"3\", \"lit\": \"yes\", \"name\": \"Strada Memorandumului\", \"ref\": \"DN1\", \"sidewalk\": \"separate\"}"
+  },
+  "execution_time_ms": 2848.18,
+  "recorded_at": "2026-10-11T17:52:07.346264+00:00"
+}

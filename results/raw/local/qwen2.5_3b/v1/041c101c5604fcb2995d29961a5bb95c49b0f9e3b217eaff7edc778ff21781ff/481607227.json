@@ -1,0 +1,57 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "steps",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 1.0,
+    "reasoning_cot": "Only highway=steps is available.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:40:24.3262986Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"steps\", \"confidence_score\": 1, \"reasoning_cot\": \"Only highway=steps is available.\", \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 903402000,
+    "load_duration": 8824100,
+    "prompt_eval_count": 1010,
+    "prompt_eval_cached_count": 983,
+    "prompt_eval_duration": 176621000,
+    "eval_count": 36,
+    "eval_duration": 709066000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1010,
+    "output_tokens": 36,
+    "total_tokens": 1046
+  },
+  "error_message": null,
+  "segment_id": "481607227",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "steps"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"steps\"}"
+  },
+  "execution_time_ms": 954.79,
+  "recorded_at": "2026-10-11T17:40:24.326811+00:00"
+}

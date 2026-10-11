@@ -1,0 +1,3165 @@
+[
+  {
+    "segment_id": "389714616",
+    "extracted": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags indicate a residential road with 2 lanes and named Aleea Bizușa, no surface or speed is provided.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 10039.11,
+    "error_categories": [
+      "speed_limit_missing",
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Aleea Bizușa",
+      "osm_tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Aleea Bizușa",
+        "sidewalk": "left"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"residential\", \"lanes\": \"2\", \"name\": \"Aleea Bizușa\", \"sidewalk\": \"left\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:48:44.3358745Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"residential\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags indicate a residential road with 2 lanes and named Aleea Bizușa, no surface or speed is provided.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 9996771800,
+      "load_duration": 2691068000,
+      "prompt_eval_count": 1136,
+      "prompt_eval_cached_count": 0,
+      "prompt_eval_duration": 5633776000,
+      "eval_count": 93,
+      "eval_duration": 1657284000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1136,
+      "output_tokens": 93,
+      "total_tokens": 1229
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "679251376",
+    "extracted": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags indicate highway=service and access=private, suggesting a private service road.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1794.95,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "access": "private",
+        "highway": "service"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"access\": \"private\", \"highway\": \"service\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:48:46.1362645Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"service\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags indicate highway=service and access=private, suggesting a private service road.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1752347400,
+      "load_duration": 8285200,
+      "prompt_eval_count": 1087,
+      "prompt_eval_cached_count": 1044,
+      "prompt_eval_duration": 268596000,
+      "eval_count": 82,
+      "eval_duration": 1462348000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1087,
+      "output_tokens": 82,
+      "total_tokens": 1169
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1181327233",
+    "extracted": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway tag is explicitly provided as 'corridor' which is a subclass of unclassified.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1297.91,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "corridor"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"corridor\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:48:47.4389324Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"unclassified\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is explicitly provided as 'corridor' which is a subclass of unclassified.\", \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1247654900,
+      "load_duration": 10421700,
+      "prompt_eval_count": 1077,
+      "prompt_eval_cached_count": 1044,
+      "prompt_eval_duration": 220519000,
+      "eval_count": 51,
+      "eval_duration": 1002883000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1077,
+      "output_tokens": 51,
+      "total_tokens": 1128
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "134752130",
+    "extracted": {
+      "road_type": "trunk",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway=residential indicates a trunk road with 2 lanes and named 'Centura Apahida-Vâlcele' with reference 'DN1N'.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "trunk",
+      "speed_limit_kmh": 70,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1655.76,
+    "error_categories": [
+      "speed_limit_missing",
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Centura Apahida-Vâlcele",
+      "osm_tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Centura Apahida-Vâlcele",
+        "ref": "DN1N"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"trunk\", \"lanes\": \"2\", \"name\": \"Centura Apahida-Vâlcele\", \"ref\": \"DN1N\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:48:49.1028648Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"trunk\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=residential indicates a trunk road with 2 lanes and named 'Centura Apahida-Vâlcele' with reference 'DN1N'.\"}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1616789100,
+      "load_duration": 8813900,
+      "prompt_eval_count": 1142,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 516041000,
+      "eval_count": 59,
+      "eval_duration": 1077502000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1142,
+      "output_tokens": 59,
+      "total_tokens": 1201
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1169809158",
+    "extracted": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paved",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway=secondary, lanes=4, lit=yes, name=Strada Uzinei Electrice, sidewalk=separate provide clear evidence.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2398.61,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Uzinei Electrice",
+      "osm_tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "lit": "yes",
+        "name": "Strada Uzinei Electrice",
+        "sidewalk": "separate"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary\", \"lanes\": \"4\", \"lit\": \"yes\", \"name\": \"Strada Uzinei Electrice\", \"sidewalk\": \"separate\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:48:51.5062585Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"secondary\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=secondary, lanes=4, lit=yes, name=Strada Uzinei Electrice, sidewalk=separate provide clear evidence.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"paved\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2352893800,
+      "load_duration": 11147700,
+      "prompt_eval_count": 1151,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 583645000,
+      "eval_count": 98,
+      "eval_duration": 1743460000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1151,
+      "output_tokens": 98,
+      "total_tokens": 1249
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "26634240",
+    "extracted": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paved",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags indicate highway=secondary_link, lit=yes, and name=Drumul Sfântul Ioan. No other attributes are provided.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2482.35,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Drumul Sfântul Ioan",
+      "osm_tags": {
+        "highway": "secondary_link",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Drumul Sfântul Ioan",
+        "ref": "DJ107R",
+        "sidewalk": "right"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"2\", \"lit\": \"yes\", \"name\": \"Drumul Sfântul Ioan\", \"ref\": \"DJ107R\", \"sidewalk\": \"right\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:48:53.995541Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"secondary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags indicate highway=secondary_link, lit=yes, and name=Drumul Sfântul Ioan. No other attributes are provided.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"paved\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2442451500,
+      "load_duration": 8797100,
+      "prompt_eval_count": 1177,
+      "prompt_eval_cached_count": 1049,
+      "prompt_eval_duration": 672507000,
+      "eval_count": 98,
+      "eval_duration": 1747235000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1177,
+      "output_tokens": 98,
+      "total_tokens": 1275
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "694699317",
+    "extracted": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paved",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway=secondary, lanes=2, lit=yes, name=Strada Câmpului, sidewalk=right provide clear evidence.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2284.48,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Câmpului",
+      "osm_tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Strada Câmpului",
+        "sidewalk": "right"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary\", \"lanes\": \"2\", \"lit\": \"yes\", \"name\": \"Strada Câmpului\", \"sidewalk\": \"right\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:48:56.2868759Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"secondary\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=secondary, lanes=2, lit=yes, name=Strada Câmpului, sidewalk=right provide clear evidence.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"paved\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2239387700,
+      "load_duration": 9415600,
+      "prompt_eval_count": 1143,
+      "prompt_eval_cached_count": 1049,
+      "prompt_eval_duration": 515756000,
+      "eval_count": 95,
+      "eval_duration": 1700700000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1143,
+      "output_tokens": 95,
+      "total_tokens": 1238
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "275775563",
+    "extracted": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paved",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags highway=tertiary_link, lanes=1, and sidewalk:both provide the necessary information.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2028.38,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "tertiary_link",
+        "lanes": "1",
+        "sidewalk": "both"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary_link\", \"lanes\": \"1\", \"sidewalk\": \"both\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:48:58.3207956Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"tertiary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags highway=tertiary_link, lanes=1, and sidewalk:both provide the necessary information.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"paved\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1983698300,
+      "load_duration": 8712100,
+      "prompt_eval_count": 1111,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 345463000,
+      "eval_count": 90,
+      "eval_duration": 1616124000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1111,
+      "output_tokens": 90,
+      "total_tokens": 1201
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "981625655",
+    "extracted": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway tag is highway=track and lit=no indicates no lighting.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "track",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1128.05,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "track",
+        "lit": "no"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"track\", \"lit\": \"no\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:48:59.45575Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"track\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is highway=track and lit=no indicates no lighting.\", \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1083245000,
+      "load_duration": 9664100,
+      "prompt_eval_count": 1087,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 224350000,
+      "eval_count": 45,
+      "eval_duration": 835489000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1087,
+      "output_tokens": 45,
+      "total_tokens": 1132
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1341277055",
+    "extracted": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags indicate highway=secondary_link and lanes=1, suggesting a two-lane secondary road.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": 50,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1892.24,
+    "error_categories": [
+      "speed_limit_missing",
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "secondary_link",
+        "lanes": "1"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"1\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:01.3542392Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"secondary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags indicate highway=secondary_link and lanes=1, suggesting a two-lane secondary road.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1842448700,
+      "load_duration": 9408200,
+      "prompt_eval_count": 1091,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 268183000,
+      "eval_count": 86,
+      "eval_duration": 1550923000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1091,
+      "output_tokens": 86,
+      "total_tokens": 1177
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1312601710",
+    "extracted": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "The highway tag is explicitly set to 'path', indicating the road type.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "dirt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1910.49,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "path"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"path\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:03.2700299Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"road_type\": \"path\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"The highway tag is explicitly set to 'path', indicating the road type.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1860739900,
+      "load_duration": 8402800,
+      "prompt_eval_count": 1075,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 180829000,
+      "eval_count": 92,
+      "eval_duration": 1659153000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1075,
+      "output_tokens": 92,
+      "total_tokens": 1167
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1154747807",
+    "extracted": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway tag is explicitly provided as 'corridor' which is a subclass of unclassified.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1268.63,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "corridor"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"corridor\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:04.5451837Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"unclassified\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is explicitly provided as 'corridor' which is a subclass of unclassified.\", \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1230389800,
+      "load_duration": 10444700,
+      "prompt_eval_count": 1077,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 185149000,
+      "eval_count": 51,
+      "eval_duration": 1020839000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1077,
+      "output_tokens": 51,
+      "total_tokens": 1128
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1274220198",
+    "extracted": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags indicate highway=unclassified and motor_vehicle=private, suggesting a private unclassified road.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": 10,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2034.8,
+    "error_categories": [
+      "speed_limit_missing",
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "access": "private",
+        "highway": "unclassified",
+        "lanes": "1",
+        "motor_vehicle": "private"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"access\": \"private\", \"highway\": \"unclassified\", \"lanes\": \"1\", \"motor_vehicle\": \"private\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:06.5860531Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"unclassified\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags indicate highway=unclassified and motor_vehicle=private, suggesting a private unclassified road.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1997238300,
+      "load_duration": 8061700,
+      "prompt_eval_count": 1117,
+      "prompt_eval_cached_count": 1044,
+      "prompt_eval_duration": 424845000,
+      "eval_count": 86,
+      "eval_duration": 1549911000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1117,
+      "output_tokens": 86,
+      "total_tokens": 1203
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "37146434",
+    "extracted": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway=secondary and name=Piața Timotei Cipariu provide the road type and name, respectively. Lanes=3 indicates a multi-lane road. Sidewalk=separate suggests the presence of sidewalks.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2813.35,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Piața Timotei Cipariu",
+      "osm_tags": {
+        "highway": "secondary",
+        "lanes": "3",
+        "name": "Piața Timotei Cipariu",
+        "ref": "DJ103G",
+        "sidewalk": "separate"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary\", \"lanes\": \"3\", \"name\": \"Piața Timotei Cipariu\", \"ref\": \"DJ103G\", \"sidewalk\": \"separate\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:09.4040119Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"secondary\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=secondary and name=Piața Timotei Cipariu provide the road type and name, respectively. Lanes=3 indicates a multi-lane road. Sidewalk=separate suggests the presence of sidewalks.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2761684200,
+      "load_duration": 9539700,
+      "prompt_eval_count": 1168,
+      "prompt_eval_cached_count": 1044,
+      "prompt_eval_duration": 663769000,
+      "eval_count": 115,
+      "eval_duration": 2074630000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1168,
+      "output_tokens": 115,
+      "total_tokens": 1283
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1187549465",
+    "extracted": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Highway tag is explicitly provided as steps.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1612.44,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "steps"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"steps\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:11.0232353Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"steps\", \"confidence_score\": 0.95, \"reasoning_cot\": \"Highway tag is explicitly provided as steps.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1575703300,
+      "load_duration": 8752200,
+      "prompt_eval_count": 1075,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 181767000,
+      "eval_count": 76,
+      "eval_duration": 1370920000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1075,
+      "output_tokens": 76,
+      "total_tokens": 1151
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "31647270",
+    "extracted": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags indicate highway=residential and name=Aleea Văleni, with no other conflicting information.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "concrete",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2161.8,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Aleea Văleni",
+      "osm_tags": {
+        "highway": "residential",
+        "lanes": "1",
+        "name": "Aleea Văleni",
+        "sidewalk": "no"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"residential\", \"lanes\": \"1\", \"name\": \"Aleea Văleni\", \"sidewalk\": \"no\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:13.1893299Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"residential\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags indicate highway=residential and name=Aleea Văleni, with no other conflicting information.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2122052400,
+      "load_duration": 10175100,
+      "prompt_eval_count": 1136,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 514825000,
+      "eval_count": 88,
+      "eval_duration": 1583931000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1136,
+      "output_tokens": 88,
+      "total_tokens": 1224
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1137007236",
+    "extracted": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.8,
+      "reasoning_cot": "Highway=construction and name=Lărgire DN indicate this is a construction road, with no specific speed limit or surface provided.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2446.3,
+    "error_categories": [
+      "barrier_presence_mismatch",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Lărgire DN",
+      "osm_tags": {
+        "bridge": "yes",
+        "highway": "construction",
+        "lanes": "2",
+        "name": "Lărgire DN"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"bridge\": \"yes\", \"highway\": \"construction\", \"lanes\": \"2\", \"name\": \"Lărgire DN\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:15.6427279Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"road_type\": \"unknown\",\n  \"confidence_score\": 0.8,\n  \"reasoning_cot\": \"Highway=construction and name=Lărgire DN indicate this is a construction road, with no specific speed limit or surface provided.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": true,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2407679900,
+      "load_duration": 8734500,
+      "prompt_eval_count": 1124,
+      "prompt_eval_cached_count": 1044,
+      "prompt_eval_duration": 426150000,
+      "eval_count": 104,
+      "eval_duration": 1959303000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1124,
+      "output_tokens": 104,
+      "total_tokens": 1228
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "857998560",
+    "extracted": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "The highway tag is explicitly set to 'service', indicating a service road.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1922.67,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "service"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"service\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:17.5697898Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"The highway tag is explicitly set to 'service', indicating a service road.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1872686800,
+      "load_duration": 10227600,
+      "prompt_eval_count": 1075,
+      "prompt_eval_cached_count": 1044,
+      "prompt_eval_duration": 184509000,
+      "eval_count": 92,
+      "eval_duration": 1664545000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1075,
+      "output_tokens": 92,
+      "total_tokens": 1167
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1047121022",
+    "extracted": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway tag is explicitly provided as 'corridor' which is a subclass of unclassified.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1285.6,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "corridor"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"corridor\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:18.8620205Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"unclassified\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is explicitly provided as 'corridor' which is a subclass of unclassified.\", \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1234598500,
+      "load_duration": 8739700,
+      "prompt_eval_count": 1077,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 183666000,
+      "eval_count": 51,
+      "eval_duration": 1029143000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1077,
+      "output_tokens": 51,
+      "total_tokens": 1128
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "411914874",
+    "extracted": {
+      "road_type": "primary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paved",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway=primary, lanes=3, lit=yes, name=Strada Memorandumului, ref=DN1, sidewalk=separate provide clear evidence.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "primary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2671.71,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Memorandumului",
+      "osm_tags": {
+        "highway": "primary",
+        "lanes": "3",
+        "lit": "yes",
+        "name": "Strada Memorandumului",
+        "ref": "DN1",
+        "sidewalk": "separate"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary\", \"lanes\": \"3\", \"lit\": \"yes\", \"name\": \"Strada Memorandumului\", \"ref\": \"DN1\", \"sidewalk\": \"separate\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:21.5381554Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"road_type\": \"primary\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Highway=primary, lanes=3, lit=yes, name=Strada Memorandumului, ref=DN1, sidewalk=separate provide clear evidence.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"paved\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2620719000,
+      "load_duration": 9827800,
+      "prompt_eval_count": 1156,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 585520000,
+      "eval_count": 111,
+      "eval_duration": 2011407000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1156,
+      "output_tokens": 111,
+      "total_tokens": 1267
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "31584884",
+    "extracted": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags highway=primary_link, lanes=1, and sidewalk:both provide clear information.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1924.94,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "primary_link",
+        "lanes": "1",
+        "sidewalk": "both"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary_link\", \"lanes\": \"1\", \"sidewalk\": \"both\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:23.4679751Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"primary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags highway=primary_link, lanes=1, and sidewalk:both provide clear information.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1885533600,
+      "load_duration": 8959100,
+      "prompt_eval_count": 1107,
+      "prompt_eval_cached_count": 1049,
+      "prompt_eval_duration": 342467000,
+      "eval_count": 84,
+      "eval_duration": 1520347000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1107,
+      "output_tokens": 84,
+      "total_tokens": 1191
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "239189345",
+    "extracted": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Only highway=living_street is available.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "living_street",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1011.6,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "living_street"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"living_street\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:24.4871065Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"living_street\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Only highway=living_street is available.\", \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 962590000,
+      "load_duration": 8870200,
+      "prompt_eval_count": 1077,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 185070000,
+      "eval_count": 40,
+      "eval_duration": 754332000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1077,
+      "output_tokens": 40,
+      "total_tokens": 1117
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "464707803",
+    "extracted": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags highway=primary_link, lanes=2, and sidewalk:both provide clear information.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1933.2,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "primary_link",
+        "lanes": "2",
+        "sidewalk": "both"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary_link\", \"lanes\": \"2\", \"sidewalk\": \"both\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:26.425425Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"primary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags highway=primary_link, lanes=2, and sidewalk:both provide clear information.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1890168000,
+      "load_duration": 9680200,
+      "prompt_eval_count": 1107,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 341782000,
+      "eval_count": 84,
+      "eval_duration": 1523062000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1107,
+      "output_tokens": 84,
+      "total_tokens": 1191
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1149985564",
+    "extracted": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway is proposed and name contains 'Drum de legatura Baciu- TransRegio Feleac', suggesting it's a proposed road with a name that might be a Romanian term for a road.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2859.96,
+    "error_categories": [
+      "barrier_presence_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Drum de legatura Baciu- TransRegio Feleac",
+      "osm_tags": {
+        "bridge": "yes",
+        "highway": "proposed",
+        "lanes": "2",
+        "name": "Drum de legatura Baciu- TransRegio Feleac"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"bridge\": \"yes\", \"highway\": \"proposed\", \"lanes\": \"2\", \"name\": \"Drum de legatura Baciu- TransRegio Feleac\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:29.2900531Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"road_type\": \"unknown\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Highway is proposed and name contains 'Drum de legatura Baciu- TransRegio Feleac', suggesting it's a proposed road with a name that might be a Romanian term for a road.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": true,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2830573000,
+      "load_duration": 10531500,
+      "prompt_eval_count": 1153,
+      "prompt_eval_cached_count": 1044,
+      "prompt_eval_duration": 584495000,
+      "eval_count": 119,
+      "eval_duration": 2222054000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1153,
+      "output_tokens": 119,
+      "total_tokens": 1272
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "227215083",
+    "extracted": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway=residential, lanes=2, name=Strada Spicului, sidewalk=both provide evidence.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2218.61,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Spicului",
+      "osm_tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Strada Spicului",
+        "sidewalk": "both"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"residential\", \"lanes\": \"2\", \"name\": \"Strada Spicului\", \"sidewalk\": \"both\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:31.5147598Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"residential\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=residential, lanes=2, name=Strada Spicului, sidewalk=both provide evidence.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2167888300,
+      "load_duration": 9583400,
+      "prompt_eval_count": 1130,
+      "prompt_eval_cached_count": 1044,
+      "prompt_eval_duration": 515190000,
+      "eval_count": 90,
+      "eval_duration": 1629956000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1130,
+      "output_tokens": 90,
+      "total_tokens": 1220
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1237991817",
+    "extracted": {
+      "road_type": "cycleway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway tag is explicitly set to cycleway.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "cycleway",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paving_stones",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1644.26,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "cycleway"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"cycleway\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:33.1637639Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"cycleway\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is explicitly set to cycleway.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1603855600,
+      "load_duration": 9024500,
+      "prompt_eval_count": 1077,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 184000000,
+      "eval_count": 77,
+      "eval_duration": 1397344000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1077,
+      "output_tokens": 77,
+      "total_tokens": 1154
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "807979520",
+    "extracted": {
+      "road_type": "trunk",
+      "speed_limit_kmh": null,
+      "barrier_present": true,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway=residential is not present, but highway=trunk is. Name and reference number provide context.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "trunk",
+      "speed_limit_kmh": 90,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": false,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2499.13,
+    "error_categories": [
+      "speed_limit_missing",
+      "barrier_presence_mismatch",
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Centura Apahida-Vâlcele",
+      "osm_tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Centura Apahida-Vâlcele",
+        "ref": "DN1N"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"bridge\": \"yes\", \"highway\": \"trunk\", \"lanes\": \"2\", \"name\": \"Centura Apahida-Vâlcele\", \"ref\": \"DN1N\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:35.6673943Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"road_type\": \"trunk\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Highway=residential is not present, but highway=trunk is. Name and reference number provide context.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": true,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2459434300,
+      "load_duration": 9364600,
+      "prompt_eval_count": 1154,
+      "prompt_eval_cached_count": 1044,
+      "prompt_eval_duration": 584892000,
+      "eval_count": 100,
+      "eval_duration": 1852250000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1154,
+      "output_tokens": 100,
+      "total_tokens": 1254
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "37196673",
+    "extracted": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "paved",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway=residential and lanes=2 provide evidence of a tertiary road. Sidewalk:right indicates a road with sidewalks on the right side.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "tertiary",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2356.42,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada General Dragalina",
+      "osm_tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Strada General Dragalina",
+        "sidewalk": "right"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary\", \"lanes\": \"2\", \"name\": \"Strada General Dragalina\", \"sidewalk\": \"right\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:38.0308403Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"tertiary\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=residential and lanes=2 provide evidence of a tertiary road. Sidewalk:right indicates a road with sidewalks on the right side.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"paved\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2317951800,
+      "load_duration": 8598000,
+      "prompt_eval_count": 1135,
+      "prompt_eval_cached_count": 1044,
+      "prompt_eval_duration": 516181000,
+      "eval_count": 98,
+      "eval_duration": 1778904000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1135,
+      "output_tokens": 98,
+      "total_tokens": 1233
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "1446879688",
+    "extracted": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway tag is 'proposed', lanes is '1', and name is 'Pasaj Oasului'. No other information is provided.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2300.15,
+    "error_categories": [
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Pasaj Oasului",
+      "osm_tags": {
+        "highway": "proposed",
+        "lanes": "1",
+        "name": "Pasaj Oasului"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"proposed\", \"lanes\": \"1\", \"name\": \"Pasaj Oasului\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:40.3372349Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"unclassified\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is 'proposed', lanes is '1', and name is 'Pasaj Oasului'. No other information is provided.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2257853200,
+      "load_duration": 10569900,
+      "prompt_eval_count": 1114,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 418810000,
+      "eval_count": 96,
+      "eval_duration": 1814974000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1114,
+      "output_tokens": 96,
+      "total_tokens": 1210
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "386550590",
+    "extracted": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags indicate highway=unclassified and motor_vehicle=yes, suggesting a road with lanes. Name is provided in Romanian: 'Strada Valea Gârbăului' does not provide explicit speed or surface information.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2577.86,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Valea Gârbăului",
+      "osm_tags": {
+        "highway": "unclassified",
+        "lanes": "2",
+        "motor_vehicle": "yes",
+        "name": "Strada Valea Gârbăului"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"unclassified\", \"lanes\": \"2\", \"motor_vehicle\": \"yes\", \"name\": \"Strada Valea Gârbăului\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:42.9220763Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"unclassified\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags indicate highway=unclassified and motor_vehicle=yes, suggesting a road with lanes. Name is provided in Romanian: 'Strada Valea Gârbăului' does not provide explicit speed or surface information.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2536748900,
+      "load_duration": 8572500,
+      "prompt_eval_count": 1140,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 515775999,
+      "eval_count": 110,
+      "eval_duration": 1998002000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1140,
+      "output_tokens": 110,
+      "total_tokens": 1250
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "260063850",
+    "extracted": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway tag explicitly states the road type as tertiary_link and sidewalk tag indicates the presence of a sidewalk on the right side.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2107.93,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "tertiary_link",
+        "sidewalk": "right"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary_link\", \"sidewalk\": \"right\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:45.0356583Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"tertiary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag explicitly states the road type as tertiary_link and sidewalk tag indicates the presence of a sidewalk on the right side.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2069368900,
+      "load_duration": 9784900,
+      "prompt_eval_count": 1097,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 337200000,
+      "eval_count": 94,
+      "eval_duration": 1709004000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1097,
+      "output_tokens": 94,
+      "total_tokens": 1191
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "377646342",
+    "extracted": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway=residential and name=Strada Tractoriștilor provide evidence, lanes=2 indicates two lanes, but no speed or surface is provided.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "residential",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2400.24,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Tractoriștilor",
+      "osm_tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Strada Tractoriștilor",
+        "sidewalk": "no"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"residential\", \"lanes\": \"2\", \"name\": \"Strada Tractoriștilor\", \"sidewalk\": \"no\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:47.443441Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"residential\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=residential and name=Strada Tractoriștilor provide evidence, lanes=2 indicates two lanes, but no speed or surface is provided.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2358865900,
+      "load_duration": 8112600,
+      "prompt_eval_count": 1139,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 515726000,
+      "eval_count": 100,
+      "eval_duration": 1821128000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1139,
+      "output_tokens": 100,
+      "total_tokens": 1239
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "377826990",
+    "extracted": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "The highway tag is explicitly set to 'service', indicating a service road.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "service",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1925.9,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "service"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"service\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:49.3767147Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"road_type\": \"service\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"The highway tag is explicitly set to 'service', indicating a service road.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1883396900,
+      "load_duration": 10032700,
+      "prompt_eval_count": 1075,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 181302000,
+      "eval_count": 92,
+      "eval_duration": 1677554000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1075,
+      "output_tokens": 92,
+      "total_tokens": 1167
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "315218180",
+    "extracted": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags highway=tertiary_link, lanes=1, and sidewalk=left provide sufficient information.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "tertiary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2023.19,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "tertiary_link",
+        "lanes": "1",
+        "sidewalk": "left"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary_link\", \"lanes\": \"1\", \"sidewalk\": \"left\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:51.4039555Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"tertiary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags highway=tertiary_link, lanes=1, and sidewalk=left provide sufficient information.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1986537500,
+      "load_duration": 8305200,
+      "prompt_eval_count": 1111,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 344972000,
+      "eval_count": 89,
+      "eval_duration": 1620083000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1111,
+      "output_tokens": 89,
+      "total_tokens": 1200
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "888449226",
+    "extracted": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags highway=path and motor_vehicle=no provide clear evidence.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "dirt",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1132.46,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "path",
+        "motor_vehicle": "no"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"path\", \"motor_vehicle\": \"no\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:52.5413976Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"path\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags highway=path and motor_vehicle=no provide clear evidence.\", \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1084985300,
+      "load_duration": 10173200,
+      "prompt_eval_count": 1089,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 268524000,
+      "eval_count": 42,
+      "eval_duration": 793479000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1089,
+      "output_tokens": 42,
+      "total_tokens": 1131
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "8028419",
+    "extracted": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Tags highway=secondary_link, lanes=1, and sidewalk=right provide sufficient information.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "secondary_link",
+      "speed_limit_kmh": 30,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1943.89,
+    "error_categories": [
+      "speed_limit_missing",
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "secondary_link",
+        "lanes": "1",
+        "sidewalk": "right"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary_link\", \"lanes\": \"1\", \"sidewalk\": \"right\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:54.4925385Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"secondary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags highway=secondary_link, lanes=1, and sidewalk=right provide sufficient information.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1917142800,
+      "load_duration": 9481100,
+      "prompt_eval_count": 1107,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 342102000,
+      "eval_count": 85,
+      "eval_duration": 1551091000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1107,
+      "output_tokens": 85,
+      "total_tokens": 1192
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "894567910",
+    "extracted": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway tag is explicitly set to 'primary_link' and lanes are explicitly set to '1'. No other attributes are provided.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "primary_link",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2037.91,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "primary_link",
+        "lanes": "1"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"primary_link\", \"lanes\": \"1\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:56.5378059Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"primary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is explicitly set to 'primary_link' and lanes are explicitly set to '1'. No other attributes are provided.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2000539900,
+      "load_duration": 9406200,
+      "prompt_eval_count": 1091,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 269099000,
+      "eval_count": 93,
+      "eval_duration": 1708069000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1091,
+      "output_tokens": 93,
+      "total_tokens": 1184
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "689069610",
+    "extracted": {
+      "road_type": "unclassified",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway=construction and name=Strada Tudor Vladimirescu indicate this is a construction road with a single lane.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "unknown",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "asphalt",
+      "oneway": true,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 2271.96,
+    "error_categories": [
+      "surface_ambiguity",
+      "oneway_mismatch"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Strada Tudor Vladimirescu",
+      "osm_tags": {
+        "highway": "construction",
+        "lanes": "1",
+        "name": "Strada Tudor Vladimirescu"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"construction\", \"lanes\": \"1\", \"name\": \"Strada Tudor Vladimirescu\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:49:58.8139053Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"unclassified\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=construction and name=Strada Tudor Vladimirescu indicate this is a construction road with a single lane.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 2229088100,
+      "load_duration": 9599700,
+      "prompt_eval_count": 1121,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 426854000,
+      "eval_count": 93,
+      "eval_duration": 1776559000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1121,
+      "output_tokens": 93,
+      "total_tokens": 1214
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "481607227",
+    "extracted": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.95,
+      "reasoning_cot": "Highway tag is explicitly provided as steps.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "steps",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1635.7,
+    "error_categories": [],
+    "is_exact_match": true,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "steps"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"steps\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:50:00.4546239Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"steps\", \"confidence_score\": 0.95, \"reasoning_cot\": \"Highway tag is explicitly provided as steps.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1597989000,
+      "load_duration": 9459000,
+      "prompt_eval_count": 1075,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 180845000,
+      "eval_count": 76,
+      "eval_duration": 1394099000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1075,
+      "output_tokens": 76,
+      "total_tokens": 1151
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  },
+  {
+    "segment_id": "954036002",
+    "extracted": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "unknown",
+      "oneway": null,
+      "confidence_score": 0.9,
+      "reasoning_cot": "Highway tag is explicitly set to 'path' in the OSM data.",
+      "anomaly_flag": false
+    },
+    "expected": {
+      "road_type": "path",
+      "speed_limit_kmh": null,
+      "barrier_present": null,
+      "barrier_type": "unknown",
+      "surface": "ground",
+      "oneway": null,
+      "confidence_score": 1.0,
+      "reasoning_cot": "Reference labels normalized from the downloaded OSM way tags.",
+      "anomaly_flag": false
+    },
+    "execution_time_ms": 1136.5,
+    "error_categories": [
+      "surface_ambiguity"
+    ],
+    "is_exact_match": false,
+    "status": "success",
+    "error_message": null,
+    "input_payload": {
+      "name": "Unnamed road",
+      "osm_tags": {
+        "highway": "path"
+      },
+      "context_description": "Downloaded road way. Visible tags: {\"highway\": \"path\"}"
+    },
+    "evaluation_fields": [
+      "speed_limit_kmh",
+      "surface",
+      "barrier_present",
+      "barrier_type",
+      "oneway"
+    ],
+    "raw_response": {
+      "model": "qwen2.5:3b",
+      "created_at": "2026-10-11T17:50:01.5954259Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\"road_type\": \"path\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is explicitly set to 'path' in the OSM data.\", \"anomaly_flag\": false}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 1095461400,
+      "load_duration": 9965300,
+      "prompt_eval_count": 1075,
+      "prompt_eval_cached_count": 1048,
+      "prompt_eval_duration": 180073000,
+      "eval_count": 47,
+      "eval_duration": 889918000,
+      "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "generation_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 1024
+      }
+    },
+    "token_usage": {
+      "input_tokens": 1075,
+      "output_tokens": 47,
+      "total_tokens": 1122
+    },
+    "cache_hit": false,
+    "estimated_cost_usd": 0.0
+  }
+]

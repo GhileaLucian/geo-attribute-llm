@@ -1,0 +1,59 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "tertiary_link",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Tags highway=tertiary_link, lanes=1, and sidewalk=left provide sufficient information.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:40:14.766673Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"tertiary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Tags highway=tertiary_link, lanes=1, and sidewalk=left provide sufficient information.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2003816600,
+    "load_duration": 8694700,
+    "prompt_eval_count": 1046,
+    "prompt_eval_cached_count": 983,
+    "prompt_eval_duration": 346789000,
+    "eval_count": 89,
+    "eval_duration": 1639134000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1046,
+    "output_tokens": 89,
+    "total_tokens": 1135
+  },
+  "error_message": null,
+  "segment_id": "315218180",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "tertiary_link",
+      "lanes": "1",
+      "sidewalk": "left"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary_link\", \"lanes\": \"1\", \"sidewalk\": \"left\"}"
+  },
+  "execution_time_ms": 2030.88,
+  "recorded_at": "2026-10-11T17:40:14.767181+00:00"
+}

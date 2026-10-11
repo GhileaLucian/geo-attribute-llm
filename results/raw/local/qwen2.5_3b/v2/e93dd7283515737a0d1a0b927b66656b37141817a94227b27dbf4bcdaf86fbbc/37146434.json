@@ -1,0 +1,61 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "secondary",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway=secondary and name=Piața Timotei Cipariu provide the road type and name, respectively. Lanes=3 indicates a multi-lane road. Sidewalk=separate suggests the presence of sidewalks.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:49:09.4040119Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"secondary\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=secondary and name=Piața Timotei Cipariu provide the road type and name, respectively. Lanes=3 indicates a multi-lane road. Sidewalk=separate suggests the presence of sidewalks.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2761684200,
+    "load_duration": 9539700,
+    "prompt_eval_count": 1168,
+    "prompt_eval_cached_count": 1044,
+    "prompt_eval_duration": 663769000,
+    "eval_count": 115,
+    "eval_duration": 2074630000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1168,
+    "output_tokens": 115,
+    "total_tokens": 1283
+  },
+  "error_message": null,
+  "segment_id": "37146434",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v2",
+  "input_payload": {
+    "name": "Piața Timotei Cipariu",
+    "osm_tags": {
+      "highway": "secondary",
+      "lanes": "3",
+      "name": "Piața Timotei Cipariu",
+      "ref": "DJ103G",
+      "sidewalk": "separate"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"secondary\", \"lanes\": \"3\", \"name\": \"Piața Timotei Cipariu\", \"ref\": \"DJ103G\", \"sidewalk\": \"separate\"}"
+  },
+  "execution_time_ms": 2813.35,
+  "recorded_at": "2026-10-11T17:49:09.405096+00:00"
+}

@@ -4,7 +4,7 @@ import argparse
 import os
 from pathlib import Path
 import sys
-from src.config import PROJECT_ROOT, load_configuration
+from src.config import PROJECT_ROOT, load_configuration, resolve_model
 
 for stream in (sys.stdout, sys.stderr):
     if hasattr(stream, "reconfigure"):
@@ -14,13 +14,13 @@ for stream in (sys.stdout, sys.stderr):
 def main():
     load_configuration()
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--mode", choices=["baseline", "claude", "openai"], default="baseline")
+    parser.add_argument("--mode", choices=["baseline", "claude", "openai", "local"], default="baseline")
     parser.add_argument("--split", choices=["dev", "test", "hard", "legacy"], default="dev")
     parser.add_argument("--dataset", type=Path, help="An explicit dataset file overrides --split")
     parser.add_argument("--data-dir", type=Path, default=PROJECT_ROOT / "data")
     parser.add_argument("--reports-dir", type=Path, default=PROJECT_ROOT / "reports")
     parser.add_argument("--results-dir", type=Path, default=PROJECT_ROOT / "results")
-    parser.add_argument("--model", help="Override ANTHROPIC_MODEL / OPENAI_MODEL")
+    parser.add_argument("--model", help="Override ANTHROPIC_MODEL / OPENAI_MODEL / LOCAL_MODEL")
     parser.add_argument("--prompt-version", choices=["v1", "v2", "v3"], default="v1")
     parser.add_argument("--cached-only", action="store_true", help="Replay saved responses with no API calls")
     parser.add_argument("--retry-failed", action="store_true", help="Retry only previously failed responses")
@@ -31,14 +31,17 @@ def main():
     dataset = args.dataset or args.data_dir / filenames[args.split]
     if not dataset.exists():
         parser.error(f"Dataset does not exist: {dataset}. Download it with python -m src.fetch_osm.")
-    if args.mode != "baseline" and not args.cached_only:
+    if args.mode in ("claude", "openai") and not args.cached_only:
         key = "ANTHROPIC_API_KEY" if args.mode == "claude" else "OPENAI_API_KEY"
         if not os.getenv(key):
             parser.error(f"{key} is missing. Copy .env.example to .env and set it locally. Baseline needs no key.")
-    model = "rule_based_baseline" if args.mode == "baseline" else (
-        args.model or os.getenv("ANTHROPIC_MODEL" if args.mode == "claude" else "OPENAI_MODEL") or
-        ("claude-sonnet-5-5" if args.mode == "claude" else "gpt-4o")
-    )
+    model = resolve_model(args.mode, args.model)
+    if args.mode == "local" and not args.cached_only:
+        from src.local_ollama import LocalOllamaExtractor
+        try:
+            LocalOllamaExtractor(model, args.prompt_version)
+        except ValueError as exc:
+            parser.error(str(exc))
     # Import Prefect only after inexpensive configuration checks.
     from src.pipeline_flow import run_geospatial_pipeline
     from src.evaluator import percentage

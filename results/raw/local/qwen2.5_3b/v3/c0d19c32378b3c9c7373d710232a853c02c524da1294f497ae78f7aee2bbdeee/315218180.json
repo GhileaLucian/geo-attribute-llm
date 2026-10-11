@@ -1,0 +1,59 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "tertiary_link",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": true,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Tags highway=tertiary_link and lanes=1 indicate a one-way road, and sidewalk:left suggests it is on the left side.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:52:41.1846306Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"tertiary_link\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Tags highway=tertiary_link and lanes=1 indicate a one-way road, and sidewalk:left suggests it is on the left side.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": true,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2400415500,
+    "load_duration": 9480100,
+    "prompt_eval_count": 1111,
+    "prompt_eval_cached_count": 1048,
+    "prompt_eval_duration": 344732000,
+    "eval_count": 108,
+    "eval_duration": 2029769000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1111,
+    "output_tokens": 108,
+    "total_tokens": 1219
+  },
+  "error_message": null,
+  "segment_id": "315218180",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "tertiary_link",
+      "lanes": "1",
+      "sidewalk": "left"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary_link\", \"lanes\": \"1\", \"sidewalk\": \"left\"}"
+  },
+  "execution_time_ms": 2446.4,
+  "recorded_at": "2026-10-11T17:52:41.185144+00:00"
+}

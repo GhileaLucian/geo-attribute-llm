@@ -1,0 +1,55 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "unknown",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.25,
+    "reasoning_cot": "Only highway=unknown is available. Other attributes are unknown.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:50:43.7469497Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"unknown\", \"confidence_score\": 0.25, \"reasoning_cot\": \"Only highway=unknown is available. Other attributes are unknown.\", \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1075807200,
+    "load_duration": 8832500,
+    "prompt_eval_count": 1072,
+    "prompt_eval_cached_count": 1034,
+    "prompt_eval_duration": 224243000,
+    "eval_count": 44,
+    "eval_duration": 828367000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1072,
+    "output_tokens": 44,
+    "total_tokens": 1116
+  },
+  "error_message": null,
+  "segment_id": "hard-10",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v2",
+  "input_payload": {
+    "name": "Unknown metadata",
+    "osm_tags": {},
+    "context_description": "Drum fara observatii despre viteza, suprafata sau bariere."
+  },
+  "execution_time_ms": 1121.45,
+  "recorded_at": "2026-10-11T17:50:43.747510+00:00"
+}

@@ -43,6 +43,11 @@ def cache_path(root, mode, model, version, segment):
             segment.context_description, version
         )] if mode != "baseline" else None
     }
+    if mode == "local":
+        from src.local_ollama import local_base_url, local_settings
+        request["local_settings"] = local_settings()
+        request["local_base_url"] = local_base_url()
+        request["local_code"] = hashlib.sha256(Path(__file__).with_name("local_ollama.py").read_bytes()).hexdigest()
     digest = hashlib.sha256(json.dumps(request, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
     model_slug = re.sub(r"[^a-zA-Z0-9_.-]", "_", model)
     segment_slug = re.sub(r"[^a-zA-Z0-9_.-]", "_", segment.segment_id)
@@ -50,7 +55,7 @@ def cache_path(root, mode, model, version, segment):
 
 
 def estimate_cost(usage, mode):
-    if mode == "baseline":
+    if mode in ("baseline", "local"):
         return 0.0
     input_rate = os.getenv("INPUT_USD_PER_MILLION")
     output_rate = os.getenv("OUTPUT_USD_PER_MILLION")
@@ -69,7 +74,7 @@ def estimate_cost(usage, mode):
 def extract_batch(dataset, mode, model, version, results_dir, cached_only=False, retry_failed=False):
     results = []
     extractor = None
-    for segment in dataset:
+    for index, segment in enumerate(dataset, 1):
         path = cache_path(results_dir, mode, model, version, segment)
         record = None
         if path.exists():
@@ -111,6 +116,8 @@ def extract_batch(dataset, mode, model, version, results_dir, cached_only=False,
             )
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(f"[{index}/{len(dataset)}] {mode} / {segment.segment_id}: {record['status']}"
+              f" ({'cached' if hit else 'new'}, {record['execution_time_ms']:.0f} ms)", flush=True)
         results.append(ExtractionResult(
             segment_id=segment.segment_id, expected=segment.expected_attributes,
             extracted=RoadAttributes.model_validate(record["extracted"]) if record.get("extracted") else None,

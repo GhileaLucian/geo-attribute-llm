@@ -1,0 +1,57 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "unclassified",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway tag is explicitly provided as 'corridor' which is a subclass of unclassified.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:51:48.0940959Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"unclassified\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is explicitly provided as 'corridor' which is a subclass of unclassified.\", \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1252143100,
+    "load_duration": 9808700,
+    "prompt_eval_count": 1077,
+    "prompt_eval_cached_count": 1048,
+    "prompt_eval_duration": 186709000,
+    "eval_count": 51,
+    "eval_duration": 1040590999,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1077,
+    "output_tokens": 51,
+    "total_tokens": 1128
+  },
+  "error_message": null,
+  "segment_id": "1154747807",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "corridor"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"corridor\"}"
+  },
+  "execution_time_ms": 1298.75,
+  "recorded_at": "2026-10-11T17:51:48.094676+00:00"
+}

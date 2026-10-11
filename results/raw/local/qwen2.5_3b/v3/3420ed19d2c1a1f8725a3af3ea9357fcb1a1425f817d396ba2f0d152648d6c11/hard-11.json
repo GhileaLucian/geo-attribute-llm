@@ -1,0 +1,58 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "primary",
+    "speed_limit_kmh": null,
+    "barrier_present": true,
+    "barrier_type": "guard_rail",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Barrier=guard_rail is explicitly provided and context_description confirms a guard rail.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:53:42.0267397Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"primary\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Barrier=guard_rail is explicitly provided and context_description confirms a guard rail.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": true,\n  \"barrier_type\": \"guard_rail\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2059368400,
+    "load_duration": 10317400,
+    "prompt_eval_count": 1079,
+    "prompt_eval_cached_count": 1034,
+    "prompt_eval_duration": 269074000,
+    "eval_count": 95,
+    "eval_duration": 1764939000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1079,
+    "output_tokens": 95,
+    "total_tokens": 1174
+  },
+  "error_message": null,
+  "segment_id": "hard-11",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "Guard rail",
+    "osm_tags": {
+      "highway": "primary",
+      "barrier": "guard_rail"
+    },
+    "context_description": "Parapet lateral; nu blocheaza accesul."
+  },
+  "execution_time_ms": 2092.41,
+  "recorded_at": "2026-10-11T17:53:42.027919+00:00"
+}

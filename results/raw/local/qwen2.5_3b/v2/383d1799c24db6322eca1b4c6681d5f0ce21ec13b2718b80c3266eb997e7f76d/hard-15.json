@@ -1,0 +1,58 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "residential",
+    "speed_limit_kmh": 140,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "maxspeed tag is preserved as evidence of an unusual speed of 140 km/h.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:50:53.6096749Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"residential\", \"confidence_score\": 0.9, \"reasoning_cot\": \"maxspeed tag is preserved as evidence of an unusual speed of 140 km/h.\", \"speed_limit_kmh\": 140, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2003667500,
+    "load_duration": 8887300,
+    "prompt_eval_count": 1086,
+    "prompt_eval_cached_count": 1034,
+    "prompt_eval_duration": 338221000,
+    "eval_count": 89,
+    "eval_duration": 1642399000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1086,
+    "output_tokens": 89,
+    "total_tokens": 1175
+  },
+  "error_message": null,
+  "segment_id": "hard-15",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v2",
+  "input_payload": {
+    "name": "Unusual speed preserved",
+    "osm_tags": {
+      "highway": "residential",
+      "maxspeed": "140"
+    },
+    "context_description": "Valoare suspecta in tag; trebuie pastrata pentru inspectie."
+  },
+  "execution_time_ms": 2049.85,
+  "recorded_at": "2026-10-11T17:50:53.610946+00:00"
+}

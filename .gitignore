@@ -15,3 +15,6 @@ build/
 .pytest_cache/
 .coverage
 htmlcov/
+# Keep locally downloaded model weights out of Git.
+*.gguf
+.ollama/

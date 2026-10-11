@@ -1,0 +1,60 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "residential",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway=residential, lanes=2, name=Strada Spicului, sidewalk=both provide evidence.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:49:31.5147598Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"residential\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway=residential, lanes=2, name=Strada Spicului, sidewalk=both provide evidence.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2167888300,
+    "load_duration": 9583400,
+    "prompt_eval_count": 1130,
+    "prompt_eval_cached_count": 1044,
+    "prompt_eval_duration": 515190000,
+    "eval_count": 90,
+    "eval_duration": 1629956000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1130,
+    "output_tokens": 90,
+    "total_tokens": 1220
+  },
+  "error_message": null,
+  "segment_id": "227215083",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v2",
+  "input_payload": {
+    "name": "Strada Spicului",
+    "osm_tags": {
+      "highway": "residential",
+      "lanes": "2",
+      "name": "Strada Spicului",
+      "sidewalk": "both"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"residential\", \"lanes\": \"2\", \"name\": \"Strada Spicului\", \"sidewalk\": \"both\"}"
+  },
+  "execution_time_ms": 2218.61,
+  "recorded_at": "2026-10-11T17:49:31.515263+00:00"
+}

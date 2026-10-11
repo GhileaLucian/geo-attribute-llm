@@ -1,0 +1,60 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "trunk",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway tag is 'trunk', lanes are 2, and name is 'Centura Apahida-Vâlcele' with reference 'DN1N'. No other attributes are provided.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:51:29.6185511Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"road_type\": \"trunk\",\n  \"confidence_score\": 0.9,\n  \"reasoning_cot\": \"Highway tag is 'trunk', lanes are 2, and name is 'Centura Apahida-Vâlcele' with reference 'DN1N'. No other attributes are provided.\",\n  \"speed_limit_kmh\": null,\n  \"barrier_present\": null,\n  \"barrier_type\": \"unknown\",\n  \"surface\": \"unknown\",\n  \"oneway\": null,\n  \"anomaly_flag\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2691820800,
+    "load_duration": 11563600,
+    "prompt_eval_count": 1142,
+    "prompt_eval_cached_count": 1048,
+    "prompt_eval_duration": 517424000,
+    "eval_count": 118,
+    "eval_duration": 2148124000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1142,
+    "output_tokens": 118,
+    "total_tokens": 1260
+  },
+  "error_message": null,
+  "segment_id": "134752130",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v3",
+  "input_payload": {
+    "name": "Centura Apahida-Vâlcele",
+    "osm_tags": {
+      "highway": "trunk",
+      "lanes": "2",
+      "name": "Centura Apahida-Vâlcele",
+      "ref": "DN1N"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"trunk\", \"lanes\": \"2\", \"name\": \"Centura Apahida-Vâlcele\", \"ref\": \"DN1N\"}"
+  },
+  "execution_time_ms": 2739.34,
+  "recorded_at": "2026-10-11T17:51:29.619057+00:00"
+}

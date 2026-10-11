@@ -6,7 +6,7 @@ import os
 import pandas as pd
 import streamlit as st
 
-from src.config import PROJECT_ROOT, load_configuration
+from src.config import PROJECT_ROOT, load_configuration, resolve_model
 from src.dataset_generator import load_ground_truth_dataset
 from src.evaluator import percentage
 from src.recording import extract_batch, input_payload
@@ -15,7 +15,7 @@ load_configuration()
 st.set_page_config(page_title="GeoAttribute QA", layout="wide", initial_sidebar_state="collapsed")
 st.markdown((PROJECT_ROOT / "assets" / "dashboard.css").read_text(encoding="utf-8"), unsafe_allow_html=True)
 st.title("GeoAttribute QA")
-st.caption("Road attribute extraction and saved evaluation results. API benchmarks require your own key.")
+st.caption("Road attribute extraction and saved evaluation results. Local Ollama needs no API key; cloud APIs require your own key.")
 
 tab_inspector, tab_benchmark, tab_workflow = st.tabs([
     "Segment Inspector", "Benchmark & Error Taxonomy", "How to run"
@@ -34,17 +34,16 @@ with tab_inspector:
         st.stop()
     segment = st.selectbox("Segment", dataset, format_func=lambda value: f"{value.segment_id} — {value.name}")
     col_engine, col_prompt = st.columns(2)
-    mode = col_engine.selectbox("Extractor", ["baseline", "claude", "openai"])
+    mode = col_engine.selectbox("Extractor", ["baseline", "local", "claude", "openai"])
     version = col_prompt.selectbox("Prompt version", ["v1", "v2", "v3"], disabled=mode == "baseline")
     if mode == "baseline":
         version = "v1"
     cached_only = st.checkbox("Use saved response only (no API calls)", value=False)
-    model = "rule_based_baseline" if mode == "baseline" else (
-        os.getenv("ANTHROPIC_MODEL" if mode == "claude" else "OPENAI_MODEL") or
-        ("claude-sonnet-5-5" if mode == "claude" else "gpt-4o")
-    )
+    model = resolve_model(mode)
     key_name = "ANTHROPIC_API_KEY" if mode == "claude" else "OPENAI_API_KEY"
-    key_available = bool(os.getenv(key_name)) if mode != "baseline" else True
+    key_available = bool(os.getenv(key_name)) if mode in ("claude", "openai") else True
+    if mode == "local":
+        st.caption(f"Local model: {model}. Start Ollama first. No OpenAI/Claude request is made.")
     if not key_available and not cached_only:
         st.info(f"{key_name} is missing. Configure .env locally, or select saved responses.")
     if segment.source == "hand-written":
@@ -137,7 +136,8 @@ with tab_benchmark:
 with tab_workflow:
     st.write("The Prefect flow loads a saved dataset, extracts or reuses responses, evaluates predictions, and exports reports.")
     st.write("Responses are cached by model, prompt, schema, code and input. Failed outputs remain visible in evaluation.")
-    st.code("python run_pipeline.py --mode baseline\npython run_pipeline.py --mode baseline --split hard\npython run_pipeline.py --mode claude --split dev --prompt-version v1", language="powershell")
+    st.code("python run_pipeline.py --mode baseline\npython run_pipeline.py --mode local --split dev --prompt-version v1\npython run_pipeline.py --mode local --split hard --prompt-version v1", language="powershell")
+    st.write("For local inference, install Ollama and run ollama pull qwen2.5:3b. The model runs on this computer; no provider API fee. Hardware and electricity are not free.")
     st.write("Copy .env.example to .env and configure your key locally before using an API.")
     st.write("Use the development set to compare prompt versions. Keep the hold-out test for the final selected version.")
     st.caption("OSM data: OpenStreetMap contributors, ODbL. See data/README.md for sources and limitations.")

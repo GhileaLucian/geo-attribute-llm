@@ -1,0 +1,58 @@
+{
+  "status": "success",
+  "extracted": {
+    "road_type": "tertiary_link",
+    "speed_limit_kmh": null,
+    "barrier_present": null,
+    "barrier_type": "unknown",
+    "surface": "unknown",
+    "oneway": null,
+    "confidence_score": 0.9,
+    "reasoning_cot": "Highway tag is explicitly provided as tertiary_link and sidewalk tag is provided as right.",
+    "anomaly_flag": false
+  },
+  "raw_response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-10-11T17:40:08.1929943Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"road_type\": \"tertiary_link\", \"confidence_score\": 0.9, \"reasoning_cot\": \"Highway tag is explicitly provided as tertiary_link and sidewalk tag is provided as right.\", \"speed_limit_kmh\": null, \"barrier_present\": null, \"barrier_type\": \"unknown\", \"surface\": \"unknown\", \"oneway\": null, \"anomaly_flag\": false}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1949467200,
+    "load_duration": 8321000,
+    "prompt_eval_count": 1032,
+    "prompt_eval_cached_count": 983,
+    "prompt_eval_duration": 340297000,
+    "eval_count": 86,
+    "eval_duration": 1590800000,
+    "local_model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "generation_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 1024
+    }
+  },
+  "token_usage": {
+    "input_tokens": 1032,
+    "output_tokens": 86,
+    "total_tokens": 1118
+  },
+  "error_message": null,
+  "segment_id": "260063850",
+  "model": "qwen2.5:3b",
+  "mode": "local",
+  "prompt_version": "v1",
+  "input_payload": {
+    "name": "Unnamed road",
+    "osm_tags": {
+      "highway": "tertiary_link",
+      "sidewalk": "right"
+    },
+    "context_description": "Downloaded road way. Visible tags: {\"highway\": \"tertiary_link\", \"sidewalk\": \"right\"}"
+  },
+  "execution_time_ms": 1991.66,
+  "recorded_at": "2026-10-11T17:40:08.194056+00:00"
+}
