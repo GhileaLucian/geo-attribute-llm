@@ -1,4 +1,4 @@
-# 🗺️ Geospatial Prompt Evaluation & Quality Control Report
+# Geospatial Prompt Evaluation & Quality Control Report
 **Dataset:** OpenStreetMap Cluj-Napoca & Transylvania Ground-Truth Benchmark  
 **Total Evaluated Segments:** 50  
 **Overall Exact Segment Match Rate:** 94.0%  

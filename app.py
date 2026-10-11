@@ -1,143 +1,333 @@
 """
-Interactive Streamlit Web Dashboard for GeoAttribute-LLM.
-Allows live interactive testing of road attribute extraction and QA benchmarking.
+Streamlit Web Application: GeoAttribute QA Platform
+Minimalist, high-end SaaS interface inspired by Linear and Mapbox Studio.
+Strictly light-themed, zero emojis, clean typography and subtle components.
 """
 
 import json
 from pathlib import Path
 import streamlit as st
 import pandas as pd
-from PIL import Image
 
-from src.models import RoadSegmentInput, RoadAttributes, RoadType, BarrierType, SurfaceType
+from src.models import RoadSegmentInput, RoadAttributes
 from src.extractor import OpenStreetMapAttributeExtractor
 from src.dataset_generator import build_cluj_osm_dataset
 
+# Configuration
 st.set_page_config(
-    page_title="GeoAttribute-LLM | Map QA Dashboard",
-    page_icon="🗺️",
-    layout="wide"
+    page_title="GeoAttribute QA",
+    layout="wide",
+    initial_sidebar_state="collapsed"
 )
 
-# Custom Styling
+# Modern Minimalist CSS
 st.markdown("""
 <style>
-    .main-title { font-size: 28px; font-weight: 800; color: #0f172a; margin-bottom: 2px; }
-    .subtitle { font-size: 15px; color: #475569; margin-bottom: 20px; }
-    .metric-card { background-color: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 12px; text-align: center; }
-    .metric-val { font-size: 22px; font-weight: 800; color: #0284c7; }
-    .metric-lbl { font-size: 12px; color: #475569; text-transform: uppercase; font-weight: 600; }
-    .cot-box { background-color: #f8fafc; border-left: 4px solid #0284c7; padding: 12px; border-radius: 4px; font-family: monospace; font-size: 13px; }
+    /* Global Resets & Typography */
+    html, body, [class*="css"] {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #0f172a;
+    }
+    .stApp {
+        background-color: #f8fafc;
+    }
+    
+    /* Header Container */
+    .header-box {
+        background: #ffffff;
+        border-bottom: 1px solid #e2e8f0;
+        padding: 24px 32px 20px;
+        margin: -4rem -4rem 24px -4rem;
+    }
+    .header-title {
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: #0f172a;
+        margin: 0;
+    }
+    .header-subtitle {
+        font-size: 13.5px;
+        color: #64748b;
+        margin-top: 4px;
+    }
+    
+    /* Cards */
+    .card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 16px;
+    }
+    .card-title {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #64748b;
+        margin-bottom: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* Metric Pills & Badges */
+    .attr-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 8px;
+    }
+    .attr-item {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 12px 14px;
+    }
+    .attr-label {
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #64748b;
+        margin-bottom: 4px;
+    }
+    .attr-value {
+        font-size: 15px;
+        font-weight: 600;
+        color: #0f172a;
+    }
+    
+    /* Reasoning Box */
+    .reasoning-box {
+        background: #f8fafc;
+        border-left: 3px solid #0284c7;
+        padding: 12px 14px;
+        border-radius: 0 6px 6px 0;
+        font-size: 12.5px;
+        line-height: 1.5;
+        color: #334155;
+        margin-top: 8px;
+    }
+    
+    /* Status Labels */
+    .status-verified {
+        color: #059669;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .status-anomaly {
+        color: #d97706;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    /* Tabs styling override */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 24px;
+        border-bottom: 1px solid #e2e8f0;
+        margin-bottom: 20px;
+    }
+    .stTabs [data-baseweb="tab"] {
+        padding: 8px 4px 12px;
+        font-size: 13.5px;
+        font-weight: 500;
+        color: #64748b;
+        background-color: transparent !important;
+    }
+    .stTabs [aria-selected="true"] {
+        color: #0f172a !important;
+        font-weight: 600 !important;
+        border-bottom: 2px solid #0284c7 !important;
+    }
+    
+    /* Remove streamlit padding gaps */
+    div.block-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="main-title">🗺️ GeoAttribute-LLM: Geospatial Quality Control</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">Automated Map Quality Assurance, LLM Attribute Extraction &amp; Ground-Truth Benchmarking</div>', unsafe_allow_html=True)
+# Application Header
+st.markdown("""
+<div class="header-box">
+    <div class="header-title">GeoAttribute Quality Assurance Platform</div>
+    <div class="header-subtitle">Automated validation of road attributes, schema enforcement, and spatial error benchmarking</div>
+</div>
+""", unsafe_allow_html=True)
 
-# Tabs
-tab1, tab2, tab3 = st.tabs(["🔍 Interactive Road Segment Inspector", "📊 Benchmark & Evaluation Metrics", "⚙️ Pipeline Architecture (Prefect)"])
-
+# Load ground-truth dataset
 dataset = build_cluj_osm_dataset()
-segment_map = {f"{s.segment_id} - {s.name}": s for s in dataset}
+segment_map = {f"{s.segment_id} — {s.name}": s for s in dataset}
 
-with tab1:
-    st.subheader("Test Road Attribute Extraction in Real Time")
-    
-    col_sel, col_btn = st.columns([3, 1])
-    with col_sel:
-        selected_key = st.selectbox("Select an OpenStreetMap segment from Cluj-Napoca:", list(segment_map.keys()))
-    with col_btn:
-        st.write("")
-        st.write("")
-        run_btn = st.button("🚀 Extract Attributes (LLM)", type="primary", use_container_width=True)
+# Top Navigation Tabs
+tab_inspector, tab_benchmark, tab_workflow = st.tabs([
+    "Segment Inspector",
+    "Benchmark & Error Taxonomy",
+    "Pipeline Architecture"
+])
+
+# ---------------------------------------------------------
+# TAB 1: SEGMENT INSPECTOR
+# ---------------------------------------------------------
+with tab_inspector:
+    ctrl_col, btn_col = st.columns([4, 1])
+    with ctrl_col:
+        selected_key = st.selectbox(
+            "Select road segment from benchmark dataset:",
+            list(segment_map.keys()),
+            label_visibility="collapsed"
+        )
+    with btn_col:
+        run_extraction = st.button("Extract Attributes", type="primary", use_container_width=True)
 
     segment: RoadSegmentInput = segment_map[selected_key]
+    
+    # Run extractor
+    extractor = OpenStreetMapAttributeExtractor(use_live_api=False)
+    extracted = extractor.extract_attributes(segment)
 
-    c1, c2 = st.columns([1, 1])
-    with c1:
-        st.markdown("##### 📍 Input OpenStreetMap Data")
-        st.write(f"**Segment ID:** `{segment.segment_id}`")
-        st.write(f"**Context:** {segment.context_description}")
-        st.markdown("**Raw OSM Tags:**")
-        st.json(segment.osm_tags)
+    col_left, col_right = st.columns([1, 1], gap="medium")
 
-    with c2:
-        st.markdown("##### 🤖 Extraction Output")
+    with col_left:
+        st.markdown("""
+        <div class="card">
+            <div class="card-title">
+                <span>Input Metadata</span>
+                <span style="font-weight: 500; color: #94a3b8;">Source: OpenStreetMap</span>
+            </div>
+        """, unsafe_allow_html=True)
         
-        extractor = OpenStreetMapAttributeExtractor(use_live_api=False)
-        extracted = extractor.extract_attributes(segment)
+        st.write(f"**Segment Identifier:** `{segment.segment_id}`")
+        st.write(f"**Road Name:** {segment.name}")
+        st.write(f"**Context:** {segment.context_description}")
+        
+        st.markdown("<p style='font-size: 11px; font-weight: 600; text-transform: uppercase; color: #64748b; margin-top: 14px; margin-bottom: 6px;'>OSM Tags</p>", unsafe_allow_html=True)
+        
+        # Clean Table for Tags
+        tags_df = pd.DataFrame(list(segment.osm_tags.items()), columns=["Key", "Value"])
+        st.dataframe(tags_df, hide_index=True, use_container_width=True, height=180)
+        
+        st.markdown("</div>", unsafe_allow_html=True)
 
-        # Display badges
-        m1, m2, m3, m4 = st.columns(4)
-        with m1:
-            st.markdown(f'<div class="metric-card"><div class="metric-val">{extracted.road_type.value}</div><div class="metric-lbl">Road Type</div></div>', unsafe_allow_html=True)
-        with m2:
-            st.markdown(f'<div class="metric-card"><div class="metric-val">{extracted.speed_limit_kmh} km/h</div><div class="metric-lbl">Speed Limit</div></div>', unsafe_allow_html=True)
-        with m3:
-            st.markdown(f'<div class="metric-card"><div class="metric-val">{"YES" if extracted.barrier_present else "NO"}</div><div class="metric-lbl">Barrier ({extracted.barrier_type.value})</div></div>', unsafe_allow_html=True)
-        with m4:
-            st.markdown(f'<div class="metric-card"><div class="metric-val">{extracted.surface.value}</div><div class="metric-lbl">Surface</div></div>', unsafe_allow_html=True)
-
-        st.markdown("<br>", unsafe_allow_html=True)
-        st.markdown("**🧠 Chain-of-Thought (CoT) Reasoning:**")
-        st.markdown(f'<div class="cot-box">{extracted.reasoning_cot}</div>', unsafe_allow_html=True)
-
+    with col_right:
+        # Check against ground truth
+        is_exact = False
         if segment.expected_attributes:
             exp = segment.expected_attributes
-            is_match = (
+            is_exact = (
                 exp.road_type == extracted.road_type and
                 exp.barrier_present == extracted.barrier_present and
-                exp.surface == extracted.surface
+                exp.surface == extracted.surface and
+                (exp.speed_limit_kmh == extracted.speed_limit_kmh if exp.speed_limit_kmh else True)
             )
-            st.markdown("<br>", unsafe_allow_html=True)
-            if is_match:
-                st.success(f"✅ Ground-Truth Match Verified! (Confidence: {extracted.confidence_score*100:.0f}%)")
-            else:
-                st.warning("⚠️ Discrepancy detected against ground truth (Cataloged in error taxonomy).")
 
-with tab2:
-    st.subheader("Benchmark Metrics & Spatial Error Taxonomy")
-    
-    metrics_file = Path("reports/metrics_summary.json")
-    chart_file = Path("reports/evaluation_metrics_chart.png")
+        status_html = '<span class="status-verified">Verified Match</span>' if is_exact else '<span class="status-anomaly">Discrepancy Cataloged</span>'
 
-    if metrics_file.exists():
-        with open(metrics_file, "r", encoding="utf-8") as f:
+        st.markdown(f"""
+        <div class="card">
+            <div class="card-title">
+                <span>Structured Extraction</span>
+                {status_html}
+            </div>
+            <div class="attr-grid">
+                <div class="attr-item">
+                    <div class="attr-label">Road Classification</div>
+                    <div class="attr-val">{extracted.road_type.value}</div>
+                </div>
+                <div class="attr-item">
+                    <div class="attr-label">Speed Limit</div>
+                    <div class="attr-val">{f"{extracted.speed_limit_kmh} km/h" if extracted.speed_limit_kmh else "Not specified"}</div>
+                </div>
+                <div class="attr-item">
+                    <div class="attr-label">Physical Barrier</div>
+                    <div class="attr-val">{"Present (" + extracted.barrier_type.value + ")" if extracted.barrier_present else "None"}</div>
+                </div>
+                <div class="attr-item">
+                    <div class="attr-label">Surface Material</div>
+                    <div class="attr-val">{extracted.surface.value}</div>
+                </div>
+            </div>
+            <div style="margin-top: 16px;">
+                <div class="attr-label">Model Reasoning (Chain-of-Thought)</div>
+                <div class="reasoning-box">{extracted.reasoning_cot}</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-top: 14px; font-size: 11.5px; color: #64748b;">
+                <span>One-Way: <strong>{"Yes" if extracted.oneway else "No"}</strong></span>
+                <span>Confidence: <strong>{extracted.confidence_score*100:.0f}%</strong></span>
+                <span>Contradiction Flag: <strong>{"Yes" if extracted.anomaly_flag else "None"}</strong></span>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+# ---------------------------------------------------------
+# TAB 2: BENCHMARK & ERROR TAXONOMY
+# ---------------------------------------------------------
+with tab_benchmark:
+    metrics_path = Path("reports/metrics_summary.json")
+    chart_path = Path("reports/evaluation_metrics_chart.png")
+
+    if metrics_path.exists():
+        with open(metrics_path, "r", encoding="utf-8") as f:
             metrics = json.load(f)
 
-        kpi1, kpi2, kpi3, kpi4, kpi5 = st.columns(5)
-        kpi1.metric("Evaluated Segments", metrics["total_segments_evaluated"])
-        kpi2.metric("Exact Match Rate", f"{metrics['exact_segment_match_rate']*100:.1f}%")
-        kpi3.metric("Road Type F1", f"{metrics['attributes']['road_type']['f1_score']*100:.1f}%")
-        kpi4.metric("Barrier F1", f"{metrics['attributes']['barrier_present']['f1_score']*100:.1f}%")
-        kpi5.metric("Surface F1", f"{metrics['attributes']['surface_type']['f1_score']*100:.1f}%")
+        m_cols = st.columns(5)
+        m_cols[0].metric("Total Evaluated", f"{metrics['total_segments_evaluated']} segments")
+        m_cols[1].metric("Exact Match Rate", f"{metrics['exact_segment_match_rate']*100:.1f}%")
+        m_cols[2].metric("Road Classification F1", f"{metrics['attributes']['road_type']['f1_score']*100:.1f}%")
+        m_cols[3].metric("Barrier Detection F1", f"{metrics['attributes']['barrier_present']['f1_score']*100:.1f}%")
+        m_cols[4].metric("Surface Material F1", f"{metrics['attributes']['surface_type']['f1_score']*100:.1f}%")
 
-        c_chart, c_err = st.columns([1.2, 1])
-        with c_chart:
-            st.markdown("##### 📈 Precision & Recall Benchmark")
-            if chart_file.exists():
-                st.image(str(chart_file), use_container_width=True)
-        with c_err:
-            st.markdown("##### 🚨 Spatial Error Taxonomy Breakdown")
-            errs = metrics.get("error_taxonomy_breakdown", {})
-            if errs:
-                err_df = pd.DataFrame(list(errs.items()), columns=["Error Taxonomy", "Count"])
-                st.dataframe(err_df, use_container_width=True)
-                st.info("💡 The taxonomy categorizes speed hallucinations and boundary ambiguities to refine system prompts iteratively.")
-    else:
-        st.warning("Run `python run_pipeline.py` first to generate the benchmark artifacts.")
+        st.markdown("<div style='height: 12px;'></div>", unsafe_allow_html=True)
 
-with tab3:
-    st.subheader("Prefect Workflow Orchestration")
+        chart_col, err_col = st.columns([1.1, 1], gap="medium")
+        with chart_col:
+            st.markdown("""
+            <div class="card">
+                <div class="card-title">Precision &amp; Recall Performance</div>
+            """, unsafe_allow_html=True)
+            if chart_path.exists():
+                st.image(str(chart_path), use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
+
+        with err_col:
+            st.markdown("""
+            <div class="card">
+                <div class="card-title">Spatial Error Taxonomy</div>
+            """, unsafe_allow_html=True)
+            err_dict = metrics.get("error_taxonomy_breakdown", {})
+            if err_dict:
+                err_df = pd.DataFrame([
+                    {"Error Category": k, "Count": v, "Percentage": f"{v/metrics['total_segments_evaluated']*100:.1f}%"}
+                    for k, v in err_dict.items()
+                ])
+                st.dataframe(err_df, hide_index=True, use_container_width=True)
+                st.caption("Discrepancies are categorized into domain-specific error types to prioritize prompt refinements.")
+            else:
+                st.write("Zero errors detected across the current evaluation suite.")
+            st.markdown("</div>", unsafe_allow_html=True)
+
+# ---------------------------------------------------------
+# TAB 3: PIPELINE ARCHITECTURE
+# ---------------------------------------------------------
+with tab_workflow:
     st.markdown("""
-    The pipeline is orchestrated with **Prefect 3.8**, decoupling operations into monitored, retriable tasks:
-    1. `load-osm-ground-truth` (Cache & Load 50 Cluj road segments)
-    2. `extract-attributes-batch` (Runs LangChain structured output extraction with retry policy)
-    3. `benchmark-and-evaluate` (Scikit-learn precision/recall calculation)
-    4. `generate-visualizations` (Matplotlib chart generation)
-    5. `export-artifacts` (Automated markdown & JSON reporting)
-    """)
-    st.code("""
-# Run the pipeline from terminal:
-python run_pipeline.py
-    """, language="bash")
+    <div class="card">
+        <div class="card-title">Prefect Workflow Orchestration</div>
+        <p style="font-size: 13px; color: #475569; line-height: 1.6;">
+            The QA pipeline runs as a resilient, scheduled Prefect flow that coordinates 5 distinct stages:
+        </p>
+        <ol style="font-size: 13px; color: #334155; line-height: 1.8; margin-left: 18px;">
+            <li><strong>Data Ingestion:</strong> Loads verified OpenStreetMap ground-truth geometries and metadata.</li>
+            <li><strong>Batch Extraction:</strong> Applies system prompts and few-shot guidance with strict Pydantic JSON schema enforcement.</li>
+            <li><strong>Benchmarking:</strong> Computes multi-class precision, recall, and F1 scores using scikit-learn.</li>
+            <li><strong>Error Taxonomy Classification:</strong> Maps failure points (e.g. speed limit hallucinations, road class mismatches).</li>
+            <li><strong>Artifact Generation:</strong> Exports quantitative metrics JSON and visual performance plots.</li>
+        </ol>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.markdown("<p style='font-size: 12px; font-weight: 600; text-transform: uppercase; color: #64748b;'>Command Line Execution</p>", unsafe_allow_html=True)
+    st.code("python run_pipeline.py", language="bash")

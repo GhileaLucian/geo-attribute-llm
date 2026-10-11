@@ -158,7 +158,7 @@ class GeospatialEvaluator:
 
         err_rows = "\n".join([f"| `{k}` | {v} | {v/total*100:.1f}% |" for k, v in errs.items()]) if errs else "| `none` | 0 | 0.0% |"
 
-        return f"""# 🗺️ Geospatial Prompt Evaluation & Quality Control Report
+        return f"""# Geospatial Prompt Evaluation & Quality Control Report
 **Dataset:** OpenStreetMap Cluj-Napoca & Transylvania Ground-Truth Benchmark  
 **Total Evaluated Segments:** {total}  
 **Overall Exact Segment Match Rate:** {exact_rate:.1f}%  

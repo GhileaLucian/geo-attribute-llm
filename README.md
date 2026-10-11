@@ -1,4 +1,4 @@
-# 🗺️ GeoAttribute-LLM: Geospatial Attribute Extraction & Automated QA Pipeline
+# GeoAttribute-LLM: Geospatial Attribute Extraction & Automated QA Pipeline
 
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB.svg?logo=python)](https://python.org)
 [![Pydantic v2](https://img.shields.io/badge/Pydantic-v2-E92063.svg?logo=pydantic)](https://pydantic.dev)
@@ -11,7 +11,7 @@
 
 ---
 
-## 📌 Project Overview & Motivation
+## Project Overview & Motivation
 
 In map data operations, validating road network attributes (classifications, legal speed limits, physical barriers, surfaces) is historically labor-intensive. Inconsistent community tagging and missing metadata frequently require manual inspection.
 
@@ -24,7 +24,7 @@ This repository implements an **end-to-end automated LLM pipeline** that:
 
 ---
 
-## 🏛️ Pipeline Architecture
+## Pipeline Architecture
 
 ```mermaid
 flowchart TD
@@ -41,7 +41,7 @@ flowchart TD
 
 ---
 
-## 📊 Benchmark Results
+## Benchmark Results
 
 Evaluated on **50 ground-truth road segments** spanning primary arterials, highways (A3 Transilvania, DN1), collector streets, residential living zones, and gated forestry/service access tracks:
 
@@ -59,7 +59,7 @@ Evaluated on **50 ground-truth road segments** spanning primary arterials, highw
 
 ---
 
-## 🔍 Spatial Error Taxonomy
+## Spatial Error Taxonomy
 
 Rather than relying solely on global accuracy, the evaluation engine classifies prompt errors into distinct spatial failure modes:
 
@@ -72,7 +72,7 @@ Rather than relying solely on global accuracy, the evaluation engine classifies 
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ### 1. Clone & Install Dependencies
 ```bash
@@ -81,27 +81,28 @@ cd geo-attribute-llm
 pip install -r requirements.txt
 ```
 
-### 2. Run the End-to-End Prefect Pipeline
+### 2. Run the Interactive Web Dashboard (Streamlit)
 ```bash
-# Run local reproducible benchmark
-python run_pipeline.py
-
-# Optional: Run with live Claude / OpenAI API
-# export OPENAI_API_KEY="your-api-key"
-# python run_pipeline.py --live-api
+python -m streamlit run app.py
 ```
 
-### 3. Explore in Jupyter Notebook
+### 3. Run the End-to-End Prefect Pipeline (CLI)
+```bash
+python run_pipeline.py
+```
+
+### 4. Explore in Jupyter Notebook
 ```bash
 jupyter notebook notebooks/evaluation_analysis.ipynb
 ```
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 geo-attribute-llm/
+├── app.py                               # Modern minimalist Streamlit web dashboard
 ├── data/
 │   └── osm_ground_truth_cluj.json       # 50 verified road ground-truth segments
 ├── notebooks/
@@ -119,6 +120,7 @@ geo-attribute-llm/
 │   ├── evaluator.py                     # Scikit-learn metrics & error taxonomy
 │   └── pipeline_flow.py                 # Prefect task & flow orchestration
 ├── run_pipeline.py                      # Pipeline CLI entrypoint
+├── push_to_github.bat                   # 1-click push script
 ├── requirements.txt                     # Python dependencies
 ├── .gitignore
 └── README.md
@@ -126,7 +128,7 @@ geo-attribute-llm/
 
 ---
 
-## 💡 Engineering Takeaways & Lessons Learned
+## Engineering Takeaways & Lessons Learned
 
 1. **Schema Enforcement is Non-Negotiable:** Freeform LLM outputs drift over time. Enforcing strict Pydantic models ensures deterministic data pipelines with zero runtime serialization failures.
 2. **Few-Shot Examples Bridge Domain Nuances:** Distinguishing between highway crash barriers (`guard_rail`) and urban access limiters (`bollard`) required targeted few-shot pairs in the prompt.
@@ -134,7 +136,7 @@ geo-attribute-llm/
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Dan Lucian Ghilea**  
 MSc Student in Applied Informatics (Complex Systems Engineering) – Technical University of Cluj-Napoca (UTCN)  
